@@ -17,7 +17,11 @@ npm install react-router-dom --save
 
 -> connect to remote github repository
 
+npm i react-tooltip
+https://www.npmjs.com/package/react-tooltip
+
 fonts
+DM Sans
 
 - roboto
 - open sans
