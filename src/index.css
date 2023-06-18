@@ -7,15 +7,30 @@
   --font-base: "DM Sans", sans-serif;
 
   /* color variables */
-  --primary: #edf2f8;
+  --offwhite: #edf2f8;
+  --primary-light: #f4eae9;
+  --primary-dark: #916265;
+  --primary-deep: #682a2e;
+  --primary-dark-a: rgba(146, 99, 102, 0.8);
   --secondary: #313bac;
+  --secondary-dark: #4C2777;
+
+ 
+
+  
+
+
+
+  --primary: #edf2f8;
+  /* --secondary: #502470; */
   --black: #030303;
   --light-gray: #e4e4e4;
   --gray: #6b7688;
   --brown: #46364a;
   --white: #ffffff;
 
-  --green: darkolivegreen;
+  --darkgreen-a: rgba(9, 59, 36, 0.794);
+  --lightblue: rgb(142, 228, 239);
 }
 
 /* targeting all elements */
@@ -27,7 +42,7 @@
   scroll-behavior: smooth;
 }
 
-ul {
+ul, li {
   list-style: none;
 }
 
@@ -35,3 +50,11 @@ a {
   text-decoration: none;
 }
 
+input,
+textarea,
+button,
+a,
+p,
+div {
+  font-family: var(--font-base)
+}

@@ -14,7 +14,7 @@ const abouts = [
     {
       title: "coding journey.",
       description: "My interest in coding led me to join the General Assembly software engineering immersive course to secure a solid foundation in programming fundamentals to build upon. I’m currently looking for opportunities to further develop my skills and learn new languages, frameworks and technologies as I believe there’s nothing more thrilling than being a life-long learner in a constantly evolving industry.",
-      imgUrl: images.ga
+      imgUrl: images.ga2
     }
   ]
 

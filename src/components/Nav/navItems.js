@@ -6,11 +6,11 @@ export const navItems = [
     'contact'
 ]
 
-export const dotItems = [
-    'home',
-    'about',
-    'work',
-    'skills',
-    'testimonials',
-    'contact'
-]
+// export const dotItems = [
+//     'home',
+//     'about',
+//     'work',
+//     'skills',
+//     'testimonial',
+//     'contact'
+// ]

@@ -2,8 +2,6 @@
     flex: 1;
     width: 100%;
     flex-direction: column;
-
-
 }
 .skills-container {
     width: 80%;
@@ -38,21 +36,26 @@
     flex-direction: column;
     text-align: center;
     margin: 1rem;
-    transition: all 0.3s ease-in-out;
 
     div {
         width: 90px;
         height: 90px;
         border-radius: 50%;
-        background-color: rgb(178, 234, 201);
+        background-color: var(--primary-medium);
+        transition: all 0.3s ease-in-out;
+
+     
+
 
         img {
             width: 50%;
             height: 50%;
+          
+
         }
 
         &:hover {
-           box-shadow: 0 0 25px #d9cfdc;
+           box-shadow: 0 0 25px #eeedee;
         }
 
         @media screen and (min-width: 2000px) {
@@ -77,4 +80,206 @@
           margin-top: 1rem;
         }
       }
+}
+
+
+.skills-exp {
+    flex: .6;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    @media screen and (max-width: 900px) {
+        margin-top: 2rem;
+
+
+    }
+
+}
+
+.skills-exp-item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 1rem 0;
+}
+
+
+.skills-exp-works {
+    flex: 1;
+
+    .skills-exp-work {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+
+
+    }
+    h4 {
+        font-weight: 500;
+    }
+    p {
+        font-weight: 400;
+        color: var(--gray);
+        margin-top: 5px;
+
+    }
+}
+
+
+.skills-exp-year {
+    margin-right: 3rem;
+    width: 150px;
+
+    p {
+        font-weight: 800;
+        color: var(--secondary);
+
+      
+    }
+
+    @media screen and (max-width: 450px) {
+        margin-right: 1rem;
+    }
+
+}
+
+.desc {
+    width: 150%;
+    line-height: 1.5;
+}
+
+
+// adjusting size of icons
+#mongoose-icon { img { scale: 1.35 } }
+#mongodb-icon { img { scale: 1.2 } }
+#ruby-icon { img { scale: 0.95 } }
+#babel-icon { img { scale: 1.2 } }
+#npm-icon { img { scale: 1.1 } }
+#tailwind-icon { img { scale: 1.15 } }
+#heroku-icon { img { scale: 0.95 } }
+
+//skills icons changing color on hover
+#html-icon:hover {
+    p { color: #e34b24; }
+    img { content: url('./../../assets/icons/icons_skills/html_color.svg') }
+}
+
+#css-icon:hover {
+    p { color: #006db8; }
+    img { content: url('./../../assets/icons/icons_skills/css_color.svg') }
+}
+
+#sass-icon:hover {
+    p { color: #cf6b9e; }
+    img { content: url('./../../assets/icons/icons_skills/sass_color.svg') }
+}
+
+#javascript-icon:hover {
+    p { color: black; }
+    img { content: url('./../../assets/icons/icons_skills/javascript_color.svg') }
+}
+
+#nodejs-icon:hover {
+    p { color: #529f41; }
+    img { content: url('./../../assets/icons/icons_skills/nodejs_color.svg') }
+}
+
+#react-icon:hover {
+    p { color: #0da3d4; }
+    img { content: url('./../../assets/icons/icons_skills/react_color.svg') }
+}
+
+#express-icon:hover {
+    p { color: #c93d30; }
+    img { content: url('./../../assets/icons/icons_skills/express_color.svg') }
+}
+
+#mongodb-icon:hover {
+    p { color: #46a438; }
+    img { content: url('./../../assets/icons/icons_skills/mongodb_color.svg') }
+}
+
+#mongoose-icon:hover {
+    p { color: #9e0303; }
+    img { content: url('./../../assets/icons/icons_skills/mongoose_color.svg') }
+}
+
+#ruby-icon:hover {
+    p { color: #cf6b9e; }
+    img { content: url('./../../assets/icons/icons_skills/ruby_color.svg') }  
+}
+
+#rails-icon:hover {
+    p { color: #cd0000; }
+    img { content: url('./../../assets/icons/icons_skills/rails_color.svg') }  
+}
+
+#postgresql-icon:hover {
+    p { color: #1d649e; }
+    img { content: url('./../../assets/icons/icons_skills/postgresql_color.svg') }  
+}
+
+#tailwind-icon:hover {
+    p { color: #44a8b3; }
+    img { content: url('./../../assets/icons/icons_skills/tailwind_color.svg') }  
+}
+
+#bootstrap-icon:hover {
+    p { color: #7E13F8; }
+    img { content: url('./../../assets/icons/icons_skills/bootstrap_color.svg') }  
+}
+
+#postman-icon:hover {
+    p { color: #f37036; }
+    img { content: url('./../../assets/icons/icons_skills/postman_color.svg') }  
+}
+
+#heroku-icon:hover {
+    p { color: #430098; }
+    img { content: url('./../../assets/icons/icons_skills/heroku_color.svg') }  
+}
+
+#netlify-icon:hover {
+    p { color: #32b5ba; }
+    img { content: url('./../../assets/icons/icons_skills/netlify_color.svg') }  
+}
+
+#passport-icon:hover {
+    p { color: #000; }
+    img { content: url('./../../assets/icons/icons_skills/passport_color.svg') }  
+}
+
+#jwt-icon:hover {
+    p { color: #D63AFF}
+    img { content: url('./../../assets/icons/icons_skills/jwt_color.svg') }  
+}
+
+#npm-icon:hover {
+    p { color: #cb3837}
+    img { content: url('./../../assets/icons/icons_skills/npm_color.svg') }  
+}
+
+#yarn-icon:hover {
+    p { color: #368FB9}
+    img { content: url('./../../assets/icons/icons_skills/yarn_color.svg') }  
+}
+
+#babel-icon:hover {
+    p { color: #000}
+    img { content: url('./../../assets/icons/icons_skills/babel_color.svg') }  
+}
+
+#git-icon:hover {
+    p { color: #F34F29}
+    img { content: url('./../../assets/icons/icons_skills/git_color.svg') }  
+}
+
+#github-icon:hover {
+    p { color: #4C2777}
+    img { content: url('./../../assets/icons/icons_skills/github_color.svg') }  
 }

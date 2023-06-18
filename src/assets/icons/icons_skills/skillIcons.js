@@ -1,66 +1,63 @@
+import babel_primary from './babel_primary.svg'
+import bootstrap_primary from './bootstrap_primary.svg'
+import css_primary from './css_primary.svg'
+import express_primary from './express_primary.svg'
+import git_primary from './git_primary.svg'
+import github_primary from './github_primary.svg'
+import heroku_primary from './heroku_primary.svg'
 
+import html_primary from './html_primary.svg'
+import html_color from './html_color.svg'
 
-import html from './html.svg'
-import css from './css.svg'
-import sass from './sass.svg'
-import javascript from './javascript.svg'
+import javascript_primary from './javascript_primary.svg'
+import jwt_primary from './jwt_primary.svg'
+import mongodb_primary from './mongodb_primary.svg'
+import mongoose_primary from './mongoose_primary.svg'
+import netlify_primary from './netlify_primary.svg'
+import nodejs_primary from './nodejs_primary.svg'
+import npm_primary from './npm_primary.svg'
+import passport_primary from './passport_primary.svg'
+import postgresql_primary from './postgresql_primary.svg'
+import postman_primary from './postman_primary.svg'
+import rails_primary from './rails_primary.svg'
+import react_primary from './react_primary.svg'
+import ruby_primary from './ruby_primary.svg'
+import sass_primary from './sass_primary.svg'
+import tailwind_primary from './tailwind_primary.svg'
+import yarn_primary from './yarn_primary.svg'
 
-import nodejs from './nodejs.svg'
-import reactjs from './reactjs.svg'
-import express from './express.svg'
-import mongodb from './mongodb.svg'
-import mongoose from './mongoose.svg'
+import javascript_p from './javascript_p.svg'
 
-import ruby3 from './ruby3.svg'
-import rails3 from './rails3.svg'
-import postgresql from './postgresql.svg'
+const skillIcons = {
 
-import tailwind from './tailwind.svg'
-import bootstrap from './bootstrap.svg'
-import postman from './postman.svg'
+    babel_primary,
+    bootstrap_primary,
+    css_primary,
+    express_primary,
+    git_primary,
+    github_primary,
+    heroku_primary,
+    html_primary,
+    html_color,
+    javascript_primary,
+    jwt_primary,
+    mongodb_primary,
+    mongoose_primary,
+    netlify_primary,
+    nodejs_primary,
+    npm_primary,
+    passport_primary,
+    postgresql_primary,
+    postman_primary,
+    rails_primary,
+    react_primary,
+    ruby_primary,
+    sass_primary,
+    tailwind_primary,
+    yarn_primary,
 
-import heroku from './heroku.svg'
-import netlify from './netlify.svg'
-import passport from './passport.svg'
-import jwt from './jwt.svg'
-
-import npm from './npm.svg'
-import yarn from './yarn.svg'
-import babel from './babel.svg'
-import git from './git.svg'
-import github from './github.svg'
-
-
-
-
-export default {
-    html,
-    css,
-    sass,
-    javascript,
+    javascript_p
     
-    nodejs,
-    reactjs,
-    express,
-    mongodb,
-    mongoose,
-
-    ruby3,
-    rails3,
-    postgresql,
-
-    tailwind,
-    bootstrap,
-    postman,
-
-    heroku,
-    netlify,
-    passport,
-    jwt,
-
-    npm,
-    yarn,
-    babel,
-    git,
-    github
 }
+
+export default skillIcons

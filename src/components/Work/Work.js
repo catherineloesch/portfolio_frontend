@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import { works } from './../../api_data/api_projects'
-import { AppContainer } from '../AppContainer'
+import { AppContainer, MotionContainer } from '../../containers'
 import { BsEyeFill } from'react-icons/bs'
 import { AiFillGithub } from 'react-icons/ai'
 import './Work.scss'
@@ -110,4 +110,9 @@ const Work = () => {
   )
 }
 
-export default AppContainer(Work, 'work')
+
+export default AppContainer(
+  MotionContainer(Work, 'work'),
+   'work',
+   'bg-primary'
+   )

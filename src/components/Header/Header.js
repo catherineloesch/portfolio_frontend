@@ -1,8 +1,8 @@
 import React from 'react'
-import './Header.scss'
 import { motion } from 'framer-motion'
 import { images} from '../../assets/images';
-import { AppContainer } from '../AppContainer';
+import { AppContainer } from '../../containers'
+import './Header.scss'
 
 
 const scaleVariants = {
@@ -10,31 +10,34 @@ const scaleVariants = {
     scale: [0, 1],
     opacity: [0, 1],
     transition: {
-          duration: 1,
-          ease: 'easeInOut'
-        }
-  }
-}
+      duration: 1,
+      ease: 'easeInOut',
+    },
+  },
+};
 
 const Header = () => {
   return (
-    <div className='flex header'>
+    <div className='header flex'>
       <motion.div
         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5 }}
         className='header-info'
       >
+
         <div className='header-badge'>
           <div className='flex badge-cmp'>
-            <span>👋</span>
+            <span>👋🏻</span>
             <div style={{ marginLeft: 20 }}>
               <p className='p-text'>Hi, I'm</p>
               <h1 className='h-text'>Katie</h1>
             </div>
           </div>
           <div className='flex tag-cmp'>
-            <p className='p-text'>Junior Full-Stack Software Engineer</p>
+            <p className='p-text'> Full-Stack</p>
+            <p className='p-text'>Junior Developer</p>
           </div>
+
         </div>
       
 

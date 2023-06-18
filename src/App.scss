@@ -10,7 +10,7 @@
   font-size: 2.75rem;
   font-weight: 800;
   text-align: center;
-  color: var(--black);
+  color: var(--primary-dark);
   text-transform: capitalize;
 
   span {
@@ -55,12 +55,10 @@
 }
 
 .contact-icons {
-
   display: flex;
   justify-content: flex-end;
   align-items: center;
   flex-direction: column;
-
   padding: 1rem;
 
   div {
@@ -74,12 +72,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     transition: all 0.3s ease-in-out;
 
     svg {
-      width: 20px;
-      height: 20px;
+      width: 15px;
+      height: 15px;
       color: var(--gray);
     }
 
@@ -87,9 +84,9 @@
       background-color: var(--secondary);
       border-color: var(--secondary);
 
-      svg {
-        color: var(--white);
-      }
+      svg { 
+        color: var(--white); }
+
     }
 
     @media screen and (min-width: 2000px) {
@@ -112,7 +109,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
   padding: 1rem;
 
   .nav-dot {
@@ -121,7 +117,6 @@
     border-radius: 50%;
     background-color: #cbcbcb;
     margin: 0.5rem;
-
     transition: background-color 0.2s ease-in-out;
 
     &:hover {
@@ -156,11 +151,11 @@
     font-family: var(--font-base);
   }
   
-  .app__whitebg {
+  .bg-white {
     background-color: var(--white);
   }
   
-  .app__primarybg {
+  .bg-primary {
     background-color: var(--primary);
   }
   

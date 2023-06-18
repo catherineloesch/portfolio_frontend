@@ -1,126 +1,158 @@
 import { skillIcons } from './../assets/icons/icons_skills'
-const bgColor = ''
+
+// var(--primary-light)
+const bgColor =  "#f4eae9";
 
 const skills = [
     {
       name: 'HTML',
-      icon: skillIcons.html,
-      bgColor: bgColor
+      icon: skillIcons.html_primary,
+      icon_color: skillIcons.html_color,
+      bgColor: bgColor,
+      id: 'html-icon',
+      color: '#e34b24'
     },
     {
       name: 'CSS',
-      icon: skillIcons.css,
-      bgColor: bgColor
+      icon: skillIcons.css_primary,
+      bgColor: bgColor,
+      id: 'css-icon',
+      color: '#006db8'
     },
     {
       name: 'Sass',
-      icon: skillIcons.sass,
-      bgColor: bgColor
+      icon: skillIcons.sass_primary,
+      bgColor: bgColor,
+      id:'sass-icon'
     },
     {
       name: 'JavaScript',
-      icon: skillIcons.javascript,
-      bgColor: bgColor
+      icon: skillIcons.javascript_p,
+      bgColor: bgColor,
+      id: 'javascript-icon',
+      color: 'black'
     },
     {
       name: 'Node.js',
-      icon: skillIcons.nodejs,
-      bgColor: bgColor
+      icon: skillIcons.nodejs_primary,
+      bgColor: bgColor,
+      id: 'nodejs-icon',
+      color: '#529f41'
     },
     {
-      name: 'React',
-      icon: skillIcons.reactjs,
-      bgColor: bgColor
+      name: 'React.js',
+      icon: skillIcons.react_primary,
+      bgColor: bgColor,
+      id:'react-icon',
+      color: '#57d2f2'
     },
     {
       name: 'express',
-      icon: skillIcons.express,
-      bgColor: bgColor
+      icon: skillIcons.express_primary,
+      bgColor: bgColor,
+      id: 'express-icon'
     },
     {
       name: 'mongoDB',
-      icon: skillIcons.mongodb,
-      bgColor: bgColor
+      icon: skillIcons.mongodb_primary,
+      bgColor: bgColor,
+      id:'mongodb-icon'
     },
     {
       name: 'mongoose',
-      icon: skillIcons.mongoose,
-      bgColor: bgColor
+      icon: skillIcons.mongoose_primary,
+      bgColor: bgColor,
+      id:'mongoose-icon'
     },
     {
       name: 'Ruby',
-      icon: skillIcons.ruby3,
-      bgColor: bgColor
+      icon: skillIcons.ruby_primary,
+      bgColor: bgColor,
+      id: 'ruby-icon'
     },
     {
       name: 'Ruby on Rails',
-      icon: skillIcons.rails3,
-      bgColor: bgColor
+      icon: skillIcons.rails_primary,
+      bgColor: bgColor,
+      id: 'rails-icon'
     },
     {
       name: 'PostgreSQL',
-      icon: skillIcons.postgresql,
-      bgColor: bgColor
+      icon: skillIcons.postgresql_primary,
+      bgColor: bgColor,
+      id: 'postgresql-icon'
     },
     {
       name: 'Tailwind CSS',
-      icon: skillIcons.tailwind,
-      bgColor: bgColor
+      icon: skillIcons.tailwind_primary,
+      bgColor: bgColor,
+      id: 'tailwind-icon'
     },
     {
       name: 'Bootstrap',
-      icon: skillIcons.bootstrap,
-      bgColor: bgColor
+      icon: skillIcons.bootstrap_primary,
+      bgColor: bgColor,
+      id: 'bootstrap-icon'
     },
     {
       name: 'Postman API',
-      icon: skillIcons.postman,
-      bgColor: bgColor
+      icon: skillIcons.postman_primary,
+      bgColor: bgColor,
+      id: 'postman-icon'
     },
     {
       name: 'Heroku',
-      icon: skillIcons.heroku,
-      bgColor: bgColor
+      icon: skillIcons.heroku_primary,
+      bgColor: bgColor,
+      id: 'heroku-icon'
     },
     {
       name: 'netlify',
-      icon: skillIcons.netlify,
-      bgColor: bgColor
+      icon: skillIcons.netlify_primary,
+      bgColor: bgColor,
+      id: 'netlify-icon'
     },
     {
       name: 'Passport.js',
-      icon: skillIcons.passport,
-      bgColor: bgColor
+      icon: skillIcons.passport_primary,
+      bgColor: bgColor,
+      id: 'passport-icon'
     },
     {
       name: 'JWT',
-      icon: skillIcons.jwt,
-      bgColor: bgColor
+      icon: skillIcons.jwt_primary,
+      bgColor: bgColor,
+      id: 'jwt-icon'
     },
     {
       name: 'npm',
-      icon: skillIcons.npm,
-      bgColor: bgColor
+      icon: skillIcons.npm_primary,
+      bgColor: bgColor,
+      id: 'npm-icon'
     },
     {
       name: 'yarn',
-      icon: skillIcons.yarn,
-      bgColor: bgColor
+      icon: skillIcons.yarn_primary,
+      bgColor: bgColor,
+      id: 'yarn-icon'
     },
     {
       name: 'Babel.js',
-      icon: skillIcons.babel,
-      bgColor: bgColor
+      icon: skillIcons.babel_primary,
+      bgColor: bgColor,
+      id: 'babel-icon'
     },
     {
       name: 'git',
-      icon: skillIcons.git,
-      bgColor: bgColor
+      icon: skillIcons.git_primary,
+      bgColor: bgColor,
+      id: 'git-icon'
     },
     {
       name: 'GitHub',
-      icon: skillIcons.github,
-      bgColor: bgColor
+      icon: skillIcons.github_primary,
+      bgColor: bgColor,
+      id: 'github-icon'
     }
   ]
 
