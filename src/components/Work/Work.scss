@@ -14,10 +14,12 @@
     margin: 4rem 0 2rem;
 
     .work-filter-item {
-        padding: 0.5rem;
+        padding: 0.5rem 1rem;
         border-radius: 0.5rem;
         background-color: #fff;
         color: #000;
+        font-weight: 800;
+    
         cursor: pointer;
         transition: all 0.3s ease;
         margin: 0.5rem;
@@ -29,7 +31,8 @@
 
         @media screen and (min-width: 2000px) {
             padding: 1rem 2rem;
-        }
+            border-radius: 0.85rem;
+          }
     }
 
     .item-active {
@@ -137,5 +140,9 @@
     h4 {
         margin-top: 1rem;
         line-height: 1.5;
+        @media screen and (min-width: 2000px) {
+            margin-top: 3rem;
+        }
     }
+
 }

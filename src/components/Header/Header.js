@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { images} from '../../assets/images';
 import { AppContainer } from '../../containers'
+import ContactIcons from './ContactIcons'
 import './Header.scss'
 
 const circleImages = [images.code_solid, images.react_solid, images.dna_solid]
@@ -17,9 +18,13 @@ const scaleVariants = {
   },
 };
 
-const Header = () => {
+const Header = ( ) => {
   return (
     <div className='header flex'>
+    <ContactIcons />
+     
+ 
+      
       <motion.div
         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5 }}
@@ -27,18 +32,13 @@ const Header = () => {
       >
 
         <div className='header-text flex' style={{ marginLeft: 20 }}>
-
           <div className='flex header-text-container'>
-         
              <p className='p-text greeting'><span>👋🏻</span>Hi, I'm</p>
              <div className='intro flex'>
                 <h1 className='h-text'>Katie</h1>
                 <p className='p-text flex job-title'>Full-Stack Developer</p>
                 <p className='p-text flex job-title'>Freelancer</p>
-             </div>
-              
-       
-
+             </div>              
           </div>
 
        
@@ -73,7 +73,9 @@ const Header = () => {
           </div>
         ))}
       </motion.div>
-      
+    
+     
+ 
     </div>
   )
 }

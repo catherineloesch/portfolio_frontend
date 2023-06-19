@@ -3,6 +3,7 @@ import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 import { navItems } from './navItems';
 import './NavBar.scss'
+
 // import { images } from './../../assets/images';
 
 
@@ -36,9 +37,10 @@ const NavBar = () => {
                   <ul>
                     {navItems.map(item => (
                       <li key={`nav-mobile-${item}`} >
-                        <a href={`#${item}`} onClick={() => setMenuToggle(false)}>
+                    <a href={`#${item}`} onClick={() => setMenuToggle(false)}>
                           {item}
-                        </a>
+                    </a>
+
                       </li>
                     ))}
                 </ul>

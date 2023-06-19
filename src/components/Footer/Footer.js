@@ -52,19 +52,19 @@ const Footer = () => {
 
       <div className='footer-socials'>
 
-        <div className='footer-social-icon'>
+        <div className='footer-social-icon mail-icon'>
           <a href="mailto:katie.loesch@pm.me" className='p-text'>
             <MdEmail />
           </a>
         </div>
     
-        <div className='footer-social-icon'>
+        <div className='footer-social-icon github-icon'>
           <a href="https://github.com/katieloesch" target="_blank" rel="noopener noreferrer" className='p-text'>
             <BsGithub />
           </a>
         </div>
 
-        <div className='footer-social-icon'>
+        <div className='footer-social-icon linkedin-icon'>
             <a href="https://www.linkedin.com/in/katie-loesch/" target="_blank" rel="noopener noreferrer" className='p-text'>
               <BsLinkedin />
             </a>

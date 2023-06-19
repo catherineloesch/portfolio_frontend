@@ -13,7 +13,8 @@ const NavDots = ({ active }) => {
             key={item+index}
             className='nav-dot'
             style={active === item ? {backgroundColor: '#916265'} : {}}
-          > </a>
+          >
+          </a>
       ))}
       
     </div>

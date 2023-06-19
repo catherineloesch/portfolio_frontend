@@ -20,7 +20,7 @@ const About = () => {
 
   return (
     <>
-      <h2 className='h-text'>About Me</h2>
+      <h2 className='h-text'>About</h2>
       <div className='profile'>
         {abouts.map((about, index) => (
           <motion.div

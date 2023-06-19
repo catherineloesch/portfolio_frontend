@@ -45,20 +45,20 @@ const Work = () => {
     <div className='works'>
       <h2 className='h-text'>Projects</h2>
       <div className='work-filter'>
-      {categories.map((category, index) => (
-        <div
-        key={index}
-        onClick={() => handleWorkFilter(category)}
-        className={`work-filter-item flex p-text ${activeFilter === category ? 'item-active' : ''} `}
-        >{category}
-        </div>
-      ))}
+        { categories.map((category, index) => (
+          <div
+            key={index}
+            onClick={() => handleWorkFilter(category)}
+            className={`work-filter-item flex p-text ${activeFilter === category ? 'item-active' : ''} `}
+          >{category}
+          </div>
+        ))}
       </div>
 
       <motion.div
-      animate={animateCard}
-      transition={{duration: 0.5, delayChildren:0.5}}
-      className='work-portfolio'
+        animate={animateCard}
+        transition={{ duration: 0.5, delayChildren:0.5 }}
+        className='work-portfolio'
       >
       {filterWork.map((work, index) => (
         <div className='work-item flex' key={index}>
@@ -66,36 +66,33 @@ const Work = () => {
             <img src={work.imgUrl} alt={work.title}/>
 
             <motion.div
-            whileHover={{opacity: [0, 1]}}
-            transition= {{ duration: 0.25, ease: 'easeInOut', staggerChildren: 0.5 }}
-            className='work-hover flex'
+              whileHover={{ opacity: [0, 1] }}
+              transition= {{ duration: 0.25, ease: 'easeInOut', staggerChildren: 0.5 }}
+              className='work-hover flex'
             >
-            <a href={work.projectLink} target='_blank' rel='noreferrer'>
-              <motion.div
-              whileInView={{scale: [0, 1]}}
-              whileHover={{scale: [1, 0.9]}}
-              transition= {{ duration: 0.25}}
-              className='flex'
-              >
-                <BsEyeFill className='work-icon'/>
-              </motion.div>
+              <a href={work.projectLink} target='_blank' rel='noreferrer'>
+                <motion.div
+                whileInView={{scale: [0, 1]}}
+                whileHover={{scale: [1, 0.9]}}
+                transition= {{ duration: 0.25}}
+                className='flex'
+                >
+                  <BsEyeFill className='work-icon'/>
+                </motion.div>
 
-            </a>
-            <a href={work.codeLink} target='_blank' rel='noreferrer'>
-              <motion.div
-              whileInView={{scale: [0, 1]}}
-              whileHover={{scale: [1, 0.9]}}
-              transition= {{ duration: 0.25}}
-              className='flex'
-              >
-                <AiFillGithub className='work-icon'/>
-              </motion.div>
+              </a>
+              <a href={work.codeLink} target='_blank' rel='noreferrer'>
+                <motion.div
+                  whileInView={{scale: [0, 1]}}
+                  whileHover={{scale: [1, 0.9]}}
+                  transition= {{ duration: 0.25}}
+                  className='flex'
+                >
+                  <AiFillGithub className='work-icon'/>
+                </motion.div>
 
-            </a>
-
+              </a>
             </motion.div>
-
-
 
           </div>
           <div className='work-content flex'>
@@ -115,4 +112,4 @@ export default AppContainer(
   MotionContainer(Work, 'work'),
    'work',
    'bg-primary'
-   )
+)
