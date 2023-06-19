@@ -40,6 +40,7 @@ const skillIcons = {
     html_primary,
     html_color,
     javascript_primary,
+    javascript_p,
     jwt_primary,
     mongodb_primary,
     mongoose_primary,
@@ -54,10 +55,7 @@ const skillIcons = {
     ruby_primary,
     sass_primary,
     tailwind_primary,
-    yarn_primary,
-
-    javascript_p
-    
+    yarn_primary
 }
 
 export default skillIcons

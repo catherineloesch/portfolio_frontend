@@ -1,16 +1,7 @@
 export const navItems = [
     'home',
-    'about',
-    'work',
     'skills',
+    'work',
+    'about',
     'contact'
 ]
-
-// export const dotItems = [
-//     'home',
-//     'about',
-//     'work',
-//     'skills',
-//     'testimonial',
-//     'contact'
-// ]

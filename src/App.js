@@ -8,11 +8,11 @@ const App = () => {
     <div className='app'>
       <NavBar />
       <Header />
-      <About />
-      <Work />
       <Skills />
-      <Testimonial />
+      <Work />
+      <About />
       <Footer />
+      <Testimonial />
     </div>
   );
 }
