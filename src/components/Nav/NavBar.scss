@@ -103,7 +103,7 @@
         z-index: 5;
         padding: 1rem;
 
-        width: 90%;
+        width: 50%;
         height: 100vh;
 
         display: flex;
@@ -158,6 +158,20 @@
         @media screen and (min-width: 900px) {
             display: none;
         }
+        @media screen and (max-width: 600px) {
+            width: 60%;
+        }
+        @media screen and (max-width: 500px) {
+            width: 70%;
+        }
+        @media screen and (max-width: 430px) {
+            width: 80%;
+        }
+        @media screen and (max-width: 380px) {
+            width: 100%;
+        }
+
+
     }
 
     @media screen and (min-width: 900px) {

@@ -59,13 +59,13 @@ const Footer = () => {
         </div>
     
         <div className='footer-social-icon'>
-          <a href="https://github.com/katieloesch" className='p-text'>
+          <a href="https://github.com/katieloesch" target="_blank" rel="noopener noreferrer" className='p-text'>
             <BsGithub />
           </a>
         </div>
 
         <div className='footer-social-icon'>
-            <a href="https://www.linkedin.com/in/katie-loesch/" className='p-text'>
+            <a href="https://www.linkedin.com/in/katie-loesch/" target="_blank" rel="noopener noreferrer" className='p-text'>
               <BsLinkedin />
             </a>
         </div>
@@ -76,7 +76,7 @@ const Footer = () => {
         <div className='footer-form flex'>
 
             <div className='flex'>
-              <input className='p-text' name='name' type='text' placeholder='Name' value={formData.name} onChange={handleFormChange} autoComplete='off'/>
+              <input className='p-text' name='name' type='text' placeholder='name' value={formData.name} onChange={handleFormChange} autoComplete='off'/>
             </div>
 
             <div className='flex'>
@@ -87,7 +87,7 @@ const Footer = () => {
               <textarea
                 className='p-text'
                 name='message'
-                placeholder='Message'
+                placeholder='message'
                 value={formData.message}
                 onChange={handleFormChange}
                 autoComplete='off'

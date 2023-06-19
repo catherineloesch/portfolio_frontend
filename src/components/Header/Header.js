@@ -34,6 +34,7 @@ const Header = () => {
              <div className='intro flex'>
                 <h1 className='h-text'>Katie</h1>
                 <p className='p-text flex job-title'>Full-Stack Developer</p>
+                <p className='p-text flex job-title'>Freelancer</p>
              </div>
               
        

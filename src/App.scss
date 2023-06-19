@@ -38,6 +38,14 @@
   }
 }
 
+*::selection {
+  background: var(--primary-light);
+}
+*::-moz-selection {
+  background: var(--primary-light);
+}
+
+
   
 .bold {
   font-size: 1rem;
