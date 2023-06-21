@@ -1,4 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { useState, useRef, useEffect, useContext} from "react"; 
+import { CurrentContext } from '../../contexts/CurrentContext'
 import { AppContainer, MotionContainer } from '../../containers'
 import { client } from './../../api'
 import { socialIcons } from './../../assets/icons/icons_social'
@@ -8,7 +10,7 @@ import { FaPaperPlane } from "react-icons/fa";
 import './Footer.scss'
 
 
-const Footer = () => {
+const Footer = ({footerRef}) => {
 
   const [formData, setFormData] = useState({
     name: '',
@@ -18,6 +20,33 @@ const Footer = () => {
 
   const [formSubmitted, setFormSubmitted] = useState(false)
   const [loading, setLoading] = useState(false)
+
+  const active = useContext(CurrentContext)
+  const [isIntersecting, setIsIntersecting] = useState(false);
+  const ref = useRef('contact');
+  const navDots = document.querySelectorAll('.nav-dot')
+  const dot = document.querySelector('#contact-dot');
+
+  useEffect(() => {
+   
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsIntersecting(entry.isIntersecting);
+      },
+      { rootMargin: "-300px" }
+    );
+    if (isIntersecting) {
+      active.current = 'about'
+      navDots.forEach(dot => dot.style.backgroundColor = '#cbcbcb');
+      dot.style.backgroundColor = '#916265';
+
+
+    }
+
+    observer.observe(ref.current);
+    return () => observer.disconnect();
+
+  }, [isIntersecting, active, dot, navDots]);
 
   const handleFormChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
@@ -50,7 +79,7 @@ const Footer = () => {
       <p className='p-text flex'> Or just have a chat? <img src={socialIcons.coffee5} alt='coffee'/> </p>
       <p className='p-text flex'>Send me a message and I'll get back to you shortly.</p>
 
-      <div className='footer-socials'>
+      <div className='footer-socials nav-section' ref={ref} >
 
         <div className='footer-social-icon mail-icon'>
           <a href="mailto:katie.loesch@pm.me" className='p-text'>

@@ -1,14 +1,43 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { motion } from 'framer-motion'
 import { AppContainer, MotionContainer } from '../../containers'
 import { abouts } from './../../api_data/api_about'
 import './About.scss'
+import { useState, useRef, useEffect} from "react"; 
+import { CurrentContext } from '../../contexts/CurrentContext'
 
 // import { urlFor, client } from './../../api'
 
 
 const About = () => {
+  const active = useContext(CurrentContext)
 
+  const [isIntersecting, setIsIntersecting] = useState(false);
+  const ref = useRef('about');
+  const navDots = document.querySelectorAll('.nav-dot')
+  const dot = document.querySelector('#about-dot');
+
+
+  useEffect(() => {
+   
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsIntersecting(entry.isIntersecting);
+      },
+      { rootMargin: "-300px" }
+    );
+    if (isIntersecting) {
+      active.current = 'about'
+      navDots.forEach(dot => dot.style.backgroundColor = '#cbcbcb');
+      dot.style.backgroundColor = '#916265';
+
+    }
+
+    observer.observe(ref.current);
+    return () => observer.disconnect();
+
+  }, [isIntersecting, active, dot, navDots]);
+  
   // const [abouts, setAbouts] = useState([])
 
   // useEffect(() => {
@@ -18,10 +47,14 @@ const About = () => {
   //   .then((data) => setAbouts(data))
   //   }, [])
 
+  // const isVisible = useIsVisible(aboutRef);
+  // console.log('about visible?',isVisible)
+
+
   return (
     <>
       <h2 className='h-text'>About</h2>
-      <div className='profile'>
+      <div className='profile' ref={ref}>
         {abouts.map((about, index) => (
           <motion.div
           whileInView={{opacity: 1}}

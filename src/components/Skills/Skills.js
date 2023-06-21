@@ -3,11 +3,40 @@ import { motion } from 'framer-motion'
 import { skills } from './../../api_data/api_skills'
 import { experience } from './../../api_data/api_experience'
 import { AppContainer, MotionContainer } from '../../containers'
+import { useState, useRef, useEffect, useContext} from "react"; 
+import { CurrentContext } from '../../contexts/CurrentContext'
 import './Skills.scss'
 // import { urlFor, client } from './../../api'
 
 
 const Skills = () => {
+  const active = useContext(CurrentContext)
+  const [isIntersecting, setIsIntersecting] = useState(false);
+  const ref = useRef('skills');
+  const navDots = document.querySelectorAll('.nav-dot')
+  const dot = document.querySelector('#skills-dot');
+
+  useEffect(() => {
+   
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsIntersecting(entry.isIntersecting);
+      },
+      { rootMargin: "-300px" }
+    );
+    if (isIntersecting) {
+      active.current = 'about'
+      navDots.forEach(dot => dot.style.backgroundColor = '#cbcbcb');
+      dot.style.backgroundColor = '#916265';
+
+
+    }
+
+    observer.observe(ref.current);
+    return () => observer.disconnect();
+
+  }, [isIntersecting, active, dot, navDots]);
+
   // call to sanity backend api
   // const [experience, setExperience] = useState([])
   // const [skills, setSkills] = useState([])
@@ -30,7 +59,7 @@ const Skills = () => {
 
   
   return (
-    <div className='skills flex'>
+    <div className='skills flex nav-section' ref={ref}>
       <h2 className='h-text'>Skills & Experience</h2>
       <div className='skills-container flex'>
         <motion.div className="skills-list flex">
