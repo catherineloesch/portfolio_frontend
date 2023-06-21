@@ -85,7 +85,7 @@ const Skills = () => {
           { experience.map((period) => (
             <motion.div
               className='experience-item'
-              key={period.year}
+              key={`year-${period.year}`}
             >
               <div className='experience-year'>
                 <p className='bold'>{period.year}</p>
@@ -93,7 +93,7 @@ const Skills = () => {
 
               <motion.div className='experience-works'>
                 {period.exp.map((work) => (
-                  <div>
+                  <div key={`project-${work.name}`}>
                     <motion.div
                       whileInView={{ opacity: [0, 1] }}
                       transition={{ duration: 0.5 }}

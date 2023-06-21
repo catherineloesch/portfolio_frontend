@@ -20,7 +20,7 @@ const NavBar = () => {
         {navItems.map(item => (
           <li key={`nav-${item}`} className='flex p-text'>
             <div />
-            <a href={`#${item}`}>{item}</a>
+            <a href={`#${item}`} className='nav-anchor' id={`${item}-a`}>{item}</a>
           </li>
         ))}
       </ul>

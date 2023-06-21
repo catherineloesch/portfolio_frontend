@@ -60,20 +60,20 @@
             // text-transform: uppercase;
             // font-weight: 500;
 
-            color: var(--white);
+            color: var(--primary-light);
             flex-direction: column;
             font-weight: 400;
             font-size: 1.25rem;
             transition: all 0.3s ease-in-out;
 
             &:hover {
-               color: var(--primary-deep);
+               color: var(--lightblue);
             }
         }
 
         &:hover {
             div {
-                background: var(--primary-deep);
+                background: var(--lightblue);
             }
         }
     }

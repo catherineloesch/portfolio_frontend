@@ -2,21 +2,32 @@ import React from 'react'
 import { useState, useRef, useEffect, useContext} from "react"; 
 import { CurrentContext } from '../../contexts/CurrentContext'
 import { AppContainer, MotionContainer } from '../../containers'
-import { client } from './../../api'
 import { socialIcons } from './../../assets/icons/icons_social'
 import { BsGithub, BsLinkedin } from'react-icons/bs'
 import { MdEmail } from'react-icons/md'
 import { FaPaperPlane } from "react-icons/fa";
 import './Footer.scss'
+import emailjs from '@emailjs/browser';
 
 
-const Footer = ({footerRef}) => {
+const Footer = () => {
+  const form = useRef();
+  //EmailJS parameters
+    //emails sent to 'katie.loesch@pm.me'
+  const publicKey = 'zNvzRNVUztWrUC40f'
+  const serviceId = 'service_gaq8s1d'
+  const templateId = 'template_4np1zu1'
+    //initialise emailjs with public key
+  emailjs.init(publicKey)
 
-  const [formData, setFormData] = useState({
+  const formTemplate = {
     name: '',
     email: '',
     message: ''
-  })
+  }
+
+
+  const [formData, setFormData] = useState(formTemplate)
 
   const [formSubmitted, setFormSubmitted] = useState(false)
   const [loading, setLoading] = useState(false)
@@ -55,20 +66,17 @@ const Footer = ({footerRef}) => {
   const handleFormSubmit = (e) => {
     setLoading(true)
 
-    const submission = {
-      _type: 'contact',
-      name: formData.name,
-      email: formData.email,
-      message: formData.message
-    }
-
-    // sendind data to sanity API
-    client.create(submission)
-    .then(() => {
+    emailjs.sendForm(serviceId, templateId, form.current, publicKey)
+    .then((res)=> {
+      console.log(res.text)
       setLoading(false)
       setFormSubmitted(true)
+      setFormData(formTemplate)
+
     })
-    .catch((err) => console.log(err));
+    .catch((err) => {
+      alert('Something went wrong, please try again later!') 
+    console.log(err.text)}); //msg: something went wrong
 
   }
 
@@ -102,7 +110,7 @@ const Footer = ({footerRef}) => {
       </div>
 
       {!formSubmitted  ? (
-        <div className='footer-form flex'>
+        <form className='footer-form flex' ref={form}>
 
             <div className='flex'>
               <input className='p-text' name='name' type='text' placeholder='name' value={formData.name} onChange={handleFormChange} autoComplete='off'/>
@@ -128,7 +136,7 @@ const Footer = ({footerRef}) => {
               <FaPaperPlane />
             </button>
 
-          </div>
+          </form>
     ) : ( 
         <div>
           <h3 className='h-text'>

@@ -14,6 +14,7 @@
   --primary-dark-a: rgba(146, 99, 102, 0.8);
 
   --secondary: #313bac;
+  --secondary-a: rgba(48, 58, 171, 0.815);
   --secondary-dark: #4C2777;
 
  
@@ -31,7 +32,7 @@
   --white: #ffffff;
 
   --darkgreen-a: rgba(9, 59, 36, 0.794);
-  --lightblue: rgb(142, 228, 239);
+  --lightblue: #8ee4ef;
 }
 
 

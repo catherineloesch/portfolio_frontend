@@ -26,7 +26,8 @@ const Work = () => {
   const ref = useRef('work');
   const navDots = document.querySelectorAll('.nav-dot');
   const dot = document.querySelector('#work-dot');
-  console.log(dot)
+  // const navAnchors = document.querySelectorAll('.nav-anchor');
+  // const anchor = document.querySelector('#work-a');
 
   useEffect(() => {
    
@@ -37,11 +38,11 @@ const Work = () => {
       { rootMargin: "-300px" }
     );
     if (isIntersecting) {
-      console.log('work is intersecting!')
       active.current = 'work'
-      console.log(active.current)
       navDots.forEach(dot => dot.style.backgroundColor = '#cbcbcb');
       dot.style.backgroundColor = '#916265';
+      // navAnchors.forEach(dot => dot.style.color = '#f4eae9');
+      // anchor.style.color = '#8ee4ef';
     }
 
     observer.observe(ref.current);
@@ -77,7 +78,7 @@ const Work = () => {
 
   return (
     <div className='works nav-section' ref={ref}>
-      <h2 className='h-text'>Projects</h2>
+      <h2 className='h-text'>Latest Projects</h2>
       
       <div className='work-filter'>
         { categories.map((category, index) => (
@@ -108,7 +109,6 @@ const Work = () => {
               <a href={work.projectLink} target='_blank' rel='noreferrer'>
                 <motion.div
                 whileInView={{scale: [0, 1]}}
-                whileHover={{scale: [1, 0.9]}}
                 transition= {{ duration: 0.25}}
                 className='flex'
                 >
@@ -119,7 +119,6 @@ const Work = () => {
               <a href={work.codeLink} target='_blank' rel='noreferrer'>
                 <motion.div
                   whileInView={{scale: [0, 1]}}
-                  whileHover={{scale: [1, 0.9]}}
                   transition= {{ duration: 0.25}}
                   className='flex'
                 >

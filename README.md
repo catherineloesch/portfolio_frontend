@@ -30,3 +30,7 @@ DM Sans
 - quicksand
 - oxygen
 - comfortaa
+
+frontend dependencies
+npm install emailjs-com
+npm i @emailjs/browser
