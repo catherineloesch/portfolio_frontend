@@ -21,7 +21,6 @@ const scaleVariants = {
 };
 
 
-
 const Header = () => {
   const active = useContext(CurrentContext)
   const [isIntersecting, setIsIntersecting] = useState(false);

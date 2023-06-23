@@ -1,4 +1,7 @@
 import { images } from '../assets/images';
+import { skillIcons } from './../assets/icons/icons_skills'
+const bgColor =  "#f4eae9";
+
 
 const works = [
   
@@ -8,7 +11,66 @@ const works = [
       projectLink: 'https://pawneepets.netlify.app/',
       codeLink: 'https://github.com/katieloesch/project4-react-frontend',
       imgUrl: images.project4,
-      tags: ['React', 'Rails', 'Full-Stack', 'All']
+      tags: ['React', 'Rails', 'Full-Stack', 'All'],
+      skills: [
+        {
+          name: 'React.js',
+          icon: skillIcons.react_primary,
+          bgColor: bgColor,
+          id:'react-icon',
+          color: '#57d2f2'
+        },
+        {
+          name: 'Ruby',
+          icon: skillIcons.ruby_primary,
+          bgColor: bgColor,
+          id: 'ruby-icon'
+        },
+        {
+          name: 'Ruby on Rails',
+          icon: skillIcons.rails_primary,
+          bgColor: bgColor,
+          id: 'rails-icon'
+        },
+        {
+          name: 'CSS',
+          icon: skillIcons.css_primary,
+          bgColor: bgColor,
+          id: 'css-icon',
+          color: '#006db8'
+        },
+        {
+          name: 'JavaScript',
+          icon: skillIcons.javascript_p,
+          bgColor: bgColor,
+          id: 'javascript-icon',
+          color: 'black'
+        },
+        {
+          name: 'Heroku',
+          icon: skillIcons.heroku_primary,
+          bgColor: bgColor,
+          id: 'heroku-icon'
+        },
+        {
+          name: 'netlify',
+          icon: skillIcons.netlify_primary,
+          bgColor: bgColor,
+          id: 'netlify-icon'
+        },    {
+          name: 'JWT',
+          icon: skillIcons.jwt_primary,
+          bgColor: bgColor,
+          id: 'jwt-icon'
+        },
+        {
+          name: 'Postman API',
+          icon: skillIcons.postman_primary,
+          bgColor: bgColor,
+          id: 'postman-icon'
+        }
+
+      ]
     },
     { // Project 3
       title: 'MERN Guest Book',
@@ -16,7 +78,68 @@ const works = [
       projectLink: 'https://hpramanathan.github.io/project3-mernstack-app/',
       codeLink: 'https://github.com/katieloesch/project3-mernstack-app',
       imgUrl: images.project3,
-      tags: ['React', 'MERN', 'Full-Stack', 'All']
+      tags: ['React', 'MERN', 'Full-Stack', 'All'],
+      skills: [
+        {
+          name: 'React.js',
+          icon: skillIcons.react_primary,
+          bgColor: bgColor,
+          id:'react-icon',
+          color: '#57d2f2'
+        },
+        {
+          name: 'express',
+          icon: skillIcons.express_primary,
+          bgColor: bgColor,
+          id: 'express-icon'
+        },
+        {
+          name: 'mongoDB',
+          icon: skillIcons.mongodb_primary,
+          bgColor: bgColor,
+          id:'mongodb-icon'
+        },
+        {
+          name: 'mongoose',
+          icon: skillIcons.mongoose_primary,
+          bgColor: bgColor,
+          id:'mongoose-icon'
+        },    {
+          name: 'Tailwind CSS',
+          icon: skillIcons.tailwind_primary,
+          bgColor: bgColor,
+          id: 'tailwind-icon'
+        },    {
+          name: 'Postman API',
+          icon: skillIcons.postman_primary,
+          bgColor: bgColor,
+          id: 'postman-icon'
+        },
+        {
+          name: 'Heroku',
+          icon: skillIcons.heroku_primary,
+          bgColor: bgColor,
+          id: 'heroku-icon'
+        },
+        {
+          name: 'netlify',
+          icon: skillIcons.netlify_primary,
+          bgColor: bgColor,
+          id: 'netlify-icon'
+        },
+        {
+          name: 'Passport.js',
+          icon: skillIcons.passport_primary,
+          bgColor: bgColor,
+          id: 'passport-icon'
+        },
+        {
+          name: 'JWT',
+          icon: skillIcons.jwt_primary,
+          bgColor: bgColor,
+          id: 'jwt-icon'
+        }
+      ]
     },
     { // Project 2
       title: 'React Film App',
@@ -24,7 +147,36 @@ const works = [
       projectLink: 'https://katieloesch.github.io/project-2-react-film-app/',
       codeLink: 'https://github.com/katieloesch/project-2-react-film-app',
       imgUrl: images.project2,
-      tags: ['React', 'Web App', 'All']
+      tags: ['React', 'Web App', 'All'],
+      skills: [
+        {
+          name: 'JavaScript',
+          icon: skillIcons.javascript_p,
+          bgColor: bgColor,
+          id: 'javascript-icon',
+          color: 'black'
+        },
+        {
+          name: 'React.js',
+          icon: skillIcons.react_primary,
+          bgColor: bgColor,
+          id:'react-icon',
+          color: '#57d2f2'
+        },
+        {
+          name: 'CSS',
+          icon: skillIcons.css_primary,
+          bgColor: bgColor,
+          id: 'css-icon',
+          color: '#006db8'
+        },
+        {
+          name: 'Postman API',
+          icon: skillIcons.postman_primary,
+          bgColor: bgColor,
+          id: 'postman-icon'
+        }
+      ]
     },
     { // Project 1
       title: 'Tic Tac Toe',
@@ -32,8 +184,29 @@ const works = [
       projectLink: 'https://katieloesch.github.io/project-1-tictactoe/',
       codeLink: 'https://github.com/katieloesch/project-1-tictactoe',
       imgUrl: images.project1,
-      tags: ['Web App', 'All']
-    },
-
-  ]
+      tags: ['Web App', 'All'],
+      skills: [ 
+      {
+        name: 'HTML',
+        icon: skillIcons.html_primary,
+        icon_color: skillIcons.html_color,
+        bgColor: bgColor,
+        id: 'html-icon',
+        color: '#e34b24'
+      },
+      {
+        name: 'CSS',
+        icon: skillIcons.css_primary,
+        bgColor: bgColor,
+        id: 'css-icon',
+        color: '#006db8'
+      },
+      {
+        name: 'JavaScript',
+        icon: skillIcons.javascript_p,
+        bgColor: bgColor,
+        id: 'javascript-icon',
+        color: 'black'
+      }]
+    }]
 export { works }

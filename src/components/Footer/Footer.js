@@ -64,6 +64,7 @@ const Footer = () => {
   }
 
   const handleFormSubmit = (e) => {
+    e.preventDefault()
     setLoading(true)
 
     emailjs.sendForm(serviceId, templateId, form.current, publicKey)
@@ -110,14 +111,14 @@ const Footer = () => {
       </div>
 
       {!formSubmitted  ? (
-        <form className='footer-form flex' ref={form}>
+        <form className='footer-form flex' ref={form} onSubmit={handleFormSubmit}>
 
             <div className='flex'>
               <input className='p-text' name='name' type='text' placeholder='name' value={formData.name} onChange={handleFormChange} autoComplete='off'/>
             </div>
 
             <div className='flex'>
-              <input className='p-text' name='email' type='email' placeholder='email' value={formData.email} onChange={handleFormChange} autoComplete='off'/>
+              <input className='p-text' name='email' type='email' placeholder='email' value={formData.email} onChange={handleFormChange} autoComplete='off' required/>
             </div>
 
             <div>
@@ -128,10 +129,11 @@ const Footer = () => {
                 value={formData.message}
                 onChange={handleFormChange}
                 autoComplete='off'
+                required
               />
             </div>
 
-            <button type='button' className='p-text' onClick={handleFormSubmit}> 
+            <button type='submit' className='p-text'> 
               {!loading ? 'Send Message' : 'Sending...'}
               <FaPaperPlane />
             </button>

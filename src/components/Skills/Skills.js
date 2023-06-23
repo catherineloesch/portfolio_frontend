@@ -15,6 +15,7 @@ const Skills = () => {
   const ref = useRef('skills');
   const navDots = document.querySelectorAll('.nav-dot')
   const dot = document.querySelector('#skills-dot');
+  
 
   useEffect(() => {
    

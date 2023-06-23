@@ -6,8 +6,8 @@ import { motion } from 'framer-motion'
 import { works } from './../../api_data/api_projects'
 import { AppContainer, MotionContainer } from '../../containers'
 import { BsEyeFill } from'react-icons/bs'
-import { AiFillGithub } from 'react-icons/ai'
 import './Work.scss'
+import WorkModal from './WorkModal'
 
 // import {ViewportChecker} from '../ViewPortChecker/ViewPortChecker'
 // import { urlFor, client } from './../../api'
@@ -26,8 +26,9 @@ const Work = () => {
   const ref = useRef('work');
   const navDots = document.querySelectorAll('.nav-dot');
   const dot = document.querySelector('#work-dot');
-  // const navAnchors = document.querySelectorAll('.nav-anchor');
-  // const anchor = document.querySelector('#work-a');
+
+  // popup with more details on each project
+  const [modal, setModal] = useState(false)
 
   useEffect(() => {
    
@@ -106,7 +107,7 @@ const Work = () => {
               transition= {{ duration: 0.25, ease: 'easeInOut', staggerChildren: 0.5 }}
               className='work-hover flex'
             >
-              <a href={work.projectLink} target='_blank' rel='noreferrer'>
+              <button onClick={() => setModal(work)} target='_blank' rel='noreferrer'>
                 <motion.div
                 whileInView={{scale: [0, 1]}}
                 transition= {{ duration: 0.25}}
@@ -115,28 +116,19 @@ const Work = () => {
                   <BsEyeFill className='work-icon'/>
                 </motion.div>
 
-              </a>
-              <a href={work.codeLink} target='_blank' rel='noreferrer'>
-                <motion.div
-                  whileInView={{scale: [0, 1]}}
-                  transition= {{ duration: 0.25}}
-                  className='flex'
-                >
-                  <AiFillGithub className='work-icon'/>
-                </motion.div>
+              </button>
 
-              </a>
             </motion.div>
 
           </div>
           <div className='work-content flex'>
             <h4 className='bold'>{work.title}</h4>
-            <p className='p-text' style={{marginTop: 10}}>{work.description}</p>
           </div>
         
         </div>
       ))}
       </motion.div>
+      <WorkModal modal={modal} closeModal={() => setModal(false)} />
     </div>
   )
 }
