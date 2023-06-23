@@ -6,6 +6,7 @@ import ContactIcons from './ContactIcons'
 import './Header.scss'
 import { useState, useRef, useEffect, useContext} from "react"; 
 import { CurrentContext } from '../../contexts/CurrentContext'
+import ParticleBackground from './particleBackground';
 
 
 
@@ -40,9 +41,8 @@ const Header = () => {
 
   return (
     <div className='header flex nav-section' ref={ref}>
-     
- 
-      
+      <ParticleBackground />
+
       <motion.div
         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5 }}

@@ -128,7 +128,7 @@ const Work = () => {
         </div>
       ))}
       </motion.div>
-      <WorkModal modal={modal} closeModal={() => setModal(false)} />
+      <WorkModal modal={modal} setModal={setModal} />
     </div>
   )
 }
