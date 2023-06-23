@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.75rem 2rem;
+    padding: 0.9rem 2rem;
   
     // background: rgba(255, 255, 255, 0.25);
     background: var(--primary-dark-a);
@@ -45,6 +45,7 @@
         margin-bottom: 1.75px;
         cursor: pointer;
         flex-direction: column;
+        position: relative;
 
         div {
             width: 5px;
@@ -64,18 +65,31 @@
             flex-direction: column;
             font-weight: 400;
             font-size: 1.25rem;
-            transition: all 0.3s ease-in-out;
+            transition: 0.4s ease-in-out;
+            position: relative;
+            padding: 0 10px;
 
             &:hover {
                color: var(--lightblue);
             }
         }
+    }
 
-        &:hover {
-            div {
-                background: var(--lightblue);
-            }
-        }
+    li::after {
+        content: "";
+        position: absolute;
+        background-color: var(--lightblue);
+        height: 1.5px;
+        width: 0;
+        left: 0;
+        bottom: -4px;
+        transition: all 0.5s ease;
+
+    }
+
+    li:hover::after {
+        width: 100%;
+
     }
 
     @media screen and (max-width: 900px) {

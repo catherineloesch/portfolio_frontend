@@ -142,9 +142,6 @@
             color: var(--white);
         }
     }
-
- 
-
 }
 
 .work-content {
@@ -225,18 +222,14 @@
         }
 
 
-        .btn-close-modal {
-       
+        .btn-close-modal {       
             display: flex;
-            // justify-content: ;
             text-align: right;
             margin-right: -10px;
             position: absolute;
-            
             top: 0;
             right: 0;
 
-    
             button {
                 text-align: right;
                 display: flex;
@@ -262,14 +255,12 @@
                         transform: scale(1.1);
                     }
                 }
-    
             }
-        
         }
-
     }
 
     .modal-content {
+
         .modal-images {
             width: 50%;
 
@@ -287,13 +278,11 @@
             flex-direction: column;
             align-items: center;
 
-
             p {
                 padding-left: 20px;
                 text-align: justify;
                 font-size: 1rem;
             }
-
         }
     }
 
@@ -329,113 +318,98 @@
                     img {
                         width: 50%;
                         height: 50%;
-                      }
+                    }
+
                     &:hover {
-                    box-shadow: 0 0 25px #fef4f5;
+                        box-shadow: 0 0 25px #fef4f5;
                     }
 
                     p {
                         font-weight: 500;
                         margin-top: 0.5rem;
-                      }
-
+                    }
                 }
             }
         }
-
-
     }
 
-
-    @media screen and (max-width: 1400px) {
-       width: 80%;
-       top: 45%;
+    @media screen and (max-width: 1450px) {
+       width: 60%;
+       top: 50%;
+       padding: 25px;
     }
 
     @media screen and (max-width: 1100px) {
         width: 80%;
-        top: 34%;
+        top: 27%;
     }
 
     @media screen and (max-width: 900px) {
        width: 90%;
        top: 45%;
 
-       h1 {
-        font-size: 25px;
-       }
+       h1 { font-size: 25px; }
 
        .modal-icon {
-        width: 30px !important;
-        height: 30px !important;
-       }
+            width: 30px !important;
+            height: 30px !important;
+        }
 
        .modal-text {
-        p {
-            font-size: 0.85rem !important;
+            p { font-size: 0.85rem !important; }
         }
-       }
 
        .modal-skills-container {
         width: 100%;
 
-        .modal-skills-item {
-            div {
-                width: 40px !important;
-                height: 40px !important;
+            .modal-skills-item {
+                div {
+                    width: 40px !important;
+                    height: 40px !important;
+                }
             }
         }
-       }
     }
 
-
+    @media screen and (max-width: 780px) {
+        top: 33%;
+    }
 
     @media screen and (max-width: 700px) {
         top: 50%;
-        .modal-images {
-            display: none;
-        }
+
+        .modal-images { display: none; }
+        
         .modal-text {
             width: 100% !important;
-            p {
-                margin: none !important;
-               
-            }
-      }
+            
+            p { margin: none !important; }
+        }
     }
 
-    @media screen and (max-width: 480px) {
-
+    @media screen and (max-width: 600px) {
+        top: 43%;
         padding: 20px;
-        .modal-content {
 
-        
-            p {
-                padding: 0 !important;
-            }
+        .modal-content {
+            p { padding: 0 !important; }
         }
 
         .modal-title {
-            h1 {
-                width: 90%;
-            }
-         }
-
+            h1 { width: 90%; }
+        }
     }
 
-    @media screen and (max-width: 390px) {
-
-        .modal-skills-list {
-            // justify-content: flex-start !important;
-        }
+    @media screen and (max-width: 420px) {
+        top: 47%;
 
         .modal-skills-item {
             margin: 4px !important;
-        
-            
+    
             div {
                 display: none;
             }
+
             p {
                 color: var(--primary-dark);
                 background-color: var(--primary-light);
@@ -444,10 +418,9 @@
                 padding-right: 10px;
             }
         }
-
     }
 
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 360px) {
 
         .modal-title {
             h1 {
@@ -460,21 +433,16 @@
             }
         }
 
-       
-
         .modal-text {
             p {
                 font-size: 12px !important;
             }
         }
-
-       
     }
 
-
-
-
-
+    @media screen and (max-width: 320px) {
+        top: 50%;
+    }
 }
 
 .overlay {
@@ -483,7 +451,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(72, 63, 63, 0.4);
+    background-color: rgba(72, 63, 63, 0.616);
     backdrop-filter: blur(5px); 
     z-index: 100;
 }

@@ -7,18 +7,6 @@ import './Header.scss'
 import { useState, useRef, useEffect, useContext} from "react"; 
 import { CurrentContext } from '../../contexts/CurrentContext'
 
-const circleImages = [images.code_solid, images.react_solid, images.dna_solid]
-
-const scaleVariants = {
-  whileInView: {
-    scale: [0, 1],
-    opacity: [0, 1],
-    transition: {
-      duration: 1,
-      ease: 'easeInOut',
-    },
-  },
-};
 
 
 const Header = () => {
@@ -52,7 +40,6 @@ const Header = () => {
 
   return (
     <div className='header flex nav-section' ref={ref}>
-      <ContactIcons />
      
  
       
@@ -62,13 +49,13 @@ const Header = () => {
         className='header-info'
       >
 
-        <div className='header-text flex' style={{ marginLeft: 20 }}>
+        <div className='header-text flex' >
           <div className='flex header-text-container'>
-             <p className='p-text greeting'><span>👋🏻</span>Hi, I'm</p>
+             <h3 className='p-text greeting'><span>👋🏻</span>Hi, I'm</h3>
              <div className='intro flex'>
                 <h1 className='h-text'>Katie</h1>
-                <p className='p-text flex job-title'>Full-Stack Developer</p>
-                <p className='p-text flex job-title'>Freelancer</p>
+                <h2 className='p-text flex job-title'>Full-Stack Developer</h2>
+                <h3 className='p-text flex job-title'>Freelancer</h3>
              </div>              
           </div>
 
@@ -92,20 +79,7 @@ const Header = () => {
         />
        
       </motion.div>
-
-      <motion.div
-        variant={scaleVariants}
-        whileInView={scaleVariants.whileInView}
-        className='header-circles'
-      >
-        { circleImages.map((circle, index) => (
-          <div key={`circle-${index}`} className='circle-cmp flex'>
-            <img src={circle} alt="circle" />
-          </div>
-        ))}
-      </motion.div>
-    
-     
+      <ContactIcons />
  
     </div>
   )
