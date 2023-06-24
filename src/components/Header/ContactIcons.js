@@ -7,14 +7,14 @@ import { VscMail } from'react-icons/vsc'
 const ContactIcons = () => {
   return (
     <div className='contact-icons'>
-      <div>
+      <div className='contact-icon-linkedin'>
+       <a href="https://www.linkedin.com/in/katie-loesch/" target="_blank" rel="noopener noreferrer" ><FaLinkedinIn /></a>
+      </div>
+      <div  className='contact-icon-github'>
         <a href="https://github.com/katieloesch" target="_blank" rel="noopener noreferrer"><BsGithub /></a>
       </div>
       <div>
-        <a href="mailto:katie.loesch@pm.me"><VscMail/></a>
-      </div>
-      <div>
-        <a href="https://www.linkedin.com/in/katie-loesch/" target="_blank" rel="noopener noreferrer" ><FaLinkedinIn /></a>
+        <a href="mailto:katie.loesch@pm.me" className='contact-icon-mail'><VscMail/></a>
       </div>
     </div>
   )
