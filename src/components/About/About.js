@@ -79,5 +79,5 @@ const About = () => {
 export default AppContainer(
   MotionContainer(About, 'about'),
    'about',
-   'bg-white'
+   'bg-primary'
 )

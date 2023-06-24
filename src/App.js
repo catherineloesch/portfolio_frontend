@@ -4,6 +4,7 @@ import { NavBar, NavDots } from './components/Nav';
 import { CurrentContext } from './contexts/CurrentContext';
 
 import './App.scss'
+import Experience from './components/Experience/Experience';
 
 const App = () => {
 
@@ -17,6 +18,7 @@ const App = () => {
       <Header />
       <Skills />
       <Work />
+      <Experience />
       <About />
       <Footer />
       <NavDots />

@@ -41,7 +41,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 0rem 3rem;
+        margin: 0rem 2rem;
         margin-bottom: 1.75px;
         cursor: pointer;
         flex-direction: column;
@@ -70,7 +70,7 @@
             padding: 0 10px;
 
             &:hover {
-               color: var(--lightblue);
+               color: var(--white);
             }
         }
     }
@@ -78,11 +78,11 @@
     li::after {
         content: "";
         position: absolute;
-        background-color: var(--lightblue);
+        background-color: var(--white);
         height: 1.5px;
         width: 0;
         left: 0;
-        bottom: -4px;
+        bottom: -2px;
         transition: all 0.5s ease;
 
     }
