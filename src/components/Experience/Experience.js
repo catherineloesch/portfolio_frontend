@@ -40,18 +40,21 @@ const Experience = () => {
 
   
   return (
-    <div className='experience flex nav-section' ref={ref}>
+    <div className='experiences flex nav-section' ref={ref}>
       <h2 className='h-text'>Experience</h2>
       <div className='experience-container flex'>
 
-        <motion.div className='experience'>
-          { experience.map((period) => (
+        <motion.div className='experience-list'>
+          { experience.map((period, index) => (
             <motion.div
-              className='experience-item'
+              className={`experience-item ${index%2 === 0 ? null : 'rev'}`}
               key={`year-${period.year}`}
             >
               <div className='experience-year'>
                 <p className='bold'>{period.year}</p>
+                <div className='experience-img'>
+                  <img src={period.exp[0].img} alt={period.exp[0].name} className={`exp-img-${index}`}/>
+                </div>
               </div>
 
               <motion.div className='experience-works'>
@@ -65,9 +68,9 @@ const Experience = () => {
                       data-for={work.name}
                       key={work.name}
                     >
-                      <h4 className='bold'>{work.name}</h4>
-                      <p className='p-text'>{work.company}</p>
-                      <p className='p-text desc'>{work.description}</p>
+                      <h3 className='bold'>{work.name}</h3>
+                      <h4 className='work-company'>{work.company}</h4>
+                      <p className='work-description p-text'>{work.description}</p>
                     </motion.div>
                   </div>
                 ))}

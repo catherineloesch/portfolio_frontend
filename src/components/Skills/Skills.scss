@@ -82,64 +82,6 @@
 }
 
 
-.experience {
-    flex: 1;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 100%;
-  
-    @media screen and (max-width: 900px) {
-      margin-top: 2rem;
-    }
-}
-
-.experience-item {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin: 1rem 0;
-}
-
-.experience-works {
-    flex: 1;
-
-    .experience-work {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        margin-bottom: 1rem;
-        cursor: pointer;
-    
-        h4 {
-          font-weight: 500;
-        }
-    
-        p {
-          font-weight: 400;
-          color: var(--gray);
-          margin-top: 5px;
-        }
-      }
-}
-
-
-.experience-year {
-    margin-right: 3rem;
-
-    p {
-      font-weight: 800;
-      color: var(--secondary);
-    }
-  
-    @media screen and (max-width: 450px) {
-      margin-right: 1rem;
-    }
-}
 
 
 // adjusting size of icons

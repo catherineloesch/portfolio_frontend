@@ -1,0 +1,140 @@
+
+
+.experience {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    h2 {
+        padding-bottom: 10px;
+    }
+}
+
+.experiences {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  
+    @media screen and (max-width: 900px) {
+      margin-top: 2rem;
+    }
+
+    .experience-container {
+        width: 70%;
+    }
+    
+}
+
+
+.experience-year {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 20px;
+ 
+     p {
+       font-weight: 800;
+       font-size: 1.1rem;
+       color: var(--primary-dark);
+       text-align: right;
+     }
+ 
+     .experience-img {
+         width: 70%;
+         align-items: flex-end;
+         justify-content: flex-end;
+         img {
+             width: 100%;
+          
+         
+         }
+ 
+     }
+   
+     @media screen and (max-width: 450px) {
+       margin-right: 1rem;
+     }
+ }
+ 
+ 
+.experience-item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 2rem 0;
+    
+
+
+    
+}
+
+
+
+
+.experience-works {
+    flex: 1;
+
+   
+
+    .experience-work {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+        cursor: pointer;
+    
+        h3 {
+         font-size: 1.2rem;
+         color: var(--secondary)
+        }
+
+        h4 {
+            font-weight: 500;
+            font-size: 1.1rem;
+            color: var(--secondary);
+        }
+    
+        p {
+          font-weight: 400;
+          color: var(--gray);
+          margin-top: 5px;
+          font-size: 1rem;
+          text-align: justify;
+        }
+      }
+  
+}
+
+.experience-item.rev {
+ 
+    flex-direction: row-reverse;
+    .experience-year {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .experience-works {
+        padding-right: 20px;
+       div {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        div {
+            p {text-align:justify;}
+        }
+        
+    }
+    }
+    
+}
+
+.exp-img-2 {
+    padding: 8px;
+}
