@@ -7,7 +7,7 @@ const experience = [
             {
                 name: 'Software Engineering Immersive',
                 company: 'General Assembly London (remote)',
-                img: experience_images.ga2,
+                img: experience_images.ga_vector,
                 description: "This 12-week immersive course established programming fundamentals of both frontend and backend. It involved building of full-stack applications, implementing responsive design,  modelling and storing data in SQL and NoSQL databases, integrating third-party APIs and deploying applications on the web. Online learning was achieved via zoom lectures, labs, stand-up, pair-programming and individual as well as group projects requiring collaboration as a team using git and GitHub."
             }
 
@@ -32,7 +32,7 @@ const experience = [
                 name: 'BSc in Biomedical Science ',
                 company: 'The University of Warwick (Coventry, UK)',
                 img: experience_images.ww7,
-                description: 'Biostatistics, Biochemistry, Genetics, Genomics'
+                description: 'Key modules: Biostatistics, Genetics, Genomics, Molecular Biology, Microbiology, Virology.'
 
             }
         ]

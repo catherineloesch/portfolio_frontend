@@ -7,7 +7,7 @@ import './Header.scss'
 import { useState, useRef, useEffect, useContext} from "react"; 
 import { CurrentContext } from '../../contexts/CurrentContext'
 import ParticleBackground from './particleBackground';
-
+import { arrowIcons } from '../../assets/icons/icons_arrows';
 
 
 const Header = () => {
@@ -80,6 +80,10 @@ const Header = () => {
        
       </motion.div>
       <ContactIcons />
+      <div className='header-down-arrows'>
+      hello world
+        <img src={arrowIcons.angles_down} alt='down arrows'/>
+      </div>
  
     </div>
   )

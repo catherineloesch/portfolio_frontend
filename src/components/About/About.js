@@ -1,7 +1,8 @@
 import React, { useContext } from 'react'
 import { motion } from 'framer-motion'
 import { AppContainer, MotionContainer } from '../../containers'
-import { abouts } from './../../api_data/api_about'
+import { intros, abouts } from './../../api_data/api_about'
+import { aboutImages } from '../../assets/images/about'
 import './About.scss'
 import { useState, useRef, useEffect} from "react"; 
 import { CurrentContext } from '../../contexts/CurrentContext'
@@ -53,7 +54,16 @@ const About = () => {
 
   return (
     <>
-      <h2 className='h-text'>About</h2>
+     
+      <motion.div className='about-intro flex'>
+        <div className='flex about-avatar'><img src={aboutImages.avatar} alt='avatar'/></div>
+        <div>
+          <h2 className='h-text'>About</h2>
+          {intros.map((intro, index) => (<p className='p-text flex' key={`about-intro-${index}`}>{intro}</p>))}
+        </div>
+        
+      </motion.div>
+    
       <div className='profile' ref={ref}>
         {abouts.map((about, index) => (
           <motion.div
@@ -61,7 +71,7 @@ const About = () => {
           whileHover={{scale: 1.1}}
           transition={{duration: 0.5, type:'tween'}}
           className='profile-item'
-          key={'about'+index}
+          key={'about-'+index}
           >
           
             <img src={about.imgUrl} alt={about.title}/>
