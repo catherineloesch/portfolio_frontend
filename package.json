@@ -2,7 +2,7 @@
   "homepage": "http://katieloesch.github.io/portfolio_frontend/",
   "name": "portfolio_frontend",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@sanity/client": "^6.1.3",
