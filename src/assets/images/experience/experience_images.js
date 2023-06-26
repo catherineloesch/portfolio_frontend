@@ -7,11 +7,13 @@ import ww4 from './ww4.jpg'
 import ww7 from './ww7.png'
 import ww8 from './ww8.jpg'
 import ga_vector from './ga_vector.png'
+import lih from './lih.png'
 
 const experience_images = {
     ga,
     ga2,
     ga_vector,
+    lih,
     ou1,
     ou3,
     ww1,

@@ -7,8 +7,6 @@ import './Header.scss'
 import { useState, useRef, useEffect, useContext} from "react"; 
 import { CurrentContext } from '../../contexts/CurrentContext'
 import ParticleBackground from './particleBackground';
-import { arrowIcons } from '../../assets/icons/icons_arrows';
-
 
 const Header = () => {
   const active = useContext(CurrentContext)
@@ -51,12 +49,11 @@ const Header = () => {
 
         <div className='header-text flex' >
           <div className='flex header-text-container'>
-             <h3 className='p-text greeting'><span>👋🏻</span>Hi, I'm</h3>
+             <h3 className='p-text greeting'><span>👋🏻</span>Hi there!</h3>
              <div className='intro flex'>
-                <h1 className='h-text'>Katie</h1>
+                <h1 className='h-text'>Katie Loesch</h1>
                 <h2 className='p-text flex job-title'>Full-Stack Developer</h2>
-                <h3 className='p-text flex job-title'>Freelancer</h3>
-             </div>              
+             </div>
           </div>
 
        
@@ -80,10 +77,6 @@ const Header = () => {
        
       </motion.div>
       <ContactIcons />
-      <div className='header-down-arrows'>
-      hello world
-        <img src={arrowIcons.angles_down} alt='down arrows'/>
-      </div>
  
     </div>
   )

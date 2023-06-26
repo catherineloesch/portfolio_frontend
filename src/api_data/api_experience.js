@@ -25,6 +25,18 @@ const experience = [
             }
         ]
     },
+
+    {
+        year: 'Jul 2016 - Sep 2016',
+        exp: [
+            {
+                name: 'Laboratory Internship',
+                company: 'Luxembourg Institute of Health, Department of Infection and Immunity',
+                img: experience_images.lih,
+                description: "Internship in Infectious Diseases Research unit, studying paramyxovirus and coronavirus shedding in bats to understand inter-species transmission. Training covered RNA extraction, purification, real-time PCR, and gel electrophoresis."
+            }
+        ]
+    },
     {
         year: 'Oct 2012 - Jun 2015',
         exp: [

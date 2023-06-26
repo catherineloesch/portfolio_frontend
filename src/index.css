@@ -1,10 +1,15 @@
 
 /* font imports */
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+
+
 
 :root {
   /* font variables */
   --font-base: "DM Sans", sans-serif;
+  --font-editorial: 'Bruno Ace SC', cursive, sans-serif;
 
   /* color variables */
   --offwhite: #edf2f8;
@@ -40,7 +45,7 @@
 }
 
 .bg-primary {
-  background-color: var(--offwhite);
+  background-color: var(--primary-light);
 }
 
 /* targeting all elements */

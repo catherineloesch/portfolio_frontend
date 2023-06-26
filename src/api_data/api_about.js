@@ -1,8 +1,8 @@
 import { aboutImages } from './../assets/images/about'
 
 const intros = [
-  "Hi there! I'm Katie.",
-  "I'm a biomedical scientist turned full-stack developer based in London."
+  "Hi! I'm Katie. I'm full-stack developer with a background biomedical science, currently based in London.",
+  "I'm passionate about designing user-centric applications and building purpose-driven solutions. I'm currently open to job opportunities where I can contribute, learn and grow."
 ]
 
 const abouts = [
@@ -13,7 +13,7 @@ const abouts = [
     },
     {
       title: "coding journey.",
-      description: "My interest in coding led me to join the General Assembly software engineering immersive course to secure a solid foundation in programming fundamentals to build upon. I’m currently looking for opportunities to further develop my skills and learn new languages, frameworks and technologies as I believe there’s nothing more thrilling than being a life-long learner in a constantly evolving industry.",
+      description: "My interest in coding led me to join the General Assembly software engineering immersive course to secure a solid foundation in programming fundamentals to build upon. I’m currently looking for opportunities to further develop my skills and learn new languages, frameworks and technologies.",
       imgUrl: aboutImages.code
     },
     {

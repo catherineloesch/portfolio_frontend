@@ -53,7 +53,7 @@ const About = () => {
 
 
   return (
-    <>
+    <div className='about-container'>
      
       <motion.div className='about-intro flex'>
         <div className='flex about-avatar'><img src={aboutImages.avatar} alt='avatar'/></div>
@@ -84,7 +84,7 @@ const About = () => {
         ))}
       </div> 
 
-    </>
+    </div>
   )
 }
 
