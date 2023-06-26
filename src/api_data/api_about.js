@@ -9,7 +9,7 @@ const abouts = [
     {
       title: "background.",
       description: "As a biomedical science graduate, I had the opportunity to work with databases that store genetic data and algorithms for comparing sequence information. This experience sparked my interest in how software and technology can be used to improve and innovate healthcare and medical research.",
-      imgUrl: aboutImages.dna
+      imgUrl: aboutImages.dnaMolecule
     },
     {
       title: "coding journey.",

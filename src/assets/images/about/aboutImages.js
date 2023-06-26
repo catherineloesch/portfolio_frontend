@@ -1,16 +1,12 @@
 import avatar from './avatar.png'
-import dna from './dna.png'
 import code from './code.jpg'
-import code2 from './code2.jpg'
-import code3 from './code3.jpg'
 import eye from './eye.jpg'
+import dnaMolecule from './dnaMolecule.png'
 
 const aboutImages = {
     avatar,
-    dna,
+    dnaMolecule,
     code,
-    code2,
-    code3,
     eye
 }
 
