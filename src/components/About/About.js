@@ -58,7 +58,7 @@ const About = () => {
       <motion.div className='about-intro flex'>
         <div className='flex about-avatar'><img src={aboutImages.avatar} alt='avatar'/></div>
         <div>
-          <h2 className='h-text'>About</h2>
+          <h2 className='h-text section-heading'>About</h2>
           <div className='about-intro-text flex'>
             {intros.map((intro, index) => (<p className='p-text flex' key={`about-intro-${index}`}>{intro}</p>))}
           </div>

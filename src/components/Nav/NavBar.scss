@@ -36,6 +36,7 @@
     justify-content: center;
     align-items: center;
    
+   
 
     li {
         display: flex;
@@ -46,6 +47,8 @@
         cursor: pointer;
         flex-direction: column;
         position: relative;
+       
+       
 
         div {
             width: 5px;
@@ -60,7 +63,7 @@
             // color: var(--gray);
             // text-transform: uppercase;
             // font-weight: 500;
-
+            font-family: var(--font-nav);
             color: var(--primary-light);
             flex-direction: column;
             font-weight: 400;

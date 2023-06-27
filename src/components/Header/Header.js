@@ -49,10 +49,15 @@ const Header = () => {
 
         <div className='header-text flex' >
           <div className='flex header-text-container'>
-             <h3 className='p-text greeting'><span>👋🏻</span>Hi there!</h3>
+             <h3 className='p-text greeting'><span>👋🏻</span>Hi there! I'm</h3>
              <div className='intro flex'>
-                <h1 className='h-text'>Katie Loesch</h1>
-                <h2 className='p-text flex job-title'>Full-Stack Developer</h2>
+                <h1 className='header-name'>
+                <span aria-hidden="true">Katie Loesch</span>
+                Katie Loesch
+                <span aria-hidden="true">Katie Loesch</span>
+                </h1>
+
+                <h2 className='p-text flex job-title'>FULL-STACK DEVELOPER</h2>
              </div>
           </div>
 

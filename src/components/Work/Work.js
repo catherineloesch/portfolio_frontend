@@ -79,7 +79,7 @@ const Work = () => {
 
   return (
     <div className='works nav-section' ref={ref}>
-      <h2 className='h-text'>Latest Projects</h2>
+      <h2 className='h-text section-heading'>Latest Projects</h2>
       
       <div className='work-filter'>
         { categories.map((category, index) => (

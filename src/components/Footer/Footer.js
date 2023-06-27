@@ -83,7 +83,7 @@ const Footer = () => {
 
   return (
     <>
-      <h2 className='h-text'>Contact</h2>
+      <h2 className='h-text section-heading'>Contact</h2>
       <p className='p-text flex'>Want to leave some feedback for me?<img src={socialIcons.feedback2} alt='feedback'/></p> 
       <p className='p-text flex'> Or just have a chat? <img src={socialIcons.coffee5} alt='coffee'/> </p>
       <p className='p-text flex'>Leave me a message and I'll be in touch!</p>

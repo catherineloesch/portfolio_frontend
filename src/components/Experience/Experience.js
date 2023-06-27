@@ -41,7 +41,7 @@ const Experience = () => {
   
   return (
     <div className='experiences flex nav-section' ref={ref}>
-      <h2 className='h-text'>Experience & Education</h2>
+      <h2 className='h-text section-heading'>Experience & Education</h2>
       <div className='experience-container flex'>
 
         <motion.div className='experience-list'>

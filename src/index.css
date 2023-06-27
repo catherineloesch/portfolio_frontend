@@ -4,12 +4,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
 
 
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+
+@font-face {
+  font-family: 'Nulshock';
+  src: url('./assets/fonts/nulshock.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Good Times';
+  src: url('./assets/fonts/goodtimes-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Terminator';
+  src: url('./assets/fonts/terminator.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 :root {
   /* font variables */
-  --font-base: "DM Sans", sans-serif;
-  --font-editorial: 'Bruno Ace SC', cursive, sans-serif;
+  --font-base: 'DM Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  /* --font-editorial: 'Bruno Ace SC', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+  /* --font-editorial: 'Bruno Ace', cursive; */
+   --font-nav: 'Good Times', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   /* --font-editorial: 'Terminator','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+   /* --font-editorial: 'Good Times','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+   --font-editorial: 'Nulshock','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
   /* color variables */
   --offwhite: #edf2f8;
@@ -20,6 +49,7 @@
   --secondary: #313bac;
   --secondary-a: rgba(48, 58, 171, 0.816);
   --secondary-dark: #4C2777;
+  --yellow: #fef071;
 
  
 
@@ -41,7 +71,7 @@
 
 
 .bg-white {
-  background-color: var(--white);
+  background-color: white;
 }
 
 .bg-primary {

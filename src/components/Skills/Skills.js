@@ -60,7 +60,7 @@ const Skills = () => {
   
   return (
     <div className='skills-section flex nav-section' ref={ref}>
-      <h2 className='h-text'>Skills</h2>
+      <h2 className='section-heading'>Skills</h2>
       <div className='skills-container flex'>
         <motion.div className="skills-list flex">
 
