@@ -9,7 +9,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 @font-face {
   font-family: 'Nulshock';
@@ -35,11 +35,11 @@
   --font-base: 'DM Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   /* --font-editorial: 'Bruno Ace SC', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
   /* --font-editorial: 'Bruno Ace', cursive; */
-   --font-nav: 'Good Times', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   --font-nav: 'Nulshock', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
    /* --font-editorial: 'Terminator','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
    /* --font-editorial: 'Good Times','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
-   --font-editorial: 'Nulshock','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+  --font-editorial: 'Nulshock','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  --font-typewriter: 'VT323', monospace;
   /* color variables */
   --offwhite: #edf2f8;
   --primary-light: #f4eae9;
@@ -67,6 +67,9 @@
 
   --darkgreen-a: rgba(9, 59, 36, 0.794);
   --lightblue: #8ee4ef;
+
+  /* animations */
+  --typewriterSpeed: 3s; 
 }
 
 

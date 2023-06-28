@@ -14,10 +14,15 @@
 }
 
 .about-intro {
-    width: 60%;
+    width: 57%;
+
+    .section-heading {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
   
     .about-avatar {
-        width: 30%;
+        width: 24vw;
 
         img {
             width: 100%;
@@ -31,7 +36,7 @@
         p {
             font-size: 1rem;
             text-align: justify;
-            width: 90%;
+            width: 85%;
         }
     }
 
@@ -47,7 +52,7 @@
 }
 
 .profile-item {
-    width: 220px;
+    width: 17.5%;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;

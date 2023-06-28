@@ -1,4 +1,7 @@
 
+#home {
+    background-color: black;
+}
 
 .header {
     flex: 1;
@@ -7,6 +10,7 @@
     flex-direction: column;
     padding: 0;
     margin: 0;
+   
 
     .h-text::selection {
         background: var(--primary-dark-a); 
@@ -30,6 +34,9 @@
         width: 100%;
         position: absolute;
         top: 30%;
+        opacity: 0;
+        transform: translateX(-25rem);
+        animation: fadeInLtR 2s ease forwards;
 
     }
 
@@ -51,11 +58,11 @@
        
 
         .greeting {
-            font-family: var(--font-editorial);
+            font-family: var(--font-typewriter);
             color: var(--yellow);
             width: 100%;
            
-            font-size: 2rem;
+            font-size: 2.5rem;
             text-align: center;
             display: flex;
             align-items: center;
@@ -70,9 +77,11 @@
         }
 
         .intro {
-            font-family: var(--font-editorial);        
+            font-family: var(--font-editorial);  
+            display: flex;      
             flex-direction: column;
             align-items: center;
+            justify-content: center;
             width: 100%;
             margin-top: 1rem;
             
@@ -82,7 +91,7 @@
                 position: relative;
                 color: var(--yellow);
                 margin-bottom: 5px;
-                font-size: 3.5rem;
+                font-size: 3.2rem;
                 text-shadow: 
                 0.05em 0 0 rgba(255, 0, 0, .75),
                 -0.025em -0.05em 0 rgba(0, 255, 0, .75),
@@ -158,17 +167,69 @@
             }
 
             .job-title {
+                font-family: var(--font-typewriter);
+                position: relative;
                 flex-direction: column;
                 align-items: center;
                 color: var(--yellow);
-                width: 100%;
                 text-align: right;
-                font-size: 2.5rem;
+                font-size: 3rem;
                 font-weight: 700;
                 text-align: center;
+                width: max-content;
               
              
             }
+
+            .job-title::before,
+            .job-title::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+            }
+
+            .job-title::before {
+                background-color: black;
+                /* Full-Stack Developer - 20 characters */
+                animation: typewriter var(--typewriterSpeed) steps(20) 1.75s forwards;
+
+            }
+            .job-title::after {
+               width: .08em;
+               background-color: var(--yellow);
+               height: 70%;
+               margin-top: 0.2em;
+
+               /* Full-Stack Developer - 20 characters */
+               animation: typewriter var(--typewriterSpeed) steps(20) 1.75s forwards,
+               blink 750ms steps(20) infinite; 
+
+            }
+
+            @keyframes typewriter {
+                to {
+                    left: 100%;
+                }
+            }
+
+            @keyframes blink {
+                to {
+                    background-color: transparent;
+                }
+
+            }
+
+            @keyframes fadeInLtR {
+                to {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+
+            }
+        
 
 
 

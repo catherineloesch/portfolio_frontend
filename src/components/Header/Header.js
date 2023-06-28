@@ -42,14 +42,13 @@ const Header = () => {
       <ParticleBackground />
 
       <motion.div
-        whileInView={{ x: [-100, 0], opacity: [0, 1] }}
-        transition={{ duration: 0.5 }}
+      
         className='header-info'
       >
 
         <div className='header-text flex' >
           <div className='flex header-text-container'>
-             <h3 className='p-text greeting'><span>👋🏻</span>Hi there! I'm</h3>
+             <h3 className='p-text greeting'>Hi there! I'm</h3>
              <div className='intro flex'>
                 <h1 className='header-name'>
                 <span aria-hidden="true">Katie Loesch</span>
@@ -57,7 +56,7 @@ const Header = () => {
                 <span aria-hidden="true">Katie Loesch</span>
                 </h1>
 
-                <h2 className='p-text flex job-title'>FULL-STACK DEVELOPER</h2>
+                <h2 className='p-text flex job-title'>Full-Stack Developer</h2>
              </div>
           </div>
 
