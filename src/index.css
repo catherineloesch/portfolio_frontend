@@ -45,7 +45,7 @@
   --primary-light: #f4eae9;
   --primary-dark: #916265;
   --primary-deep: #682a2e;
-  --primary-dark-a:rgba(145, 98, 101, 0.825);
+  --primary-dark-a:rgba(104, 42, 46, 0.7);
   --secondary: #313bac;
   --secondary-a: rgba(48, 58, 171, 0.816);
   --secondary-dark: #4C2777;
@@ -62,6 +62,7 @@
   --black: #030303;
   --light-gray: #e4e4e4;
   --gray: #6b7688;
+  --gray-a: rgba(108, 119, 137, 0.55);
   --brown: #46364a;
   --white: #ffffff;
 
@@ -74,7 +75,8 @@
 
 
 .bg-white {
-  background-color: white;
+  background-color: var(--white);
+
 }
 
 .bg-primary {

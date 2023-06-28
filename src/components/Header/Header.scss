@@ -261,42 +261,45 @@
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: row;
+    gap: 5px;
   
     div {
       width: 40px;
       height: 40px;
       border-radius: 50%;
     
-      border: 1px solid var(--lightgray);
+      border: 2px solid var(--gray-a);
       
   
       display: flex;
       justify-content: center;
+      align-items: center;
       align-items: center;
       transition: all 0.3s ease-in-out;
   
       svg {
         width: 25px;
         height: 25px;
-        color: var(--gray);
+        padding-top: 3px;
+        color: var(--gray-a);
+        transition: all 0.3s ease-in-out;
+
       }
 
       .contact-icon-mail {
         svg {
             scale: 1.2;
-            margin-left: 7px;
+            
         }
-      }
-
-      .contact-icon-github {
-        background-color: red;
-      }
+        }
 
   
       &:hover {
+        border: 2px solid var(--gray);
        
         svg { 
-          color: var(--white); }
+          color: var(--gray);
+        }
   
       }
   

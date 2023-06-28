@@ -73,7 +73,7 @@
             padding: 0 10px;
 
             &:hover {
-               color: var(--yellow);
+               color: var(--white);
             }
         }
     }
@@ -81,7 +81,7 @@
     li::after {
         content: "";
         position: absolute;
-        background-color: var(--yellow);
+        background-color: var(--white);
         height: 1.5px;
         width: 0;
         left: 0;
