@@ -1,8 +1,7 @@
 {
-  "homepage": "http://katieloesch.co.uk",
+  "homepage": ".",
   "name": "portfolio",
   "version": "0.1.0",
-  "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@sanity/client": "^6.1.3",
