@@ -1,8 +1,8 @@
 {
-  "homepage": "http://katieloesch.github.io/portfolio_frontend/",
-  "name": "portfolio_frontend",
+  "homepage": "http://katieloesch.co.uk",
+  "name": "portfolio",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@sanity/client": "^6.1.3",
