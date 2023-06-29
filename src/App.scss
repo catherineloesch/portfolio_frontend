@@ -58,6 +58,9 @@
   font-weight: 800;
   text-align: center;
   color: var(--primary-dark);
+  @media screen and (max-width: 550px) {
+    font-size: 2rem;
+  }
 }
 
 .p-text {

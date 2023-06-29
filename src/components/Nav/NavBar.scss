@@ -95,7 +95,7 @@
 
     }
 
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 1150px) {
         display: none;
     }
 }
@@ -177,7 +177,7 @@
             }
         }
 
-        @media screen and (min-width: 900px) {
+        @media screen and (min-width: 1150px) {
             display: none;
         }
         @media screen and (max-width: 600px) {
@@ -192,9 +192,14 @@
         @media screen and (max-width: 380px) {
             width: 100%;
         }
+        @media screen and (max-width: 299px) {
+            width: 110%;
+            li {
+                a {margin-left: 2rem;}}
+        }
     }
 
-    @media screen and (min-width: 900px) {
+    @media screen and (min-width: 1151px) {
         display: none;
     }
 }

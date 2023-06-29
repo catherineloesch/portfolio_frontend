@@ -40,6 +40,13 @@
 
     }
 
+    @media screen and (max-width: 620px) {
+        .header-info {
+            top: 20%
+        }
+    }
+
+
 
 .header-text {
     position: absolute;
@@ -76,6 +83,10 @@
 
         }
 
+        @media screen and (max-width: 800px) {
+            .greeting {font-size: 1.75rem;}
+        }
+
         .intro {
             font-family: var(--font-editorial);  
             display: flex;      
@@ -89,6 +100,7 @@
 
             .header-name {
                 position: relative;
+                text-align: center;
                 color: var(--yellow);
                 margin-bottom: 5px;
                 font-size: 3.2rem;
@@ -236,15 +248,22 @@
             @media screen and (max-width: 800px) {
 
                 h1 {font-size: 2.5rem;}
-                .job-title {font-size: 1.5rem;}
+                .job-title {font-size: 2rem;}
+               
 
+            }
+
+            @media screen and (max-width: 600px) {
+                h1 {font-size: 1.8rem;
+                    
+                }
             }
 
             @media screen and (max-width: 400px) {
 
-                h1 {font-size: 2rem;}
+                h1 {font-size: 1.8rem;}
                 .job-title {
-                    font-size: 1rem;
+                    font-size: 1.7rem;
                    
                 }
 
@@ -253,15 +272,19 @@
     }
 }
 
+
+
+
 .contact-icons {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 8px;
+    left: 5px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: row;
     gap: 5px;
+    
   
     div {
       width: 40px;

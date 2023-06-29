@@ -14,7 +14,6 @@ import WorkModal from './WorkModal'
 
 const Work = () => {
 
-
   const [activeFilter, setActiveFilter] = useState('All')
   const [animateCard, setAnimateCard] = useState({y: 0, opacity: 1})
   const [filterWork, setFilterWork] = useState(works)
