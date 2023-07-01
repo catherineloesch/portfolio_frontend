@@ -62,11 +62,11 @@ npx create-react-app portfolio
     - https://www.npmjs.com/package/emailjs-com
   - @emailjs/browser (v3.11.0)
     - https://www.npmjs.com/package/@emailjs/browser
-  - animations + effects
-    - framer-motion (v10.12.16)
-      - https://www.npmjs.com/package/framer-motion
-    - react-tsparticles (v2.10.1)
-      - https://www.npmjs.com/package/react-tsparticles
+- animations + effects
+  - framer-motion (v10.12.16)
+    - https://www.npmjs.com/package/framer-motion
+  - react-tsparticles (v2.10.1)
+    - https://www.npmjs.com/package/react-tsparticles
 
 ### UI
 
@@ -137,6 +137,10 @@ npx create-react-app portfolio
 - As a user I should be able to easily find relevant experience, education and skills.
 - As a user I should be able to easily find information on previous projects.
 - As a user I should be able to navigate the website from an device.
+
+I started the building process for this project on 13/06/2023.
+Initial deployment on gh-pages: 26/06/2023.
+Deployment to [custom domain](katieloesch.co.uk) obtained from [Hostinger](https://www.hostinger.co.uk) on 29/06/2023.
 
 ## 7. <a name="challenges"></a> Challenges
 
