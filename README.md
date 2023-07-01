@@ -17,6 +17,8 @@
 
 ## <a name="description"></a> 1. Description
 
+I started the development of this portfolio project after completion of the General Assemlby Software Engineering Immersive Course in order to showcase the projects I had built and the skills I had gained during the course.
+
 ## <a name="deployment-link"></a> 2. Deployment link
 
 http://katieloesch.co.uk
