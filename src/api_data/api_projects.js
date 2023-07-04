@@ -76,7 +76,7 @@ const works = [
       title: 'MERN Guest Book',
       description: "A Full-Stack Guestbook application, built from scratch within 9 days by a team of 4 developers using the MERN stack. The website allows users to sign up for an account and subsequently log into and out of their account. They also can also edit their username and password once they are logged in, or delete their account. Authentication was achieved by using the Node ExpressJS and Passport.js packages. Users can also read, post, edit and delete comments in the Guestbook application, the concept of which was tailored around a specific event type: a divorce party. The idea behind this concept was to support recent divorcees by enjoying their divorce party to the fullest and later re-live all the happy memories.",
       projectLink: 'http://mern-guestbook.netlify.app/',
-      codeLink: 'http://github.com/katieloesch/project3-mernstack-app',
+      codeLink: 'http://github.com/katieloesch/p3-mern-guestbook-frontend',
       imgUrl: project_images.p3,
       tags: ['React', 'MERN', 'Full-Stack', 'All'],
       skills: [
