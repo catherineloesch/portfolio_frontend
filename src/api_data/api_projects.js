@@ -144,7 +144,7 @@ const works = [
     { // Project 2
       title: 'React Film App',
       description: "A movie and tv watchlist SPA with full CRUD functionality built from scratch in 8 days using ReactJS/CSS. This front-end list-based application updates the UI and makes requests to a third-party API. The user can add movies and tv shows to a 'watched' and a 'to-watch' list, mark them as watched as well as edit and remove them from the list. By clicking on cover art of a film and or tv show, more information is displayed about the title. The user also has the option to add movies and tv shows from the public TMDB API to their lists and modify/remove them.",
-      projectLink: 'https://katieloesch.github.io/project-2-react-film-app/',
+      projectLink: 'https://react-film-app.katieloesch.co.uk',
       codeLink: 'https://github.com/katieloesch/project-2-react-film-app',
       imgUrl: project_images.project2,
       tags: ['React', 'Web App', 'All'],
@@ -175,6 +175,19 @@ const works = [
           icon: skillIcons.postman_primary,
           bgColor: bgColor,
           id: 'postman-icon'
+        },
+        {
+          name: 'Firbase',
+          icon: skillIcons.firebase_primary,
+          bgColor: bgColor,
+          id: 'firebase-icon'
+    
+        }, {
+          name: 'Cloud Firestore',
+          icon: skillIcons.firestore_primary,
+          bgColor: bgColor,
+          id: 'firestore-icon'
+    
         }
       ]
     },

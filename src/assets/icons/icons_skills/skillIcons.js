@@ -2,6 +2,10 @@ import babel_primary from './babel_primary.svg'
 import bootstrap_primary from './bootstrap_primary.svg'
 import css_primary from './css_primary.svg'
 import express_primary from './express_primary.svg'
+import firebase_primary from './firebase_primary.svg'
+import firestore_primary from './firestore_primary.svg'
+import firestore_p from './firestore_p.svg'
+import firestore_c from './firestore_c.svg'
 import git_primary from './git_primary.svg'
 import github_primary from './github_primary.svg'
 import heroku_primary from './heroku_primary.svg'
@@ -34,6 +38,10 @@ const skillIcons = {
     bootstrap_primary,
     css_primary,
     express_primary,
+    firebase_primary,
+    firestore_primary,
+    firestore_p,
+    firestore_c,
     git_primary,
     github_primary,
     heroku_primary,

@@ -141,6 +141,18 @@ const skills = [
       icon: skillIcons.babel_primary,
       bgColor: bgColor,
       id: 'babel-icon'
+    }, {
+      name: 'Firbase',
+      icon: skillIcons.firebase_primary,
+      bgColor: bgColor,
+      id: 'firebase-icon'
+
+    }, {
+      name: 'Cloud Firestore',
+      icon: skillIcons.firestore_primary,
+      bgColor: bgColor,
+      id: 'firestore-icon'
+
     },
     {
       name: 'git',

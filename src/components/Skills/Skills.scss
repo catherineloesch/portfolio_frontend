@@ -92,6 +92,8 @@
 #npm-icon { img { scale: 1.1 } }
 #tailwind-icon { img { scale: 1.15 } }
 #heroku-icon { img { scale: 0.95 } }
+#firebase-icon { img { scale: 1.05 } }
+#firestore-icon { img { scale: 1.15 } }
 
 //skills icons changing color on hover
 #html-icon:hover {
@@ -202,6 +204,17 @@
 #babel-icon:hover {
     p { color: #000}
     img { content: url('./../../assets/icons/icons_skills/babel_color.svg') }  
+}
+
+#firebase-icon:hover {
+    p { color: #e99619}
+    img { content: url('./../../assets/icons/icons_skills/firebase_color.svg') }  
+
+}
+
+#firestore-icon:hover {
+    p { color: #e99619}
+    img { content: url('./../../assets/icons/icons_skills/firestore_color.svg') } 
 }
 
 #git-icon:hover {
