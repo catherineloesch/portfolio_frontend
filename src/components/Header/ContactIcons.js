@@ -1,7 +1,6 @@
 import React from 'react'
 import { BsGithub} from'react-icons/bs'
 import { FaLinkedinIn } from 'react-icons/fa'
-// import { MdOutlineEmail } from'react-icons/md'
 import { VscMail } from'react-icons/vsc'
 
 const ContactIcons = () => {
