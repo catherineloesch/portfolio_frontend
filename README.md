@@ -102,6 +102,8 @@ npx create-react-app portfolio
   - used for launching the website and displaying the application Google Chrome
 - Google Chrome Developer Tools: For troubleshooting and debugging
   - https://www.google.com/intl/en_uk/chrome/
+- Hostinger: provider used to host portfolio website
+  - https://www.hostinger.co.uk
 
 ## <a name="deliverables"></a> 5. Deliverables
 
@@ -141,7 +143,7 @@ npx create-react-app portfolio
 - As a user I should be able to send a message via contact form.
 - As a user I should be able to easily find relevant experience, education and skills.
 - As a user I should be able to easily find information on previous projects.
-- As a user I should be able to navigate the website from an device.
+- As a user I should be able to navigate the website from any device.
 
 I started the building process for this project on 13/06/2023.
 Initial deployment on gh-pages: 26/06/2023.
