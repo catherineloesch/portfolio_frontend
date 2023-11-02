@@ -1,6 +1,5 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { images} from '../../assets/images';
 import { AppContainer } from '../../containers'
 import ContactIcons from './ContactIcons'
 import './Header.scss'
@@ -66,20 +65,6 @@ const Header = () => {
       
       </motion.div>
 
-      <motion.div
-        whileInView={{ opacity: [0, 1] }}
-        transition={{ duration: 0.5, delayChildren: 0.5}}
-        className='header-img'
-      >
-        <motion.img
-          whileInView={{ scale: [0, 1] }}
-          transition={{ duration: 1, ease: 'easeInOut' }}
-          src={images.avatar}
-          alt='avatar'
-          className='img-avatar'
-        />
-       
-      </motion.div>
       <ContactIcons />
  
     </div>

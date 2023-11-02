@@ -45,7 +45,7 @@ npm install
 npx create-react-app portfolio
 ```
 
-### dependencies
+### Dependencies
 
 - intersection-observer - https://www.npmjs.com/package/intersection-observer
 - node-sass (v7.0.3)
@@ -82,7 +82,7 @@ npx create-react-app portfolio
     - https://fonts.google.com/specimen/VT323
   - .woff files: assets/fonts directory
 - icons:
-  - react icons
+  - React Icons
     - https://react-icons.github.io/react-icons/
     - https://www.npmjs.com/package/react-icons
   - iconify
@@ -104,6 +104,8 @@ npx create-react-app portfolio
   - https://www.google.com/intl/en_uk/chrome/
 
 ## <a name="deliverables"></a> 5. Deliverables
+
+### MVP
 
 - make a website that showcases
   - easy-to-find contact information - email, GitHub, Linkedin and other relevant links
@@ -128,7 +130,8 @@ npx create-react-app portfolio
 
 ### Stretch Goals
 
-- animations + effects
+- animations
+- effects
 
 ## <a name="planning"></a>6. Planning / Build Process
 

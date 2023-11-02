@@ -47,6 +47,13 @@ const skills = [
       color: '#57d2f2'
     },
     {
+      name: 'Redux',
+      icon: skillIcons.redux_primary,
+      bgColor: bgColor,
+      id:'redux-icon',
+      color: '#57d2f2'
+    },
+    {
       name: 'express',
       icon: skillIcons.express_primary,
       bgColor: bgColor,
@@ -99,6 +106,18 @@ const skills = [
       icon: skillIcons.postman_primary,
       bgColor: bgColor,
       id: 'postman-icon'
+    },
+    {
+      name: 'Vite',
+      icon: skillIcons.vite_primary,
+      bgColor: bgColor,
+      id: 'vite-icon'
+    },
+    {
+      name: 'OpenAI',
+      icon: skillIcons.openai_primary,
+      bgColor: bgColor,
+      id: 'openai-icon'
     },
     {
       name: 'Heroku',

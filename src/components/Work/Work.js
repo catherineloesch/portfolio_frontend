@@ -18,7 +18,7 @@ const Work = () => {
   const [animateCard, setAnimateCard] = useState({y: 0, opacity: 1})
   const [filterWork, setFilterWork] = useState(works)
 
-  const categories = ['All', 'React', 'MERN', 'Rails', 'Full-Stack', 'Web App']
+  const categories = ['All', 'React', 'MERN', 'Rails', 'Full-Stack', 'Responsive Design']
   const active = useContext(CurrentContext)
 
   const [isIntersecting, setIsIntersecting] = useState(false);

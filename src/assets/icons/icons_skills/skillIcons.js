@@ -18,15 +18,18 @@ import mongoose_primary from './mongoose_primary.svg'
 import netlify_primary from './netlify_primary.svg'
 import nodejs_primary from './nodejs_primary.svg'
 import npm_primary from './npm_primary.svg'
+import openai_primary from './openai_primary.svg'
 import passport_primary from './passport_primary.svg'
 import postgresql_primary from './postgresql_primary.svg'
 import postman_primary from './postman_primary.svg'
 import rails_primary from './rails_primary.svg'
 import react_primary from './react_primary.svg'
+import redux_primary from './redux_primary.svg'
 import ruby_primary from './ruby_primary.svg'
 import sass_primary from './sass_primary.svg'
 import tailwind_primary from './tailwind_primary.svg'
 import yarn_primary from './yarn_primary.svg'
+import vite_primary from './vite_primary.svg'
 
 import javascript_p from './javascript_p.svg'
 
@@ -51,14 +54,17 @@ const skillIcons = {
     netlify_primary,
     nodejs_primary,
     npm_primary,
+    openai_primary,
     passport_primary,
     postgresql_primary,
     postman_primary,
     rails_primary,
     react_primary,
+    redux_primary,
     ruby_primary,
     sass_primary,
     tailwind_primary,
+    vite_primary,
     yarn_primary
 }
 
