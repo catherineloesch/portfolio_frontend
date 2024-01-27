@@ -105,6 +105,11 @@ npx create-react-app portfolio
 - Hostinger: provider used to host portfolio website
   - https://www.hostinger.co.uk
 
+### Resources and tutorials
+
+- [Animated Portfolio Website with React & Framer Motion | React Project for Beginners](https://www.youtube.com/watch?v=CHGHuF24Cjw&list=PL5TCQHRtvHGkuR2YZDf_2lDFuc9m5OUlO&index=3) by [Lama Dev](https://www.youtube.com/@LamaDev)
+  - responsive navigation menu
+
 ## <a name="deliverables"></a> 5. Deliverables
 
 ### MVP

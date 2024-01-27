@@ -41,8 +41,10 @@ const Header = () => {
       <ParticleBackground />
 
       <motion.div
-      
         className='header-info'
+        initial={{x:-1500}}
+        animate={{x:0}}
+        transition={{duration: 2}}
       >
 
         <div className='header-text flex' >

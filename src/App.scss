@@ -12,6 +12,7 @@
   flex-direction: row;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
+  scroll-snap-align: start;
   overflow-y: auto;
 }
 
@@ -20,6 +21,7 @@
   width: 100%;
   flex-direction: column;
   padding: 4rem 2rem;
+
 
   @media screen and (max-width: 450px) {
     padding: 4rem 1rem 2rem;
@@ -52,12 +54,13 @@
   }
 }
 
+
 .section-heading {
-  font-family: var(--font-editorial);
-  font-size: 2.75rem;
+  font-family: var(--font-nav);
+  font-size: 2.2rem;
   font-weight: 800;
   text-align: center;
-  color: var(--primary-dark);
+  color: var(--green);
   @media screen and (max-width: 550px) {
     font-size: 2rem;
   }

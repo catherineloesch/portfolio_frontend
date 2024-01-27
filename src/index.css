@@ -1,14 +1,14 @@
 
 /* font imports */
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap'); */
 
-
+/* 
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap'); */
 
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 @font-face {
@@ -19,25 +19,49 @@
 }
 @font-face {
   font-family: 'Good Times';
-  src: url('./assets/fonts/goodtimes-regular.woff') format('woff');
+  src: url('./assets/fonts/goodtimes-light.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
+  font-family: 'Good Times';
+  src: url('./assets/fonts/goodtimes-regular.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+/* @font-face {
   font-family: 'Terminator';
   src: url('./assets/fonts/terminator.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Electromagnetic Lungs';
+  src: url('./assets/fonts/electromagnetic-lungs.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+} */
+/* @font-face {
+  font-family: 'conthrax';
+  src: url('./assets/fonts/conthrax-semi-bold-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Electromagnetic Lungs';
+  src: url('./assets/fonts/Venera\ 500.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+} */
 
 :root {
   /* font variables */
   --font-base: 'DM Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  /* --font-editorial: 'Bruno Ace SC', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
-  /* --font-editorial: 'Bruno Ace', cursive; */
-   --font-nav: 'Nulshock', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-   /* --font-editorial: 'Terminator','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
-   /* --font-editorial: 'Good Times','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+  /* --font-nav: 'Bruno Ace SC', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+   --font-nav: 'Good Times', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   /* --font-nav: 'Electromagnetic Lungs', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+   /* --font-nav: 'venera','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+   /* --font-nav: 'Good Times','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
   --font-editorial: 'Nulshock','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   --font-typewriter: 'VT323', monospace;
   /* color variables */
@@ -51,13 +75,8 @@
   --secondary-dark: #4C2777;
   --yellow: #fef071;
 
- 
-
-  
-
-
-
-  --primary: #edf2f8;
+  /* --primary: #edf2f8; */
+  --primary: #62d465;
   /* --secondary: #502470; */
   --black: #030303;
   --light-gray: #e4e4e4;
@@ -69,18 +88,42 @@
   --darkgreen-a: rgba(9, 59, 36, 0.794);
   --lightblue: #8ee4ef;
 
+  /* bg */
+  --bg-1: rgb(8, 7, 7);
+  --bg-1-light: rgb(32, 27, 29);
+
+
+  --bg-2: rgb(1, 7, 5);
+  --bg-3: #211e44;
+  /* neon */
+  --neon-blue: rgb(102, 224, 226);
+  --neon-blue-2: #90f3fb;
+  --pink: #cd6363;
+  --neon-pink:#ef85d7;
+  --neon-purple: #e190fa;
+  --green: #62d465;
+
+
   /* animations */
   --typewriterSpeed: 3s; 
 }
 
 
 .bg-white {
-  background-color: var(--white);
+  /* background: rgb(8,7,7);
+  background: radial-gradient(circle, rgba(8,7,7,1) 0%, rgba(13,22,35,1) 50%, rgba(8,7,7,1) 100%); */
+  background: rgb(0,8,34);
+  background: radial-gradient(circle, rgb(0, 18, 37) 0%, rgb(0, 28, 57) 0%, rgba(0, 18, 37) 100%); 
+ 
+
 
 }
 
 .bg-primary {
-  background-color: var(--primary-light);
+  /* background-color: var(--primary-light); */
+
+  background: rgb(0,8,34);
+  background: radial-gradient(circle, rgba(0,8,34,1) 0%, rgba(0,19,44,1) 0%, rgba(0,8,34,1) 100%);
 }
 
 /* targeting all elements */
@@ -89,7 +132,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  scroll-behavior: smooth;
+  
 }
 
 *::selection {
@@ -97,6 +140,12 @@
 }
 *::-moz-selection {
   background: var(--primary-light);
+}
+
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 
 ul, li {

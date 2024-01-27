@@ -142,24 +142,6 @@ const skills = [
       icon: skillIcons.jwt_primary,
       bgColor: bgColor,
       id: 'jwt-icon'
-    },
-    {
-      name: 'npm',
-      icon: skillIcons.npm_primary,
-      bgColor: bgColor,
-      id: 'npm-icon'
-    },
-    {
-      name: 'yarn',
-      icon: skillIcons.yarn_primary,
-      bgColor: bgColor,
-      id: 'yarn-icon'
-    },
-    {
-      name: 'Babel.js',
-      icon: skillIcons.babel_primary,
-      bgColor: bgColor,
-      id: 'babel-icon'
     }, {
       name: 'Firbase',
       icon: skillIcons.firebase_primary,
