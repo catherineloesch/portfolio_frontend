@@ -55,28 +55,57 @@
 } */
 
 :root {
-  /* font variables */
+
   --font-base: 'DM Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  --font-nav: 'Good Times', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  --font-editorial: 'Nulshock','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  --font-typewriter: 'VT323', monospace;
+  --typewriterSpeed: 3s; 
+
+  --green: #62d465;
+  --green-a: rgba(160, 255, 148, 0.7);
+
+  /* --primary: #62d465; */
+  --primary: #6bda6b;
+  --secondary: #66e0e2;
+  --secondary: rgb(19, 37, 57);
+  --secondary-dark: rgb(75, 132, 168);
+  /* --secondary: #313bac; */
+  --yellow: #fef071;
+  --orange: #e68333;
+
+  --lightblue: #8ee4ef;
+  --neon-blue: #66e0e2;
+  --neon-blue-2: #90f3fb;
+
+  --grey-a: #80808080;
+  --grey-a: rgba(128, 128, 128, 0.7);
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+  /* font variables */
   /* --font-nav: 'Bruno Ace SC', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
-   --font-nav: 'Good Times', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
    /* --font-nav: 'Electromagnetic Lungs', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
    /* --font-nav: 'venera','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
    /* --font-nav: 'Good Times','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
-  --font-editorial: 'Nulshock','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  --font-typewriter: 'VT323', monospace;
+
   /* color variables */
   --offwhite: #edf2f8;
   --primary-light: #f4eae9;
   --primary-dark: #916265;
   --primary-deep: #682a2e;
   --primary-dark-a:rgba(104, 42, 46, 0.85);
-  --secondary: #313bac;
+
   --secondary-a: rgba(48, 58, 171, 0.816);
   --secondary-dark: #4C2777;
-  --yellow: #fef071;
 
   /* --primary: #edf2f8; */
-  --primary: #62d465;
+
   /* --secondary: #502470; */
   --black: #030303;
   --light-gray: #e4e4e4;
@@ -86,9 +115,11 @@
   --white: #ffffff;
 
   --darkgreen-a: rgba(9, 59, 36, 0.794);
-  --lightblue: #8ee4ef;
+
 
   /* bg */
+
+
   --bg-1: rgb(8, 7, 7);
   --bg-1-light: rgb(32, 27, 29);
 
@@ -96,34 +127,52 @@
   --bg-2: rgb(1, 7, 5);
   --bg-3: #211e44;
   /* neon */
-  --neon-blue: rgb(102, 224, 226);
-  --neon-blue-2: #90f3fb;
+
   --pink: #cd6363;
   --neon-pink:#ef85d7;
   --neon-purple: #e190fa;
-  --green: #62d465;
 
 
-  /* animations */
-  --typewriterSpeed: 3s; 
+
+
+}
+
+body {
+  background-color: #030303;
 }
 
 
-.bg-white {
+
+.bg-1 { /* | skills | experience | contact | */
   /* background: rgb(8,7,7);
   background: radial-gradient(circle, rgba(8,7,7,1) 0%, rgba(13,22,35,1) 50%, rgba(8,7,7,1) 100%); */
+/*   
   background: rgb(0,8,34);
-  background: radial-gradient(circle, rgb(0, 18, 37) 0%, rgb(0, 28, 57) 0%, rgba(0, 18, 37) 100%); 
- 
+  background: radial-gradient(circle, rgb(0, 18, 37) 0%, rgb(0, 28, 57) 0%, rgba(0, 18, 37) 100%);
 
+     */
+     /* background: rgb(0,8,34);
+     background: radial-gradient(circle, rgba(0,8,34,1) 0%, rgba(29,20,39,1) 0%, rgba(0,8,34,1) 100%); */
+/* 
+     background: rgb(8,69,74);
+     background: radial-gradient(circle, rgba(8,69,74,1) 0%, rgba(23,87,105,1) 0%, rgba(8,69,74,1) 100%);
+    } */
+    /* background-color: #0f2034; */
 
-}
-
-.bg-primary {
+    background: rgb(7,7,7);
+background: radial-gradient(circle, rgba(7,7,7,1) 0%, rgba(15,32,52,1) 0%, rgba(7,7,7,1) 100%);
+  }
+.bg-2 { /* | work | about | */
   /* background-color: var(--primary-light); */
 
-  background: rgb(0,8,34);
-  background: radial-gradient(circle, rgba(0,8,34,1) 0%, rgba(0,19,44,1) 0%, rgba(0,8,34,1) 100%);
+  /* background: rgb(0,8,34);
+  background: radial-gradient(circle, rgba(0,8,34,1) 0%, rgba(0,19,44,1) 0%, rgba(0,8,34,1) 100%); */
+
+  /* background-color: #100116; */
+
+
+  background: rgb(7,7,7);
+  background: radial-gradient(circle, rgba(7,7,7,1) 0%, rgba(15,32,52,1) 0%, rgba(7,7,7,1) 100%);
 }
 
 /* targeting all elements */
@@ -148,6 +197,8 @@ html {
   scroll-snap-type: y mandatory;
 }
 
+
+
 ul, li {
   list-style: none;
 }
@@ -164,3 +215,8 @@ p,
 div {
   font-family: var(--font-base)
 }
+
+*:focus {
+  outline: none;
+}
+

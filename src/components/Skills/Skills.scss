@@ -5,6 +5,8 @@
     align-items: center;
     justify-content: center;
 
+    
+
 }
 
 .skills-container {
@@ -40,21 +42,32 @@
     text-align: center;
     margin: 1rem;
     transition: all 0.3s ease-in-out;
+   
   
     div {
       width: 90px;
       height: 90px;
       border-radius: 50%;
-      background-color: #fef4f5;
+      
+      
+     
+  
   
       img {
         width: 50%;
         height: 50%;
+
+
       }
+
+      
+        
+
   
-      &:hover {
-        box-shadow: 0 0 25px #fef4f5;
-      }
+    //   &:hover {
+    //           box-shadow: 0 0 5px rgb(9, 59, 113);
+
+    //   }
   
       @media screen and (min-width: 2000px) {
         width: 150px;
@@ -158,7 +171,7 @@
 }
 
 #javascript-icon:hover {
-    p { color: black; }
+    p { color: #f2cd6f; }
     img { content: url('./../../assets/icons/icons_skills/javascript_color.svg') }
 }
 

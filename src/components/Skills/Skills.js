@@ -4,7 +4,9 @@ import { skills } from './../../api_data/api_skills'
 import { AppContainer, MotionContainer } from '../../containers'
 import { useState, useRef, useEffect, useContext} from "react"; 
 import { CurrentContext } from '../../contexts/CurrentContext'
+import { colors } from '../../assets/colors/colors';
 import './Skills.scss'
+
 // import { urlFor, client } from './../../api'
 
 
@@ -26,8 +28,8 @@ const Skills = () => {
     );
     if (isIntersecting) {
       active.current = 'about'
-      navDots.forEach(dot => dot.style.backgroundColor = '#cbcbcb');
-      dot.style.backgroundColor = '#916265';
+      navDots.forEach(dot => dot.style.backgroundColor = colors.navDotInactive);
+      dot.style.backgroundColor = colors.navDotActive;
 
 
     }
@@ -72,7 +74,7 @@ const Skills = () => {
               id={skill.id}
               key={`skill-${skill.name}`}
             >
-              <div className="flex" style={{ backgroundColor: skill.bgColor }}>
+              <div className="flex" style={{ backgroundColor: colors.skillBg }}>
                 <img src={skill.icon} alt={skill.name} />
               </div>
               <p className="p-text">{skill.name}</p>
@@ -83,6 +85,7 @@ const Skills = () => {
 
       </div>
       
+      
     </div>
   )
 }
@@ -90,5 +93,5 @@ const Skills = () => {
 export default AppContainer(
   MotionContainer(Skills, 'skills'),
    'skills',
-   'bg-white'
+   'bg-1'
 )

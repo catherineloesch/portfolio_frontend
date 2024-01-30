@@ -1,9 +1,11 @@
 
 .app {
-  background-color: var(--offwhite);
+  background-color: black;
   font-family: var(--font-base);
  
 }
+
+
 
 .app-cont {
   min-height: 100vh;
@@ -38,7 +40,7 @@
   font-size: 2.75rem;
   font-weight: 800;
   text-align: center;
-  color: var(--primary-dark);
+  color: var(--primary);
   text-transform: capitalize;
 
   span {
@@ -60,7 +62,7 @@
   font-size: 2.2rem;
   font-weight: 800;
   text-align: center;
-  color: var(--green);
+  color: #6bda6b;
   @media screen and (max-width: 550px) {
     font-size: 2rem;
   }
@@ -108,12 +110,12 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #cbcbcb;
+    background-color: var(--gray-a);
     margin: 0.5rem;
     transition: background-color 0.2s ease-in-out;
 
     &:hover {
-      background-color: var(--secondary)!important;
+      background-color: var(--primary)!important;
     }
 
     @media screen and (min-width: 2000px) {
@@ -123,7 +125,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
   .nav-dots,
   .contact-icons {
     display: none;

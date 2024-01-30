@@ -4,6 +4,7 @@ import { experience } from './../../api_data/api_experience'
 import { AppContainer, MotionContainer } from '../../containers'
 import { useState, useRef, useEffect, useContext} from "react"; 
 import { CurrentContext } from '../../contexts/CurrentContext'
+import { colors } from '../../assets/colors/colors';
 import './Experience.scss'
 
 
@@ -25,8 +26,8 @@ const Experience = () => {
     );
     if (isIntersecting) {
       active.current = 'about'
-      navDots.forEach(dot => dot.style.backgroundColor = '#cbcbcb');
-      dot.style.backgroundColor = '#916265';
+      navDots.forEach(dot => dot.style.backgroundColor = colors.navDotInactive);
+      dot.style.backgroundColor = colors.navDotActive;
 
 
     }
@@ -89,5 +90,5 @@ const Experience = () => {
 export default AppContainer(
   MotionContainer(Experience, 'experience'),
    'experience',
-   'bg-white'
+   'bg-1'
 )

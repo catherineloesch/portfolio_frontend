@@ -1,13 +1,48 @@
 import React from 'react'
 import { useState, useRef, useEffect, useContext} from "react"; 
 import { CurrentContext } from '../../contexts/CurrentContext'
+import { motion } from 'framer-motion';
+import emailjs from '@emailjs/browser';
+
 import { AppContainer, MotionContainer } from '../../containers'
 import { socialIcons } from './../../assets/icons/icons_social'
 import { BsGithub, BsLinkedin } from'react-icons/bs'
 import { MdEmail } from'react-icons/md'
 import { FaPaperPlane } from "react-icons/fa";
+import { colors } from '../../assets/colors/colors';
+
+
+
 import './Footer.scss'
-import emailjs from '@emailjs/browser';
+
+const txtVariants = {
+  initial: {
+    x: -500,
+    opacity: 0,
+  }, animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 1,
+      staggerChildren: 0.1,
+    },
+  },
+
+};
+
+// const slideTxtVariants = {
+//   initial: {
+//     x: 0,
+//   }, animate: {
+//     x:"220%",
+//     transition: {
+//       repeat: Infinity,
+//       repeatType: "mirror",
+//       duration: 5,
+//     },
+//   },
+
+// };
 
 
 const Footer = () => {
@@ -24,6 +59,17 @@ const Footer = () => {
     name: '',
     email: '',
     message: ''
+  }
+
+  function onMouseOverCaptureHandler(e) {
+    console.log(e.pageX, e.pageY)
+    console.log(e.target.offsetLeft)
+
+    const x = e.pageX - e.target.offsetLeft;
+    const y = e.pageY - e.target.offsetTop;
+
+    e.target.style.setProperty('--x', x + 'px');
+    e.target.style.setProperty('--y', y + 'px');
   }
 
 
@@ -48,8 +94,8 @@ const Footer = () => {
     );
     if (isIntersecting) {
       active.current = 'about'
-      navDots.forEach(dot => dot.style.backgroundColor = '#cbcbcb');
-      dot.style.backgroundColor = '#916265';
+      navDots.forEach(dot => dot.style.backgroundColor = colors.navDotInactive);
+      dot.style.backgroundColor = colors.navDotActive;
 
 
     }
@@ -83,10 +129,10 @@ const Footer = () => {
 
   return (
     <>
-      <h2 className='h-text section-heading'>Contact</h2>
-      <p className='p-text flex'>Want to leave some feedback for me?<img src={socialIcons.feedback2} alt='feedback'/></p> 
-      <p className='p-text flex'> Or just have a chat? <img src={socialIcons.coffee5} alt='coffee'/> </p>
-      <p className='p-text flex'>Leave me a message and I'll be in touch!</p>
+      <motion.h2 className='h-text section-heading' variants={txtVariants} initial="initial" animate="animate">Contact</motion.h2>
+      <motion.p className='p-text flex'  variants={txtVariants} initial="initial" animate="animate">Want to leave some feedback for me?<img src={socialIcons.feedback2} alt='feedback'/></motion.p> 
+      <motion.p className='p-text flex'  variants={txtVariants} initial="initial" animate="animate"> Or just have a chat? <img src={socialIcons.coffee5} alt='coffee'/> </motion.p>
+      <motion.p className='p-text flex'  variants={txtVariants} initial="initial" animate="animate">Leave me a message and I'll be in touch!</motion.p>
 
       <div className='footer-socials nav-section' ref={ref} >
 
@@ -107,6 +153,9 @@ const Footer = () => {
               <BsLinkedin />
             </a>
         </div>
+       {/* <motion.div className='sliding-txt-container' variants={slideTxtVariants} initial="initial" animate="animate">
+          Sliding text ???
+        </motion.div> */}
 
       </div>
 
@@ -133,9 +182,11 @@ const Footer = () => {
               />
             </div>
 
-            <button type='submit' className='p-text'> 
-              {!loading ? 'Send Message' : 'Sending...'}
-              <FaPaperPlane />
+            <button type='submit' className='btn' id='btn-submit-contact-form' onMouseOverCapture={onMouseOverCaptureHandler}> 
+              <span>
+                {!loading ? 'Send Message' : 'Sending...'}
+                <FaPaperPlane />
+              </span>
             </button>
 
           </form>
@@ -146,6 +197,7 @@ const Footer = () => {
           </h3>
         </div>
     )}
+    
     </>
   )
 }
@@ -153,5 +205,5 @@ const Footer = () => {
 export default AppContainer(
   MotionContainer(Footer, 'footer'),
   'contact',
-  'bg-white'
+  'bg-1'
 )

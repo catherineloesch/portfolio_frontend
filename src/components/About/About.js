@@ -3,11 +3,12 @@ import { motion } from 'framer-motion'
 import { AppContainer, MotionContainer } from '../../containers'
 import { intros, abouts } from './../../api_data/api_about'
 import { aboutImages } from '../../assets/images/about'
-import './About.scss'
 import { useState, useRef, useEffect} from "react"; 
 import { CurrentContext } from '../../contexts/CurrentContext'
+import { colors } from '../../assets/colors/colors'
 
 // import { urlFor, client } from './../../api'
+import './About.scss'
 
 
 const About = () => {
@@ -29,8 +30,8 @@ const About = () => {
     );
     if (isIntersecting) {
       active.current = 'about'
-      navDots.forEach(dot => dot.style.backgroundColor = '#cbcbcb');
-      dot.style.backgroundColor = '#916265';
+      navDots.forEach(dot => dot.style.backgroundColor = colors.navDotInactive);
+      dot.style.backgroundColor = colors.navDotActive;
 
     }
 
@@ -91,5 +92,5 @@ const About = () => {
 export default AppContainer(
   MotionContainer(About, 'about'),
    'about',
-   'bg-primary'
+   'bg-2'
 )

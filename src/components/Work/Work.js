@@ -6,8 +6,11 @@ import { motion } from 'framer-motion'
 import { works } from './../../api_data/api_projects'
 import { AppContainer, MotionContainer } from '../../containers'
 import { BsEyeFill } from'react-icons/bs'
-import './Work.scss'
 import WorkModal from './WorkModal'
+import { colors } from '../../assets/colors/colors'
+
+import './Work.scss'
+
 
 // import {ViewportChecker} from '../ViewPortChecker/ViewPortChecker'
 // import { urlFor, client } from './../../api'
@@ -39,8 +42,8 @@ const Work = () => {
     );
     if (isIntersecting) {
       active.current = 'work'
-      navDots.forEach(dot => dot.style.backgroundColor = '#cbcbcb');
-      dot.style.backgroundColor = '#916265';
+      navDots.forEach(dot => dot.style.backgroundColor = colors.navDotInactive);
+      dot.style.backgroundColor = colors.navDotActive;
       // navAnchors.forEach(dot => dot.style.color = '#f4eae9');
       // anchor.style.color = '#8ee4ef';
     }
@@ -136,5 +139,5 @@ const Work = () => {
 export default AppContainer(
   MotionContainer(Work, 'work'),
    'work',
-   'bg-primary'
+   'bg-2'
 )

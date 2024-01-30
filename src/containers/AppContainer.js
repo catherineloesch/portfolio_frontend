@@ -6,9 +6,9 @@ import React from 'react'
 const AppContainer = (Component, idName, classNames) => function HOC() {
   return (
     <div id={idName} className={`app-cont ${classNames}`}>
-      {/*  <ContactIcons />*/}
 
         <div className='app-wrapper flex'>
+        
             <Component />
         </div>
 

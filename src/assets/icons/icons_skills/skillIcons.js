@@ -1,3 +1,7 @@
+//icons source:
+    // https://icon-sets.iconify.design/
+    // https://fontawesome.com/icons
+
 import babel_primary from './babel_primary.svg'
 import bootstrap_primary from './bootstrap_primary.svg'
 import css_primary from './css_primary.svg'
