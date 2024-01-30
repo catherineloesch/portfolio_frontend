@@ -62,7 +62,7 @@
   font-size: 2.2rem;
   font-weight: 800;
   text-align: center;
-  color: #6bda6b;
+  color: var(--primary);
   @media screen and (max-width: 550px) {
     font-size: 2rem;
   }

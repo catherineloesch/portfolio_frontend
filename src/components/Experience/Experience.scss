@@ -46,8 +46,8 @@
  
      p {
        font-weight: 500;
-       font-size: 1.1rem;
-       color: var(--gray);
+       font-size: 1rem;
+       color: var(--grey);
        text-align: right;
      }
  
@@ -144,23 +144,21 @@
         margin-bottom: 1rem;
     
         h3 {
-         font-size: 1.2rem;
-         color: var(--primary-dark)
-         
-         
+         font-size: 1.25rem;
+         color: var(--red)
         }
 
         h4 {
             font-weight: 500;
-            font-size: 1.1rem;
-            color: var(--primary-dark);
+            font-size: 1.25rem;
+            color: var(--red);
         }
     
         p {
-          font-weight: 400;
-          color: var(--gray);
+        //   font-weight: 400;
+          color: var(--grey-light);
           margin-top: 5px;
-          font-size: 0.9rem;
+          font-size: 1.1rem;
           text-align: justify;
         }
 

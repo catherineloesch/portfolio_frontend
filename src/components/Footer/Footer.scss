@@ -45,6 +45,7 @@
     align-items: center;
     text-align: center;
     justify-content: center;
+    color: var(--grey);
 
     img { //coffee mug + speech bubble icons
         width: 30px;
@@ -107,13 +108,12 @@
 
         width: 60px;
         height: 60px;
-        border: 1px solid var(--lightGray);
+        // border: 1px solid var(--grey-light);
 
         svg {
             width: 35px;
             height: 35px;
-            color: grey;
-            // color: rgba(255, 255, 255, 0.7);
+            color: var(--secondary);
             transition: all 0.3s ease-in-out;
         }
 
@@ -121,7 +121,7 @@
             // box-shadow: 0 0 25px #fef4f5;
 
             svg {
-                color: var(--primary);
+                color: var(--red);
                 transform: scale(1.05);
             }
         }
@@ -144,7 +144,6 @@
     @media screen and (max-width: 900px) {
         width: 40%;
     }
-
     @media screen and (max-width: 620px) {
         width: 60%;
     }
@@ -174,19 +173,24 @@
             padding: 0.7rem;
             border: none;
             border-radius: 7px;
-            background-color: rgba(145, 228, 255, 0.1);
+            background-color: var(--navy-light);
             color: var(--white);
             outline: none;
             font-size: 1rem;
             border: 2px solid rgba(255, 255, 255, 0.117);
 
-            &:hover, &:focus {
-                border: 2px solid grey;
+            &:hover {
+                border: 2px solid var(--grey);
+                // outline: none;
+            }
+
+            &:focus {
+                border: 2px solid var(--secondary);
                 // outline: none;
             }
 
             &::placeholder {
-                color:grey;
+                color:var(--grey);
             }
 
         }
@@ -200,7 +204,7 @@
     .btn {
         position: relative;
         overflow: hidden;
-        background-color: #0c1624;
+        background-color: var(--navy-dark);
         color: var(--primary);
         border: 1px solid var(--primary);
         box-shadow: 0 0 2px  #62d465;
@@ -219,7 +223,7 @@
         }
 
         &:hover {
-            color: #0c1624;
+            color: var(--navy-dark);
             transition: 0.3s;
         }
       
@@ -285,15 +289,15 @@
 }
 
 
-.sliding-txt-container {
-    position: absolute;
-    width: 100%;
-    font-size: 2rem;
-    color: var(--pink);
-    white-space: nowrap;
-    bottom: 0;
-    left:0;
-    width: 50%;
-    font-weight: bold;
+// .sliding-txt-container {
+//     position: absolute;
+//     width: 100%;
+//     font-size: 2rem;
+//     color: var(--pink);
+//     white-space: nowrap;
+//     bottom: 0;
+//     left:0;
+//     width: 50%;
+//     font-weight: bold;
 
-}
+// }

@@ -101,6 +101,8 @@
    
 
             .header-name {
+                font-family: var(--font-editorial);  
+
                 position: relative;
                 text-align: center;
                 color: var(--yellow);
@@ -116,6 +118,8 @@
                 position: absolute;
                 top: 0;
                 left: 0;
+                font-family: var(--font-editorial);  
+
                }
 
                span:first-child {

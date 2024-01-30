@@ -4,9 +4,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    
-
 }
 
 .skills-container {
@@ -28,7 +25,6 @@
     justify-content: flex-start;
     align-items: flex-start;
   
-  
     @media screen and (max-width: 900px) {
       margin-right: 0;
       justify-content: center;
@@ -42,56 +38,40 @@
     text-align: center;
     margin: 1rem;
     transition: all 0.3s ease-in-out;
-   
   
     div {
+
       width: 90px;
       height: 90px;
       border-radius: 50%;
-      
-      
-     
-  
   
       img {
         width: 50%;
         height: 50%;
-
-
       }
-
-      
+  
+        //   &:hover {
+        //           box-shadow: 0 0 5px rgb(9, 59, 113);
+        //   }
+        @media screen and (min-width: 2000px) {
+            margin: 1rem 2rem;
         
-
-  
-    //   &:hover {
-    //           box-shadow: 0 0 5px rgb(9, 59, 113);
-
-    //   }
-  
-      @media screen and (min-width: 2000px) {
-        width: 150px;
-        height: 150px;
-      }
-  
-      @media screen and (max-width: 450px) {
-        width: 70px;
-        height: 70px;
-      }
+        }
+        @media screen and (min-width: 2000px) {
+            width: 150px;
+            height: 150px;
+        }
+        @media screen and (max-width: 450px) {
+            width: 70px;
+            height: 70px;
+        }
     }
-
-  p {
-    font-weight: 500;
-    margin-top: 0.5rem;
-  }
-
-  @media screen and (min-width: 2000px) {
-    margin: 1rem 2rem;
 
     p {
-      margin-top: 1rem;
+        font-size: 0.95rem;
+        margin-top: 0.5rem;
+        color: var(--grey);
     }
-  }
 }
 
 
@@ -156,12 +136,12 @@
 }
 
 #github-icon:hover {
-    p { color: #4C2777}
+    p { color: #8c3ae9}
     img { content: url('./../../assets/icons/icons_skills/github_color.svg') }  
 }
 
 #heroku-icon:hover {
-    p { color: #430098; }
+    p { color: #6600eb; }
     img { content: url('./../../assets/icons/icons_skills/heroku_color.svg') }  
 }
 
@@ -206,7 +186,7 @@
 }
 
 #openai-icon:hover {
-    p { color: black; }
+    p { color: var(--grey-light); }
     img { content: url('./../../assets/icons/icons_skills/openai_color.svg') }  
 }
 
@@ -241,7 +221,7 @@
 }
 
 #ruby-icon:hover {
-    p { color: #cf6b9e; }
+    p { color: #cd0000; }
     img { content: url('./../../assets/icons/icons_skills/ruby_color.svg') }  
 }
 

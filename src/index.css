@@ -1,187 +1,110 @@
+/* font imports (.woff files in ./assets/fonts ) */
+/* --font-main */
+@font-face {/* https://en.bestfonts.pro/font/futura-pt */
+  font-family: 'Futura PT';
+  src: url('./assets/fonts/futura-pt/futura-pt-book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
-/* font imports */
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
-/* @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap'); */
+@font-face {/* https://en.bestfonts.pro/font/futura-pt */
+  font-family: 'Futura PT';
+  src: url('./assets/fonts/futura-pt/futura-pt-demi.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
 
-/* 
-@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap'); */
-
-/* @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-
+/* --font-editorial */
 @font-face {
   font-family: 'Nulshock';
   src: url('./assets/fonts/nulshock.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
+
+/* font-nav */
 @font-face {
   font-family: 'Good Times';
   src: url('./assets/fonts/goodtimes-light.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Good Times';
   src: url('./assets/fonts/goodtimes-regular.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
-/* @font-face {
-  font-family: 'Terminator';
-  src: url('./assets/fonts/terminator.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Electromagnetic Lungs';
-  src: url('./assets/fonts/electromagnetic-lungs.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-} */
-/* @font-face {
-  font-family: 'conthrax';
-  src: url('./assets/fonts/conthrax-semi-bold-regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Electromagnetic Lungs';
-  src: url('./assets/fonts/Venera\ 500.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-} */
+
+/* --font-typewriter */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 
 :root {
 
-  --font-base: 'DM Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  /* font variables */
+  --font-main: 'Futura PT','Futura', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   --font-nav: 'Good Times', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   --font-editorial: 'Nulshock','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   --font-typewriter: 'VT323', monospace;
   --typewriterSpeed: 3s; 
 
-  --green: #62d465;
+  --primary: rgb(98, 212, 101);
+  --secondary: rgb(102, 224, 226);
+  /* --secondary: rgb(19, 37, 57);
+  --secondary-dark: rgb(75, 132, 168); */
+
+  --white: rgb(255, 255, 255);
+  --black: rgb(0, 0, 0);
+
+  --green: rgb(98, 212, 101);
   --green-a: rgba(160, 255, 148, 0.7);
 
-  /* --primary: #62d465; */
-  --primary: #6bda6b;
-  --secondary: #66e0e2;
-  --secondary: rgb(19, 37, 57);
-  --secondary-dark: rgb(75, 132, 168);
-  /* --secondary: #313bac; */
-  --yellow: #fef071;
-  --orange: #e68333;
+  --yellow: hsl(54, 99%, 72%);
+  --yellow-a: rgba(254, 240, 113, 0.55);
 
-  --lightblue: #8ee4ef;
-  --neon-blue: #66e0e2;
-  --neon-blue-2: #90f3fb;
+  --red: rgb(237, 74, 90);
+  /* --red: #e34b24; */
 
-  --grey-a: #80808080;
-  --grey-a: rgba(128, 128, 128, 0.7);
+  --grey: rgb(107, 118, 136);
+  --grey-a: rgba(108, 119, 137, 0.55);
+  --grey-light: rgb(228, 228, 228);
 
+  --navy-dark: rgb(2, 11, 22);
+  --navy-light: rgb(6, 33, 66);
 
-
-/* ------------------------------------------------------------------------------------------------------------------------- */
-
-
-
-
-  /* font variables */
-  /* --font-nav: 'Bruno Ace SC', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
-   /* --font-nav: 'Electromagnetic Lungs', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
-   /* --font-nav: 'venera','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
-   /* --font-nav: 'Good Times','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
-
-  /* color variables */
-  --offwhite: #edf2f8;
-  --primary-light: #f4eae9;
-  --primary-dark: #916265;
-  --primary-deep: #682a2e;
-  --primary-dark-a:rgba(104, 42, 46, 0.85);
-
-  --secondary-a: rgba(48, 58, 171, 0.816);
-  --secondary-dark: #4C2777;
-
-  /* --primary: #edf2f8; */
-
-  /* --secondary: #502470; */
-  --black: #030303;
-  --light-gray: #e4e4e4;
-  --gray: #6b7688;
-  --gray-a: rgba(108, 119, 137, 0.55);
-  --brown: #46364a;
-  --white: #ffffff;
-
-  --darkgreen-a: rgba(9, 59, 36, 0.794);
-
-
-  /* bg */
-
-
-  --bg-1: rgb(8, 7, 7);
-  --bg-1-light: rgb(32, 27, 29);
-
-
-  --bg-2: rgb(1, 7, 5);
-  --bg-3: #211e44;
-  /* neon */
-
-  --pink: #cd6363;
-  --neon-pink:#ef85d7;
-  --neon-purple: #e190fa;
-
-
-
+  --navDotAcive: rgba(160, 255, 148, 0.7);
+  --navDotInactive: rgba(128, 128, 128, 0.5);
+  --homeDotActive: rgba(254, 240, 113, 0.55);
+  --skillBg: rgb(6, 33, 66);
 
 }
 
 body {
-  background-color: #030303;
+  background-color: var(--black);
 }
 
-
-
+/* section backgrounds */
 .bg-1 { /* | skills | experience | contact | */
-  /* background: rgb(8,7,7);
-  background: radial-gradient(circle, rgba(8,7,7,1) 0%, rgba(13,22,35,1) 50%, rgba(8,7,7,1) 100%); */
-/*   
-  background: rgb(0,8,34);
-  background: radial-gradient(circle, rgb(0, 18, 37) 0%, rgb(0, 28, 57) 0%, rgba(0, 18, 37) 100%);
-
-     */
-     /* background: rgb(0,8,34);
-     background: radial-gradient(circle, rgba(0,8,34,1) 0%, rgba(29,20,39,1) 0%, rgba(0,8,34,1) 100%); */
-/* 
-     background: rgb(8,69,74);
-     background: radial-gradient(circle, rgba(8,69,74,1) 0%, rgba(23,87,105,1) 0%, rgba(8,69,74,1) 100%);
-    } */
-    /* background-color: #0f2034; */
-
-    background: rgb(7,7,7);
-background: radial-gradient(circle, rgba(7,7,7,1) 0%, rgba(15,32,52,1) 0%, rgba(7,7,7,1) 100%);
-  }
-.bg-2 { /* | work | about | */
-  /* background-color: var(--primary-light); */
-
-  /* background: rgb(0,8,34);
-  background: radial-gradient(circle, rgba(0,8,34,1) 0%, rgba(0,19,44,1) 0%, rgba(0,8,34,1) 100%); */
-
-  /* background-color: #100116; */
-
-
-  background: rgb(7,7,7);
-  background: radial-gradient(circle, rgba(7,7,7,1) 0%, rgba(15,32,52,1) 0%, rgba(7,7,7,1) 100%);
+  background-color: var(--navy-dark);
 }
 
-/* targeting all elements */
+.bg-2 { /* | work | about | */
+  background-color: var(--navy-light);
+}
 
+
+/* type selectors */
 *, *::before, *::after{
   box-sizing: border-box;
   padding: 0;
-  margin: 0;
-  
+  margin: 0; 
+  font-family: var(--font-main)
+}
+
+*:focus {
+  outline: none;
 }
 
 *::selection {
@@ -191,13 +114,10 @@ background: radial-gradient(circle, rgba(7,7,7,1) 0%, rgba(15,32,52,1) 0%, rgba(
   background: var(--primary-light);
 }
 
-
 html {
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
 }
-
-
 
 ul, li {
   list-style: none;
@@ -207,16 +127,10 @@ a {
   text-decoration: none;
 }
 
-input,
-textarea,
-button,
-a,
-p,
-div {
-  font-family: var(--font-base)
+input, textarea, button, a, p, div {
+  font-family: var(--font-main)
 }
 
-*:focus {
-  outline: none;
+textarea {
+  resize: none;
 }
-
