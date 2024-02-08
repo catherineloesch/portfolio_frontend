@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion'
 import { AiFillGithub } from 'react-icons/ai'
 import { HiX, HiLink } from 'react-icons/hi';
+import { colors } from './../../assets/colors/colors'
 
 export default function WorkModal({ modal, setModal}) {
     const backdrop = {
@@ -93,7 +94,7 @@ export default function WorkModal({ modal, setModal}) {
                     id={skill.id}
                     key={`skill-${skill.name}`}
                 >
-                    <div className="flex" style={{ backgroundColor: skill.bgColor }}>
+                    <div className="flex" style={{ backgroundColor: colors.skillBgModal }}>
                     <img src={skill.icon} alt={skill.name} />
                     </div>
                     <p className="p-text">{skill.name}</p>

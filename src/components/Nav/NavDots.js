@@ -5,9 +5,12 @@ import React from 'react'
 
 
 const NavDots = () => {
+  console.log('..............')
+  console.log(navItems.navDots)
   return (
+
     <div className='nav-dots'>
-        { navItems.map((item, index) => (
+        { navItems.navDots.map((item, index) => (
           <a
             href={`#${item}`}
             id={`${item}-dot`}

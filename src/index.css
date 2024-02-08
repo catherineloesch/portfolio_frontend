@@ -1,15 +1,15 @@
 /* font imports (.woff files in ./assets/fonts ) */
 /* --font-main */
-@font-face {/* https://en.bestfonts.pro/font/futura-pt */
-  font-family: 'Futura PT';
-  src: url('./assets/fonts/futura-pt/futura-pt-book.woff') format('woff');
+@font-face {/* https://github.com/jandre3000/j4n-co/tree/master/assets/fonts */
+  font-family: 'Sofia Pro';
+  src: url('./assets/fonts/j4n-co-fonts/sofia-pro/Sofia\ Pro\ Light.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
-@font-face {/* https://en.bestfonts.pro/font/futura-pt */
-  font-family: 'Futura PT';
-  src: url('./assets/fonts/futura-pt/futura-pt-demi.woff') format('woff');
+@font-face {/* https://github.com/jandre3000/j4n-co/tree/master/assets/fonts */
+  font-family: 'Sofia Pro';
+  src: url('./assets/fonts/j4n-co-fonts/sofia-pro/Sofia\ Pro\ Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
@@ -44,40 +44,44 @@
 :root {
 
   /* font variables */
-  --font-main: 'Futura PT','Futura', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  --font-main: 'Sofia Pro', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   --font-nav: 'Good Times', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   --font-editorial: 'Nulshock','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   --font-typewriter: 'VT323', monospace;
   --typewriterSpeed: 3s; 
 
-  --primary: rgb(98, 212, 101);
-  --secondary: rgb(102, 224, 226);
-  /* --secondary: rgb(19, 37, 57);
-  --secondary-dark: rgb(75, 132, 168); */
+  /* colour variables */
+  --primary: rgb(114, 245, 134);
+  --primary-a: rgba(114, 245, 134, 0.85);
+  --secondary: rgb(254, 240, 113);
 
-  --white: rgb(255, 255, 255);
-  --black: rgb(0, 0, 0);
+  --bg1: #103a55;
+  --bg2: #082434;
 
-  --green: rgb(98, 212, 101);
-  --green-a: rgba(160, 255, 148, 0.7);
-
-  --yellow: hsl(54, 99%, 72%);
+  --yellow: rgb(254, 240, 113);
   --yellow-a: rgba(254, 240, 113, 0.55);
-
-  --red: rgb(237, 74, 90);
-  /* --red: #e34b24; */
-
-  --grey: rgb(107, 118, 136);
+  
+  --white: #fffefe;
+  --white-a: rgba(255, 255, 255, 0.8);
+  --black: rgb(0, 0, 0);
+  --grey: rgb(159, 169, 184);
   --grey-a: rgba(108, 119, 137, 0.55);
   --grey-light: rgb(228, 228, 228);
-
-  --navy-dark: rgb(2, 11, 22);
-  --navy-light: rgb(6, 33, 66);
 
   --navDotAcive: rgba(160, 255, 148, 0.7);
   --navDotInactive: rgba(128, 128, 128, 0.5);
   --homeDotActive: rgba(254, 240, 113, 0.55);
   --skillBg: rgb(6, 33, 66);
+
+  --hero-section-width: 1366px;
+  --section-title-size: '';
+  --h1-font-size: '';
+  --h2-font-size: '';
+  --p-font-size: '';
+
+  /* --red: rgb(237, 74, 90); */
+  /* --red: rgb(227, 75, 36); */
+  /* --pink: rgb(236, 66, 141); */
 
 }
 
@@ -87,13 +91,12 @@ body {
 
 /* section backgrounds */
 .bg-1 { /* | skills | experience | contact | */
-  background-color: var(--navy-dark);
+  background-color: var(--bg2);
 }
 
 .bg-2 { /* | work | about | */
-  background-color: var(--navy-light);
+  background-color: var(--bg1);
 }
-
 
 /* type selectors */
 *, *::before, *::after{
@@ -133,4 +136,8 @@ input, textarea, button, a, p, div {
 
 textarea {
   resize: none;
+}
+
+button {
+  cursor: pointer;
 }

@@ -8,7 +8,6 @@ const AppContainer = (Component, idName, classNames) => function HOC() {
     <div id={idName} className={`app-cont ${classNames}`}>
 
         <div className='app-wrapper flex'>
-        
             <Component />
         </div>
 

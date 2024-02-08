@@ -7,9 +7,6 @@ import { CurrentContext } from '../../contexts/CurrentContext'
 import { colors } from '../../assets/colors/colors';
 import './Skills.scss'
 
-// import { urlFor, client } from './../../api'
-
-
 const Skills = () => {
   const active = useContext(CurrentContext)
   const [isIntersecting, setIsIntersecting] = useState(false);
@@ -38,26 +35,6 @@ const Skills = () => {
     return () => observer.disconnect();
 
   }, [isIntersecting, active, dot, navDots]);
-
-  // call to sanity backend api
-  // const [experience, setExperience] = useState([])
-  // const [skills, setSkills] = useState([])
-
-  // useEffect(() => {
-  //   const experiencesQuery = '*[_type == "experiences"]'
-  //   const skillsQuery = '*[_type == "skills"]'
-
-  //   client.fetch(experiencesQuery)
-  //   .then((data) => {
-  //     setExperience(data)
-  //   })
-
-  //   client.fetch(skillsQuery)
-  //   .then((data) => {
-  //     setSkills(data)
-  //   })
-
-  // }, [])
 
   
   return (

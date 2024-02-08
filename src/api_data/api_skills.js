@@ -1,182 +1,128 @@
 import { skillIcons } from './../assets/icons/icons_skills'
-
-// var(--primary-light)
-// const bgColor =  "#f4eae9";
-
-const bgColor='grey';
-const iconColor = '#62d465'
+    // sources:
+    // https://fontawesome.com/icons
+    // https://icon-sets.iconify.design/ 
 
 const skills = [
     {
       name: 'HTML',
       icon: skillIcons.html_primary,
-      icon_color: skillIcons.html_color,
-      bgColor: bgColor,
-      id: 'html-icon',
-      color: iconColor 
+      id: 'html-icon'
     },
     {
       name: 'CSS',
       icon: skillIcons.css_primary,
-      bgColor: bgColor,
-      id: 'css-icon',
-      color: iconColor
+      id: 'css-icon'
     },
     {
       name: 'Sass',
       icon: skillIcons.sass_primary,
-      bgColor: bgColor,
-      id:'sass-icon',
-      color: iconColor
+      id:'sass-icon'
     },
     {
       name: 'JavaScript',
       icon: skillIcons.javascript_p,
-      bgColor: bgColor,
-      id: 'javascript-icon',
-      color: iconColor
+      id: 'javascript-icon'
     },
     {
       name: 'Node.js',
       icon: skillIcons.nodejs_primary,
-      bgColor: bgColor,
-      id: 'nodejs-icon',
-      color: iconColor
+      id: 'nodejs-icon'
     },
     {
       name: 'React.js',
       icon: skillIcons.react_primary,
-      bgColor: bgColor,
-      id:'react-icon',
-      color: iconColor
+      id:'react-icon'
     },
     {
       name: 'Redux',
       icon: skillIcons.redux_primary,
-      bgColor: bgColor,
-      id:'redux-icon',
-      color: iconColor
+      id:'redux-icon'
     },
     {
       name: 'express',
       icon: skillIcons.express_primary,
-      bgColor: bgColor,
-      id: 'express-icon',
-      color: iconColor
+      id: 'express-icon'
     },
     {
       name: 'mongoDB',
       icon: skillIcons.mongodb_primary,
-      bgColor: bgColor,
-      id:'mongodb-icon',
-      color: iconColor
+      id:'mongodb-icon'
     },
     {
       name: 'mongoose',
       icon: skillIcons.mongoose_primary,
-      bgColor: bgColor,
-      id:'mongoose-icon',
-      color: iconColor
+      id:'mongoose-icon'
     },
     {
       name: 'Ruby',
       icon: skillIcons.ruby_primary,
-      bgColor: bgColor,
-      id: 'ruby-icon',
-      color: iconColor
+      id: 'ruby-icon'
     },
     {
       name: 'Ruby on Rails',
       icon: skillIcons.rails_primary,
-      bgColor: bgColor,
-      id: 'rails-icon',
-      color: iconColor
+      id: 'rails-icon'
     },
     {
       name: 'PostgreSQL',
       icon: skillIcons.postgresql_primary,
-      bgColor: bgColor,
-      id: 'postgresql-icon',
-      color: iconColor
+      id: 'postgresql-icon'
     },
     {
       name: 'Tailwind CSS',
       icon: skillIcons.tailwind_primary,
-      bgColor: bgColor,
-      id: 'tailwind-icon',
-      color: iconColor
-
+      id: 'tailwind-icon'
     },
     {
       name: 'Bootstrap',
       icon: skillIcons.bootstrap_primary,
-      bgColor: bgColor,
-      id: 'bootstrap-icon',
-      color: iconColor
+      id: 'bootstrap-icon'
     },
     {
       name: 'Postman API',
       icon: skillIcons.postman_primary,
-      bgColor: bgColor,
-      id: 'postman-icon',
-      color: iconColor
+      id: 'postman-icon'
     },
     {
       name: 'Vite',
       icon: skillIcons.vite_primary,
-      bgColor: bgColor,
-      id: 'vite-icon',
-      color: iconColor
+      id: 'vite-icon'
     },
     {
       name: 'OpenAI',
       icon: skillIcons.openai_primary,
-      bgColor: bgColor,
-      id: 'openai-icon',
-      color: iconColor
+      id: 'openai-icon'
     },
     {
       name: 'Heroku',
       icon: skillIcons.heroku_primary,
-      bgColor: bgColor,
-      id: 'heroku-icon',
-      color: iconColor
+      id: 'heroku-icon'
     },
     {
       name: 'netlify',
       icon: skillIcons.netlify_primary,
-      bgColor: bgColor,
-      id: 'netlify-icon',
-      color: iconColor
+      id: 'netlify-icon'
     },
     {
-      name: 'Firbase',
+      name: 'Firebase',
       icon: skillIcons.firebase_primary,
-      bgColor: bgColor,
-      id: 'firebase-icon',
-      color: iconColor
-
-    }, {
+      id: 'firebase-icon'
+    },
+    {
       name: 'Cloud Firestore',
       icon: skillIcons.firestore_primary,
-      bgColor: bgColor,
-      id: 'firestore-icon',
-      color: iconColor
-
+      id: 'firestore-icon'
     },
     {
       name: 'git',
       icon: skillIcons.git_primary,
-      bgColor: bgColor,
-      id: 'git-icon',
-      color: iconColor
+      id: 'git-icon'
     },
     {
       name: 'GitHub',
       icon: skillIcons.github_primary,
-      bgColor: bgColor,
-      id: 'github-icon',
-      color: iconColor
+      id: 'github-icon'
     }
   ]
 

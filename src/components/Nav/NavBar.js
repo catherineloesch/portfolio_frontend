@@ -8,6 +8,9 @@ import './NavBar.scss'
 
 
 const NavBar = () => {
+
+  console.log('barrrrrrr')
+  console.log(navItems.navBar)
   
   return (
     <motion.nav className='navbar'
@@ -17,7 +20,7 @@ const NavBar = () => {
     >
 
       <ul className='nav-links'>
-        {navItems.map(item => (
+        {navItems.navBar.map(item => (
           <li key={`nav-${item}`} className='flex p-text'>
             
             <a href={`#${item}`} className='nav-anchor' id={`${item}-a`}>{item}</a>

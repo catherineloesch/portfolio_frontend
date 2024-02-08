@@ -12,9 +12,6 @@ import { colors } from '../../assets/colors/colors'
 import './Work.scss'
 
 
-// import {ViewportChecker} from '../ViewPortChecker/ViewPortChecker'
-// import { urlFor, client } from './../../api'
-
 const Work = () => {
 
   const [activeFilter, setActiveFilter] = useState('All')
@@ -66,18 +63,6 @@ const Work = () => {
         }, 500)
   }
 
-  // const [works, setWorks] = useState([])
-
-  // useEffect(() => {
-  //   const query = '*[_type == "works"]'
-
-  //   client.fetch(query)
-  //   .then((data) => {
-  //     setWorks(data)
-  //     setFilterWork(data)
-  //   })
-  // }
-  // , [])
 
   return (
     <div className='works nav-section' ref={ref}>

@@ -2,10 +2,7 @@
 .app {
   background-color: black;
   font-family: var(--font-base);
- 
 }
-
-
 
 .app-cont {
   min-height: 100vh;
@@ -22,8 +19,19 @@
   flex: 1;
   width: 100%;
   flex-direction: column;
-  padding: 4rem 2rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  // padding: 4rem 2rem;
 
+
+  @media screen and (min-width: 1500px) {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+  }
 
   @media screen and (max-width: 450px) {
     padding: 4rem 1rem 2rem;
@@ -56,13 +64,12 @@
   }
 }
 
-
 .section-heading {
   font-family: var(--font-nav);
-  font-size: 2.2rem;
-  font-weight: 800;
+  font-size: 2rem;
+  // font-weight: 800;
   text-align: center;
-  color: var(--primary);
+  color: var(--secondary);
   @media screen and (max-width: 550px) {
     font-size: 2rem;
   }
@@ -78,7 +85,6 @@
     font-size: 1.75rem;
   }
 }
-
 
 .bold {
   font-size: 1rem;

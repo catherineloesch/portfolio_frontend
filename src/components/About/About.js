@@ -7,7 +7,6 @@ import { useState, useRef, useEffect} from "react";
 import { CurrentContext } from '../../contexts/CurrentContext'
 import { colors } from '../../assets/colors/colors'
 
-// import { urlFor, client } from './../../api'
 import './About.scss'
 
 
@@ -18,7 +17,6 @@ const About = () => {
   const ref = useRef('about');
   const navDots = document.querySelectorAll('.nav-dot')
   const dot = document.querySelector('#about-dot');
-
 
   useEffect(() => {
    
@@ -36,21 +34,11 @@ const About = () => {
     }
 
     observer.observe(ref.current);
+    console.log('issue?????????', ref.current)
+
     return () => observer.disconnect();
 
   }, [isIntersecting, active, dot, navDots]);
-  
-  // const [abouts, setAbouts] = useState([])
-
-  // useEffect(() => {
-  //   const query = '*[_type == "abouts"]'
-
-  //   client.fetch(query)
-  //   .then((data) => setAbouts(data))
-  //   }, [])
-
-  // const isVisible = useIsVisible(aboutRef);
-  // console.log('about visible?',isVisible)
 
 
   return (
@@ -71,7 +59,7 @@ const About = () => {
         {abouts.map((about, index) => (
           <motion.div
           whileInView={{opacity: 1}}
-          whileHover={{scale: 1.1}}
+          whileHover={{scale: 1}}
           transition={{duration: 0.5, type:'tween'}}
           className='profile-item'
           key={'about-'+index}

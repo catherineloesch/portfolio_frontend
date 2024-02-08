@@ -1,6 +1,5 @@
 import React from 'react'
 import { motion } from 'framer-motion';
-
 import { navItems } from './navItems';
 import './NavMobile.scss'
 
@@ -32,7 +31,7 @@ const NavMobileLinks = () => {
 
   return (
     <div className='mobile-nav-links' variants={variants}>
-                {navItems.map(item => (
+                {navItems.navBar.map(item => (
                     <motion.a key={`nav-mobile-${item}`} href={`#${item}`} variants={itemvVariants} whileHover={{scale: 1.1}} whileTap={{scale: 0.95}}>
                         {item}
                     </motion.a>

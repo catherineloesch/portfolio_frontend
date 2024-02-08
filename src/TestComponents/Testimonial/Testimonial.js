@@ -1,33 +1,15 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import { HiChevronLeft, HiChevronRight } from'react-icons/hi'
-import { AppContainer, MotionContainer } from '../../containers'
-import { testimonials, brands } from './../../api_data/api_testimonials'
+import { AppContainer, MotionContainer } from '../../../containers'
+import { testimonials, brands } from '../../../api_data/api_testimonials'
 
 import './Testimonial.scss'
 
 const Testimonial = () => {
 
-  // const [testimonials, setTestimonials] = useState([])
-  // const [brands, setBrands] = useState([])
   const [currentIndex, setCurrentIndex] = useState(0)
   const handleClick = (index) => setCurrentIndex(index)
-
-  // useEffect(() => {
-  //   const testimonialsQuery = '*[_type == "testimonials"]'
-  //   const brandsQuery = '*[_type == "brands"]'
-
-  //   client.fetch(testimonialsQuery)
-  //   .then((data) => {
-  //     setTestimonials(data)
-  //   })
-
-  //   client.fetch(brandsQuery)
-  //   .then((data) => {
-  //     setBrands(data)
-  //   })
-
-  // }, [])
 
 
 const tm = testimonials[currentIndex]

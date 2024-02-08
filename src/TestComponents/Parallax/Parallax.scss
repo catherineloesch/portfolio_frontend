@@ -1,0 +1,84 @@
+.parallax#parallaxA  {
+    background: linear-gradient(180deg, #111132, #0c0c1d);
+
+    .planets {
+        background-image: url('./../../assets/images/parallex/safak/planets.png');
+    }
+}
+
+.parallax#parallaxB {
+    background: linear-gradient(180deg,#111132, #505064);
+
+    .planets {
+        background-image: url('./../../assets/images/parallex/safak/sun.png');
+    }
+} 
+
+.parallax {
+
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+
+    scroll-snap-type:none;
+    scroll-behavior:auto;
+    scroll-snap-align:unset;
+    overflow-y:scroll;
+
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+
+
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+        h1 {
+            font-size: 100px;
+        }
+    
+        .mountains {
+            background-image: url('./../../assets/images/parallex/safak/mountains.png');
+            background-size: cover;
+            background-position: bottom;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 3;
+    
+        }
+    
+        .planets {
+            background-size: cover;
+            background-position: bottom;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 2;
+    
+        }
+    
+        .stars {
+            background-image: url('./../../assets/images/parallex/safak/stars.png');
+            background-size: cover;
+            background-position: bottom;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 1;
+    
+        }
+    
+       
+    
+
+
+
+
+}
