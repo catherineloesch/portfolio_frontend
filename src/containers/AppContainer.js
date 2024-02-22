@@ -1,6 +1,5 @@
 import React from 'react'
-// import { NavDots } from './../components/Nav'
-// import ContactIcons from './ContactIcons'
+
 
 
 const AppContainer = (Component, idName, classNames) => function HOC() {

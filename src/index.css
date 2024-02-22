@@ -53,15 +53,24 @@
   /* colour variables */
   --primary: rgb(114, 245, 134);
   --primary-a: rgba(114, 245, 134, 0.85);
-  --secondary: rgb(254, 240, 113);
+  /* --secondary: #e84fab; */
+  /* --secondary: #ec56da; */
+  --secondary: #ff5fec;
+  /* --secondary: #ee4f71; */
+  /* --secondary: #c16a2e; */
+  /* --secondary: orange; */
 
-  --bg1: #103a55;
-  --bg2: #082434;
+  --secondary:  rgb(250, 95, 195);
+
+
+  --bg1: rgb(16, 58, 85);
+  --bg2: rgb(8, 36, 52);
 
   --yellow: rgb(254, 240, 113);
   --yellow-a: rgba(254, 240, 113, 0.55);
+  --red: rgb(237, 74, 90);
   
-  --white: #fffefe;
+  --white: rgb(255, 254, 254);
   --white-a: rgba(255, 255, 255, 0.8);
   --black: rgb(0, 0, 0);
   --grey: rgb(159, 169, 184);

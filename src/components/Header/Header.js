@@ -36,7 +36,6 @@ const Header = () => {
   const dot = document.querySelector('#home-dot');
 
 
-
   useEffect(() => {
    
     const observer = new IntersectionObserver(

@@ -71,7 +71,17 @@ const Experience = () => {
                     >
                       <h3 className='bold'>{work.name}</h3>
                       <h4 className='work-company'>{work.company}</h4>
-                      <p className='work-description p-text'>{work.description}</p>
+                      {
+                        <ul>
+                        {work.description.map((descriptionItem, index) => (
+                          <li className='work-description p-text' key={`experience-description-${index}`}>
+                            {descriptionItem}
+                          </li>
+                        ))}
+                        </ul>
+                       
+                      }
+                      
                     </motion.div>
                   </div>
                 ))}

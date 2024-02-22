@@ -4,6 +4,7 @@ import { NavBar, NavDots, NavMobile } from './components/Nav';
 import { CurrentContext } from './contexts/CurrentContext';
 
 import './App.scss'
+
 const App = () => {
 
   const active = useRef('home');
@@ -19,16 +20,12 @@ const App = () => {
         <Header />        
         <Skills />
         <Work />
-
-       
  
-
         <Experience />
         <About />
-        
-       
 
         <Footer />
+    
         <NavDots />
       
       </CurrentContext.Provider>
