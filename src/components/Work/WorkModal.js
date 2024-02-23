@@ -94,8 +94,8 @@ export default function WorkModal({ modal, setModal}) {
                     id={skill.id}
                     key={`skill-${skill.name}`}
                 >
-                    <div className="flex" style={{ backgroundColor: colors.skillBgModal }}>
-                    <img src={skill.icon} alt={skill.name} />
+                    <div className="flex" style={{ backgroundColor: colors.skillBg }}>
+                        <img src={skill.icon} alt={skill.name} />
                     </div>
                     <p className="p-text">{skill.name}</p>
                 </motion.div>

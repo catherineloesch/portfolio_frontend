@@ -3,8 +3,6 @@ export const colors = {
     navDotInactive: 'rgba(128, 128, 128, 0.5)',
     homeDotActive: 'rgba(254, 240, 113, 0.55)',
     skillBg: '#103a55',
-    skillBgModal: '#082434',
     downArrows: 'rgba(107, 118, 136, 0.8)',
-
     lightGrey: '#e4e4e4'
 }

@@ -107,6 +107,14 @@
   --secondary-a: rgba(48, 58, 171, 0.816);
   --secondary-dark: #4C2777; */
 
+  --bubble-footer-before: 20px;
+  --bubble-footer-after: 300px;
+  --bubble-footer-transition: 2s;
+
+  --bubble-projects-filter-before: 20px;
+  --bubble-projects-filter-after: 190px;
+  --bubble-projects-filter-transition: 0.5s;
+
 }
 
 body {
@@ -123,7 +131,7 @@ body {
 }
 
 /* type selectors */
-*, *::before, *::after{
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0; 
@@ -164,4 +172,14 @@ textarea {
 
 button {
   cursor: pointer;
+}
+
+.btn {
+  background-color: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  padding: 15px 20px;
+  font-size: 1rem;
+  border-radius: 10px;
+  letter-spacing: 1px;
 }

@@ -1,14 +1,12 @@
-import React, { useState, useEffect } from 'react'
-import { useRef, useContext } from 'react'
-import { CurrentContext } from '../../contexts/CurrentContext'
-
+import React, { useState, useEffect, useRef, useContext } from 'react'
 import { motion } from 'framer-motion'
-import { works } from './../../api_data/api_projects'
-import { AppContainer, MotionContainer } from '../../containers'
-import { BsEyeFill } from'react-icons/bs'
-import WorkModal from './WorkModal'
-import { colors } from '../../assets/colors/colors'
 
+import { CurrentContext } from '../../contexts/CurrentContext'
+import { AppContainer, MotionContainer } from '../../containers'
+import WorkModal from './WorkModal'
+import { BsEyeFill } from'react-icons/bs'
+import { works } from './../../api_data/api_projects'
+import { colors } from '../../assets/colors/colors'
 import './Work.scss'
 
 
@@ -41,8 +39,6 @@ const Work = () => {
       active.current = 'work'
       navDots.forEach(dot => dot.style.backgroundColor = colors.navDotInactive);
       dot.style.backgroundColor = colors.navDotActive;
-      // navAnchors.forEach(dot => dot.style.color = '#f4eae9');
-      // anchor.style.color = '#8ee4ef';
     }
 
     observer.observe(ref.current);
@@ -62,7 +58,6 @@ const Work = () => {
           }
         }, 500)
   }
-
 
   return (
     <div className='works nav-section' ref={ref}>
@@ -119,7 +114,6 @@ const Work = () => {
     </div>
   )
 }
-
 
 export default AppContainer(
   MotionContainer(Work, 'work'),

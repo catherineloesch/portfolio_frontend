@@ -1,18 +1,15 @@
-import React, { useContext } from 'react'
-import { motion } from 'framer-motion'
-import { AppContainer, MotionContainer } from '../../containers'
-import { intros, abouts } from './../../api_data/api_about'
-import { aboutImages } from '../../assets/images/about'
-import { useState, useRef, useEffect} from "react"; 
-import { CurrentContext } from '../../contexts/CurrentContext'
-import { colors } from '../../assets/colors/colors'
+import React, { useContext, useState, useRef, useEffect } from 'react'
+import { motion } from 'framer-motion';
 
+import { CurrentContext } from '../../contexts/CurrentContext';
+import { AppContainer, MotionContainer } from '../../containers';
+import { intros, abouts } from './../../api_data/api_about';
+import { aboutImages } from '../../assets/images/about';
+import { colors } from '../../assets/colors/colors';
 import './About.scss'
-
 
 const About = () => {
   const active = useContext(CurrentContext)
-
   const [isIntersecting, setIsIntersecting] = useState(false);
   const ref = useRef('about');
   const navDots = document.querySelectorAll('.nav-dot')
@@ -26,6 +23,7 @@ const About = () => {
       },
       { rootMargin: "-300px" }
     );
+
     if (isIntersecting) {
       active.current = 'about'
       navDots.forEach(dot => dot.style.backgroundColor = colors.navDotInactive);
@@ -34,8 +32,6 @@ const About = () => {
     }
 
     observer.observe(ref.current);
-    console.log('issue?????????', ref.current)
-
     return () => observer.disconnect();
 
   }, [isIntersecting, active, dot, navDots]);
@@ -45,13 +41,17 @@ const About = () => {
     <div className='about-container'>
      
       <motion.div className='about-intro flex'>
-        <div className='flex about-avatar'><img src={aboutImages.avatar} alt='avatar'/></div>
-        <div className='about-introduction'>
-          <h2 className='h-text section-heading'>Hi, I'm Katie</h2>
-          <div className='about-intro-text flex'>
+
+        <motion.div className='flex about-avatar'>
+          <img src={aboutImages.avatar} alt='avatar'/>
+        </motion.div>
+
+        <motion.div className='about-introduction'>
+          <motion.h2 className='h-text section-heading'>Hi, I'm Katie</motion.h2>
+          <motion.div className='about-intro-text flex'>
             {intros.map((intro, index) => (<p className='p-text flex' key={`about-intro-${index}`}>{intro}</p>))}
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
         
       </motion.div>
     

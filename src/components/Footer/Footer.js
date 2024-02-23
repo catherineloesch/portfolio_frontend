@@ -45,20 +45,22 @@ const Footer = () => {
 
   }, [isIntersecting, active, dot, navDots]);
 
-  // end nav
-
   //button fill effect
-  function onMouseOverCaptureHandler(e) {
+  function handleMouseOver(e) {
+    const rect = e.target.getBoundingClientRect();
 
-    const x = e.pageX - e.target.offsetLeft;
-    const y = e.pageY - e.target.offsetTop;
+     // Calculate cursor's position relative to the button
+     const x = e.clientX - rect.left; // Cursor's x coordinate within the button
+     const y = e.clientY - rect.top;  // Cursor's y coordinate within the button
 
-    e.target.style.setProperty('--x', x + 'px');
-    e.target.style.setProperty('--y', y + 'px');
+     // Update CSS variables on the button to move the bubble
+     e.target.style.setProperty('--x', `${x}px`);
+     e.target.style.setProperty('--y', `${y}px`);
+
+    console.log(x, y)
   }
 
   //motion
-
   const variants = {
     initial: {
       y: 500,
@@ -212,7 +214,7 @@ const Footer = () => {
             required
           />
 
-          <button type='submit' className='btn' id='btn-submit-contact-form' onMouseOverCapture={onMouseOverCaptureHandler}> 
+          <button type='submit' className='btn btn-fill' id='btn-submit-contact-form' onMouseOverCapture={(e) => handleMouseOver(e)}> 
             <span>
               {!loading ? 'Send Message' : 'Sending...'}
               <FaPaperPlane />
