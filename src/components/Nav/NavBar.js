@@ -16,7 +16,7 @@ const NavBar = () => {
     <motion.nav className='navbar'
     initial={{x:-1500}}
     animate={{x:0}}
-    transition={{duration: 2}}
+    transition={{duration: 1.2}}
     >
 
       <ul className='nav-links'>

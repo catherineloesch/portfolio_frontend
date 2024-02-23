@@ -39,6 +39,7 @@
 
 /* --font-typewriter */
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 
 :root {
@@ -48,7 +49,8 @@
   --font-nav: 'Good Times', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   --font-editorial: 'Nulshock','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   --font-typewriter: 'VT323', monospace;
-  --typewriterSpeed: 3s; 
+  --font-typewriter: "Space Mono", monospace;
+  --typewriterSpeed: 4s; 
 
   /* colour variables */
   --primary: rgb(114, 245, 134);
@@ -94,6 +96,16 @@
   /* --red: rgb(237, 74, 90); */
   /* --red: rgb(227, 75, 36); */
   /* --pink: rgb(236, 66, 141); */
+
+  /* light mode */
+  /* --offwhite: #edf2f8;
+  --primary-light: #f4eae9;
+  --primary-dark: #916265;
+  --primary-deep: #682a2e;
+  --primary-dark-a:rgba(104, 42, 46, 0.85);
+  --secondary: #313bac;
+  --secondary-a: rgba(48, 58, 171, 0.816);
+  --secondary-dark: #4C2777; */
 
 }
 

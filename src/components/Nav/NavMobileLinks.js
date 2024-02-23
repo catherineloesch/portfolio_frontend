@@ -32,7 +32,7 @@ const NavMobileLinks = () => {
   return (
     <div className='mobile-nav-links' variants={variants}>
                 {navItems.navBar.map(item => (
-                    <motion.a key={`nav-mobile-${item}`} href={`#${item}`} variants={itemvVariants} whileHover={{scale: 1.1}} whileTap={{scale: 0.95}}>
+                    <motion.a key={`nav-mobile-${item}`} href={`#${item}`} variants={itemvVariants} whileHover={{scale: 1.025}} whileTap={{scale: 0.95}}>
                         {item}
                     </motion.a>
                 ))}

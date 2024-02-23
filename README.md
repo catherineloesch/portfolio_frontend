@@ -75,11 +75,13 @@ npx create-react-app portfolio
     - https://www.npmjs.com/package/framer-motion
   - react-tsparticles (v2.10.1)
     - https://www.npmjs.com/package/react-tsparticles
+  - react-vertical-timeline-component (v3.6.0) by [Stéphane Monnot](https://github.com/stephane-monnot/react-vertical-timeline/commits?author=stephane-monnot)
+    - https://www.npmjs.com/package/react-vertical-timeline-component
+    - https://github.com/stephane-monnot/react-vertical-timeline
 
 ### UI
 
 - fonts:
-  -
   - 'Nulshock' designed by Typodermic Fonts
     - https://www.cufonfonts.com/font/nulshock#google_vignette
   - 'VT323' Designed by Peter Hull
@@ -93,6 +95,11 @@ npx create-react-app portfolio
     - https://icon-sets.iconify.design/
   - fontawesome
     - https://fontawesome.com/
+  - timeline (Experience Section):
+    - react-vertical-timeline-component (library for responsive timelines in React applications)
+      - https://www.npmjs.com/package/react-vertical-timeline-component
+      - https://github.com/stephane-monnot/react-vertical-timeline
+      - source: [Stéphane Monnot](https://github.com/stephane-monnot/react-vertical-timeline/commits?author=stephane-monnot)
 
 ### Additional tools used:
 
@@ -125,9 +132,12 @@ npx create-react-app portfolio
   https://krimsonhart.medium.com/css-parallax-explore-space-effect-with-html-css-js-scroll-animation-aded7b771b2
 
 - initial portfolio structure
+
   - [Modern React Web Development Full Course - 12 Hours | 4 Real Industry Web Applications](https://www.youtube.com/watch?v=XxXyfkrP298) by [JavaScript Mastery | adrianhajdin](https://www.youtube.com/@javascriptmastery)
   - code: https://github.com/adrianhajdin/project_professional_portfolio
   - https://www.youtube.com/watch?v=3HNyXCPDQ7Q
+
+- timeline (Experience section): [Simple Timeline for your Portfolio Website | React Tutorial](https://www.youtube.com/watch?v=-rnkToU2_lw) by [Aleks Popovic](https://www.youtube.com/@AleksPopovic)
 
 ## <a name="deliverables"></a> 5. Deliverables
 
