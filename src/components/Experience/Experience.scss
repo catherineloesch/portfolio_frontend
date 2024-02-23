@@ -2,21 +2,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     
-    h2 {
-        padding-bottom: 55px;
+    h1 {
+        margin-bottom: 50px;
     }
 }
 
 .experiences {
-    flex: 1;
+    // flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    width: 100%;
+    
     .experience-container {
         width: 100%; 
+        display: none;
     }
 }
 
@@ -150,4 +153,93 @@
             }
         }
     }
+}
+
+.timeline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+  
+
+    .timeline-img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+    
+    #timeline-img-1 { // OU logo
+        padding-top: 2px;
+    }
+    #timeline-img-2 { // LIH logo
+        padding: 2px;
+    }
+    #timeline-img-3 { // Warwick logo
+        padding: 7px;
+    }
+    
+    .vertical-timeline-element-title {
+        color: var(--primary);
+        font-size: 1.3rem;
+        
+
+        @media screen and (max-width: 1170px) {
+            margin-top: -10px;
+        }
+
+        margin-top: -50px;
+
+
+        
+    }
+    .vertical-timeline-element-subtitle {
+        color: var(--primary);
+        font-weight: normal;
+        padding-top: 3px;
+    }
+    
+    .timeline-item-description {
+        padding-top: 5px;
+        li {
+            list-style: disc;
+            color: var(--grey-light);
+            width: 100%;
+        }
+    }
+
+}
+
+.vertical-timeline {
+    min-width: 95%;
+}
+
+.vertical-timeline-element {
+
+    margin: 1em 0;
+    margin-left: 5px;
+   
+}
+
+
+.vertical-timeline-element-content {
+    box-shadow: none;
+    width: 100%;
+    // border: 1px solid var(--secondary);
+
+    @media screen and (max-width: 1170px) {
+       width: 85%;
+    } 
+   
+}
+
+.timeline-date {
+    color: var(--secondary);
+    opacity: 1 !important;
+    font-size: 1.05rem !important;
+    font-family: var(--font-nav);
+}
+
+.vertical-timeline-element-content-arrow {
+    border-right: 7px solid transparent;
 }

@@ -1,10 +1,17 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import { experience } from './../../api_data/api_experience'
-import { AppContainer, MotionContainer } from '../../containers'
+import React from 'react';
 import { useState, useRef, useEffect, useContext} from "react"; 
-import { CurrentContext } from '../../contexts/CurrentContext'
+import { motion } from 'framer-motion';
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+import "react-vertical-timeline-component/style.min.css"
+
+import { AppContainer, MotionContainer } from '../../containers';
+import { CurrentContext } from '../../contexts/CurrentContext';
+
 import { colors } from '../../assets/colors/colors';
+
+import { experience } from './../../api_data/api_experience'
+import { timelineData } from '../../api_data/api_timeline';
+
 import './Experience.scss'
 
 
@@ -37,13 +44,13 @@ const Experience = () => {
 
   }, [isIntersecting, active, dot, navDots]);
 
-
-
   
   return (
     <div className='experiences flex nav-section' ref={ref}>
-      <h2 className='h-text section-heading'>Experience & Education</h2>
-      <div className='experience-container flex'>
+      <h1 className='h-text section-heading'>Experience & Education</h1>
+
+
+      <div className='experience-container flex LEGACY'>
 
         <motion.div className='experience-list'>
           { experience.map((period, index) => (
@@ -91,6 +98,32 @@ const Experience = () => {
           ))}
             
         </motion.div>
+      </div>
+
+      <div className='timeline'>
+        <VerticalTimeline className='timeline-container'>
+          {
+            timelineData.map((timelineItem, index) => (
+              <VerticalTimelineElement
+              key={timelineItem.key}
+              date={timelineItem.date}
+              dateClassName='timeline-date'
+              iconStyle={timelineItem.style}
+              icon = {<img src={timelineItem.img} alt={`${timelineItem.title} logo`} className='timeline-img' id={`timeline-img-${index}`} />}
+              contentStyle={{ background: 'transparent' }}
+              >
+              <h3 className='vertical-timeline-element-title'>{timelineItem.title}</h3>
+              <h4 className='vertical-timeline-element-subtitle'>{timelineItem.company}</h4>
+              <ul className='timeline-item-description' id='description'>
+                {timelineItem.description.map((descriptionItem, index) => (
+                  <li key={`timeline-description-item-index`}>{descriptionItem}</li>
+                ))}
+              </ul>
+              </VerticalTimelineElement>
+            ))
+          }
+        </VerticalTimeline>
+     
       </div>
       
     </div>

@@ -1,4 +1,4 @@
-import { aboutImages } from './../assets/images/about'
+// import { aboutImages } from './../assets/images/about'
 import { aboutIcons } from './../assets/icons/icons_about'
 
 const intros = [

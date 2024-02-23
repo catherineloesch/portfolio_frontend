@@ -56,11 +56,14 @@
   /* --secondary: #e84fab; */
   /* --secondary: #ec56da; */
   --secondary: #ff5fec;
+
   /* --secondary: #ee4f71; */
   /* --secondary: #c16a2e; */
   /* --secondary: orange; */
 
   --secondary:  rgb(250, 95, 195);
+  --secondary-dark: rgb(220, 0, 136);
+
 
 
   --bg1: rgb(16, 58, 85);

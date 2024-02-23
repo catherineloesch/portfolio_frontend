@@ -24,6 +24,7 @@
     "react-scroll": "^1.8.9",
     "react-tooltip": "^5.14.0",
     "react-tsparticles": "^2.10.1",
+    "react-vertical-timeline-component": "^3.6.0",
     "tsparticles": "^2.10.1",
     "web-vitals": "^2.1.4"
   },
