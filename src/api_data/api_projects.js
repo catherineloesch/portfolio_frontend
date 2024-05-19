@@ -33,7 +33,7 @@ const works = [
       },
       {
         name: 'JavaScript',
-        icon: skillIcons.javascript_p,
+        icon: skillIcons.javascript_primary,
         id: 'javascript-icon'
       },
       {
@@ -128,7 +128,7 @@ const works = [
       skills: [
         {
           name: 'JavaScript',
-          icon: skillIcons.javascript_p,
+          icon: skillIcons.javascript_primary,
           id: 'javascript-icon'
         },
         {
@@ -176,7 +176,7 @@ const works = [
     //     },
     //     {
     //       name: 'JavaScript',
-    //       icon: skillIcons.javascript_p,
+    //       icon: skillIcons.javascript_primary,
     //       id: 'javascript-icon'
     //     },
     //     {
@@ -209,7 +209,7 @@ const works = [
       skills: [ 
         {
           name: 'JavaScript',
-          icon: skillIcons.javascript_p,
+          icon: skillIcons.javascript_primary,
           id: 'javascript-icon',
         },
         {
@@ -252,7 +252,7 @@ const works = [
           },
           {
             name: 'JavaScript',
-            icon: skillIcons.javascript_p,
+            icon: skillIcons.javascript_primary,
             id: 'javascript-icon'
           }]
     }

@@ -2,19 +2,17 @@ import React from 'react'
 import { useState, useRef, useEffect, useContext} from "react"; 
 import emailjs from '@emailjs/browser';
 import { motion, useInView } from 'framer-motion';
-
-import { CurrentContext } from '../../contexts/CurrentContext'
-import { AppContainer, MotionContainer } from '../../containers'
-import { socialIcons } from './../../assets/icons/icons_social'
-import { BsGithub, BsLinkedin } from'react-icons/bs'
-import { MdEmail } from'react-icons/md'
+import { BsGithub, BsLinkedin } from'react-icons/bs';
+import { MdEmail } from'react-icons/md';
 import { FaPaperPlane } from "react-icons/fa";
 
+import { CurrentContext } from '../../contexts/CurrentContext';
+import { AppContainer, MotionContainer } from '../../containers';
+import { footerIcons } from '../../assets/icons/icons_footer';
 import { colors } from '../../assets/colors/colors'
 import './Footer.scss'
 
 const Footer = () => {
-
 
   //Navigation
   const active = useContext(CurrentContext)
@@ -126,8 +124,8 @@ const Footer = () => {
       <motion.div className='footer-txt-container nav-section' variants={variants} initial="initial" whileInView="animate" ref={iconRef}>
 
         <motion.h1 className='h-text section-heading' variants={variants}>Get in touch</motion.h1>
-        <motion.p className='p-text' variants={variants}>Want to leave some feedback?<img src={socialIcons.feedback2} alt='feedback'/></motion.p> 
-        <motion.p className='p-text' variants={variants}> Or just have a chat? <img src={socialIcons.coffee5} alt='coffee' ref={ref}/> </motion.p>
+        <motion.p className='p-text' variants={variants}>Want to leave some feedback?<img src={footerIcons.feedback} alt='feedback'/></motion.p> 
+        <motion.p className='p-text' variants={variants}> Or just have a chat? <img src={footerIcons.coffee} alt='coffee' ref={ref}/> </motion.p>
         <motion.p className='p-text' variants={variants}>Leave a message and I'll be in touch!</motion.p>
 
         <motion.div className='footer-socials' variants={variants}>
