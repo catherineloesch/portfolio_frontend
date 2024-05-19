@@ -35,8 +35,6 @@ import tailwind_primary from './tailwind_primary.svg'
 import yarn_primary from './yarn_primary.svg'
 import vite_primary from './vite_primary.svg'
 
-import javascript_p from './javascript_p.svg'
-
 const skillIcons = {
 
     babel_primary,
@@ -51,7 +49,6 @@ const skillIcons = {
     html_primary,
     html_color,
     javascript_primary,
-    javascript_p,
     jwt_primary,
     mongodb_primary,
     mongoose_primary,

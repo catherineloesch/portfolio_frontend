@@ -19,8 +19,8 @@ const abouts = [
     },
     {
       title: "interests.",
-      description: "I'm fascinated by sci-fi books, movies, and TV shows like Star Trek and Black Mirror that have often predicted technological advancements before they became mainstream, such as video calls, mobile phones, wireless headphones, credit cards, solar power, and AI.",
-      imgUrl: aboutIcons.brain1
+      description: "I'm fascinated by sci-fi books, movies, and TV shows like Star Trek and Black Mirror that have often predicted technological advancements before they became mainstream, such as video calls, mobile phones, wireless headphones, credit cards, solar power and AI.",
+      imgUrl: aboutIcons.ufo2
     },
   ]
 

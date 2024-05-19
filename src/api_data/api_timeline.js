@@ -8,7 +8,7 @@ const timelineData = [
         company: 'General Assembly London (remote)',
         img: experience_images.ga3,
         style: {background: '#ffffff'},
-        description: ["12-week immersive bootcamp", "frontend + backend fundamentals","full-stack applications with responsive design + deployment", "SQL + NoSQL databases, third-party API integration", "individual + group projects, pair-programming, collaboration using git/GitHub"]
+        description: ["12-week full-time bootcamp, frontend + backend fundamentals","full-stack applications with responsive design + deployment", "SQL + NoSQL databases, third-party API integration", "individual + group projects, pair-programming, git/GitHub collabotation"]
     },
     {
         id: 2,

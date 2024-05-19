@@ -1,5 +1,5 @@
 .sidebar {
-    position: absolute;
+    position: fixed;
     top: -40px;
     left: -40px;
     display: flex;
@@ -62,19 +62,22 @@
     }
 
     #btn-toggle-mobile-nav { //toggle btn
-        width: 50px;
-        height: 50px;
+        width: 65px;
+        height: 65px;
         border-radius: 50%;
         position: relative;
         position: fixed;
-        top: 25px;
-        left: 25px;
+        top: 18px;
+        left: 18px;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: transparent;
         border: none;
         cursor: pointer;
+       
+
+ 
 
         @media screen and (min-width: 1200px) {
             display: none;

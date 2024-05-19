@@ -8,6 +8,10 @@ import neural_network from './neural_network.svg'
 import spark from './spark.svg'
 import technology from './technology.svg'
 
+import ufo1 from './ufo1.svg'
+import ufo2 from './ufo2.svg'
+import ufo3 from './ufo3.svg'
+
 const aboutIcons = {
     brain1,
     brain2,
@@ -17,7 +21,10 @@ const aboutIcons = {
     dna,
     neural_network,
     spark,
-    technology
+    technology,
+    ufo1,
+    ufo2,
+    ufo3
    
 }
 

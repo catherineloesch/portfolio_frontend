@@ -21,7 +21,7 @@ const skills = [
     },
     {
       name: 'JavaScript',
-      icon: skillIcons.javascript_p,
+      icon: skillIcons.javascript_primary,
       id: 'javascript-icon'
     },
     {
