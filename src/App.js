@@ -1,10 +1,9 @@
 import React, { useRef } from 'react';
-import { About, Footer, Header, Skills, Work } from './components';
-import { NavBar, NavDots } from './components/Nav';
+import { Header, Skills, Work, Experience, About, Footer } from './components';
+import { NavBar, NavDots, NavMobile } from './components/Nav';
 import { CurrentContext } from './contexts/CurrentContext';
 
 import './App.scss'
-import Experience from './components/Experience/Experience';
 
 const App = () => {
 
@@ -14,14 +13,21 @@ const App = () => {
   return (
     <div className='app' >
       <CurrentContext.Provider value={{active}} >
-      <NavBar />
-      <Header />
-      <Skills />
-      <Work />
-      <Experience />
-      <About />
-      <Footer />
-      <NavDots />
+      
+        <NavBar />
+        <NavMobile />
+
+        <Header />        
+        <Skills />
+        <Work />
+ 
+        <Experience />
+        <About />
+
+        <Footer />
+    
+        <NavDots />
+      
       </CurrentContext.Provider>
     </div>
   );

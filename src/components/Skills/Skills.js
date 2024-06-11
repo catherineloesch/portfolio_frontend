@@ -4,9 +4,8 @@ import { skills } from './../../api_data/api_skills'
 import { AppContainer, MotionContainer } from '../../containers'
 import { useState, useRef, useEffect, useContext} from "react"; 
 import { CurrentContext } from '../../contexts/CurrentContext'
+import { colors } from '../../assets/colors/colors';
 import './Skills.scss'
-// import { urlFor, client } from './../../api'
-
 
 const Skills = () => {
   const active = useContext(CurrentContext)
@@ -26,8 +25,8 @@ const Skills = () => {
     );
     if (isIntersecting) {
       active.current = 'about'
-      navDots.forEach(dot => dot.style.backgroundColor = '#cbcbcb');
-      dot.style.backgroundColor = '#916265';
+      navDots.forEach(dot => dot.style.backgroundColor = colors.navDotInactive);
+      dot.style.backgroundColor = colors.navDotActive;
 
 
     }
@@ -37,30 +36,10 @@ const Skills = () => {
 
   }, [isIntersecting, active, dot, navDots]);
 
-  // call to sanity backend api
-  // const [experience, setExperience] = useState([])
-  // const [skills, setSkills] = useState([])
-
-  // useEffect(() => {
-  //   const experiencesQuery = '*[_type == "experiences"]'
-  //   const skillsQuery = '*[_type == "skills"]'
-
-  //   client.fetch(experiencesQuery)
-  //   .then((data) => {
-  //     setExperience(data)
-  //   })
-
-  //   client.fetch(skillsQuery)
-  //   .then((data) => {
-  //     setSkills(data)
-  //   })
-
-  // }, [])
-
   
   return (
     <div className='skills-section flex nav-section' ref={ref}>
-      <h2 className='section-heading'>Skills</h2>
+      <h2 className='section-heading'>Technologies</h2>
       <div className='skills-container flex'>
         <motion.div className="skills-list flex">
 
@@ -72,7 +51,7 @@ const Skills = () => {
               id={skill.id}
               key={`skill-${skill.name}`}
             >
-              <div className="flex" style={{ backgroundColor: skill.bgColor }}>
+              <div className="flex" style={{ backgroundColor: colors.skillBg }}>
                 <img src={skill.icon} alt={skill.name} />
               </div>
               <p className="p-text">{skill.name}</p>
@@ -83,6 +62,7 @@ const Skills = () => {
 
       </div>
       
+      
     </div>
   )
 }
@@ -90,5 +70,5 @@ const Skills = () => {
 export default AppContainer(
   MotionContainer(Skills, 'skills'),
    'skills',
-   'bg-white'
+   'bg-1'
 )

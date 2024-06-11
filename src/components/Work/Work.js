@@ -1,16 +1,14 @@
-import React, { useState, useEffect } from 'react'
-import { useRef, useContext } from 'react'
-import { CurrentContext } from '../../contexts/CurrentContext'
-
+import React, { useState, useEffect, useRef, useContext } from 'react'
 import { motion } from 'framer-motion'
-import { works } from './../../api_data/api_projects'
-import { AppContainer, MotionContainer } from '../../containers'
-import { BsEyeFill } from'react-icons/bs'
-import './Work.scss'
-import WorkModal from './WorkModal'
 
-// import {ViewportChecker} from '../ViewPortChecker/ViewPortChecker'
-// import { urlFor, client } from './../../api'
+import { CurrentContext } from '../../contexts/CurrentContext'
+import { AppContainer, MotionContainer } from '../../containers'
+import WorkModal from './WorkModal'
+import { BsEyeFill } from'react-icons/bs'
+import { works } from './../../api_data/api_projects'
+import { colors } from '../../assets/colors/colors'
+import './Work.scss'
+
 
 const Work = () => {
 
@@ -39,10 +37,8 @@ const Work = () => {
     );
     if (isIntersecting) {
       active.current = 'work'
-      navDots.forEach(dot => dot.style.backgroundColor = '#cbcbcb');
-      dot.style.backgroundColor = '#916265';
-      // navAnchors.forEach(dot => dot.style.color = '#f4eae9');
-      // anchor.style.color = '#8ee4ef';
+      navDots.forEach(dot => dot.style.backgroundColor = colors.navDotInactive);
+      dot.style.backgroundColor = colors.navDotActive;
     }
 
     observer.observe(ref.current);
@@ -62,19 +58,6 @@ const Work = () => {
           }
         }, 500)
   }
-
-  // const [works, setWorks] = useState([])
-
-  // useEffect(() => {
-  //   const query = '*[_type == "works"]'
-
-  //   client.fetch(query)
-  //   .then((data) => {
-  //     setWorks(data)
-  //     setFilterWork(data)
-  //   })
-  // }
-  // , [])
 
   return (
     <div className='works nav-section' ref={ref}>
@@ -132,9 +115,8 @@ const Work = () => {
   )
 }
 
-
 export default AppContainer(
   MotionContainer(Work, 'work'),
    'work',
-   'bg-primary'
+   'bg-2'
 )

@@ -34,9 +34,9 @@
         width: 100%;
         position: absolute;
         top: 30%;
-        opacity: 0;
-        transform: translateX(-25rem);
-        animation: fadeInLtR 2s ease forwards;
+        // opacity: 0;
+        // transform: translateX(-25rem);
+        animation: fadeInLtR 2.5s ease forwards;
 
     }
 
@@ -62,6 +62,7 @@
         color: var(--white);
         width: 100%;
         width: 100%;
+        letter-spacing: 5px;
        
 
         .greeting {
@@ -69,7 +70,7 @@
             color: var(--yellow);
             width: 100%;
            
-            font-size: 2.5rem;
+            font-size: 32px;
             text-align: center;
             display: flex;
             align-items: center;
@@ -96,14 +97,17 @@
             width: 100%;
             margin-top: 1rem;
             
+            
    
 
             .header-name {
+                font-family: var(--font-editorial);  
+
                 position: relative;
                 text-align: center;
                 color: var(--yellow);
-                margin-bottom: 5px;
-                font-size: 3.2rem;
+                margin-bottom: 1rem;
+                font-size: 3rem;
                 text-shadow: 
                 0.05em 0 0 rgba(255, 0, 0, .75),
                 -0.025em -0.05em 0 rgba(0, 255, 0, .75),
@@ -114,6 +118,8 @@
                 position: absolute;
                 top: 0;
                 left: 0;
+                font-family: var(--font-editorial);  
+
                }
 
                span:first-child {
@@ -185,7 +191,7 @@
                 align-items: center;
                 color: var(--yellow);
                 text-align: right;
-                font-size: 3rem;
+                font-size: 32px;
                 font-weight: 700;
                 text-align: center;
                 width: max-content;
@@ -358,4 +364,21 @@
         transition-duration: 0s !important;
         transition-delay: 0s !important;
     }
+}
+
+.arrow-container {
+
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    bottom: 150px;
+    cursor: pointer;
+
+    img {
+        width: 40px;  
+    }
+
 }

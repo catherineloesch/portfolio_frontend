@@ -4,7 +4,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
 
 .skills-container {
@@ -26,7 +25,6 @@
     justify-content: flex-start;
     align-items: flex-start;
   
-  
     @media screen and (max-width: 900px) {
       margin-right: 0;
       justify-content: center;
@@ -42,43 +40,39 @@
     transition: all 0.3s ease-in-out;
   
     div {
+
       width: 90px;
       height: 90px;
       border-radius: 50%;
-      background-color: #fef4f5;
+      
   
       img {
         width: 50%;
         height: 50%;
       }
   
-      &:hover {
-        box-shadow: 0 0 25px #fef4f5;
-      }
-  
-      @media screen and (min-width: 2000px) {
-        width: 150px;
-        height: 150px;
-      }
-  
-      @media screen and (max-width: 450px) {
-        width: 70px;
-        height: 70px;
-      }
+        //   &:hover {
+        //           box-shadow: 0 0 5px rgb(9, 59, 113);
+        //   }
+        @media screen and (min-width: 2000px) {
+            margin: 1rem 2rem;
+        
+        }
+        @media screen and (min-width: 2000px) {
+            width: 150px;
+            height: 150px;
+        }
+        @media screen and (max-width: 450px) {
+            width: 70px;
+            height: 70px;
+        }
     }
-
-  p {
-    font-weight: 500;
-    margin-top: 0.5rem;
-  }
-
-  @media screen and (min-width: 2000px) {
-    margin: 1rem 2rem;
 
     p {
-      margin-top: 1rem;
+        font-size: 0.95rem;
+        margin-top: 0.5rem;
+        color: var(--grey);
     }
-  }
 }
 
 
@@ -113,12 +107,12 @@
 }
 
 #bootstrap-icon:hover {
-    p { color: #7E13F8; }
+    p { color: #8d58e2; }
     img { content: url('./../../assets/icons/icons_skills/bootstrap_color.svg') }  
 }
 
 #css-icon:hover {
-    p { color: #006db8; }
+    p { color: #0da3d4; }
     img { content: url('./../../assets/icons/icons_skills/css_color.svg') }
 }
 
@@ -143,12 +137,12 @@
 }
 
 #github-icon:hover {
-    p { color: #4C2777}
+    p { color: #8d58e2}
     img { content: url('./../../assets/icons/icons_skills/github_color.svg') }  
 }
 
 #heroku-icon:hover {
-    p { color: #430098; }
+    p { color: #8d58e2; }
     img { content: url('./../../assets/icons/icons_skills/heroku_color.svg') }  
 }
 
@@ -158,7 +152,7 @@
 }
 
 #javascript-icon:hover {
-    p { color: black; }
+    p { color: #f2cd6f; }
     img { content: url('./../../assets/icons/icons_skills/javascript_color.svg') }
 }
 
@@ -188,12 +182,12 @@
 }
 
 #nodejs-icon:hover {
-    p { color: #529f41; }
+    p { color: #46a438; }
     img { content: url('./../../assets/icons/icons_skills/nodejs_color.svg') }
 }
 
 #openai-icon:hover {
-    p { color: black; }
+    p { color: var(--grey-light); }
     img { content: url('./../../assets/icons/icons_skills/openai_color.svg') }  
 }
 
@@ -223,12 +217,12 @@
 }
 
 #redux-icon:hover {
-    p { color: #764ABC; }
+    p { color: #8d58e2; }
     img { content: url('./../../assets/icons/icons_skills/redux_color.svg') }
 }
 
 #ruby-icon:hover {
-    p { color: #cf6b9e; }
+    p { color: #cd0000; }
     img { content: url('./../../assets/icons/icons_skills/ruby_color.svg') }  
 }
 

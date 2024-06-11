@@ -13,5 +13,16 @@ const MotionContainer = (Component, classNames) => function HOC() {
     </motion.div>
   )
 }
+// const MotionContainer = (Component, classNames) => function HOC() {
+//   return (
+//     <motion.div
+      
+//         className={`${classNames}`}
+//     >
+//         <Component />
+      
+//     </motion.div>
+//   )
+// }
 
 export default MotionContainer

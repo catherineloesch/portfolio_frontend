@@ -1,37 +1,20 @@
 import React from 'react'
 import { useState, useRef, useEffect, useContext} from "react"; 
-import { CurrentContext } from '../../contexts/CurrentContext'
-import { AppContainer, MotionContainer } from '../../containers'
-import { socialIcons } from './../../assets/icons/icons_social'
-import { BsGithub, BsLinkedin } from'react-icons/bs'
-import { MdEmail } from'react-icons/md'
-import { FaPaperPlane } from "react-icons/fa";
-import './Footer.scss'
 import emailjs from '@emailjs/browser';
+import { motion, useInView } from 'framer-motion';
+import { BsGithub, BsLinkedin } from'react-icons/bs';
+import { MdEmail } from'react-icons/md';
+import { FaPaperPlane } from "react-icons/fa";
 
+import { CurrentContext } from '../../contexts/CurrentContext';
+import { AppContainer, MotionContainer } from '../../containers';
+import { footerIcons } from '../../assets/icons/icons_footer';
+import { colors } from '../../assets/colors/colors'
+import './Footer.scss'
 
 const Footer = () => {
-  const form = useRef();
-  //EmailJS parameters
-    //emails sent to 'katie.loesch@pm.me'
-  const publicKey = 'zNvzRNVUztWrUC40f'
-  const serviceId = 'service_gaq8s1d'
-  const templateId = 'template_4np1zu1'
-    //initialise emailjs with public key
-  emailjs.init(publicKey)
 
-  const formTemplate = {
-    name: '',
-    email: '',
-    message: ''
-  }
-
-
-  const [formData, setFormData] = useState(formTemplate)
-
-  const [formSubmitted, setFormSubmitted] = useState(false)
-  const [loading, setLoading] = useState(false)
-
+  //Navigation
   const active = useContext(CurrentContext)
   const [isIntersecting, setIsIntersecting] = useState(false);
   const ref = useRef('contact');
@@ -46,10 +29,11 @@ const Footer = () => {
       },
       { rootMargin: "-300px" }
     );
+    
     if (isIntersecting) {
       active.current = 'about'
-      navDots.forEach(dot => dot.style.backgroundColor = '#cbcbcb');
-      dot.style.backgroundColor = '#916265';
+      navDots.forEach(dot => dot.style.backgroundColor = colors.navDotInactive);
+      dot.style.backgroundColor = colors.navDotActive;
 
 
     }
@@ -58,6 +42,60 @@ const Footer = () => {
     return () => observer.disconnect();
 
   }, [isIntersecting, active, dot, navDots]);
+
+  //button fill effect
+  function handleMouseOver(e) {
+    const rect = e.target.getBoundingClientRect();
+
+     // Calculate cursor's position relative to the button
+     const x = e.clientX - rect.left; // Cursor's x coordinate within the button
+     const y = e.clientY - rect.top;  // Cursor's y coordinate within the button
+
+     // Update CSS variables on the button to move the bubble
+     e.target.style.setProperty('--x', `${x}px`);
+     e.target.style.setProperty('--y', `${y}px`);
+
+    console.log(x, y)
+  }
+
+  //motion
+  const variants = {
+    initial: {
+      y: 500,
+      opacity: 0,
+    },
+    animate: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+        staggerChildren: 0.1,
+      },
+    },
+  };
+  //end motion
+
+  const iconRef = useRef();
+  const isInView = useInView(iconRef, { margin: "-100px" });
+
+  //EmailJS parameters
+    //emails sent to 'katie.loesch@pm.me'
+  const publicKey = 'zNvzRNVUztWrUC40f'
+  const serviceId = 'service_gaq8s1d'
+  const templateId = 'template_4np1zu1'
+    //initialise emailjs with public key
+  emailjs.init(publicKey)
+
+  const formTemplate = {
+    name: '',
+    email: '',
+    message: ''
+  }
+
+  const form = useRef();
+  const [formData, setFormData] = useState(formTemplate)
+  const [formSubmitted, setFormSubmitted] = useState(false)
+  const [loading, setLoading] = useState(false)
 
   const handleFormChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
@@ -83,69 +121,121 @@ const Footer = () => {
 
   return (
     <>
-      <h2 className='h-text section-heading'>Contact</h2>
-      <p className='p-text flex'>Want to leave some feedback for me?<img src={socialIcons.feedback2} alt='feedback'/></p> 
-      <p className='p-text flex'> Or just have a chat? <img src={socialIcons.coffee5} alt='coffee'/> </p>
-      <p className='p-text flex'>Leave me a message and I'll be in touch!</p>
+      <motion.div className='footer-txt-container nav-section' variants={variants} initial="initial" whileInView="animate" ref={iconRef}>
 
-      <div className='footer-socials nav-section' ref={ref} >
+        <motion.h1 className='h-text section-heading' variants={variants}>Get in touch</motion.h1>
+        <motion.p className='p-text' variants={variants}>Want to leave some feedback?<img src={footerIcons.feedback} alt='feedback'/></motion.p> 
+        <motion.p className='p-text' variants={variants}> Or just have a chat? <img src={footerIcons.coffee} alt='coffee' ref={ref}/> </motion.p>
+        <motion.p className='p-text' variants={variants}>Leave a message and I'll be in touch!</motion.p>
 
-        <div className='footer-social-icon mail-icon'>
-          <a href="mailto:katie.loesch@pm.me" className='p-text'>
+        <motion.div className='footer-socials' variants={variants}>
+          <a href="mailto:katie.loesch@pm.me" className='footer-social-icon' id="mail-icon">
             <MdEmail />
           </a>
-        </div>
     
-        <div className='footer-social-icon github-icon'>
-          <a href="https://github.com/katieloesch" target="_blank" rel="noopener noreferrer" className='p-text'>
+          <a href="https://github.com/katieloesch" target="_blank" rel="noopener noreferrer" className='footer-social-icon' id="github-icon">
             <BsGithub />
           </a>
-        </div>
 
-        <div className='footer-social-icon linkedin-icon'>
-            <a href="https://www.linkedin.com/in/katie-loesch/" target="_blank" rel="noopener noreferrer" className='p-text'>
-              <BsLinkedin />
-            </a>
-        </div>
+          <a href="https://www.linkedin.com/in/katie-loesch/" target="_blank" rel="noopener noreferrer" className='footer-social-icon' id="linkedin-icon">
+            <BsLinkedin />
+          </a>
+        </motion.div>
 
-      </div>
+      </motion.div>
 
-      {!formSubmitted  ? (
-        <form className='footer-form flex' ref={form} onSubmit={handleFormSubmit}>
+      <div className='footer-form-container'>
 
-            <div className='flex'>
-              <input className='p-text' name='name' type='text' placeholder='name' value={formData.name} onChange={handleFormChange} autoComplete='off'/>
-            </div>
+        <motion.div
+        className="svg-container"
+        initial={{ opacity: 1 }}
+        whileInView={{ opacity: 0 }}
+        transition={{ delay: 3, duration: 1 }}
+        >
+          <svg width="400px" height="400px" viewBox="0 0 32.666 32.666">
+            <motion.path
+              strokeWidth={0.2}
+              fill="none"
+              initial={{ pathLength: 0 }}
+              animate={isInView && { pathLength: 1 }}
+              transition={{ duration: 3 }}
+              d="M28.189,16.504h-1.666c0-5.437-4.422-9.858-9.856-9.858l-0.001-1.664C23.021,4.979,28.189,10.149,28.189,16.504z
+            M16.666,7.856L16.665,9.52c3.853,0,6.983,3.133,6.981,6.983l1.666-0.001C25.312,11.735,21.436,7.856,16.666,7.856z M16.333,0
+            C7.326,0,0,7.326,0,16.334c0,9.006,7.326,16.332,16.333,16.332c0.557,0,1.007-0.45,1.007-1.006c0-0.559-0.45-1.01-1.007-1.01
+            c-7.896,0-14.318-6.424-14.318-14.316c0-7.896,6.422-14.319,14.318-14.319c7.896,0,14.317,6.424,14.317,14.319
+            c0,3.299-1.756,6.568-4.269,7.954c-0.913,0.502-1.903,0.751-2.959,0.761c0.634-0.377,1.183-0.887,1.591-1.529
+            c0.08-0.121,0.186-0.228,0.238-0.359c0.328-0.789,0.357-1.684,0.555-2.518c0.243-1.064-4.658-3.143-5.084-1.814
+            c-0.154,0.492-0.39,2.048-0.699,2.458c-0.275,0.366-0.953,0.192-1.377-0.168c-1.117-0.952-2.364-2.351-3.458-3.457l0.002-0.001
+            c-0.028-0.029-0.062-0.061-0.092-0.092c-0.031-0.029-0.062-0.062-0.093-0.092v0.002c-1.106-1.096-2.506-2.34-3.457-3.459
+            c-0.36-0.424-0.534-1.102-0.168-1.377c0.41-0.311,1.966-0.543,2.458-0.699c1.326-0.424-0.75-5.328-1.816-5.084
+            c-0.832,0.195-1.727,0.227-2.516,0.553c-0.134,0.057-0.238,0.16-0.359,0.24c-2.799,1.774-3.16,6.082-0.428,9.292
+            c1.041,1.228,2.127,2.416,3.245,3.576l-0.006,0.004c0.031,0.031,0.063,0.06,0.095,0.09c0.03,0.031,0.059,0.062,0.088,0.095
+            l0.006-0.006c1.16,1.118,2.535,2.765,4.769,4.255c4.703,3.141,8.312,2.264,10.438,1.098c3.67-2.021,5.312-6.338,5.312-9.719
+            C32.666,7.326,25.339,0,16.333,0z"
+            />
+          </svg>
+        </motion.div>
 
-            <div className='flex'>
-              <input className='p-text' name='email' type='email' placeholder='email' value={formData.email} onChange={handleFormChange} autoComplete='off' required/>
-            </div>
+        { !formSubmitted  ? (
 
-            <div>
-              <textarea
-                className='p-text'
-                name='message'
-                placeholder='message'
-                value={formData.message}
-                onChange={handleFormChange}
-                autoComplete='off'
-                required
-              />
-            </div>
+        <motion.form className='footer-form' ref={form} onSubmit={handleFormSubmit} initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 3, duration: 1}}>
+        
+          <input
+            className='p-text'
+            name='name'
+            type='text'
+            placeholder='name'
+            value={formData.name}
+            onChange={handleFormChange}
+            autoComplete='off'
+          />
 
-            <button type='submit' className='p-text'> 
+          <input
+            className='p-text'
+            name='email'
+            type='email'
+            placeholder='email'
+            value={formData.email}
+            onChange={handleFormChange}
+            autoComplete='off'
+            required
+          />
+
+          <textarea
+            className='p-text'
+            name='message'
+            placeholder='message'
+            value={formData.message}
+            onChange={handleFormChange}
+            autoComplete='off'
+            rows={7}
+            required
+          />
+
+          <button type='submit' className='btn btn-fill' id='btn-submit-contact-form' onMouseOverCapture={(e) => handleMouseOver(e)}> 
+            <span>
               {!loading ? 'Send Message' : 'Sending...'}
               <FaPaperPlane />
-            </button>
+            </span>
+          </button>
 
-          </form>
-    ) : ( 
+        </motion.form>
+
+        ) : ( 
+
         <div>
           <h3 className='h-text'>
             Thanks for getting in touch!
           </h3>
         </div>
-    )}
+
+        )}
+
+      </div>
+
+
+
+
     </>
   )
 }
@@ -153,5 +243,5 @@ const Footer = () => {
 export default AppContainer(
   MotionContainer(Footer, 'footer'),
   'contact',
-  'bg-white'
+  'bg-1'
 )

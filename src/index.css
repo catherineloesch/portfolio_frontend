@@ -1,95 +1,145 @@
+/* font imports (.woff files in ./assets/fonts ) */
+/* --font-main */
+@font-face {/* https://github.com/jandre3000/j4n-co/tree/master/assets/fonts */
+  font-family: 'Sofia Pro';
+  src: url('./assets/fonts/j4n-co-fonts/sofia-pro/Sofia\ Pro\ Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
-/* font imports */
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+@font-face {/* https://github.com/jandre3000/j4n-co/tree/master/assets/fonts */
+  font-family: 'Sofia Pro';
+  src: url('./assets/fonts/j4n-co-fonts/sofia-pro/Sofia\ Pro\ Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
 
-
-@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-
+/* --font-editorial */
 @font-face {
   font-family: 'Nulshock';
   src: url('./assets/fonts/nulshock.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
+
+/* font-nav */
 @font-face {
   font-family: 'Good Times';
-  src: url('./assets/fonts/goodtimes-regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Terminator';
-  src: url('./assets/fonts/terminator.woff') format('woff');
+  src: url('./assets/fonts/goodtimes-light.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Good Times';
+  src: url('./assets/fonts/goodtimes-regular.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* --font-typewriter */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
 :root {
+
   /* font variables */
-  --font-base: 'DM Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  /* --font-editorial: 'Bruno Ace SC', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
-  /* --font-editorial: 'Bruno Ace', cursive; */
-   --font-nav: 'Nulshock', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-   /* --font-editorial: 'Terminator','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
-   /* --font-editorial: 'Good Times','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+  --font-main: 'Sofia Pro', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  --font-nav: 'Good Times', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   --font-editorial: 'Nulshock','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   --font-typewriter: 'VT323', monospace;
-  /* color variables */
-  --offwhite: #edf2f8;
+  --font-typewriter: "Space Mono", monospace;
+  --typewriterSpeed: 4s; 
+
+  /* colour variables */
+  --primary: rgb(114, 245, 134);
+  --primary-a: rgba(114, 245, 134, 0.85);
+  /* --secondary: #e84fab; */
+  /* --secondary: #ec56da; */
+  --secondary: #ff5fec;
+
+  /* --secondary: #ee4f71; */
+  /* --secondary: #c16a2e; */
+  /* --secondary: orange; */
+
+  --secondary:  rgb(250, 95, 195);
+  --secondary-dark: rgb(220, 0, 136);
+
+
+
+  --bg1: rgb(16, 58, 85);
+  --bg2: rgb(8, 36, 52);
+
+  --yellow: rgb(254, 240, 113);
+  --yellow-a: rgba(254, 240, 113, 0.55);
+  --red: rgb(237, 74, 90);
+  
+  --white: rgb(255, 254, 254);
+  --white-a: rgba(255, 255, 255, 0.8);
+  --black: rgb(0, 0, 0);
+  --grey: rgb(159, 169, 184);
+  --grey-a: rgba(108, 119, 137, 0.55);
+  --grey-light: rgb(228, 228, 228);
+
+  --navDotAcive: rgba(160, 255, 148, 0.7);
+  --navDotInactive: rgba(128, 128, 128, 0.5);
+  --homeDotActive: rgba(254, 240, 113, 0.55);
+  --skillBg: rgb(6, 33, 66);
+
+  --hero-section-width: 1366px;
+  --section-title-size: '';
+  --h1-font-size: '';
+  --h2-font-size: '';
+  --p-font-size: '';
+
+  /* --red: rgb(237, 74, 90); */
+  /* --red: rgb(227, 75, 36); */
+  /* --pink: rgb(236, 66, 141); */
+
+  /* light mode */
+  /* --offwhite: #edf2f8;
   --primary-light: #f4eae9;
   --primary-dark: #916265;
   --primary-deep: #682a2e;
   --primary-dark-a:rgba(104, 42, 46, 0.85);
   --secondary: #313bac;
   --secondary-a: rgba(48, 58, 171, 0.816);
-  --secondary-dark: #4C2777;
-  --yellow: #fef071;
+  --secondary-dark: #4C2777; */
 
- 
+  --bubble-footer-before: 20px;
+  --bubble-footer-after: 300px;
+  --bubble-footer-transition: 2s;
 
-  
-
-
-
-  --primary: #edf2f8;
-  /* --secondary: #502470; */
-  --black: #030303;
-  --light-gray: #e4e4e4;
-  --gray: #6b7688;
-  --gray-a: rgba(108, 119, 137, 0.55);
-  --brown: #46364a;
-  --white: #ffffff;
-
-  --darkgreen-a: rgba(9, 59, 36, 0.794);
-  --lightblue: #8ee4ef;
-
-  /* animations */
-  --typewriterSpeed: 3s; 
-}
-
-
-.bg-white {
-  background-color: var(--white);
+  --bubble-projects-filter-before: 20px;
+  --bubble-projects-filter-after: 190px;
+  --bubble-projects-filter-transition: 0.5s;
 
 }
 
-.bg-primary {
-  background-color: var(--primary-light);
+body {
+  background-color: var(--black);
 }
 
-/* targeting all elements */
+/* section backgrounds */
+.bg-1 { /* | skills | experience | contact | */
+  background-color: var(--bg2);
+}
 
-*, *::before, *::after{
+.bg-2 { /* | work | about | */
+  background-color: var(--bg1);
+}
+
+/* type selectors */
+* {
   box-sizing: border-box;
   padding: 0;
-  margin: 0;
-  scroll-behavior: smooth;
+  margin: 0; 
+  font-family: var(--font-main)
+}
+
+*:focus {
+  outline: none;
 }
 
 *::selection {
@@ -97,6 +147,11 @@
 }
 *::-moz-selection {
   background: var(--primary-light);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 
 ul, li {
@@ -107,11 +162,24 @@ a {
   text-decoration: none;
 }
 
-input,
-textarea,
-button,
-a,
-p,
-div {
-  font-family: var(--font-base)
+input, textarea, button, a, p, div {
+  font-family: var(--font-main)
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.btn {
+  background-color: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  padding: 15px 20px;
+  font-size: 1rem;
+  border-radius: 10px;
+  letter-spacing: 1px;
 }

@@ -1,8 +1,7 @@
 
 .app {
-  background-color: var(--offwhite);
+  background-color: black;
   font-family: var(--font-base);
- 
 }
 
 .app-cont {
@@ -12,6 +11,7 @@
   flex-direction: row;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
+  scroll-snap-align: start;
   overflow-y: auto;
 }
 
@@ -19,7 +19,19 @@
   flex: 1;
   width: 100%;
   flex-direction: column;
-  padding: 4rem 2rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  // padding: 4rem 2rem;
+
+
+  @media screen and (min-width: 1500px) {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+  }
 
   @media screen and (max-width: 450px) {
     padding: 4rem 1rem 2rem;
@@ -36,7 +48,7 @@
   font-size: 2.75rem;
   font-weight: 800;
   text-align: center;
-  color: var(--primary-dark);
+  color: var(--primary);
   text-transform: capitalize;
 
   span {
@@ -53,11 +65,10 @@
 }
 
 .section-heading {
-  font-family: var(--font-editorial);
-  font-size: 2.75rem;
-  font-weight: 800;
+  font-family: var(--font-nav);
+  font-size: 2rem;
   text-align: center;
-  color: var(--primary-dark);
+  color: var(--secondary);
   @media screen and (max-width: 550px) {
     font-size: 2rem;
   }
@@ -73,7 +84,6 @@
     font-size: 1.75rem;
   }
 }
-
 
 .bold {
   font-size: 1rem;
@@ -105,12 +115,12 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #cbcbcb;
+    background-color: var(--gray-a);
     margin: 0.5rem;
     transition: background-color 0.2s ease-in-out;
 
     &:hover {
-      background-color: var(--secondary)!important;
+      background-color: var(--primary)!important;
     }
 
     @media screen and (min-width: 2000px) {
@@ -120,7 +130,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
   .nav-dots,
   .contact-icons {
     display: none;

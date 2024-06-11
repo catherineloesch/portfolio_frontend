@@ -16,28 +16,32 @@
     .work-filter-item {
         padding: 0.5rem 1rem;
         border-radius: 0.5rem;
-        background-color: #fff;
-        color: #000;
-        font-weight: 800;
+        background-color: transparent;
+        border: 1px solid var(--primary);
+        color: var(--primary);
+        // font-weight: bold;
+        font-size: 0.95rem;
     
         cursor: pointer;
         transition: all 0.3s ease;
         margin: 0.5rem;
 
         &:hover {
-            background-color: var(--secondary);
-            color: #fff
+            background-color: var(--primary);
+            border: 1px solid var(--primary);
+            color: var(--bg1);
         }
 
         @media screen and (min-width: 2000px) {
             padding: 1rem 2rem;
             border-radius: 0.85rem;
-          }
+        }
     }
 
     .item-active {
-        background-color: var(--secondary);
-        color: #fff;
+        background-color: var(--primary);
+        border: 1px solid var(--primary);
+        color: var(--bg2);
     }
 
 }
@@ -54,8 +58,9 @@
         margin: 2rem;
         padding: 1rem;
         border-radius: 0.5rem;
-        background-color: #fff;
-        color: #000;
+        background-color: transparent;
+        color: var(--white);
+        border: 2px solid hsla(129, 87%, 70%, 0.5);
 
         cursor: pointer;
         transition: all 0.3s ease;
@@ -92,7 +97,7 @@
 
     @media screen and (min-width: 2000px) {
             height: 350px;
-        }
+    }
 
 }
 
@@ -117,29 +122,29 @@
 
 
     div {
-        width: 50px;
-        
+        width: 50px; 
         height: 50px;
         border-radius: 50%;
         // background-color: rgba(0, 0, 0, 0.5);
-        background-color: var(--primary-light);
+        background-color: var(--secondary);
         color: #fff;
         margin: 1rem;
         font-weight: 800;
         cursor: pointer;
         transition: all 0.3s ease;
+
         svg {
             width: 60%;
             height: 60%;
-            color: black;
+            color: var(--white);
         }
 
     }
 
     div:hover {
-        background-color: var(--secondary);
+        // background-color: var(--bg2);
         svg {
-            color: var(--white);
+            color: var(--bg2);
         }
     }
 }
@@ -153,8 +158,9 @@
     h4 {
         margin-top: 1rem;
         line-height: 1.5;
-        color: var(--secondary);
+        color: var(--primary);
         font-size: 1.1rem;
+        font-weight: normal;
         @media screen and (min-width: 2000px) {
             margin-top: 3rem;
         }
@@ -167,7 +173,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: var(--white);
+    background-color: var(--bg2);
+    border: 1px solid var(--primary);
     padding: 50px;
     z-index: 100;
     border-radius: 0.5rem;
@@ -189,7 +196,7 @@
             align-items: center;
             padding-left: 5px;
             width: 100%;
-            color: var(--primary-dark);
+            color: var(--primary);
         }
 
         .modal-links {
@@ -199,7 +206,7 @@
             width: 30%;
 
             .modal-icon {
-                background-color: var(--primary-dark);
+                background-color: var(--primary);
                 border-radius: 50%;
                 width: 38px;
                 height: 38px;
@@ -208,13 +215,10 @@
                 justify-content: center;
                 transition: all 0.4s ease-in-out;
 
-
                 svg {
-
                     width: 60%;
                     height: 60%;
-                    color: white;
-                   
+                    color: var(--bg2);
                 }
 
                 &:hover {
@@ -248,14 +252,14 @@
                 svg {
                     width: 35px;
                     height: 35px;
-                    color: var(--secondary);
+                    color: var(--grey-light);
                     margin: 0.5rem 1rem;
                 }
 
                 &:hover {
                     cursor: pointer;
                     svg {
-                        color: var(--primary-dark);
+                        color: var(--secondary);
                         transform: scale(1.1);
                     }
                 }
@@ -273,6 +277,7 @@
                 height: 90%;
                 border-radius: 0.5rem;
                 object-fit: cover;
+                border: 1px solid var(--white);
             }
         }
 
@@ -286,6 +291,7 @@
                 padding-left: 20px;
                 text-align: justify;
                 font-size: 1rem;
+                color: var(--grey-light);
             }
         }
     }
@@ -317,21 +323,16 @@
                     width: 60px;
                     height: 60px;
                     border-radius: 50%;
-                    background-color: #fef4f5;
 
                     img {
                         width: 50%;
                         height: 50%;
                     }
+                }
 
-                    &:hover {
-                        box-shadow: 0 0 25px #fef4f5;
-                    }
-
-                    p {
-                        font-weight: 500;
-                        margin-top: 0.5rem;
-                    }
+                p {
+                    margin-top: 0.5rem;
+                    color: var(--grey);
                 }
             }
         }
@@ -455,7 +456,6 @@
     left: 0;
     right: 0;
     bottom: 0;
-    // background-color: rgba(72, 63, 63, 0.616);
     background-color: rgba(0,0,0,0.4);
     backdrop-filter: blur(5px); 
     z-index: 100;

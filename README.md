@@ -33,6 +33,12 @@ http://katieloesch.co.uk
 npm install
 ```
 
+- to start the application, run:
+
+```zsh
+npm start
+```
+
 <br>
 
 ## <a name="technologies"></a> 4. Technologies Used
@@ -69,13 +75,13 @@ npx create-react-app portfolio
     - https://www.npmjs.com/package/framer-motion
   - react-tsparticles (v2.10.1)
     - https://www.npmjs.com/package/react-tsparticles
+  - react-vertical-timeline-component (v3.6.0) by [Stéphane Monnot](https://github.com/stephane-monnot/react-vertical-timeline/commits?author=stephane-monnot)
+    - https://www.npmjs.com/package/react-vertical-timeline-component
+    - https://github.com/stephane-monnot/react-vertical-timeline
 
 ### UI
 
 - fonts:
-  - 'DM Sans' designed by Colophon Foundry, Jonny Pinhorn, Indian Type Foundry
-    - https://fonts.google.com/specimen/DM+Sans
-    - https://en.bestfonts.pro/font/dm-sans
   - 'Nulshock' designed by Typodermic Fonts
     - https://www.cufonfonts.com/font/nulshock#google_vignette
   - 'VT323' Designed by Peter Hull
@@ -89,13 +95,18 @@ npx create-react-app portfolio
     - https://icon-sets.iconify.design/
   - fontawesome
     - https://fontawesome.com/
+  - timeline (Experience Section):
+    - react-vertical-timeline-component (library for responsive timelines in React applications)
+      - https://www.npmjs.com/package/react-vertical-timeline-component
+      - https://github.com/stephane-monnot/react-vertical-timeline
+      - source: [Stéphane Monnot](https://github.com/stephane-monnot/react-vertical-timeline/commits?author=stephane-monnot)
 
 ### Additional tools used:
 
 - Git / GitHub
   - used for version control
   - https://git-scm.com/
-  - https://github.com/https://github.com/
+  - https://github.com/
 - Visual Studio Code (VSCode)
   - code editor used for writing CSS, JSX, JavaScript and ruby.
 - Google Chrome browser
@@ -104,6 +115,29 @@ npx create-react-app portfolio
   - https://www.google.com/intl/en_uk/chrome/
 - Hostinger: provider used to host portfolio website
   - https://www.hostinger.co.uk
+
+### Resources and tutorials
+
+- [Animated Portfolio Website with React & Framer Motion | React Project for Beginners](https://www.youtube.com/watch?v=CHGHuF24Cjw&list=PL5TCQHRtvHGkuR2YZDf_2lDFuc9m5OUlO&index=3) by [Lama Dev](https://www.youtube.com/@LamaDev)
+
+  - responsive navigation menu
+  - parallax, images
+  - code: https://github.com/safak/animated-portfolio/tree/starter
+
+- button fill effect:
+
+  - [Button Ripple Hover Effects using CSS & Javascript](https://www.youtube.com/watch?v=WOSaNbpHNqU) by [Online Tutorials | Md Irshad Ansari](https://www.youtube.com/@OnlineTutorialsYT)
+
+- parallax: KrishnaPrasad
+  https://krimsonhart.medium.com/css-parallax-explore-space-effect-with-html-css-js-scroll-animation-aded7b771b2
+
+- initial portfolio structure
+
+  - [Modern React Web Development Full Course - 12 Hours | 4 Real Industry Web Applications](https://www.youtube.com/watch?v=XxXyfkrP298) by [JavaScript Mastery | adrianhajdin](https://www.youtube.com/@javascriptmastery)
+  - code: https://github.com/adrianhajdin/project_professional_portfolio
+  - https://www.youtube.com/watch?v=3HNyXCPDQ7Q
+
+- timeline (Experience section): [Simple Timeline for your Portfolio Website | React Tutorial](https://www.youtube.com/watch?v=-rnkToU2_lw) by [Aleks Popovic](https://www.youtube.com/@AleksPopovic)
 
 ## <a name="deliverables"></a> 5. Deliverables
 
