@@ -11,6 +11,7 @@ import { AppContainer, MotionContainer } from "../../containers";
 import { footerIcons } from "../../assets/icons/icons_footer";
 import { colors } from "../../assets/colors/colors";
 import "./Footer.scss";
+import SectionHeading from "../Shared/SectionHeading/SectionHeading";
 
 const Footer = () => {
   //Navigation
@@ -125,9 +126,12 @@ const Footer = () => {
         whileInView="animate"
         ref={iconRef}
       >
-        <motion.h1 className="h-text section-heading" variants={variants}>
+        {/* {  <motion.h1 className="h-text section-heading" variants={variants}>
           Get in touch
-        </motion.h1>
+        </motion.h1>*/}
+        <SectionHeading section="footer" variants={variants}>
+          Get in Touch
+        </SectionHeading>
         <motion.p className="p-text" variants={variants}>
           Want to leave some feedback?
           <img src={footerIcons.feedback} alt="feedback" />

@@ -32,7 +32,7 @@ const NavMobile = () => {
       <motion.div variants={variants} className="bg">
         {" "}
         {/* bg */}
-        <NavMobileLinks />
+        <NavMobileLinks setOpen={setOpen} />
       </motion.div>
       <Hamburger setOpen={setOpen} />
     </motion.div>
