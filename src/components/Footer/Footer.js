@@ -8,7 +8,7 @@ import { FaPaperPlane } from "react-icons/fa";
 
 import { CurrentContext } from "../../contexts/CurrentContext";
 import { AppContainer, MotionContainer } from "../../containers";
-import { SectionHeading, BtnFill } from "../../components";
+import { SectionHeading, BtnFill } from "../Shared";
 import { footerIcons } from "../../assets/icons/icons_footer";
 import { colors } from "../../assets/colors/colors";
 import "./Footer.scss";
@@ -239,8 +239,8 @@ const Footer = () => {
             </BtnFill>
           </motion.form>
         ) : (
-          <div>
-            <h3 className="h-text">Thanks for getting in touch!</h3>
+          <div className="msg-container">
+            <h3 className="msg-thanks">Thanks for getting in touch!</h3>
           </div>
         )}
       </div>

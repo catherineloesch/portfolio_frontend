@@ -1,7 +1,11 @@
-import angles_down from './angles_down.svg';
+import arrowsDown from "./arrows_down.svg";
+import arrowLeft from "./arrow_left.svg";
+import arrowRight from "./arrow_right.svg";
 
 const arrowIcons = {
-    angles_down
-}
+  arrowsDown,
+  arrowLeft,
+  arrowRight,
+};
 
 export default arrowIcons;

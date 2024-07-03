@@ -11,6 +11,7 @@ import { CurrentContext } from "../../contexts/CurrentContext";
 import { colors } from "../../assets/colors/colors";
 import { timelineData } from "../../api_data/api_timeline";
 import "./Experience.scss";
+import { SectionHeading } from "../Shared";
 
 const Experience = () => {
   const active = useContext(CurrentContext);
@@ -40,7 +41,9 @@ const Experience = () => {
 
   return (
     <div className="experiences flex nav-section" ref={ref}>
-      <h1 className="h-text section-heading">Experience & Education</h1>
+      <SectionHeading section="experience">
+        Experience & Education
+      </SectionHeading>
       <div className="timeline">
         <VerticalTimeline className="timeline-container">
           {timelineData.map((timelineItem, index) => (

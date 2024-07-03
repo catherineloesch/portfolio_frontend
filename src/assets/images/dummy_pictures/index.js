@@ -1,1 +1,1 @@
-export { default as dummy_images } from "./dummy_images";
+export { default as dummyArr } from "./dummy_images";

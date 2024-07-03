@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { Header, Skills, Work, Experience, About, Footer } from "./components";
-import { NavBar, NavDots, NavMobile } from "./components/Nav";
+import { NavBar, NavDots, NavMobile } from "./components/Shared";
 import { CurrentContext } from "./contexts/CurrentContext";
 
 import "./App.scss";

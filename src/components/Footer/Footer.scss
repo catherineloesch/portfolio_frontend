@@ -158,6 +158,20 @@
       //     height: 1800px;
       //   }
     }
+
+    .msg-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .msg-thanks {
+        font-size: 2.1rem;
+        text-align: center;
+        font-weight: normal;
+        color: var(--secondary);
+        width: 50%;
+      }
+    }
   }
 }
 
@@ -211,6 +225,14 @@
 
     .footer-form-container {
       width: 85%;
+
+      .msg-container {
+        .msg-thanks {
+          font-size: 1.7rem;
+
+          width: 90%;
+        }
+      }
     }
   }
 }

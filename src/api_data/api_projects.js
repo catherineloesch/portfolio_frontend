@@ -1,7 +1,7 @@
 import { project_images } from "../assets/images/projects";
 import { skillIcons } from "./../assets/icons/icons_skills";
 
-import { dummy_images } from "../assets/images/dummy_pictures";
+import { dummyArr } from "../assets/images/dummy_pictures";
 
 const projects = [
   {
@@ -14,7 +14,7 @@ const projects = [
     codeLink: "https://github.com/katieloesch/project4-react-frontend",
     imgUrl: project_images.project4,
     img: project_images.project4,
-    imgArr: dummy_images,
+    imgArr: dummyArr,
     tags: ["React", "Rails", "Full-Stack", "Responsive Design", "All"],
     skills: [
       {
@@ -73,7 +73,7 @@ const projects = [
       "http://github.com/katieloesch/project-2-react-film-app-revisited",
     imgUrl: project_images.project2,
     img: project_images.project2,
-    imgArr: dummy_images,
+    imgArr: dummyArr,
     tags: ["React", "Full-Stack", "Responsive Design", "All"],
     skills: [
       {
@@ -114,7 +114,7 @@ const projects = [
     codeLink: "https://github.com/katieloesch/react-todo-app",
     imgUrl: project_images.todo_img2,
     img: project_images.todo_img2,
-    imgArr: dummy_images,
+    imgArr: dummyArr,
     tags: ["React", "Responsive Design", "All"],
     skills: [
       {
@@ -152,7 +152,7 @@ const projects = [
     codeLink: "http://github.com/katieloesch/project-1-tictactoe",
     imgUrl: project_images.project1,
     img: project_images.project1,
-    imgArr: dummy_images,
+    imgArr: dummyArr,
     tags: ["Responsive Design", "All"],
     skills: [
       {

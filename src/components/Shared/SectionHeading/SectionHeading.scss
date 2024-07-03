@@ -1,9 +1,16 @@
 .heading-section {
-  font-family: var(--font-nav);
-  font-size: 2.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  font-family: var(--font-nav);
+  font-size: 2.2rem;
   color: var(--secondary);
   width: 85%;
+
+  &.about-heading {
+    justify-content: left;
+  }
 
   @media (max-width: 550px) {
     font-size: 2.3rem;
