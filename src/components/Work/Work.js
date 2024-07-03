@@ -8,6 +8,7 @@ import { BsEyeFill } from "react-icons/bs";
 import { projects } from "./../../api_data/api_projects";
 import { colors } from "../../assets/colors/colors";
 import "./Work.scss";
+import BtnFill from "../Shared/BtnFill/BtnFill";
 
 const Work = () => {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -72,15 +73,18 @@ const Work = () => {
 
       <div className="work-filter">
         {categories.map((category, index) => (
-          <div
-            key={index}
+          <BtnFill
+            type="button"
+            name={category}
+            key={`work-filter-${category}`}
+            id={`work-filter-${category}`}
+            size="small"
+            active={activeFilter}
+            classNames="work-filter-item"
             onClick={() => handleWorkFilter(category)}
-            className={`work-filter-item flex p-text ${
-              activeFilter === category ? "item-active" : ""
-            } `}
           >
             {category}
-          </div>
+          </BtnFill>
         ))}
       </div>
 

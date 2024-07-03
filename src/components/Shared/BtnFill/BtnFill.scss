@@ -1,0 +1,49 @@
+.btn-fill {
+  z-index: 1;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  overflow: hidden;
+
+  span {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &:hover {
+    color: var(--bg2);
+  }
+}
+
+.btn-fill::before {
+  content: "";
+  position: absolute;
+  background: var(--primary);
+  left: var(--x);
+  top: var(--y);
+  transform: translate(-50%, -50%);
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+}
+
+.btn-fill-large::before {
+  transition: width 1.1s, height 1.1s;
+}
+
+.btn-fill-small::before {
+  transition: width 0.7s, height 0.7s;
+}
+
+.btn-fill-large:hover::before {
+  width: 1800px;
+  height: 1800px;
+}
+
+.btn-fill-small:hover::before {
+  width: 400px;
+  height: 400px;
+}

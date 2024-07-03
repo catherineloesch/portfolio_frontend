@@ -8,10 +8,10 @@ import { FaPaperPlane } from "react-icons/fa";
 
 import { CurrentContext } from "../../contexts/CurrentContext";
 import { AppContainer, MotionContainer } from "../../containers";
+import { SectionHeading, BtnFill } from "../../components";
 import { footerIcons } from "../../assets/icons/icons_footer";
 import { colors } from "../../assets/colors/colors";
 import "./Footer.scss";
-import SectionHeading from "../Shared/SectionHeading/SectionHeading";
 
 const Footer = () => {
   //Navigation
@@ -40,21 +40,6 @@ const Footer = () => {
     observer.observe(ref.current);
     return () => observer.disconnect();
   }, [isIntersecting, active, dot, navDots]);
-
-  //button fill effect
-  function handleMouseOver(e) {
-    const rect = e.target.getBoundingClientRect();
-
-    // Calculate cursor's position relative to the button
-    const x = e.clientX - rect.left; // Cursor's x coordinate within the button
-    const y = e.clientY - rect.top; // Cursor's y coordinate within the button
-
-    // Update CSS variables on the button to move the bubble
-    e.target.style.setProperty("--x", `${x}px`);
-    e.target.style.setProperty("--y", `${y}px`);
-
-    console.log(x, y);
-  }
 
   //motion
   const variants = {
@@ -248,17 +233,10 @@ const Footer = () => {
               required
             />
 
-            <button
-              type="submit"
-              className="btn btn-fill"
-              id="btn-submit-contact-form"
-              onMouseOverCapture={(e) => handleMouseOver(e)}
-            >
-              <span>
-                {!loading ? "Send Message" : "Sending..."}
-                <FaPaperPlane />
-              </span>
-            </button>
+            <BtnFill type={"submit"} id="btn-submit-contact-form" size="large">
+              {!loading ? "Send Message" : "Sending..."}
+              <FaPaperPlane />
+            </BtnFill>
           </motion.form>
         ) : (
           <div>

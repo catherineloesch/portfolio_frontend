@@ -8,3 +8,4 @@ export { default as Footer } from "./Footer/Footer";
 
 // Shared components
 export { default as SectionHeading } from "./Shared/SectionHeading/SectionHeading";
+export { default as BtnFill } from "./Shared/BtnFill/BtnFill";

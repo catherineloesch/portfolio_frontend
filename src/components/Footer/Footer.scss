@@ -8,11 +8,6 @@
   gap: 50px;
 
   .footer-txt-container {
-    // h1 {
-    //   font-size: 45px;
-    //   width: 70%;
-    // }
-
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -126,18 +121,13 @@
       }
 
       #btn-submit-contact-form {
-        z-index: 1;
-        position: relative;
-        display: inline-flex;
-        justify-content: center;
-        overflow: hidden;
+        // z-index: 1;
+        // position: relative;
+        // display: inline-flex;
+        // justify-content: center;
+        // overflow: hidden;
 
         span {
-          position: relative;
-          z-index: 1;
-          display: flex;
-          align-items: center;
-          justify-content: center;
           gap: 20px;
 
           svg {
@@ -145,28 +135,28 @@
           }
         }
 
-        &:hover {
-          color: var(--bg2);
-        }
+        // &:hover {
+        //   color: var(--bg2);
+        // }
       }
 
-      #btn-submit-contact-form::before {
-        content: "";
-        position: absolute;
-        background: var(--primary);
-        left: var(--x);
-        top: var(--y);
-        transform: translate(-50%, -50%);
-        width: 0px;
-        height: 0px;
-        border-radius: 50%;
-        transition: width 1.1s, height 1.1s;
-      }
+      //   #btn-submit-contact-form::before {
+      //     content: "";
+      //     position: absolute;
+      //     background: var(--primary);
+      //     left: var(--x);
+      //     top: var(--y);
+      //     transform: translate(-50%, -50%);
+      //     width: 0px;
+      //     height: 0px;
+      //     border-radius: 50%;
+      //     transition: width 1.1s, height 1.1s;
+      //   }
 
-      #btn-submit-contact-form:hover::before {
-        width: 1800px;
-        height: 1800px;
-      }
+      //   #btn-submit-contact-form:hover::before {
+      //     width: 1800px;
+      //     height: 1800px;
+      //   }
     }
   }
 }
@@ -198,14 +188,6 @@
 @media screen and (max-width: 600px) {
   .footer {
     width: 100%;
-    .footer-form-container {
-      width: 90%;
-    }
-  }
-}
-
-@media screen and (max-width: 390px) {
-  .footer {
     .footer-txt-container {
       p {
         font-size: 1.1rem;
@@ -225,6 +207,10 @@
           }
         }
       }
+    }
+
+    .footer-form-container {
+      width: 85%;
     }
   }
 }
