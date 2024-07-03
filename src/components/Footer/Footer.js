@@ -1,61 +1,58 @@
-import React from 'react'
-import { useState, useRef, useEffect, useContext} from "react"; 
-import emailjs from '@emailjs/browser';
-import { motion, useInView } from 'framer-motion';
-import { BsGithub, BsLinkedin } from'react-icons/bs';
-import { MdEmail } from'react-icons/md';
+import React from "react";
+import { useState, useRef, useEffect, useContext } from "react";
+import emailjs from "@emailjs/browser";
+import { motion, useInView } from "framer-motion";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { MdEmail } from "react-icons/md";
 import { FaPaperPlane } from "react-icons/fa";
 
-import { CurrentContext } from '../../contexts/CurrentContext';
-import { AppContainer, MotionContainer } from '../../containers';
-import { footerIcons } from '../../assets/icons/icons_footer';
-import { colors } from '../../assets/colors/colors'
-import './Footer.scss'
+import { CurrentContext } from "../../contexts/CurrentContext";
+import { AppContainer, MotionContainer } from "../../containers";
+import { footerIcons } from "../../assets/icons/icons_footer";
+import { colors } from "../../assets/colors/colors";
+import "./Footer.scss";
 
 const Footer = () => {
-
   //Navigation
-  const active = useContext(CurrentContext)
+  const active = useContext(CurrentContext);
   const [isIntersecting, setIsIntersecting] = useState(false);
-  const ref = useRef('contact');
-  const navDots = document.querySelectorAll('.nav-dot')
-  const dot = document.querySelector('#contact-dot');
+  const ref = useRef("contact");
+  const navDots = document.querySelectorAll(".nav-dot");
+  const dot = document.querySelector("#contact-dot");
 
   useEffect(() => {
-   
     const observer = new IntersectionObserver(
       ([entry]) => {
         setIsIntersecting(entry.isIntersecting);
       },
       { rootMargin: "-300px" }
     );
-    
+
     if (isIntersecting) {
-      active.current = 'about'
-      navDots.forEach(dot => dot.style.backgroundColor = colors.navDotInactive);
+      active.current = "about";
+      navDots.forEach(
+        (dot) => (dot.style.backgroundColor = colors.navDotInactive)
+      );
       dot.style.backgroundColor = colors.navDotActive;
-
-
     }
 
     observer.observe(ref.current);
     return () => observer.disconnect();
-
   }, [isIntersecting, active, dot, navDots]);
 
   //button fill effect
   function handleMouseOver(e) {
     const rect = e.target.getBoundingClientRect();
 
-     // Calculate cursor's position relative to the button
-     const x = e.clientX - rect.left; // Cursor's x coordinate within the button
-     const y = e.clientY - rect.top;  // Cursor's y coordinate within the button
+    // Calculate cursor's position relative to the button
+    const x = e.clientX - rect.left; // Cursor's x coordinate within the button
+    const y = e.clientY - rect.top; // Cursor's y coordinate within the button
 
-     // Update CSS variables on the button to move the bubble
-     e.target.style.setProperty('--x', `${x}px`);
-     e.target.style.setProperty('--y', `${y}px`);
+    // Update CSS variables on the button to move the bubble
+    e.target.style.setProperty("--x", `${x}px`);
+    e.target.style.setProperty("--y", `${y}px`);
 
-    console.log(x, y)
+    console.log(x, y);
   }
 
   //motion
@@ -79,78 +76,108 @@ const Footer = () => {
   const isInView = useInView(iconRef, { margin: "-100px" });
 
   //EmailJS parameters
-    //emails sent to 'katie.loesch@pm.me'
-  const publicKey = 'zNvzRNVUztWrUC40f'
-  const serviceId = 'service_gaq8s1d'
-  const templateId = 'template_4np1zu1'
-    //initialise emailjs with public key
-  emailjs.init(publicKey)
+  //emails sent to 'katie.loesch@pm.me'
+  const publicKey = "zNvzRNVUztWrUC40f";
+  const serviceId = "service_gaq8s1d";
+  const templateId = "template_4np1zu1";
+  //initialise emailjs with public key
+  emailjs.init(publicKey);
 
   const formTemplate = {
-    name: '',
-    email: '',
-    message: ''
-  }
+    name: "",
+    email: "",
+    message: "",
+  };
 
   const form = useRef();
-  const [formData, setFormData] = useState(formTemplate)
-  const [formSubmitted, setFormSubmitted] = useState(false)
-  const [loading, setLoading] = useState(false)
+  const [formData, setFormData] = useState(formTemplate);
+  const [formSubmitted, setFormSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleFormChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value })
-  }
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
 
   const handleFormSubmit = (e) => {
-    e.preventDefault()
-    setLoading(true)
+    e.preventDefault();
+    setLoading(true);
 
-    emailjs.sendForm(serviceId, templateId, form.current, publicKey)
-    .then((res)=> {
-      console.log(res.text)
-      setLoading(false)
-      setFormSubmitted(true)
-      setFormData(formTemplate)
-
-    })
-    .catch((err) => {
-      alert('Something went wrong, please try again later!') 
-    console.log(err.text)}); //msg: something went wrong
-
-  }
+    emailjs
+      .sendForm(serviceId, templateId, form.current, publicKey)
+      .then((res) => {
+        console.log(res.text);
+        setLoading(false);
+        setFormSubmitted(true);
+        setFormData(formTemplate);
+      })
+      .catch((err) => {
+        alert("Something went wrong, please try again later!");
+        console.log(err.text);
+      }); //msg: something went wrong
+  };
 
   return (
     <>
-      <motion.div className='footer-txt-container nav-section' variants={variants} initial="initial" whileInView="animate" ref={iconRef}>
+      <motion.div
+        className="footer-txt-container nav-section"
+        variants={variants}
+        initial="initial"
+        whileInView="animate"
+        ref={iconRef}
+      >
+        <motion.h1 className="h-text section-heading" variants={variants}>
+          Get in touch
+        </motion.h1>
+        <motion.p className="p-text" variants={variants}>
+          Want to leave some feedback?
+          <img src={footerIcons.feedback} alt="feedback" />
+        </motion.p>
+        <motion.p className="p-text" variants={variants}>
+          {" "}
+          Or just have a chat?{" "}
+          <img src={footerIcons.coffee} alt="coffee" ref={ref} />{" "}
+        </motion.p>
+        <motion.p className="p-text" variants={variants}>
+          Leave a message and I'll be in touch!
+        </motion.p>
 
-        <motion.h1 className='h-text section-heading' variants={variants}>Get in touch</motion.h1>
-        <motion.p className='p-text' variants={variants}>Want to leave some feedback?<img src={footerIcons.feedback} alt='feedback'/></motion.p> 
-        <motion.p className='p-text' variants={variants}> Or just have a chat? <img src={footerIcons.coffee} alt='coffee' ref={ref}/> </motion.p>
-        <motion.p className='p-text' variants={variants}>Leave a message and I'll be in touch!</motion.p>
-
-        <motion.div className='footer-socials' variants={variants}>
-          <a href="mailto:katie.loesch@pm.me" className='footer-social-icon' id="mail-icon">
+        <motion.div className="footer-socials" variants={variants}>
+          <a
+            href="mailto:katie.loesch@pm.me"
+            className="footer-social-icon"
+            id="mail-icon"
+          >
             <MdEmail />
           </a>
-    
-          <a href="https://github.com/katieloesch" target="_blank" rel="noopener noreferrer" className='footer-social-icon' id="github-icon">
+
+          <a
+            href="https://github.com/katieloesch"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-social-icon"
+            id="github-icon"
+          >
             <BsGithub />
           </a>
 
-          <a href="https://www.linkedin.com/in/katie-loesch/" target="_blank" rel="noopener noreferrer" className='footer-social-icon' id="linkedin-icon">
+          <a
+            href="https://www.linkedin.com/in/katie-loesch/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-social-icon"
+            id="linkedin-icon"
+          >
             <BsLinkedin />
           </a>
         </motion.div>
-
       </motion.div>
 
-      <div className='footer-form-container'>
-
+      <div className="footer-form-container">
         <motion.div
-        className="svg-container"
-        initial={{ opacity: 1 }}
-        whileInView={{ opacity: 0 }}
-        transition={{ delay: 3, duration: 1 }}
+          className="svg-container"
+          initial={{ opacity: 1 }}
+          whileInView={{ opacity: 0 }}
+          transition={{ delay: 2, duration: 0.4 }}
         >
           <svg width="400px" height="400px" viewBox="0 0 32.666 32.666">
             <motion.path
@@ -158,7 +185,7 @@ const Footer = () => {
               fill="none"
               initial={{ pathLength: 0 }}
               animate={isInView && { pathLength: 1 }}
-              transition={{ duration: 3 }}
+              transition={{ duration: 2 }}
               d="M28.189,16.504h-1.666c0-5.437-4.422-9.858-9.856-9.858l-0.001-1.664C23.021,4.979,28.189,10.149,28.189,16.504z
             M16.666,7.856L16.665,9.52c3.853,0,6.983,3.133,6.981,6.983l1.666-0.001C25.312,11.735,21.436,7.856,16.666,7.856z M16.333,0
             C7.326,0,0,7.326,0,16.334c0,9.006,7.326,16.332,16.333,16.332c0.557,0,1.007-0.45,1.007-1.006c0-0.559-0.45-1.01-1.007-1.01
@@ -176,72 +203,71 @@ const Footer = () => {
           </svg>
         </motion.div>
 
-        { !formSubmitted  ? (
+        {!formSubmitted ? (
+          <motion.form
+            className="footer-form"
+            ref={form}
+            onSubmit={handleFormSubmit}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 3, duration: 1 }}
+          >
+            <input
+              className="p-text"
+              name="name"
+              type="text"
+              placeholder="name"
+              value={formData.name}
+              onChange={handleFormChange}
+              autoComplete="off"
+            />
 
-        <motion.form className='footer-form' ref={form} onSubmit={handleFormSubmit} initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 3, duration: 1}}>
-        
-          <input
-            className='p-text'
-            name='name'
-            type='text'
-            placeholder='name'
-            value={formData.name}
-            onChange={handleFormChange}
-            autoComplete='off'
-          />
+            <input
+              className="p-text"
+              name="email"
+              type="email"
+              placeholder="email"
+              value={formData.email}
+              onChange={handleFormChange}
+              autoComplete="off"
+              required
+            />
 
-          <input
-            className='p-text'
-            name='email'
-            type='email'
-            placeholder='email'
-            value={formData.email}
-            onChange={handleFormChange}
-            autoComplete='off'
-            required
-          />
+            <textarea
+              className="p-text"
+              name="message"
+              placeholder="message"
+              value={formData.message}
+              onChange={handleFormChange}
+              autoComplete="off"
+              rows={7}
+              required
+            />
 
-          <textarea
-            className='p-text'
-            name='message'
-            placeholder='message'
-            value={formData.message}
-            onChange={handleFormChange}
-            autoComplete='off'
-            rows={7}
-            required
-          />
-
-          <button type='submit' className='btn btn-fill' id='btn-submit-contact-form' onMouseOverCapture={(e) => handleMouseOver(e)}> 
-            <span>
-              {!loading ? 'Send Message' : 'Sending...'}
-              <FaPaperPlane />
-            </span>
-          </button>
-
-        </motion.form>
-
-        ) : ( 
-
-        <div>
-          <h3 className='h-text'>
-            Thanks for getting in touch!
-          </h3>
-        </div>
-
+            <button
+              type="submit"
+              className="btn btn-fill"
+              id="btn-submit-contact-form"
+              onMouseOverCapture={(e) => handleMouseOver(e)}
+            >
+              <span>
+                {!loading ? "Send Message" : "Sending..."}
+                <FaPaperPlane />
+              </span>
+            </button>
+          </motion.form>
+        ) : (
+          <div>
+            <h3 className="h-text">Thanks for getting in touch!</h3>
+          </div>
         )}
-
       </div>
-
-
-
-
     </>
-  )
-}
+  );
+};
 
 export default AppContainer(
-  MotionContainer(Footer, 'footer'),
-  'contact',
-  'bg-1'
-)
+  MotionContainer(Footer, "footer"),
+  "contact",
+  "bg-1"
+);
