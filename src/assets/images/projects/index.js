@@ -1,1 +1,1 @@
-export { default as project_images } from './project_images';
+export { default as projectImages } from "./project_images";

@@ -4,6 +4,7 @@ import { CSSTransition } from "react-transition-group";
 import { colors } from "../../../assets/colors/colors";
 import { AiFillGithub } from "react-icons/ai";
 import { HiX, HiLink } from "react-icons/hi";
+import { workIcons } from "../../../assets/icons/icons_work";
 
 import Backdrop from "../Backdrop/Backdrop";
 import "./Modal.scss";
@@ -29,28 +30,24 @@ const Overlay = ({ show, type, data, closeModal }) => {
           <HiX />
         </button>
       </div>
-      <header className={`modal__header`}>
-        <div className="modal-links">
-          <a href={data.codeLink} target="_blank" rel="noreferrer">
-            <div className="modal-link">
-              <AiFillGithub />
-            </div>
-          </a>
-          <a href={data.projectLink} target="_blank" rel="noreferrer">
-            <div className="modal-link">
-              <HiLink />
-            </div>
-          </a>
-        </div>
-
-        <h2>{data.title}</h2>
-      </header>
 
       <div className={`modal__main`}>
         <div className="modal__main__img-container">
           <Carousel imgData={data.imgArr} type="project" />
         </div>
         <div className="modal__main__text-container">
+          <div className="heading-modal">
+            <h2>{data.title}</h2>
+            <div className="modal-links">
+              <a href={data.codeLink} target="_blank" rel="noreferrer">
+                <div className="modal-link">{workIcons.gitHub}</div>
+              </a>
+              <a href={data.projectLink} target="_blank" rel="noreferrer">
+                <div className="modal-link">{workIcons.link}</div>
+              </a>
+            </div>
+          </div>
+
           <p>{data.description}</p>
         </div>
       </div>

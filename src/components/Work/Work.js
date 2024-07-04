@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 
 import { CurrentContext } from "../../contexts/CurrentContext";
 import { AppContainer, MotionContainer } from "../../containers";
-import WorkModal from "./WorkModal";
+// import WorkModal from "./WorkModal";
 import { BsEyeFill } from "react-icons/bs";
 import { projects } from "./../../api_data/api_projects";
 import { colors } from "../../assets/colors/colors";
-import "./Work.scss";
 import { BtnFill, Modal, SectionHeading } from "../Shared";
+import "./Work.scss";
 
 const Work = () => {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -103,10 +103,10 @@ const Work = () => {
           transition={{ duration: 0.5, delayChildren: 0.5 }}
           className="work-portfolio"
         >
-          {filterWork.map((work, index) => (
+          {filterWork.map((project, index) => (
             <div className="work-item flex" key={index}>
               <div className="work-img flex">
-                <img src={work.imgUrl} alt={work.title} />
+                <img src={project.imgArr[0].src} alt={project.title} />
 
                 <motion.div
                   whileHover={{ opacity: [0, 1] }}
@@ -118,7 +118,7 @@ const Work = () => {
                   className="work-hover flex"
                 >
                   <button
-                    onClick={() => openProjectModal(work)}
+                    onClick={() => openProjectModal(project)}
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -133,7 +133,7 @@ const Work = () => {
                 </motion.div>
               </div>
               <div className="work-content flex">
-                <h4 className="bold">{work.title}</h4>
+                <h4 className="bold">{project.title}</h4>
               </div>
             </div>
           ))}

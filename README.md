@@ -139,6 +139,8 @@ npx create-react-app portfolio
 
 - timeline (Experience section): [Simple Timeline for your Portfolio Website | React Tutorial](https://www.youtube.com/watch?v=-rnkToU2_lw) by [Aleks Popovic](https://www.youtube.com/@AleksPopovic)
 
+- image carousel (work section): [Build a Slider with React.js](https://www.youtube.com/watch?v=og3wCO98HkQ) by [The Web School.](https://www.youtube.com/@TheWebSchool)
+
 ## <a name="deliverables"></a> 5. Deliverables
 
 ### MVP
