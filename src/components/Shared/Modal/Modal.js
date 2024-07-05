@@ -47,8 +47,16 @@ const Overlay = ({ show, type, data, closeModal }) => {
               </a>
             </div>
           </div>
-
-          <p>{data.description}</p>
+          <ul className="modal-description">
+            {data.description.map((descriptionParagraph, index) => (
+              <li
+                key={`modal-description-item-${index}`}
+                className="modal-description-item"
+              >
+                {descriptionParagraph}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
 

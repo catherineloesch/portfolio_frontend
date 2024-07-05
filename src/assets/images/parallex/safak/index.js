@@ -1,1 +1,0 @@
-export { default as safakImages } from './safakImages';

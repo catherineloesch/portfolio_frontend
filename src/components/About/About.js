@@ -40,7 +40,7 @@ const About = () => {
     <div className="about-container">
       <motion.div className="about-intro flex">
         <motion.div className="flex about-avatar">
-          <img src={aboutImages.avatar} alt="avatar" />
+          <img src={aboutImages.avatar2Svg} alt="avatar" />
         </motion.div>
 
         <motion.div className="about-introduction">
