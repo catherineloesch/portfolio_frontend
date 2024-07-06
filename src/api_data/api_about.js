@@ -1,7 +1,7 @@
 import { aboutIcons } from "./../assets/icons/icons_about";
 
 const intros = [
-  "I'm a full-stack developer with a background in biomedical science, currently based in London.",
+  "Hi! I'm Katie. I'm a full-stack developer with a background in biomedical science, currently based in London.",
   "I'm passionate about designing user-centric applications and building purpose-driven solutions. I'm currently open to job opportunities where I can contribute, learn and grow.",
 ];
 

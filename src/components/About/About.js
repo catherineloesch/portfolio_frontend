@@ -1,12 +1,11 @@
 import React, { useContext, useState, useRef, useEffect } from "react";
-import { motion } from "framer-motion";
 
 import { CurrentContext } from "../../contexts/CurrentContext";
 import { AppContainer, MotionContainer } from "../../containers";
+import { SectionHeading, Column } from "../Shared";
 import { intros, abouts } from "./../../api_data/api_about";
 import { aboutImages } from "../../assets/images/about";
 import { colors } from "../../assets/colors/colors";
-import { SectionHeading } from "../Shared";
 import "./About.scss";
 
 const About = () => {
@@ -38,40 +37,33 @@ const About = () => {
 
   return (
     <div className="about-container">
-      <motion.div className="about-intro flex">
-        <motion.div className="flex about-avatar">
+      <div className="about-intro flex">
+        <div className="about-intro__avatar-container flex">
           <img src={aboutImages.avatar2Svg} alt="avatar" />
-        </motion.div>
+        </div>
 
-        <motion.div className="about-introduction">
-          <SectionHeading section="about">Hi, I'm Katie</SectionHeading>
-          <motion.div className="about-intro-text flex">
+        <div className="about-intro__text-container">
+          <SectionHeading section="about">About</SectionHeading>
+          <div className="about-intro__text flex">
             {intros.map((intro, index) => (
               <p className="p-text flex" key={`about-intro-${index}`}>
                 {intro}
               </p>
             ))}
-          </motion.div>
-        </motion.div>
-      </motion.div>
+          </div>
+        </div>
+      </div>
 
-      <div className="profile" ref={ref}>
+      <div className="about-columns-container" ref={ref}>
         {abouts.map((about, index) => (
-          <motion.div
-            whileInView={{ opacity: 1 }}
-            whileHover={{ scale: 1 }}
-            transition={{ duration: 0.5, type: "tween" }}
-            className="profile-item"
-            key={"about-" + index}
-          >
-            <img src={about.imgUrl} alt={about.title} />
-            <h2 className="bold" style={{ marginTop: 20 }}>
-              {about.title}
-            </h2>
-            <p className="p-text" style={{ marginTop: 20 }}>
-              {about.description}
-            </p>
-          </motion.div>
+          <Column
+            type="about"
+            key={`about-column-${index}`}
+            img={about.imgUrl}
+            alt={about.title}
+            title={about.title}
+            txt={about.description}
+          />
         ))}
       </div>
     </div>

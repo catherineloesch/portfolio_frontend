@@ -46,16 +46,17 @@ const Carousel = ({ imgData, type }) => {
             {arrowIcons.arrowRight}
           </button>
         </div>
-        <div className="dots-carousel">
-          {imgData.map((img, index) => (
-            <div
-              key={`carousel-dot-${index}`}
-              className={`dot-carousel ${
-                index === slideIndex ? "active" : "inactive"
-              }`}
-            ></div>
-          ))}
-        </div>
+      </div>
+
+      <div className="dots-carousel">
+        {imgData.map((img, index) => (
+          <div
+            key={`carousel-dot-${index}`}
+            className={`dot-carousel ${
+              index === slideIndex ? "active" : "inactive"
+            }`}
+          ></div>
+        ))}
       </div>
     </div>
   );

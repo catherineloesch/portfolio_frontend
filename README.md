@@ -113,33 +113,25 @@ npx create-react-app portfolio
   - used for launching the website and displaying the application Google Chrome
 - Google Chrome Developer Tools: For troubleshooting and debugging
   - https://www.google.com/intl/en_uk/chrome/
+- chatGTP
+  - https://chat.openai.com/
+  - used for debugging
 - Hostinger: provider used to host portfolio website
   - https://www.hostinger.co.uk
 
 ### Resources and tutorials
 
-- [Animated Portfolio Website with React & Framer Motion | React Project for Beginners](https://www.youtube.com/watch?v=CHGHuF24Cjw&list=PL5TCQHRtvHGkuR2YZDf_2lDFuc9m5OUlO&index=3) by [Lama Dev](https://www.youtube.com/@LamaDev)
+- initial portfolio structure & navigation dots: [Build and Deploy a Fullstack Responsive Portfolio Website | ULTIMATE Step By Step Tutorial 2023](https://www.youtube.com/watch?v=3HNyXCPDQ7Q&list=PL5TCQHRtvHGmk69zb9GYb62MQMAmVQStF&index=3) by [JavaScript Mastery](https://www.youtube.com/@javascriptmastery)
 
-  - responsive navigation menu
-  - parallax, images
-  - code: https://github.com/safak/animated-portfolio/tree/starter
+- responsive navigation menu: [Animated Portfolio Website with React & Framer Motion | React Project for Beginners](https://www.youtube.com/watch?v=CHGHuF24Cjw&list=PL5TCQHRtvHGkuR2YZDf_2lDFuc9m5OUlO&index=3) by [Lama Dev](https://www.youtube.com/@LamaDev)
 
-- button fill effect:
+- timeline (experience section): [Simple Timeline for your Portfolio Website | React Tutorial](https://www.youtube.com/watch?v=-rnkToU2_lw) by [Aleks Popovic](https://www.youtube.com/@AleksPopovic)
 
-  - [Button Ripple Hover Effects using CSS & Javascript](https://www.youtube.com/watch?v=WOSaNbpHNqU) by [Online Tutorials | Md Irshad Ansari](https://www.youtube.com/@OnlineTutorialsYT)
-
-- parallax: KrishnaPrasad
-  https://krimsonhart.medium.com/css-parallax-explore-space-effect-with-html-css-js-scroll-animation-aded7b771b2
-
-- initial portfolio structure
-
-  - [Modern React Web Development Full Course - 12 Hours | 4 Real Industry Web Applications](https://www.youtube.com/watch?v=XxXyfkrP298) by [JavaScript Mastery | adrianhajdin](https://www.youtube.com/@javascriptmastery)
-  - code: https://github.com/adrianhajdin/project_professional_portfolio
-  - https://www.youtube.com/watch?v=3HNyXCPDQ7Q
-
-- timeline (Experience section): [Simple Timeline for your Portfolio Website | React Tutorial](https://www.youtube.com/watch?v=-rnkToU2_lw) by [Aleks Popovic](https://www.youtube.com/@AleksPopovic)
+- card hover effect (work section): [How To Create An Image Hover Effect With CSS](https://www.youtube.com/watch?v=tF3RE5CGt9U&list=PL5TCQHRtvHGn_xv-dWP9P_rDofoxMUQHQ) by [Web Dev Simplified](https://www.youtube.com/@WebDevSimplified)
 
 - image carousel (work section): [Build a Slider with React.js](https://www.youtube.com/watch?v=og3wCO98HkQ) by [The Web School.](https://www.youtube.com/@TheWebSchool)
+
+- button fill effect: [Button Ripple Hover Effects using CSS & Javascript](https://www.youtube.com/watch?v=WOSaNbpHNqU) by [Online Tutorials | Md Irshad Ansari](https://www.youtube.com/@OnlineTutorialsYT)
 
 ## <a name="deliverables"></a> 5. Deliverables
 
@@ -187,10 +179,14 @@ Deployment to [custom domain](katieloesch.co.uk) obtained from [Hostinger](https
 
 ## 7. <a name="challenges"></a> Challenges
 
+- depending on how much text is provided to the modal showing details on each project, the container overflows but by default you can't scroll down on a modal
+- In order to scoll on overlay text the scroll on the body needs to be disabled first which took me a while to figure out.
+
 ## 8. <a name="wins"></a> Wins
 
 - fully responsive design
 - implementation of animations + effects
+- I'm glad I decided to use React.js for my portfolio as I definitely learned a lot doing this project and feel more confident using this framework.
 
 ## <a name="takeaways"></a> 9. Key Learnings & Takeaways
 

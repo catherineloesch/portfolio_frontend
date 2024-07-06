@@ -123,6 +123,7 @@
       text-align: center;
       line-height: 1.5;
       color: var(--primary);
+
       font-size: 1.1rem;
       font-weight: normal;
       @media screen and (min-width: 2000px) {
@@ -156,6 +157,20 @@
   .project-card__img-container:hover {
     img.zoom {
       scale: (1.1);
+    }
+  }
+
+  // effect: GRAYSCALE
+  .project-card__img-container:hover {
+    img.grayscale {
+      filter: grayscale(1);
+    }
+  }
+
+  // effect: SEPIA
+  .project-card__img-container:hover {
+    img.grayscale {
+      filter: sepia(1);
     }
   }
 

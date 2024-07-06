@@ -85,26 +85,6 @@ const skills = [
     id: "postman-icon",
   },
   {
-    name: "Vite",
-    icon: skillIcons.vite_primary,
-    id: "vite-icon",
-  },
-  {
-    name: "OpenAI",
-    icon: skillIcons.openai_primary,
-    id: "openai-icon",
-  },
-  {
-    name: "Heroku",
-    icon: skillIcons.heroku_primary,
-    id: "heroku-icon",
-  },
-  {
-    name: "netlify",
-    icon: skillIcons.netlify_primary,
-    id: "netlify-icon",
-  },
-  {
     name: "Firebase",
     icon: skillIcons.firebase_primary,
     id: "firebase-icon",
@@ -113,6 +93,11 @@ const skills = [
     name: "Cloud Firestore",
     icon: skillIcons.firestore_primary,
     id: "firestore-icon",
+  },
+  {
+    name: "OpenAI",
+    icon: skillIcons.openai_primary,
+    id: "openai-icon",
   },
   {
     name: "git",
