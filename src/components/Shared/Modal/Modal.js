@@ -1,14 +1,14 @@
 import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
 import { CSSTransition } from "react-transition-group";
-import { colors } from "../../../assets/colors/colors";
-import { AiFillGithub } from "react-icons/ai";
-import { HiX, HiLink } from "react-icons/hi";
-import { workIcons } from "../../../assets/icons/icons_work";
+import { HiX } from "react-icons/hi";
 
 import Backdrop from "../Backdrop/Backdrop";
-import "./Modal.scss";
 import Carousel from "../Carousel/Carousel";
+import { workIcons } from "../../../assets/icons/icons_work";
+import { colors } from "../../../assets/colors/colors";
+
+import "./Modal.scss";
 
 const Overlay = ({ show, type, data, closeModal }) => {
   useEffect(() => {
@@ -17,7 +17,6 @@ const Overlay = ({ show, type, data, closeModal }) => {
     } else {
       document.body.style.overflow = "auto";
     }
-    // Cleanup on unmount
     return () => {
       document.body.style.overflow = "auto";
     };
@@ -64,7 +63,7 @@ const Overlay = ({ show, type, data, closeModal }) => {
         <div className="modal-skills-list flex">
           {data.skills.map((skill) => (
             <div
-              whileInView={{ opacity: [0, 1] }}
+              whileinview={{ opacity: [0, 1] }}
               transition={{ duration: 0.5 }}
               className="modal-skills-item flex"
               id={skill.id}

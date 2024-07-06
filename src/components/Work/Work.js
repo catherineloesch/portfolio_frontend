@@ -3,11 +3,9 @@ import { motion } from "framer-motion";
 
 import { CurrentContext } from "../../contexts/CurrentContext";
 import { AppContainer, MotionContainer } from "../../containers";
-// import WorkModal from "./WorkModal";
-import { BsEyeFill } from "react-icons/bs";
+import { BtnFill, Card, Modal, SectionHeading } from "../Shared";
 import { projects } from "./../../api_data/api_projects";
 import { colors } from "../../assets/colors/colors";
-import { BtnFill, Modal, SectionHeading } from "../Shared";
 import "./Work.scss";
 
 const Work = () => {
@@ -103,7 +101,7 @@ const Work = () => {
           transition={{ duration: 0.5, delayChildren: 0.5 }}
           className="work-portfolio"
         >
-          {filterWork.map((project, index) => (
+          {/* {filterWork.map((project, index) => (
             <div className="work-item flex" key={index}>
               <div className="work-img flex">
                 <img src={project.imgArr[0].src} alt={project.title} />
@@ -136,9 +134,21 @@ const Work = () => {
                 <h4 className="bold">{project.title}</h4>
               </div>
             </div>
+          ))} */}
+
+          {filterWork.map((project, index) => (
+            <Card
+              type="project"
+              key={`project-card-${index}`}
+              img={project.imgArr[0].src}
+              alt={project.imgArr[0].title}
+              txt={project.title}
+              imgEffects=""
+              overlayEffects="blur slide-up"
+              onClick={() => openProjectModal(project)}
+            />
           ))}
         </motion.div>
-        {/*<WorkModal modal={modal} setModal={setModal} />*/}
       </div>
       <Modal
         type="project-modal"
