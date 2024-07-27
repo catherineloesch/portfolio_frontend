@@ -1,15 +1,19 @@
 /* font imports (.woff files in ./assets/fonts ) */
 /* --font-main */
-@font-face {/* https://github.com/jandre3000/j4n-co/tree/master/assets/fonts */
+@font-face {
+  /* https://github.com/jandre3000/j4n-co/tree/master/assets/fonts */
   font-family: 'Sofia Pro';
-  src: url('./assets/fonts/j4n-co-fonts/sofia-pro/Sofia\ Pro\ Light.woff') format('woff');
+  src: url('./assets/fonts/j4n-co-fonts/sofia-pro/Sofia\ Pro\ Light.woff')
+    format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
-@font-face {/* https://github.com/jandre3000/j4n-co/tree/master/assets/fonts */
+@font-face {
+  /* https://github.com/jandre3000/j4n-co/tree/master/assets/fonts */
   font-family: 'Sofia Pro';
-  src: url('./assets/fonts/j4n-co-fonts/sofia-pro/Sofia\ Pro\ Bold.woff') format('woff');
+  src: url('./assets/fonts/j4n-co-fonts/sofia-pro/Sofia\ Pro\ Bold.woff')
+    format('woff');
   font-weight: bold;
   font-style: normal;
 }
@@ -41,19 +45,20 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-
 :root {
-
   /* font variables */
-  --font-main: 'Sofia Pro', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  --font-nav: 'Good Times', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  --font-editorial: 'Nulshock','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  --font-main: 'Sofia Pro', 'Trebuchet MS', 'Lucida Sans Unicode',
+    'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  --font-nav: 'Good Times', 'Trebuchet MS', 'Lucida Sans Unicode',
+    'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  --font-editorial: 'Nulshock', 'Trebuchet MS', 'Lucida Sans Unicode',
+    'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   --font-typewriter: 'VT323', monospace;
-  --font-typewriter: "Space Mono", monospace;
-  --typewriterSpeed: 4s; 
+  --font-typewriter: 'Space Mono', monospace;
+  --typewriterSpeed: 4s;
 
   /* colour variables */
-  --primary: rgb(114, 245, 134);
+  --primary: #72f586;
   --primary-a: rgba(114, 245, 134, 0.85);
   /* --secondary: #e84fab; */
   /* --secondary: #ec56da; */
@@ -63,18 +68,16 @@
   /* --secondary: #c16a2e; */
   /* --secondary: orange; */
 
-  --secondary:  rgb(250, 95, 195);
+  --secondary: rgb(250, 95, 195);
   --secondary-dark: rgb(220, 0, 136);
 
-
-
   --bg1: rgb(16, 58, 85);
-  --bg2: rgb(8, 36, 52);
+  --bg2: #082434;
 
   --yellow: rgb(254, 240, 113);
   --yellow-a: rgba(254, 240, 113, 0.55);
   --red: rgb(237, 74, 90);
-  
+
   --white: rgb(255, 254, 254);
   --white-a: rgba(255, 255, 255, 0.8);
   --black: rgb(0, 0, 0);
@@ -114,7 +117,6 @@
   --bubble-projects-filter-before: 20px;
   --bubble-projects-filter-after: 190px;
   --bubble-projects-filter-transition: 0.5s;
-
 }
 
 body {
@@ -122,11 +124,13 @@ body {
 }
 
 /* section backgrounds */
-.bg-1 { /* | skills | experience | contact | */
+.bg-1 {
+  /* | skills | experience | contact | */
   background-color: var(--bg2);
 }
 
-.bg-2 { /* | work | about | */
+.bg-2 {
+  /* | work | about | */
   background-color: var(--bg1);
 }
 
@@ -134,8 +138,8 @@ body {
 * {
   box-sizing: border-box;
   padding: 0;
-  margin: 0; 
-  font-family: var(--font-main)
+  margin: 0;
+  font-family: var(--font-main);
 }
 
 *:focus {
@@ -154,7 +158,8 @@ html {
   scroll-snap-type: y mandatory;
 }
 
-ul, li {
+ul,
+li {
   list-style: none;
 }
 
@@ -162,8 +167,13 @@ a {
   text-decoration: none;
 }
 
-input, textarea, button, a, p, div {
-  font-family: var(--font-main)
+input,
+textarea,
+button,
+a,
+p,
+div {
+  font-family: var(--font-main);
 }
 
 textarea {

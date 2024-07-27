@@ -1,114 +1,247 @@
-import { skillIcons } from "./../assets/icons/icons_skills";
-// sources:
+import { skillIcons } from './../assets/icons/icons_skills';
+// icon sources:
 // https://fontawesome.com/icons
 // https://icon-sets.iconify.design/
 
 const skills = [
   {
-    name: "HTML",
+    name: 'HTML',
     icon: skillIcons.html_primary,
-    id: "html-icon",
+    id: 'html-icon',
   },
   {
-    name: "CSS",
+    name: 'CSS',
     icon: skillIcons.css_primary,
-    id: "css-icon",
+    id: 'css-icon',
   },
   {
-    name: "Sass",
+    name: 'Sass',
     icon: skillIcons.sass_primary,
-    id: "sass-icon",
+    id: 'sass-icon',
   },
   {
-    name: "JavaScript",
+    name: 'JavaScript',
     icon: skillIcons.javascript_primary,
-    id: "javascript-icon",
+    id: 'javascript-icon',
   },
   {
-    name: "Node.js",
+    name: 'Node.js',
     icon: skillIcons.nodejs_primary,
-    id: "nodejs-icon",
+    id: 'nodejs-icon',
   },
   {
-    name: "React.js",
+    name: 'React.js',
     icon: skillIcons.react_primary,
-    id: "react-icon",
+    id: 'react-icon',
   },
   {
-    name: "Redux",
-    icon: skillIcons.redux_primary,
-    id: "redux-icon",
-  },
-  {
-    name: "express",
+    name: 'express',
     icon: skillIcons.express_primary,
-    id: "express-icon",
+    id: 'express-icon',
   },
   {
-    name: "mongoDB",
+    name: 'mongoDB',
     icon: skillIcons.mongodb_primary,
-    id: "mongodb-icon",
+    id: 'mongodb-icon',
   },
   {
-    name: "mongoose",
+    name: 'mongoose',
     icon: skillIcons.mongoose_primary,
-    id: "mongoose-icon",
+    id: 'mongoose-icon',
   },
   {
-    name: "Ruby",
+    name: 'Ruby',
     icon: skillIcons.ruby_primary,
-    id: "ruby-icon",
+    id: 'ruby-icon',
   },
   {
-    name: "Ruby on Rails",
+    name: 'Ruby on Rails',
     icon: skillIcons.rails_primary,
-    id: "rails-icon",
+    id: 'rails-icon',
   },
   {
-    name: "PostgreSQL",
+    name: 'PostgreSQL',
     icon: skillIcons.postgresql_primary,
-    id: "postgresql-icon",
+    id: 'postgresql-icon',
   },
   {
-    name: "Tailwind CSS",
+    name: 'Tailwind CSS',
     icon: skillIcons.tailwind_primary,
-    id: "tailwind-icon",
+    id: 'tailwind-icon',
   },
   {
-    name: "Bootstrap",
+    name: 'Bootstrap',
     icon: skillIcons.bootstrap_primary,
-    id: "bootstrap-icon",
+    id: 'bootstrap-icon',
   },
   {
-    name: "Postman API",
+    name: 'Postman API',
     icon: skillIcons.postman_primary,
-    id: "postman-icon",
+    id: 'postman-icon',
   },
   {
-    name: "Firebase",
+    name: 'Firebase',
     icon: skillIcons.firebase_primary,
-    id: "firebase-icon",
+    id: 'firebase-icon',
   },
   {
-    name: "Cloud Firestore",
+    name: 'Cloud Firestore',
     icon: skillIcons.firestore_primary,
-    id: "firestore-icon",
+    id: 'firestore-icon',
   },
   {
-    name: "OpenAI",
+    name: 'OpenAI',
     icon: skillIcons.openai_primary,
-    id: "openai-icon",
+    id: 'openai-icon',
   },
   {
-    name: "git",
+    name: 'git',
     icon: skillIcons.git_primary,
-    id: "git-icon",
+    id: 'git-icon',
   },
   {
-    name: "GitHub",
+    name: 'GitHub',
     icon: skillIcons.github_primary,
-    id: "github-icon",
+    id: 'github-icon',
   },
 ];
+
+const skillsCategorised = {
+  frontend: {
+    title: 'Front-End',
+    list: [
+      {
+        name: 'HTML',
+        icon: skillIcons.html_primary,
+        id: 'html-icon',
+      },
+      {
+        name: 'CSS',
+        icon: skillIcons.css_primary,
+        id: 'css-icon',
+      },
+      {
+        name: 'Sass',
+        icon: skillIcons.sass_primary,
+        id: 'sass-icon',
+      },
+      {
+        name: 'JavaScript',
+        icon: skillIcons.javascript_primary,
+        id: 'javascript-icon',
+      },
+      {
+        name: 'React.js',
+        icon: skillIcons.react_primary,
+        id: 'react-icon',
+      },
+      {
+        name: 'Tailwind CSS',
+        icon: skillIcons.tailwind_primary,
+        id: 'tailwind-icon',
+      },
+      {
+        name: 'Bootstrap',
+        icon: skillIcons.bootstrap_primary,
+        id: 'bootstrap-icon',
+      },
+    ],
+  },
+  backend: {
+    title: 'Back-End',
+    list: [
+      {
+        name: 'Node.js',
+        icon: skillIcons.nodejs_primary,
+        id: 'nodejs-icon',
+      },
+      {
+        name: 'express',
+        icon: skillIcons.express_primary,
+        id: 'express-icon',
+      },
+      {
+        name: 'Ruby',
+        icon: skillIcons.ruby_primary,
+        id: 'ruby-icon',
+      },
+      {
+        name: 'Ruby on Rails',
+        icon: skillIcons.rails_primary,
+        id: 'rails-icon',
+      },
+      // {
+      //   name: 'Python',
+      //   icon: '',
+      //   id: 'python-icon',
+      // },
+      // {
+      //   name: 'Django',
+      //   icon: '',
+      //   id: 'django-icon',
+      // },
+      // {
+      //   name: 'Go',
+      //   icon: '',
+      //   id: 'go-icon',
+      // },
+    ],
+  },
+  db: {
+    title: 'Databases/ Data Management',
+    list: [
+      {
+        name: 'mongoDB',
+        icon: skillIcons.mongodb_primary,
+        id: 'mongodb-icon',
+      },
+      {
+        name: 'PostgreSQL',
+        icon: skillIcons.postgresql_primary,
+        id: 'postgresql-icon',
+      },
+      {
+        name: 'mongoose',
+        icon: skillIcons.mongoose_primary,
+        id: 'mongoose-icon',
+      },
+      {
+        name: 'Firebase',
+        icon: skillIcons.firebase_primary,
+        id: 'firebase-icon',
+      },
+      {
+        name: 'Cloud Firestore',
+        icon: skillIcons.firestore_primary,
+        id: 'firestore-icon',
+      },
+    ],
+  },
+  devTools: {
+    title: 'Development Tools',
+    list: [
+      {
+        name: 'git',
+        icon: skillIcons.git_primary,
+        id: 'git-icon',
+      },
+      {
+        name: 'GitHub',
+        icon: skillIcons.github_primary,
+        id: 'github-icon',
+      },
+      {
+        name: 'Postman API',
+        icon: skillIcons.postman_primary,
+        id: 'postman-icon',
+      },
+      {
+        name: 'OpenAI',
+        icon: skillIcons.openai_primary,
+        id: 'openai-icon',
+      },
+    ],
+  },
+};
 
 export { skills };

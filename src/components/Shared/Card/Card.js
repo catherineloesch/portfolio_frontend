@@ -1,7 +1,7 @@
-import React from "react";
-import { BsEyeFill } from "react-icons/bs";
+import React from 'react';
+import { BsEyeFill } from 'react-icons/bs';
 
-import "./Card.scss";
+import './Card.scss';
 
 const Card = ({ type, img, alt, txt, onClick, imgEffects, overlayEffects }) => {
   return (
@@ -13,9 +13,9 @@ const Card = ({ type, img, alt, txt, onClick, imgEffects, overlayEffects }) => {
           alt={alt}
         />
         <div className={`${type}-card__img-overlay ${overlayEffects}`}>
-          <button className="project-card__img-overlay__btn" onClick={onClick}>
-            <div className="project-card__img-overlay__btn-icon-container">
-              <BsEyeFill className="work-icon" />
+          <button className='project-card__img-overlay__btn' onClick={onClick}>
+            <div className='project-card__img-overlay__btn-icon-container'>
+              <BsEyeFill className='work-icon' />
             </div>
           </button>
         </div>

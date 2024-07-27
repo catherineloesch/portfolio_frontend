@@ -1,36 +1,36 @@
-import React from "react";
-import { useState, useRef, useEffect, useContext } from "react";
-import emailjs from "@emailjs/browser";
-import { motion, useInView } from "framer-motion";
-import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { MdEmail } from "react-icons/md";
-import { FaPaperPlane } from "react-icons/fa";
+import React from 'react';
+import { useState, useRef, useEffect, useContext } from 'react';
+import emailjs from '@emailjs/browser';
+import { motion, useInView } from 'framer-motion';
+import { BsGithub, BsLinkedin } from 'react-icons/bs';
+import { MdEmail } from 'react-icons/md';
+import { FaPaperPlane } from 'react-icons/fa';
 
-import { CurrentContext } from "../../contexts/CurrentContext";
-import { AppContainer, MotionContainer } from "../../containers";
-import { SectionHeading, BtnFill } from "../Shared";
-import { footerIcons } from "../../assets/icons/icons_footer";
-import { colors } from "../../assets/colors/colors";
-import "./Footer.scss";
+import { CurrentContext } from '../../contexts/CurrentContext';
+import { AppContainer, MotionContainer } from '../../containers';
+import { SectionHeading, BtnFill } from '../Shared';
+import { footerIcons } from '../../assets/icons/icons_footer';
+import { colors } from '../../assets/colors/colors';
+import './Footer.scss';
 
 const Footer = () => {
   //Navigation
   const active = useContext(CurrentContext);
   const [isIntersecting, setIsIntersecting] = useState(false);
-  const ref = useRef("contact");
-  const navDots = document.querySelectorAll(".nav-dot");
-  const dot = document.querySelector("#contact-dot");
+  const ref = useRef('contact');
+  const navDots = document.querySelectorAll('.nav-dot');
+  const dot = document.querySelector('#contact-dot');
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         setIsIntersecting(entry.isIntersecting);
       },
-      { rootMargin: "-300px" }
+      { rootMargin: '-300px' }
     );
 
     if (isIntersecting) {
-      active.current = "about";
+      active.current = 'about';
       navDots.forEach(
         (dot) => (dot.style.backgroundColor = colors.navDotInactive)
       );
@@ -59,20 +59,20 @@ const Footer = () => {
   //end motion
 
   const iconRef = useRef();
-  const isInView = useInView(iconRef, { margin: "-100px" });
+  const isInView = useInView(iconRef, { margin: '-100px' });
 
   //EmailJS parameters
   //emails sent to 'katie.loesch@pm.me'
-  const publicKey = "zNvzRNVUztWrUC40f";
-  const serviceId = "service_gaq8s1d";
-  const templateId = "template_4np1zu1";
+  const publicKey = 'zNvzRNVUztWrUC40f';
+  const serviceId = 'service_gaq8s1d';
+  const templateId = 'template_4np1zu1';
   //initialise emailjs with public key
   emailjs.init(publicKey);
 
   const formTemplate = {
-    name: "",
-    email: "",
-    message: "",
+    name: '',
+    email: '',
+    message: '',
   };
 
   const form = useRef();
@@ -97,7 +97,7 @@ const Footer = () => {
         setFormData(formTemplate);
       })
       .catch((err) => {
-        alert("Something went wrong, please try again later!");
+        alert('Something went wrong, please try again later!');
         console.log(err.text);
       }); //msg: something went wrong
   };
@@ -105,77 +105,77 @@ const Footer = () => {
   return (
     <>
       <motion.div
-        className="footer-txt-container nav-section"
+        className='footer-txt-container nav-section'
         variants={variants}
-        initial="initial"
-        whileInView="animate"
+        initial='initial'
+        whileInView='animate'
         ref={iconRef}
       >
         {/* {  <motion.h1 className="h-text section-heading" variants={variants}>
           Get in touch
         </motion.h1>*/}
-        <SectionHeading section="footer" variants={variants}>
+        <SectionHeading section='footer' variants={variants}>
           Get in Touch
         </SectionHeading>
-        <motion.p className="p-text" variants={variants}>
+        <motion.p className='p-text' variants={variants}>
           Want to leave some feedback?
-          <img src={footerIcons.feedback} alt="feedback" />
+          <img src={footerIcons.feedback} alt='feedback' />
         </motion.p>
-        <motion.p className="p-text" variants={variants}>
-          {" "}
-          Or just have a chat?{" "}
-          <img src={footerIcons.coffee} alt="coffee" ref={ref} />{" "}
+        <motion.p className='p-text' variants={variants}>
+          {' '}
+          Or just have a chat?{' '}
+          <img src={footerIcons.coffee} alt='coffee' ref={ref} />{' '}
         </motion.p>
-        <motion.p className="p-text" variants={variants}>
+        <motion.p className='p-text' variants={variants}>
           Leave a message and I'll be in touch!
         </motion.p>
 
-        <motion.div className="footer-socials" variants={variants}>
+        <motion.div className='footer-socials' variants={variants}>
           <a
-            href="mailto:katie.loesch@pm.me"
-            className="footer-social-icon"
-            id="mail-icon"
+            href='mailto:katie.loesch@pm.me'
+            className='footer-social-icon'
+            id='mail-icon'
           >
             <MdEmail />
           </a>
 
           <a
-            href="https://github.com/katieloesch"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="footer-social-icon"
-            id="github-icon"
+            href='https://github.com/katieloesch'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='footer-social-icon'
+            id='github-icon'
           >
             <BsGithub />
           </a>
 
           <a
-            href="https://www.linkedin.com/in/katie-loesch/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="footer-social-icon"
-            id="linkedin-icon"
+            href='https://www.linkedin.com/in/katie-loesch/'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='footer-social-icon'
+            id='linkedin-icon'
           >
             <BsLinkedin />
           </a>
         </motion.div>
       </motion.div>
 
-      <div className="footer-form-container">
+      <div className='footer-form-container'>
         <motion.div
-          className="svg-container"
+          className='svg-container'
           initial={{ opacity: 1 }}
           whileInView={{ opacity: 0 }}
           transition={{ delay: 2, duration: 0.4 }}
         >
-          <svg width="400px" height="400px" viewBox="0 0 32.666 32.666">
+          <svg width='400px' height='400px' viewBox='0 0 32.666 32.666'>
             <motion.path
               strokeWidth={0.2}
-              fill="none"
+              fill='none'
               initial={{ pathLength: 0 }}
               animate={isInView && { pathLength: 1 }}
               transition={{ duration: 2 }}
-              d="M28.189,16.504h-1.666c0-5.437-4.422-9.858-9.856-9.858l-0.001-1.664C23.021,4.979,28.189,10.149,28.189,16.504z
+              d='M28.189,16.504h-1.666c0-5.437-4.422-9.858-9.856-9.858l-0.001-1.664C23.021,4.979,28.189,10.149,28.189,16.504z
             M16.666,7.856L16.665,9.52c3.853,0,6.983,3.133,6.981,6.983l1.666-0.001C25.312,11.735,21.436,7.856,16.666,7.856z M16.333,0
             C7.326,0,0,7.326,0,16.334c0,9.006,7.326,16.332,16.333,16.332c0.557,0,1.007-0.45,1.007-1.006c0-0.559-0.45-1.01-1.007-1.01
             c-7.896,0-14.318-6.424-14.318-14.316c0-7.896,6.422-14.319,14.318-14.319c7.896,0,14.317,6.424,14.317,14.319
@@ -187,14 +187,14 @@ const Footer = () => {
             c-0.832,0.195-1.727,0.227-2.516,0.553c-0.134,0.057-0.238,0.16-0.359,0.24c-2.799,1.774-3.16,6.082-0.428,9.292
             c1.041,1.228,2.127,2.416,3.245,3.576l-0.006,0.004c0.031,0.031,0.063,0.06,0.095,0.09c0.03,0.031,0.059,0.062,0.088,0.095
             l0.006-0.006c1.16,1.118,2.535,2.765,4.769,4.255c4.703,3.141,8.312,2.264,10.438,1.098c3.67-2.021,5.312-6.338,5.312-9.719
-            C32.666,7.326,25.339,0,16.333,0z"
+            C32.666,7.326,25.339,0,16.333,0z'
             />
           </svg>
         </motion.div>
 
         {!formSubmitted ? (
           <motion.form
-            className="footer-form"
+            className='footer-form'
             ref={form}
             onSubmit={handleFormSubmit}
             initial={{ opacity: 0 }}
@@ -202,45 +202,45 @@ const Footer = () => {
             transition={{ delay: 3, duration: 1 }}
           >
             <input
-              className="p-text"
-              name="name"
-              type="text"
-              placeholder="name"
+              className='p-text'
+              name='name'
+              type='text'
+              placeholder='name'
               value={formData.name}
               onChange={handleFormChange}
-              autoComplete="off"
+              autoComplete='off'
             />
 
             <input
-              className="p-text"
-              name="email"
-              type="email"
-              placeholder="email"
+              className='p-text'
+              name='email'
+              type='email'
+              placeholder='email'
               value={formData.email}
               onChange={handleFormChange}
-              autoComplete="off"
+              autoComplete='off'
               required
             />
 
             <textarea
-              className="p-text"
-              name="message"
-              placeholder="message"
+              className='p-text'
+              name='message'
+              placeholder='message'
               value={formData.message}
               onChange={handleFormChange}
-              autoComplete="off"
+              autoComplete='off'
               rows={7}
               required
             />
 
-            <BtnFill type={"submit"} id="btn-submit-contact-form" size="large">
-              {!loading ? "Send Message" : "Sending..."}
+            <BtnFill type={'submit'} id='btn-submit-contact-form' size='large'>
+              {!loading ? 'Send Message' : 'Sending...'}
               <FaPaperPlane />
             </BtnFill>
           </motion.form>
         ) : (
-          <div className="msg-container">
-            <h3 className="msg-thanks">Thanks for getting in touch!</h3>
+          <div className='msg-container'>
+            <h3 className='msg-thanks'>Thanks for getting in touch!</h3>
           </div>
         )}
       </div>
@@ -249,7 +249,7 @@ const Footer = () => {
 };
 
 export default AppContainer(
-  MotionContainer(Footer, "footer"),
-  "contact",
-  "bg-1"
+  MotionContainer(Footer, 'footer'),
+  'contact',
+  'bg-1'
 );

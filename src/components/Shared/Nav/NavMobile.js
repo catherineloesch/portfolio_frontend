@@ -1,26 +1,26 @@
-import React, { useState } from "react";
-import { motion } from "framer-motion";
-import Hamburger from "./Hamburger";
-import NavMobileLinks from "./NavMobileLinks";
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import Hamburger from './Hamburger';
+import NavMobileLinks from './NavMobileLinks';
 
-import "./NavMobile.scss";
+import './NavMobile.scss';
 
 const NavMobile = () => {
   const [open, setOpen] = useState(false);
 
   const variants = {
     open: {
-      clipPath: "circle(1200px at 50px 50px)",
+      clipPath: 'circle(1200px at 50px 50px)',
       transition: {
-        type: "spring",
+        type: 'spring',
         stiffness: 20,
       },
     },
     closed: {
-      clipPath: "circle(30px at 50px 50px)",
+      clipPath: 'circle(30px at 50px 50px)',
       transition: {
         delay: 0.5,
-        type: "spring",
+        type: 'spring',
         stiffness: 400,
         damping: 40,
       },
@@ -28,9 +28,9 @@ const NavMobile = () => {
   };
 
   return (
-    <motion.div className="sidebar" animate={open ? "open" : "closed"}>
-      <motion.div variants={variants} className="bg">
-        {" "}
+    <motion.div className='sidebar' animate={open ? 'open' : 'closed'}>
+      <motion.div variants={variants} className='bg'>
+        {' '}
         {/* bg */}
         <NavMobileLinks setOpen={setOpen} />
       </motion.div>

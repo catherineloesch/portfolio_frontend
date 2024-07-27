@@ -1,5 +1,5 @@
-import React from "react";
-import "./BtnFill.scss";
+import React from 'react';
+import './BtnFill.scss';
 
 const BtnFill = ({
   type,
@@ -20,15 +20,15 @@ const BtnFill = ({
     const y = e.clientY - rect.top; // Cursor's y coordinate within the button
 
     // Update CSS variables on the button to move the bubble
-    e.target.style.setProperty("--x", `${x}px`);
-    e.target.style.setProperty("--y", `${y}px`);
+    e.target.style.setProperty('--x', `${x}px`);
+    e.target.style.setProperty('--y', `${y}px`);
   }
 
   return (
     <button
       type={type}
       className={`btn btn-fill ${classNames} btn-fill-${size} ${
-        active === name ? "item-active" : ""
+        active === name ? 'item-active' : ''
       }`}
       id={id}
       onMouseOverCapture={(e) => handleMouseOver(e)}

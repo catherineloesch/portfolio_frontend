@@ -1,18 +1,14 @@
-import React from 'react'
+import React from 'react';
 
-
-
-const AppContainer = (Component, idName, classNames) => function HOC() {
-  return (
-    <div id={idName} className={`app-cont ${classNames}`}>
-
+const AppContainer = (Component, idName, classNames) =>
+  function HOC() {
+    return (
+      <div id={idName} className={`app-cont ${classNames}`}>
         <div className='app-wrapper flex'>
-            <Component />
+          <Component />
         </div>
+      </div>
+    );
+  };
 
-      
-    </div>
-  )
-}
-
-export default AppContainer
+export default AppContainer;

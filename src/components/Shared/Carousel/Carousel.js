@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import "./Carousel.scss";
-import { arrowIcons } from "../../../assets/icons/icons_arrows";
+import React, { useState } from 'react';
+import './Carousel.scss';
+import { arrowIcons } from '../../../assets/icons/icons_arrows';
 
 const Carousel = ({ imgData, type }) => {
   const [slideIndex, setSlideIndex] = useState(0);
@@ -23,11 +23,11 @@ const Carousel = ({ imgData, type }) => {
 
   return (
     <div className={`${type}-carousel`}>
-      <div className="carousel-container">
+      <div className='carousel-container'>
         {imgData.map((img, index) => (
           <div
             className={`slide ${
-              index === slideIndex ? "slide-active" : "slide-hidden"
+              index === slideIndex ? 'slide-active' : 'slide-hidden'
             }`}
             key={`carousel-slide-${img.id}`}
           >
@@ -38,22 +38,22 @@ const Carousel = ({ imgData, type }) => {
             />
           </div>
         ))}
-        <div className="btns-carousel">
-          <button onClick={prevSlide} className="btn-carousel-prev">
+        <div className='btns-carousel'>
+          <button onClick={prevSlide} className='btn-carousel-prev'>
             {arrowIcons.arrowLeft}
           </button>
-          <button onClick={nextSlide} className="btn-carousel-next">
+          <button onClick={nextSlide} className='btn-carousel-next'>
             {arrowIcons.arrowRight}
           </button>
         </div>
       </div>
 
-      <div className="dots-carousel">
+      <div className='dots-carousel'>
         {imgData.map((img, index) => (
           <div
             key={`carousel-dot-${index}`}
             className={`dot-carousel ${
-              index === slideIndex ? "active" : "inactive"
+              index === slideIndex ? 'active' : 'inactive'
             }`}
           ></div>
         ))}

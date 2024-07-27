@@ -1,7 +1,7 @@
-import React from "react";
-import { motion } from "framer-motion";
-import { navItems } from "./navItems";
-import "./NavMobile.scss";
+import React from 'react';
+import { motion } from 'framer-motion';
+import { navItems } from './navItems';
+import './NavMobile.scss';
 
 const NavMobileLinks = ({ setOpen }) => {
   const variants = {
@@ -29,7 +29,7 @@ const NavMobileLinks = ({ setOpen }) => {
   };
 
   return (
-    <div className="mobile-nav-links" variants={variants}>
+    <div className='mobile-nav-links' variants={variants}>
       {navItems.navBar.map((item) => (
         <motion.a
           onClick={() => setOpen((prev) => false)}

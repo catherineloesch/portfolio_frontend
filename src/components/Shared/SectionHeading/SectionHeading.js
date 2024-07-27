@@ -1,6 +1,6 @@
-import React from "react";
-import "./SectionHeading.scss";
-import { motion } from "framer-motion";
+import React from 'react';
+import './SectionHeading.scss';
+import { motion } from 'framer-motion';
 
 const SectionHeading = ({ section, variants, children }) => {
   return (

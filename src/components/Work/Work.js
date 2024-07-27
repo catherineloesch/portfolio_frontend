@@ -1,15 +1,15 @@
-import React, { useState, useEffect, useRef, useContext } from "react";
-import { motion } from "framer-motion";
+import React, { useState, useEffect, useRef, useContext } from 'react';
+import { motion } from 'framer-motion';
 
-import { CurrentContext } from "../../contexts/CurrentContext";
-import { AppContainer, MotionContainer } from "../../containers";
-import { BtnFill, Card, Modal, SectionHeading } from "../Shared";
-import { projects } from "./../../api_data/api_projects";
-import { colors } from "../../assets/colors/colors";
-import "./Work.scss";
+import { CurrentContext } from '../../contexts/CurrentContext';
+import { AppContainer, MotionContainer } from '../../containers';
+import { BtnFill, Card, Modal, SectionHeading } from '../Shared';
+import { projects } from './../../api_data/api_projects';
+import { colors } from '../../assets/colors/colors';
+import './Work.scss';
 
 const Work = () => {
-  const [activeFilter, setActiveFilter] = useState("All");
+  const [activeFilter, setActiveFilter] = useState('All');
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
   const [filterWork, setFilterWork] = useState(projects);
 
@@ -26,29 +26,29 @@ const Work = () => {
   };
 
   const categories = [
-    "All",
-    "React",
-    "MERN",
-    "Rails",
-    "Full-Stack",
-    "Responsive Design",
+    'All',
+    'React',
+    'MERN',
+    'Rails',
+    'Full-Stack',
+    'Responsive Design',
   ];
   const active = useContext(CurrentContext);
 
   const [isIntersecting, setIsIntersecting] = useState(false);
-  const ref = useRef("work");
-  const navDots = document.querySelectorAll(".nav-dot");
-  const dot = document.querySelector("#work-dot");
+  const ref = useRef('work');
+  const navDots = document.querySelectorAll('.nav-dot');
+  const dot = document.querySelector('#work-dot');
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         setIsIntersecting(entry.isIntersecting);
       },
-      { rootMargin: "-300px" }
+      { rootMargin: '-300px' }
     );
     if (isIntersecting) {
-      active.current = "work";
+      active.current = 'work';
       navDots.forEach(
         (dot) => (dot.style.backgroundColor = colors.navDotInactive)
       );
@@ -64,7 +64,7 @@ const Work = () => {
     setAnimateCard([{ y: 100, opacity: 0 }]);
     setTimeout(() => {
       setAnimateCard([{ y: 0, opacity: 1 }]);
-      if (category === "All") {
+      if (category === 'All') {
         setFilterWork(projects);
       } else {
         setFilterWork(
@@ -76,19 +76,19 @@ const Work = () => {
 
   return (
     <React.Fragment>
-      <div className="works nav-section" ref={ref}>
-        <SectionHeading section="work">Latest Projects</SectionHeading>
+      <div className='works nav-section' ref={ref}>
+        <SectionHeading section='work'>Latest Projects</SectionHeading>
 
-        <div className="work-filter">
+        <div className='work-filter'>
           {categories.map((category, index) => (
             <BtnFill
-              type="button"
+              type='button'
               name={category}
               key={`work-filter-${category}`}
               id={`work-filter-${category}`}
-              size="small"
+              size='small'
               active={activeFilter}
-              classNames="work-filter-item"
+              classNames='work-filter-item'
               onClick={() => handleWorkFilter(category)}
             >
               {category}
@@ -99,7 +99,7 @@ const Work = () => {
         <motion.div
           animate={animateCard}
           transition={{ duration: 0.5, delayChildren: 0.5 }}
-          className="work-portfolio"
+          className='work-portfolio'
         >
           {/* {filterWork.map((project, index) => (
             <div className="work-item flex" key={index}>
@@ -138,20 +138,20 @@ const Work = () => {
 
           {filterWork.map((project, index) => (
             <Card
-              type="project"
+              type='project'
               key={`project-card-${index}`}
               img={project.imgArr[0].src}
               alt={project.imgArr[0].title}
               txt={project.title}
-              imgEffects=""
-              overlayEffects="blur slide-up"
+              imgEffects=''
+              overlayEffects='blur slide-up'
               onClick={() => openProjectModal(project)}
             />
           ))}
         </motion.div>
       </div>
       <Modal
-        type="project-modal"
+        type='project-modal'
         data={modalContent}
         show={showProjectModal}
         onCancel={closeProjectModal}
@@ -161,4 +161,4 @@ const Work = () => {
   );
 };
 
-export default AppContainer(MotionContainer(Work, "work"), "work", "bg-2");
+export default AppContainer(MotionContainer(Work, 'work'), 'work', 'bg-2');
