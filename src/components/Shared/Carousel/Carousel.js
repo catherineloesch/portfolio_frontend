@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import './Carousel.scss';
+
 import { arrowIcons } from '../../../assets/icons/icons_arrows';
+import './Carousel.scss';
 
 const Carousel = ({ slides, type }) => {
   const [slideIndex, setSlideIndex] = useState(0);

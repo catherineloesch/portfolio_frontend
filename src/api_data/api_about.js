@@ -26,4 +26,41 @@ const abouts = [
   },
 ];
 
-export { intros, abouts };
+const media = [
+  {
+    name: 'techlore',
+    img: '',
+    alt: '',
+    url: '',
+    description: '',
+  },
+  {
+    name: 'the new oil',
+    img: '',
+    alt: '',
+    url: '',
+    description: '',
+  },
+  {
+    name: 'Lama dev',
+    img: '',
+    alt: '',
+    url: '',
+    description: '',
+  },
+  {
+    name: 'Andy Sterkowitz',
+    img: '',
+    alt: '',
+    url: 'https://www.youtube.com/@AndySterkowitz',
+    description: '',
+  },
+];
+
+const aboutData = {
+  intros: intros,
+  abouts: abouts,
+  media: media,
+};
+
+export { aboutData };

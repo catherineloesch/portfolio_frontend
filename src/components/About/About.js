@@ -2,11 +2,14 @@ import React, { useContext, useState, useRef, useEffect } from 'react';
 
 import { CurrentContext } from '../../contexts/CurrentContext';
 import { AppContainer, MotionContainer } from '../../containers';
-import { SectionHeading, Column } from '../Shared';
-import { intros, abouts } from './../../api_data/api_about';
+import { SectionHeading, Column, Slider } from '../Shared';
+import { aboutData } from './../../api_data/api_about';
 import { aboutImages } from '../../assets/images/about';
+
 import { colors } from '../../assets/colors/colors';
 import './About.scss';
+import Abouts from './Abouts';
+import Media from './Media';
 
 const About = () => {
   const active = useContext(CurrentContext);
@@ -55,7 +58,7 @@ const About = () => {
         <div className='about-intro__text-container'>
           <SectionHeading section='about'>About</SectionHeading>
           <div className='about-intro__text flex'>
-            {intros.map((intro, index) => (
+            {aboutData.intros.map((intro, index) => (
               <p className='p-text flex' key={`about-intro-${index}`}>
                 {intro}
               </p>
@@ -64,28 +67,17 @@ const About = () => {
         </div>
       </div>
 
-      <div className='about-columns-container' ref={ref}>
-        {abouts.map((about, index) => (
-          <Column
-            type='about'
-            key={`about-column-${index}`}
-            img={about.imgUrl}
-            title={about.title}
-            txt={about.description}
-          />
-        ))}
+      <div className='about__slider-container' ref={ref}>
+        <Slider
+          type='about'
+          slides={[<Abouts columnData={aboutData.abouts} />, <Media />]}
+        />
       </div>
-      <div className='about-columns-container' ref={ref}>
-        {abouts.map((about, index) => (
-          <Column
-            type='about'
-            key={`about-column-${index}`}
-            img={about.imgUrl}
-            title={about.title}
-            txt={about.description}
-          />
-        ))}
-      </div>
+
+      {/* <Slider
+        type='about'
+        slides={[<Abouts columnData={aboutData.abouts} />, <Media />]}
+      /> */}
     </div>
   );
 };
