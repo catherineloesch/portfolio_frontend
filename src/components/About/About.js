@@ -12,8 +12,12 @@ const About = () => {
   const active = useContext(CurrentContext);
   const [isIntersecting, setIsIntersecting] = useState(false);
   const ref = useRef('about');
+
+  // select corresponding navlink + navDot, change color when active
   const navDots = document.querySelectorAll('.nav-dot');
   const dot = document.querySelector('#about-dot');
+  // const navBarLinks = document.querySelectorAll('.nav-anchor');
+  // const navBarLink = document.querySelector('#about-a');
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -28,7 +32,13 @@ const About = () => {
       navDots.forEach(
         (dot) => (dot.style.backgroundColor = colors.navDotInactive)
       );
+
+      // navBarLinks.forEach(
+      //   (link) => (link.style.color = colors.navLinkInactive)
+      // );
+
       dot.style.backgroundColor = colors.navDotActive;
+      // navBarLink.style.color = colors.navLinkActive;
     }
 
     observer.observe(ref.current);
@@ -60,7 +70,17 @@ const About = () => {
             type='about'
             key={`about-column-${index}`}
             img={about.imgUrl}
-            alt={about.title}
+            title={about.title}
+            txt={about.description}
+          />
+        ))}
+      </div>
+      <div className='about-columns-container' ref={ref}>
+        {abouts.map((about, index) => (
+          <Column
+            type='about'
+            key={`about-column-${index}`}
+            img={about.imgUrl}
             title={about.title}
             txt={about.description}
           />

@@ -32,7 +32,7 @@ const Overlay = ({ show, type, data, closeModal }) => {
 
       <div className={`modal__main`}>
         <div className='modal__main__img-container'>
-          <Carousel imgData={data.imgArr} type='project' />
+          <Carousel slides={data.imgArr} type='project' />
         </div>
         <div className='modal__main__text-container'>
           <div className='heading-modal'>

@@ -60,16 +60,10 @@
   /* colour variables */
   --primary: #72f586;
   --primary-a: rgba(114, 245, 134, 0.85);
-  /* --secondary: #e84fab; */
-  /* --secondary: #ec56da; */
-  --secondary: #ff5fec;
-
-  /* --secondary: #ee4f71; */
-  /* --secondary: #c16a2e; */
-  /* --secondary: orange; */
+  /* --secondary: #ff5fec; */
 
   --secondary: rgb(250, 95, 195);
-  --secondary-dark: rgb(220, 0, 136);
+  --secondary-dark: rgb(224, 7, 163);
 
   --bg1: rgb(16, 58, 85);
   --bg2: #082434;
@@ -96,10 +90,6 @@
   --h2-font-size: '';
   --p-font-size: '';
 
-  /* --red: rgb(237, 74, 90); */
-  /* --red: rgb(227, 75, 36); */
-  /* --pink: rgb(236, 66, 141); */
-
   /* light mode */
   /* --offwhite: #edf2f8;
   --primary-light: #f4eae9;
@@ -110,10 +100,10 @@
   --secondary-a: rgba(48, 58, 171, 0.816);
   --secondary-dark: #4C2777; */
 
+  /* btn fill effect */
   --bubble-footer-before: 20px;
   --bubble-footer-after: 300px;
   --bubble-footer-transition: 2s;
-
   --bubble-projects-filter-before: 20px;
   --bubble-projects-filter-after: 190px;
   --bubble-projects-filter-transition: 0.5s;
@@ -192,4 +182,12 @@ button {
   font-size: 1rem;
   border-radius: 10px;
   letter-spacing: 1px;
+}
+
+.grad1 {
+  background: linear-gradient(90deg, rgb(248, 237, 144) 0%, #72f586 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
 }

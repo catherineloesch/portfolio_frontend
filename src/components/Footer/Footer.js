@@ -18,8 +18,12 @@ const Footer = () => {
   const active = useContext(CurrentContext);
   const [isIntersecting, setIsIntersecting] = useState(false);
   const ref = useRef('contact');
+
+  // select corresponding navlink + navDot, change color when active
   const navDots = document.querySelectorAll('.nav-dot');
   const dot = document.querySelector('#contact-dot');
+  // const navBarLinks = document.querySelectorAll('.nav-anchor');
+  // const navBarLink = document.querySelector('#contact-a');
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -34,7 +38,13 @@ const Footer = () => {
       navDots.forEach(
         (dot) => (dot.style.backgroundColor = colors.navDotInactive)
       );
+
+      // navBarLinks.forEach(
+      //   (link) => (link.style.color = colors.navLinkInactive)
+      // );
+
       dot.style.backgroundColor = colors.navDotActive;
+      // navBarLink.style.color = colors.navLinkActive;
     }
 
     observer.observe(ref.current);

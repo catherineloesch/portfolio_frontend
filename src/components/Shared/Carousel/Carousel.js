@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import './Carousel.scss';
 import { arrowIcons } from '../../../assets/icons/icons_arrows';
 
-const Carousel = ({ imgData, type }) => {
+const Carousel = ({ slides, type }) => {
   const [slideIndex, setSlideIndex] = useState(0);
 
   const nextSlide = () => {
-    if (slideIndex === imgData.length - 1) {
+    if (slideIndex === slides.length - 1) {
       setSlideIndex(0);
     } else {
       setSlideIndex(slideIndex + 1);
@@ -15,7 +15,7 @@ const Carousel = ({ imgData, type }) => {
 
   const prevSlide = () => {
     if (slideIndex === 0) {
-      setSlideIndex(imgData.length - 1);
+      setSlideIndex(slides.length - 1);
     } else {
       setSlideIndex(slideIndex - 1);
     }
@@ -24,7 +24,7 @@ const Carousel = ({ imgData, type }) => {
   return (
     <div className={`${type}-carousel`}>
       <div className='carousel-container'>
-        {imgData.map((img, index) => (
+        {slides.map((img, index) => (
           <div
             className={`slide ${
               index === slideIndex ? 'slide-active' : 'slide-hidden'
@@ -49,7 +49,7 @@ const Carousel = ({ imgData, type }) => {
       </div>
 
       <div className='dots-carousel'>
-        {imgData.map((img, index) => (
+        {slides.map((img, index) => (
           <div
             key={`carousel-dot-${index}`}
             className={`dot-carousel ${

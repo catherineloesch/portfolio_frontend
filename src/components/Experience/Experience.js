@@ -17,8 +17,12 @@ const Experience = () => {
   const active = useContext(CurrentContext);
   const [isIntersecting, setIsIntersecting] = useState(false);
   const ref = useRef('experience');
+
+  // select corresponding navlink + navDot, change color when active
   const navDots = document.querySelectorAll('.nav-dot');
   const dot = document.querySelector('#experience-dot');
+  // const navBarLinks = document.querySelectorAll('.nav-anchor');
+  // const navBarLink = document.querySelector('#experience-a');
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -32,7 +36,11 @@ const Experience = () => {
       navDots.forEach(
         (dot) => (dot.style.backgroundColor = colors.navDotInactive)
       );
+      // navBarLinks.forEach(
+      //   (link) => (link.style.color = colors.navLinkInactive)
+      // );
       dot.style.backgroundColor = colors.navDotActive;
+      // navBarLink.style.color = colors.navLinkActive;
     }
 
     observer.observe(ref.current);
