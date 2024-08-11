@@ -1,15 +1,13 @@
 import React, { useContext, useState, useRef, useEffect } from 'react';
 
-import { CurrentContext } from '../../contexts/CurrentContext';
 import { AppContainer, MotionContainer } from '../../containers';
-import { SectionHeading, Column, Slider } from '../Shared';
+import { SectionHeading, Slider } from '../Shared';
+import { Abouts, Media } from './sliderComponents';
+import { CurrentContext } from '../../contexts/CurrentContext';
 import { aboutData } from './../../api_data/api_about';
 import { aboutImages } from '../../assets/images/about';
-
 import { colors } from '../../assets/colors/colors';
 import './About.scss';
-import Abouts from './Abouts';
-import Media from './Media';
 
 const About = () => {
   const active = useContext(CurrentContext);

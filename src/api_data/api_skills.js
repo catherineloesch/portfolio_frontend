@@ -3,6 +3,7 @@ import { skillIcons } from './../assets/icons/icons_skills';
 // https://fontawesome.com/icons
 // https://icon-sets.iconify.design/
 
+// Ids should be unique, use classes instead as icons get reused in modal??
 const skills = [
   {
     name: 'HTML',
@@ -239,6 +240,11 @@ const skillsCategorised = {
         name: 'OpenAI',
         icon: skillIcons.openai_primary,
         id: 'openai-icon',
+      },
+      {
+        name: 'Vite',
+        icon: skillIcons.vite_primary,
+        id: 'vite-icon',
       },
     ],
   },
