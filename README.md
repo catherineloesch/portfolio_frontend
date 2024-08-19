@@ -21,25 +21,55 @@ I started the development of this portfolio project after completion of the Gene
 
 ## <a name="deployment-link"></a> 2. Deployment link
 
-http://katieloesch.co.uk
+<img src="./src//assets//icons//icons_readme/link.svg" alt="" width="20">&nbsp;&nbsp;<sup>https://katieloesch.co.uk/</sup>
+
+:link: https://katieloesch.co.uk/
 
 ## <a name="installation"></a> 3. Installation
 
-- package manager used: npm - v9.5.0
-  - https://www.npmjs.com/package/npm
-- to install dependencies, run:
+#### Package Manager: npm (v9.5.0)
+
+- <sub>[website](https://www.npmjs.com/)</sub>
+- <sub>[GitHub Repository](https://github.com/npm)</sub>
+
+#### Getting Started
+
+- Ensure [Git](https://git-scm.com/) is installed on your machine.
+- Clone the repository by running this command in your terminal:
+
+```zsh
+git clone https://github.com/katieloesch/portfolio.git
+```
+
+- Navigate to the project directory to install dependencies:
+
+```zsh
+cd portfolio
+```
+
+### Running the Application Locally in a local development environment:
+
+**1. Install Dependencies**
+
+- Run the following command in the project’s root directory to install all necessary dependencies:
 
 ```zsh
 npm install
 ```
 
-- to start the application, run:
+**2. Start the Development Server**
+
+- After installing the dependencies, start the development server with:
 
 ```zsh
 npm start
 ```
 
-<br>
+**3. Access the Application**
+
+- The development server will start at `http://localhost:3000`.
+- By default, your web browser should automatically open and navigate to this address.
+- If it doesn’t, you can manually access the application by entering `http://localhost:3000` in any web browser.
 
 ## <a name="technologies"></a> 4. Technologies Used
 
@@ -51,87 +81,157 @@ npm start
 npx create-react-app portfolio
 ```
 
-### Dependencies
+### Key Dependencies
 
-- intersection-observer - https://www.npmjs.com/package/intersection-observer
-- node-sass (v7.0.3)
-  - https://www.npmjs.com/package/node-sass
-- react-icons (v4.9.0)
-  - https://www.npmjs.com/package/react-icons
-- routing:
-  - react-router (v6.12.1)
-    - https://www.npmjs.com/package/react-router
-  - react-router-dom (v6.12.1)
-    - https://www.npmjs.com/package/react-router-dom
-- contact form
-  - emailjs (v4.0.2)
-    - https://www.npmjs.com/package/emailjs
-  - emailjs-com (v3.2.0)
-    - https://www.npmjs.com/package/emailjs-com
-  - @emailjs/browser (v3.11.0)
-    - https://www.npmjs.com/package/@emailjs/browser
-- animations + effects
-  - framer-motion (v10.12.16)
-    - https://www.npmjs.com/package/framer-motion
-  - react-tsparticles (v2.10.1)
-    - https://www.npmjs.com/package/react-tsparticles
-  - react-vertical-timeline-component (v3.6.0) by [Stéphane Monnot](https://github.com/stephane-monnot/react-vertical-timeline/commits?author=stephane-monnot)
-    - https://www.npmjs.com/package/react-vertical-timeline-component
-    - https://github.com/stephane-monnot/react-vertical-timeline
+- **react-router** (v6.12.1)
+  - <sub>a library that provides the foundational routing components and logic for React applications</sub>
+  - <sub>[npm page](https://www.npmjs.com/package/react-router)</sub>
+  - <sub>[GitHub repository](https://github.com/remix-run/react-router)</sub>
+  - <sub> [website](https://reactrouter.com/en/main)</sub>
+- **react-router-dom** (v6.12.1)
 
-### UI
+  - <sub>an implementation of react-router that includes additional components for browser-based routing</sub>
+  - <sub>[npm page](https://www.npmjs.com/package/react-router-dom)</sub>
+  - <sub>[GitHub repository](https://github.com/remix-run/react-router)</sub>
+  - <sub> [website](https://reactrouter.com/en/main)</sub>
 
-- fonts:
-  - 'Nulshock' designed by Typodermic Fonts
-    - https://www.cufonfonts.com/font/nulshock#google_vignette
-  - 'VT323' Designed by Peter Hull
-    - https://fonts.google.com/specimen/VT323
-  - .woff files: assets/fonts directory
-- icons:
-  - React Icons
-    - https://react-icons.github.io/react-icons/
-    - https://www.npmjs.com/package/react-icons
-  - iconify
-    - https://icon-sets.iconify.design/
-  - fontawesome
-    - https://fontawesome.com/
-  - timeline (Experience Section):
-    - react-vertical-timeline-component (library for responsive timelines in React applications)
-      - https://www.npmjs.com/package/react-vertical-timeline-component
-      - https://github.com/stephane-monnot/react-vertical-timeline
-      - source: [Stéphane Monnot](https://github.com/stephane-monnot/react-vertical-timeline/commits?author=stephane-monnot)
+- **@emailjs/browser** (v3.11.0)
 
-### Additional tools used:
+  - <sub>package for sending emails directly from the browser using the EmailJS service</sub>
+  - <sub>[npm page](https://www.npmjs.com/package/@emailjs/browser)</sub>
+  - <sub>[GitHub repository](https://github.com/emailjs-com/emailjs-sdk)</sub>
+  - <sub> [website](https://www.emailjs.com/)</sub>
 
-- Git / GitHub
-  - used for version control
-  - https://git-scm.com/
-  - https://github.com/
-- Visual Studio Code (VSCode)
-  - code editor used for writing CSS, JSX, JavaScript and ruby.
-- Google Chrome browser
-  - used for launching the website and displaying the application Google Chrome
-- Google Chrome Developer Tools: For troubleshooting and debugging
-  - https://www.google.com/intl/en_uk/chrome/
-- chatGTP
-  - https://chat.openai.com/
-  - used for debugging
-- Hostinger: provider used to host portfolio website
-  - https://www.hostinger.co.uk
+- **intersection-observer** (v0.12.2)
+
+  - <sub>a polyfill for the Intersection Observer API allowing you to observe when elements enter or exit the viewport or a parent container</sub>
+  - <sub>[npm page](https://www.npmjs.com/package/intersection-observer)</sub>
+  - <sub>[GitHub repository](https://github.com/GoogleChromeLabs/intersection-observer)</sub>
+
+- **framer-motion** (v3.11.0)
+
+  - <sub>an open source animation library for React</sub>
+  - <sub>[npm page](https://www.npmjs.com/package/framer-motion)</sub>
+  - <sub>[GitHub repository](https://github.com/framer/motion)</sub>
+  - <sub> [website](https://www.framer.com/motion/)</sub>
+
+- **react-transition-group** (v4.4.5)
+
+  - <sub>a library for handling animations and transitions in React applications</sub>
+  - <sub>[npm page](https://www.npmjs.com/package/react-transition-group)</sub>
+  - <sub>[GitHub repository](https://github.com/reactjs/react-transition-group)</sub>
+  - <sub> [website](https://reactcommunity.org/react-transition-group/)</sub>
+
+- **Sass** (v1.77.8)
+
+  - <sub>CSS preprocessor used for styling the application</sub>
+  - <sub>[npm page](https://www.npmjs.com/package/sass)</sub>
+  - <sub>[GitHub repository](https://github.com/sass/dart-sass)</sub>
+
+- **react-icons** (v4.9.0)
+
+  - <sub>a free and open-source project providing icons for use in React projects</sub>
+  - <sub>[npm page](https://www.npmjs.com/package/react-icons)</sub>
+  - <sub>[GitHub repository](https://github.com/react-icons/react-icons)</sub>
+  - <sub> [website](https://react-icons.github.io/react-icons/)</sub>
+
+- **react-tsparticles** (v2.10.1)
+
+  - <sub>a React component library that provides a way to integrate customizable particle animations into React applications</sub>
+  - <sub>[npm page](https://www.npmjs.com/package/react-tsparticles)</sub>
+  - <sub>[GitHub repository](https://github.com/tsparticles/react)</sub>
+  - <sub> [website](https://particles.js.org/)</sub>
+
+- **react-vertical-timeline-component** (v3.6.0)
+
+  - <sub>a React component library that provides a pre-built, customizable vertical timeline component/sub>
+  - <sub>[npm page](https://www.npmjs.com/package/react-vertical-timeline-component)</sub>
+  - <sub>[GitHub repository](https://github.com/stephane-monnot/react-vertical-timeline)</sub>
+  - <sub> [website](https://stephane-monnot.github.io/react-vertical-timeline/#/)</sub>
+
+### UI and Design
+
+- **Fonts**
+  - main: \'**Nulshock**\', designed by **Typodermic Fonts**
+    - <sub>[Cufon Fonts](https://www.cufonfonts.com/font/nulshock#google_vignette)</sub>
+  - header: \'**VT323**\', designed by **Peter Hull**
+    - <sub>[Google Fonts](https://fonts.google.com/specimen/VT323)</sub>
+- **Icons**
+
+  - **Iconify**
+    - <sub>A free and open-source framework providing access to a vast number of icons, designed for use across various platforms and environments, including React.</sub>
+    - <sub>[website](https://icon-sets.iconify.design/)</sub>
+    - <sub>[GitHub repository](https://github.com/iconify/iconify/tree/main)</sub>
+    - <sub>[license](https://github.com/iconify/iconify/blob/main/license.txt)</sub>
+  - **Font Awesome**
+    - <sub>A popular icon library offering a large set of scalable and customizable icons, with a free version that is open source.</sub>
+    - <sub>[website](https://fontawesome.com/)</sub>
+    - <sub>[GitHub repository](https://github.com/FortAwesome/Font-Awesome)</sub>
+    - <sub>[license](https://fontawesome.com/license/free)</sub>
+  - **React Icons**
+    - <sub>A free and open-source project providing icons for use in React projects.</sub>
+    - <sub> [website](https://react-icons.github.io/react-icons/)</sub>
+    - <sub>[GitHub repository](https://github.com/react-icons/react-icons)</sub>
+    - <sub>[license](https://github.com/react-icons/react-icons/blob/master/LICENSE)</sub>
+
+- **Timeline** (Experience Section): **react-vertical-timeline-component** (v3.6.0)
+
+  - <sub>a React component library that provides a pre-built, customizable vertical timeline component/sub>
+  - <sub> created by [Stéphane Monnot](https://github.com/stephane-monnot/react-vertical-timeline/commits?author=stephane-monnot)</sub>
+  - <sub>[npm page](https://www.npmjs.com/package/react-vertical-timeline-component)</sub>
+  - <sub>[GitHub repository](https://github.com/stephane-monnot/react-vertical-timeline)</sub>
+  - <sub> [website](https://stephane-monnot.github.io/react-vertical-timeline/#/)</sub>
+
+### Development Tools
+
+- **Git / GitHub**
+
+  - <sub>used for version control and collaboration</sub>
+  - <sub>[Git website](https://git-scm.com/)</sub>
+  - <sub>[GitHub website](https://github.com/)</sub>
+
+- **Visual Studio Code (VSCode)**
+
+  - <sub>code editor used for development</sub>
+  - <sub>[website](https://code.visualstudio.com/)</sub>
+  - <sub>[GitHub repository](https://github.com/microsoft/vscode)</sub>
+
+- **Google Chrome & Chrome DevTools**
+
+  - <sub>used for testing, debugging, and developing in the browser</sub>
+  - <sub>[Google Chrome website](https://www.google.com/chrome/)</sub>
+  - <sub>[Chrome DevTools documentation](https://developer.chrome.com/docs/devtools)</sub>
+
+- **Excalidraw**
+
+  - <sub>tool used to create wireframes for the application</sub>
+  - <sub>[website](https://excalidraw.com/)</sub>
+  - <sub>[GitHub repository](https://github.com/excalidraw/excalidraw)</sub>
+
+- **ChatGPT4o**:
+
+  - <sub>generative AI tool used for debugging, development support and generating artwork for the README file</sub>
+  - <sub>[website](https://chat.openai.com/)</sub>
+  - <sub>[GitHub repository](https://github.com/openai)</sub>
+
+- **Hostinger**:
+  - <sub>web hosting provider used to deploy the application</sub>
+  - <sub>[UK website](https://www.hostinger.co.uk)</sub>
 
 ### Resources and tutorials
 
-- initial portfolio structure & navigation dots: [Build and Deploy a Fullstack Responsive Portfolio Website | ULTIMATE Step By Step Tutorial 2023](https://www.youtube.com/watch?v=3HNyXCPDQ7Q&list=PL5TCQHRtvHGmk69zb9GYb62MQMAmVQStF&index=3) by [JavaScript Mastery](https://www.youtube.com/@javascriptmastery)
-
-- responsive navigation menu: [Animated Portfolio Website with React & Framer Motion | React Project for Beginners](https://www.youtube.com/watch?v=CHGHuF24Cjw&list=PL5TCQHRtvHGkuR2YZDf_2lDFuc9m5OUlO&index=3) by [Lama Dev](https://www.youtube.com/@LamaDev)
-
-- timeline (experience section): [Simple Timeline for your Portfolio Website | React Tutorial](https://www.youtube.com/watch?v=-rnkToU2_lw) by [Aleks Popovic](https://www.youtube.com/@AleksPopovic)
-
-- card hover effect (work section): [How To Create An Image Hover Effect With CSS](https://www.youtube.com/watch?v=tF3RE5CGt9U&list=PL5TCQHRtvHGn_xv-dWP9P_rDofoxMUQHQ) by [Web Dev Simplified](https://www.youtube.com/@WebDevSimplified)
-
-- image carousel (work section): [Build a Slider with React.js](https://www.youtube.com/watch?v=og3wCO98HkQ) by [The Web School.](https://www.youtube.com/@TheWebSchool)
-
-- button fill effect: [Button Ripple Hover Effects using CSS & Javascript](https://www.youtube.com/watch?v=WOSaNbpHNqU) by [Online Tutorials | Md Irshad Ansari](https://www.youtube.com/@OnlineTutorialsYT)
+- initial portfolio structure & navigation dots:
+  - [Build and Deploy a Fullstack Responsive Portfolio Website | ULTIMATE Step By Step Tutorial 2023](https://www.youtube.com/watch?v=3HNyXCPDQ7Q&list=PL5TCQHRtvHGmk69zb9GYb62MQMAmVQStF&index=3) by [JavaScript Mastery](https://www.youtube.com/@javascriptmastery)
+- responsive navigation menu:
+  - [Animated Portfolio Website with React & Framer Motion | React Project for Beginners](https://www.youtube.com/watch?v=CHGHuF24Cjw&list=PL5TCQHRtvHGkuR2YZDf_2lDFuc9m5OUlO&index=3) by [Lama Dev](https://www.youtube.com/@LamaDev)
+- timeline (experience section):
+  - [Simple Timeline for your Portfolio Website | React Tutorial](https://www.youtube.com/watch?v=-rnkToU2_lw) by [Aleks Popovic](https://www.youtube.com/@AleksPopovic)
+- card hover effect (work section):
+  - [How To Create An Image Hover Effect With CSS](https://www.youtube.com/watch?v=tF3RE5CGt9U&list=PL5TCQHRtvHGn_xv-dWP9P_rDofoxMUQHQ) by [Web Dev Simplified](https://www.youtube.com/@WebDevSimplified)
+- image carousel (work section):
+  - [Build a Slider with React.js](https://www.youtube.com/watch?v=og3wCO98HkQ) by [The Web School.](https://www.youtube.com/@TheWebSchool)
+- button fill effect:
+  - [Button Ripple Hover Effects using CSS & Javascript](https://www.youtube.com/watch?v=WOSaNbpHNqU) by [Online Tutorials | Md Irshad Ansari](https://www.youtube.com/@OnlineTutorialsYT)
 
 ## <a name="deliverables"></a> 5. Deliverables
 
