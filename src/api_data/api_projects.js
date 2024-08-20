@@ -2,26 +2,26 @@ import { skillIcons } from './../assets/icons/icons_skills';
 import { projectImages } from '../assets/images/project_images';
 
 const projects = [
-  {
-    id: 0,
-    title: 'Hunting Buddy',
-    description: [],
-    projectLink: '',
-    codeLink: '',
-    imgArr: projectImages.jobBoard,
-    tags: ['React', 'MERN', 'Full-Stack', 'Responsive Design', 'All'],
-    skills: [],
-  },
-  {
-    id: 1,
-    title: 'PlaceBook',
-    description: [],
-    projectLink: '',
-    codeLink: '',
-    imgArr: projectImages.jobBoard,
-    tags: [],
-    skills: [],
-  },
+  // {
+  //   id: 0,
+  //   title: 'Hunting Buddy',
+  //   description: [],
+  //   projectLink: '',
+  //   codeLink: '',
+  //   imgArr: projectImages.jobBoard,
+  //   tags: ['React', 'MERN', 'Full-Stack', 'Responsive Design', 'All'],
+  //   skills: [],
+  // },
+  // {
+  //   id: 1,
+  //   title: 'PlaceBook',
+  //   description: [],
+  //   projectLink: '',
+  //   codeLink: '',
+  //   imgArr: projectImages.jobBoard,
+  //   tags: [],
+  //   skills: [],
+  // },
   {
     id: 2,
     title: 'Pawnee Pets',
@@ -114,42 +114,112 @@ const projects = [
       },
     ],
   },
-  // {
-  //   id: 4,
-  //   title: 'Pomodoro Productivity',
-  //   description: [
-  //     "A todo list application built from scratch using React.js with full CRUD functionality: Users can add new tasks to the list, mark tasks as completed, edit tasks and remove tasks from the list. The application also displays the total number of tasks remaining and tasks are saved in the browser's local storage, so they persist after reloading the page. There is also filtering functionality to show completed tasks only, incomplete tasks or all tasks. Application state is managed with Redux and styling was achieved using CSS modules with a fully responsive design.",
-  //   ],
-  //   projectLink: 'http://todo-app.katieloesch.co.uk/',
-  //   codeLink: 'https://github.com/katieloesch/react-todo-app',
-  //   imgArr: projectImages.pomodoro,
-  //   tags: ['React', 'Responsive Design', 'All'],
-  //   skills: [
-  //     {
-  //       name: 'JavaScript',
-  //       icon: skillIcons.javascript_primary,
-  //       id: 'javascript-icon',
-  //     },
-  //     {
-  //       name: 'React.js',
-  //       icon: skillIcons.react_primary,
-  //       id: 'react-icon',
-  //     },
-  //     {
-  //       name: 'Redux',
-  //       icon: skillIcons.redux_primary,
-  //       id: 'redux-icon',
-  //     },
-  //     {
-  //       name: 'CSS',
-  //       icon: skillIcons.css_primary,
-  //       id: 'css-icon',
-  //     },
-  //   ],
-  // },
+  {
+    id: 6,
+    title: 'MERN Guestbook',
+    description: [
+      [
+        'A Full-Stack Guestbook application, built from scratch within 9 days by a team of 4 developers using the MERN stack. The website allows users to sign up for an account and subsequently log into and out of their account. They also can also edit their username and password once they are logged in, or delete their account. Authentication was achieved by using the Node ExpressJS and Passport.js packages. Users can also read, post, edit and delete comments in the Guestbook application, the concept of which was tailored around a specific event type: a divorce party. The idea behind this concept was to support recent divorcees by enjoying their divorce party to the fullest and later re-live all the happy memories.',
+      ],
+    ],
+    projectLink: 'https://mern-guestbook.katieloesch.co.uk/',
+    codeLink: 'https://github.com/katieloesch/p3-mern-guestbook-frontend',
+    imgArr: projectImages.guestbook,
+    tags: ['React', 'MERN', 'Full-Stack', 'Responsive Design', 'All'],
+    skills: [
+      {
+        name: 'JavaScript',
+        icon: skillIcons.javascript_primary,
+        id: 'javascript-icon',
+      },
+      {
+        name: 'React.js',
+        icon: skillIcons.react_primary,
+        id: 'react-icon',
+      },
+      {
+        name: 'Node.js',
+        icon: skillIcons.nodejs_primary,
+        id: 'nodejs-icon',
+      },
+      {
+        name: 'express',
+        icon: skillIcons.express_primary,
+        id: 'express-icon',
+      },
+      {
+        name: 'mongoDB',
+        icon: skillIcons.mongodb_primary,
+        id: 'mongodb-icon',
+      },
+      {
+        name: 'mongoose',
+        icon: skillIcons.mongoose_primary,
+        id: 'mongoose-icon',
+      },
+      {
+        name: 'Tailwind CSS',
+        icon: skillIcons.tailwind_primary,
+        id: 'tailwind-icon',
+      },
+      {
+        name: 'Postman API',
+        icon: skillIcons.postman_primary,
+        id: 'postman-icon',
+      },
+      {
+        name: 'Passport.js',
+        icon: skillIcons.passport_primary,
+        id: 'passport-icon',
+      },
+      {
+        name: 'JWT',
+        icon: skillIcons.jwt_primary,
+        id: 'jwt-icon',
+      },
+      {
+        name: 'Heroku',
+        icon: skillIcons.heroku_primary,
+        id: 'heroku-icon',
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: 'Todo App',
+    description: [
+      "A todo list application built from scratch using React.js with full CRUD functionality: Users can add new tasks to the list, mark tasks as completed, edit tasks and remove tasks from the list. The application also displays the total number of tasks remaining and tasks are saved in the browser's local storage, so they persist after reloading the page. There is also filtering functionality to show completed tasks only, incomplete tasks or all tasks. Application state is managed with Redux and styling was achieved using CSS modules with a fully responsive design.",
+    ],
+    projectLink: 'http://todo-app.katieloesch.co.uk/',
+    codeLink: 'https://github.com/katieloesch/react-todo-app',
+    imgArr: projectImages.pomodoro,
+    tags: ['React', 'Responsive Design', 'All'],
+    skills: [
+      {
+        name: 'JavaScript',
+        icon: skillIcons.javascript_primary,
+        id: 'javascript-icon',
+      },
+      {
+        name: 'React.js',
+        icon: skillIcons.react_primary,
+        id: 'react-icon',
+      },
+      {
+        name: 'Redux',
+        icon: skillIcons.redux_primary,
+        id: 'redux-icon',
+      },
+      {
+        name: 'CSS',
+        icon: skillIcons.css_primary,
+        id: 'css-icon',
+      },
+    ],
+  },
   {
     id: 5,
-    title: 'Browser Arcade',
+    title: 'Tic Tac Toe',
     description: [
       "A classic game of Tic Tac Toe built from scratch in 7 days using HTML/CSS/JS. This dynamic game allows two players to compete from the same computer. It lets users enter their name and pick a colour. After they start the game, a preview of their symbol will appear in any empty cell when they hover over it and a display notifies them about whose turn it is, who wins or if there's a draw. Users can also reset the game and keep track of the number of draws and wins. The game features animations and sound effects, which can be muted and the LocalStorage option enables users to continue their gaming session where they left off after the page reloads or the internet connection is interrupted.",
     ],
