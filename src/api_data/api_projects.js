@@ -1,5 +1,5 @@
-import { skillIcons } from './../assets/icons/icons_skills';
 import { projectImages } from '../assets/images/project_images';
+import tech from './api_technologies';
 
 const projects = [
   // {
@@ -33,51 +33,19 @@ const projects = [
     imgArr: projectImages.jobBoard,
     tags: ['React', 'Rails', 'Full-Stack', 'Responsive Design', 'All'],
     skills: [
-      {
-        name: 'React.js',
-        icon: skillIcons.react_primary,
-        id: 'react-icon',
-      },
-      {
-        name: 'Ruby',
-        icon: skillIcons.ruby_primary,
-        id: 'ruby-icon',
-      },
-      {
-        name: 'Ruby on Rails',
-        icon: skillIcons.rails_primary,
-        id: 'rails-icon',
-      },
-      {
-        name: 'CSS',
-        icon: skillIcons.css_primary,
-        id: 'css-icon',
-      },
-      {
-        name: 'JavaScript',
-        icon: skillIcons.javascript_primary,
-        id: 'javascript-icon',
-      },
-      {
-        name: 'Heroku',
-        icon: skillIcons.heroku_primary,
-        id: 'heroku-icon',
-      },
-      {
-        name: 'JWT',
-        icon: skillIcons.jwt_primary,
-        id: 'jwt-icon',
-      },
-      {
-        name: 'Postman API',
-        icon: skillIcons.postman_primary,
-        id: 'postman-icon',
-      },
+      tech.react,
+      tech.ruby,
+      tech.rails,
+      tech.css,
+      tech.javascript,
+      tech.heroku,
+      tech.jwt,
+      tech.postman,
     ],
   },
   {
     id: 3,
-    title: 'Flicks 4 Brains',
+    title: 'Film & TV Stuff',
     description: [
       "A movie and tv watchlist SPA with full CRUD functionality built from scratch in 8 days using ReactJS/SCSS. The user can add movies and tv shows to a 'watched' and a 'to-watch' list, mark them as watched as well as edit and remove them from the list. By clicking on cover art of a film and or tv show, more information is displayed about the title. The user also has the option to add movies and tv shows from the public TMDB API to their lists and modify/remove them. The updated version of the project is fully responsive for easy navigation on all screen sizes and connects to firestore/firebase allowing users to create an account and save their data.",
     ],
@@ -87,35 +55,15 @@ const projects = [
     imgArr: projectImages.flicks4brains,
     tags: ['React', 'Full-Stack', 'Responsive Design', 'All'],
     skills: [
-      {
-        name: 'JavaScript',
-        icon: skillIcons.javascript_primary,
-        id: 'javascript-icon',
-      },
-      {
-        name: 'React.js',
-        icon: skillIcons.react_primary,
-        id: 'react-icon',
-      },
-      {
-        name: 'Sass',
-        icon: skillIcons.sass_primary,
-        id: 'sass-icon',
-      },
-      {
-        name: 'Firebase',
-        icon: skillIcons.firebase_primary,
-        id: 'firebase-icon',
-      },
-      {
-        name: 'Cloud Firestore',
-        icon: skillIcons.firestore_primary,
-        id: 'firestore-icon',
-      },
+      tech.javascript,
+      tech.react,
+      tech.sass,
+      tech.firebase,
+      tech.firestore,
     ],
   },
   {
-    id: 6,
+    id: 4,
     title: 'MERN Guestbook',
     description: [
       [
@@ -127,65 +75,21 @@ const projects = [
     imgArr: projectImages.guestbook,
     tags: ['React', 'MERN', 'Full-Stack', 'Responsive Design', 'All'],
     skills: [
-      {
-        name: 'JavaScript',
-        icon: skillIcons.javascript_primary,
-        id: 'javascript-icon',
-      },
-      {
-        name: 'React.js',
-        icon: skillIcons.react_primary,
-        id: 'react-icon',
-      },
-      {
-        name: 'Node.js',
-        icon: skillIcons.nodejs_primary,
-        id: 'nodejs-icon',
-      },
-      {
-        name: 'express',
-        icon: skillIcons.express_primary,
-        id: 'express-icon',
-      },
-      {
-        name: 'mongoDB',
-        icon: skillIcons.mongodb_primary,
-        id: 'mongodb-icon',
-      },
-      {
-        name: 'mongoose',
-        icon: skillIcons.mongoose_primary,
-        id: 'mongoose-icon',
-      },
-      {
-        name: 'Tailwind CSS',
-        icon: skillIcons.tailwind_primary,
-        id: 'tailwind-icon',
-      },
-      {
-        name: 'Postman API',
-        icon: skillIcons.postman_primary,
-        id: 'postman-icon',
-      },
-      {
-        name: 'Passport.js',
-        icon: skillIcons.passport_primary,
-        id: 'passport-icon',
-      },
-      {
-        name: 'JWT',
-        icon: skillIcons.jwt_primary,
-        id: 'jwt-icon',
-      },
-      {
-        name: 'Heroku',
-        icon: skillIcons.heroku_primary,
-        id: 'heroku-icon',
-      },
+      tech.javascript,
+      tech.react,
+      tech.nodejs,
+      tech.express,
+      tech.mongodb,
+      tech.mongoose,
+      tech.tailwind,
+      tech.postman,
+      tech.passport,
+      tech.jwt,
+      tech.heroku,
     ],
   },
   {
-    id: 4,
+    id: 5,
     title: 'Todo App',
     description: [
       "A todo list application built from scratch using React.js with full CRUD functionality: Users can add new tasks to the list, mark tasks as completed, edit tasks and remove tasks from the list. The application also displays the total number of tasks remaining and tasks are saved in the browser's local storage, so they persist after reloading the page. There is also filtering functionality to show completed tasks only, incomplete tasks or all tasks. Application state is managed with Redux and styling was achieved using CSS modules with a fully responsive design.",
@@ -194,31 +98,10 @@ const projects = [
     codeLink: 'https://github.com/katieloesch/react-todo-app',
     imgArr: projectImages.pomodoro,
     tags: ['React', 'Responsive Design', 'All'],
-    skills: [
-      {
-        name: 'JavaScript',
-        icon: skillIcons.javascript_primary,
-        id: 'javascript-icon',
-      },
-      {
-        name: 'React.js',
-        icon: skillIcons.react_primary,
-        id: 'react-icon',
-      },
-      {
-        name: 'Redux',
-        icon: skillIcons.redux_primary,
-        id: 'redux-icon',
-      },
-      {
-        name: 'CSS',
-        icon: skillIcons.css_primary,
-        id: 'css-icon',
-      },
-    ],
+    skills: [tech.javascript, tech.react, tech.redux, tech.css],
   },
   {
-    id: 5,
+    id: 6,
     title: 'Tic Tac Toe',
     description: [
       "A classic game of Tic Tac Toe built from scratch in 7 days using HTML/CSS/JS. This dynamic game allows two players to compete from the same computer. It lets users enter their name and pick a colour. After they start the game, a preview of their symbol will appear in any empty cell when they hover over it and a display notifies them about whose turn it is, who wins or if there's a draw. Users can also reset the game and keep track of the number of draws and wins. The game features animations and sound effects, which can be muted and the LocalStorage option enables users to continue their gaming session where they left off after the page reloads or the internet connection is interrupted.",
@@ -227,23 +110,7 @@ const projects = [
     codeLink: 'http://github.com/katieloesch/project-1-tictactoe',
     imgArr: projectImages.arcade,
     tags: ['React', 'Responsive Design', 'All'],
-    skills: [
-      {
-        name: 'JavaScript',
-        icon: skillIcons.javascript_primary,
-        id: 'javascript-icon',
-      },
-      {
-        name: 'React.js',
-        icon: skillIcons.react_primary,
-        id: 'react-icon',
-      },
-      {
-        name: 'Sass',
-        icon: skillIcons.sass_primary,
-        id: 'sass-icon',
-      },
-    ],
+    skills: [tech.javascript, tech.html, tech.css],
   },
 ];
 
