@@ -8,6 +8,7 @@ import { AppContainer, MotionContainer } from '../../containers';
 import { SectionHeading } from '../Shared';
 import { colors } from '../../assets/colors/colors';
 import './Skills.scss';
+import SkillsCategory from './SkillsCategory';
 
 const Skills = () => {
   const active = useContext(CurrentContext);
@@ -48,20 +49,12 @@ const Skills = () => {
     <div className='skills-section flex nav-section' ref={ref}>
       <SectionHeading section='skills'>Technologies</SectionHeading>
       <div className='skills-container flex'>
-        <motion.div className='skills-list flex'>
-          {skills.map((skill) => (
-            <motion.div
-              whileInView={{ opacity: [0, 1] }}
-              transition={{ duration: 0.5 }}
-              className='skills-item flex'
-              id={skill.id}
-              key={`skill-${skill.name}`}
-            >
-              <div className='flex' style={{ backgroundColor: colors.skillBg }}>
-                <img src={skill.icon} alt={skill.name} />
-              </div>
-              <p className='p-text'>{skill.name}</p>
-            </motion.div>
+        <motion.div className='categories-container flex'>
+          {skills.map((category, index) => (
+            <SkillsCategory
+              category={category}
+              key={`skills-category-${index}`}
+            />
           ))}
         </motion.div>
       </div>

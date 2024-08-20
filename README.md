@@ -21,9 +21,7 @@ I started the development of this portfolio project after completion of the Gene
 
 ## <a name="deployment-link"></a> 2. Deployment link
 
-<img src="./src//assets//icons//icons_readme/link.svg" alt="" width="20">&nbsp;&nbsp;<sup>https://katieloesch.co.uk/</sup>
-
-:link: https://katieloesch.co.uk/
+:link: &nbsp;&nbsp;https://katieloesch.co.uk/
 
 ## <a name="installation"></a> 3. Installation
 
