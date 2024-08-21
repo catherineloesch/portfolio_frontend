@@ -14,7 +14,7 @@ const skills = [
       tech.css,
       tech.sass,
       tech.tailwind,
-      tech.bootstrap,
+      // tech.bootstrap,
     ],
   },
   {
