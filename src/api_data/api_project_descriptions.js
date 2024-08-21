@@ -18,7 +18,7 @@ const descriptions = {
     'They also can also edit their username and password once they are logged in, or delete their account.',
     'Authentication was achieved by using the Node ExpressJS and Passport.js packages.',
     ' Users can also read, post, edit and delete comments in the Guestbook application, the concept of which was tailored around a specific event type: a divorce party.',
-    'The idea behind this concept was to support recent divorcees by enjoying their divorce party to the fullest and later re-live all the happy memories.',
+    // 'The idea behind this concept was to support recent divorcees by enjoying their divorce party to the fullest and later re-live all the happy memories.',
   ],
   pomodoro: [
     'A todo list application built from scratch using React.js with full CRUD functionality:',
