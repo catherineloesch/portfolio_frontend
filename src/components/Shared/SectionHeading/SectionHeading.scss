@@ -8,22 +8,24 @@
   color: var(--secondary);
   width: 85%;
 
-  &.about-heading {
-    justify-content: left;
-  }
+  // &.about-heading {
+  //   justify-content: left;
+  // }
 
   @media screen and (min-width: 2000px) {
     font-size: 2.8rem;
   }
-
   @media (max-width: 550px) {
     font-size: 2.3rem;
   }
-
   @media screen and (max-width: 400px) {
     font-size: 2rem;
   }
   @media screen and (max-width: 325px) {
     font-size: 1.6rem;
   }
+}
+
+.heading-section.about-heading {
+  justify-content: left;
 }
