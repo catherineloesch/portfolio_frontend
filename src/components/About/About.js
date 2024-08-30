@@ -68,14 +68,12 @@ const About = () => {
       <div className='about__slider-container' ref={ref}>
         <Slider
           type='about'
-          slides={[<Abouts columnData={aboutData.abouts} />, <Media />]}
+          slides={[
+            <Abouts columnData={aboutData.abouts} />,
+            <Media mediaData={aboutData.media} />,
+          ]}
         />
       </div>
-
-      {/* <Slider
-        type='about'
-        slides={[<Abouts columnData={aboutData.abouts} />, <Media />]}
-      /> */}
     </div>
   );
 };

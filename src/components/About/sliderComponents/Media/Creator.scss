@@ -1,0 +1,45 @@
+.about-creator {
+  width: 145px;
+  height: 130px;
+  margin: 15px 25px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  background-color: var(--bg2);
+  border-radius: 13px;
+  box-shadow: 0 0 25px rgba(194, 189, 189, 0.2);
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .img-container {
+    width: 75px;
+    height: 75px;
+    padding: 10px;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    .proton-img {
+      padding-top: 10px;
+      scale: 0.65;
+    }
+
+    .nbtv-img {
+      scale: 1.5;
+    }
+    .sr-img {
+      scale: 0.8;
+    }
+  }
+}

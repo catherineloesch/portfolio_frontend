@@ -5,7 +5,7 @@ import './Abouts.scss';
 
 const Abouts = ({ columnData }) => {
   return (
-    <div className='abouts-columns'>
+    <div className='abouts-columns about-slide'>
       {columnData.map((about, index) => (
         <Column
           type='about'
