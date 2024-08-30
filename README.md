@@ -71,13 +71,24 @@ npm start
 
 ## <a name="technologies"></a> 4. Technologies Used
 
-- This application is based in ReactJS (v18.2.0), JavaScript, JSX and SCSS.
-  - it was created using the 'create-react-app' command
-  - https://create-react-app.dev/
+### Core Technologies
+
+- **ReactJS** (v18.2.0)
+
+  - <sub>primary framework used to build the application</sub>
+  - <sub>created using the create-react-app tool</sub>
+  - <sub>[React documentation](https://reactjs.org/)</sub>
+  - <sub>[Create React App documentation](https://create-react-app.dev/)</sub>
+
+<br>
 
 ```zsh
-npx create-react-app portfolio
+npx create-react-app .
 ```
+
+- **SCSS**
+  - <sub>CSS preprocessor used for styling the application</sub>
+  - <sub>[SCSS documentation](https://sass-lang.com/guide)</sub>
 
 ### Key Dependencies
 
