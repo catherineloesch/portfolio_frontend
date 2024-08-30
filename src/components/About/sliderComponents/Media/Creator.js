@@ -1,19 +1,20 @@
 import React from 'react';
 import './Creator.scss';
 
-const Creator = ({ item }) => {
+const Creator = ({ blog, onClick }) => {
   return (
     <div
-      className={`about-creator ${item.className}`}
-      key={`about-media-item-${item.className}`}
+      className={`about-creator ${blog.className}`}
+      key={`about-media-item-${blog.className}`}
+      onClick={onClick}
     >
-      <p>{item.name}</p>
+      <p>{blog.name}</p>
 
       <div className='img-container'>
         <img
-          className={`${item.className}-img`}
-          src={item.img}
-          alt={item.alt}
+          className={`${blog.className}-img`}
+          src={blog.img}
+          alt={blog.alt}
         />
       </div>
     </div>
