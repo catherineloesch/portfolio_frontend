@@ -111,41 +111,6 @@ const Work = () => {
           transition={{ duration: 0.5, delayChildren: 0.5 }}
           className='work-portfolio'
         >
-          {/* {filterWork.map((project, index) => (
-            <div className="work-item flex" key={index}>
-              <div className="work-img flex">
-                <img src={project.imgArr[0].src} alt={project.title} />
-
-                <motion.div
-                  whileHover={{ opacity: [0, 1] }}
-                  transition={{
-                    duration: 0.25,
-                    ease: "easeInOut",
-                    staggerChildren: 0.5,
-                  }}
-                  className="work-hover flex"
-                >
-                  <button
-                    onClick={() => openProjectModal(project)}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <motion.div
-                      whileInView={{ scale: [0, 1] }}
-                      transition={{ duration: 0.25 }}
-                      className="flex"
-                    >
-                      <BsEyeFill className="work-icon" />
-                    </motion.div>
-                  </button>
-                </motion.div>
-              </div>
-              <div className="work-content flex">
-                <h4 className="bold">{project.title}</h4>
-              </div>
-            </div>
-          ))} */}
-
           {filterWork.map((project, index) => (
             <Card
               type='project'

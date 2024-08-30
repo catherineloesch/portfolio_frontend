@@ -23,7 +23,7 @@ const Overlay = ({ show, type, data, closeModal }) => {
   }, [show]);
 
   const content = (
-    <div className={`modal ${type}`}>
+    <div className={`modal ${type} ${data.className}-modal`}>
       <div className='btn-close-modal'>
         <button onClick={closeModal}>
           <HiX />
