@@ -1,4 +1,4 @@
-import descriptions from './api_project_descriptions';
+import { descriptions, overviews } from './api_project_descriptions';
 import projectImages from '../assets/images/project_images/project_images';
 import tech from './api_technologies';
 
@@ -7,6 +7,7 @@ const projects = [
   //   id: 0,
   //   title: 'Hunting Buddy',
   //   description: [],
+  // overview: ''
   //   projectLink: '',
   //   codeLink: '',
   //   imgArr: projectImages.jobBoard,
@@ -17,6 +18,7 @@ const projects = [
   //   id: 1,
   //   title: 'PlaceBook',
   //   description: [],
+  // overview: ''
   //   projectLink: '',
   //   codeLink: '',
   //   imgArr: projectImages.jobBoard,
@@ -28,6 +30,7 @@ const projects = [
     title: 'Pawnee Pets',
     className: 'job-board',
     description: descriptions.jobBoard,
+    overview: overviews.jobBoard,
     projectLink: 'http://pawnee-pets.katieloesch.co.uk',
     codeLink: 'https://github.com/katieloesch/project4-react-frontend',
     imgArr: projectImages.jobBoard,
@@ -48,6 +51,7 @@ const projects = [
     title: 'Film & TV Stuff',
     className: 'flicks4brains',
     description: descriptions.flicks4brains,
+    overview: overviews.flicks4brains,
     projectLink: 'http://film-tv-stuff.katieloesch.co.uk',
     codeLink:
       'http://github.com/katieloesch/project-2-react-film-app-revisited',
@@ -66,6 +70,7 @@ const projects = [
     title: 'MERN Guestbook',
     className: 'guestbook',
     description: descriptions.guestbook,
+    overview: overviews.guestbook,
     projectLink: 'https://mern-guestbook.katieloesch.co.uk/',
     codeLink: 'https://github.com/katieloesch/p3-mern-guestbook-frontend',
     imgArr: projectImages.guestbook,
@@ -84,22 +89,23 @@ const projects = [
       // tech.heroku,
     ],
   },
-  {
-    id: 5,
-    title: 'Todo App',
-    className: 'pomodoro',
-    description: descriptions.pomodoro,
-    projectLink: 'http://todo-app.katieloesch.co.uk/',
-    codeLink: 'https://github.com/katieloesch/react-todo-app',
-    imgArr: projectImages.pomodoro,
-    tags: ['React', 'Responsive Design', 'All'],
-    skills: [tech.javascript, tech.react, tech.redux, tech.css],
-  },
+  // {
+  //   id: 5,
+  //   title: 'Todo App',
+  //   className: 'pomodoro',
+  //   description: descriptions.pomodoro,
+  //   projectLink: 'http://todo-app.katieloesch.co.uk/',
+  //   codeLink: 'https://github.com/katieloesch/react-todo-app',
+  //   imgArr: projectImages.pomodoro,
+  //   tags: ['React', 'Responsive Design', 'All'],
+  //   skills: [tech.javascript, tech.react, tech.redux, tech.css],
+  // },
   {
     id: 6,
     title: 'Tic Tac Toe',
     className: 'browser-arcade',
     description: descriptions.browserArcade,
+    overview: overviews.browserArcade,
     projectLink: 'http://tictactoe.katieloesch.co.uk/',
     codeLink: 'http://github.com/katieloesch/project-1-tictactoe',
     imgArr: projectImages.arcade,

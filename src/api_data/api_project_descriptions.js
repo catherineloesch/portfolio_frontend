@@ -1,4 +1,4 @@
-const descriptions = {
+export const descriptions = {
   jobBoard: [
     'A fully responsive full-stack job board application developed in 10 days, utilizing a Rails API for the backend and a React-based frontend.',
     'Designed for freelance pet services, the platform allows users to create accounts and post job listings for dog walkers or pet sitters.',
@@ -30,4 +30,10 @@ const descriptions = {
   ],
 };
 
-export default descriptions;
+export const overviews = {
+  jobBoard: ['Full-stack job board', '[Rails/React]'],
+  flicks4brains: ['Film & TV watchlist SPA', '[React/Firestore/Firebase]'],
+  guestbook: ['Full-stack Guestbook app', '[MERN-stack]'],
+  pomodoro: ['A to-do list application', '[React/Redux]'],
+  browserArcade: ['Classic Tic Tac Toe game', '[HTML/CSS/JS]'],
+};

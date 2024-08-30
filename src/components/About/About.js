@@ -5,7 +5,7 @@ import { SectionHeading, Slider } from '../Shared';
 import { Abouts, Media } from './sliderComponents';
 import { CurrentContext } from '../../contexts/CurrentContext';
 import { aboutData } from './../../api_data/api_about';
-import { aboutImages } from '../../assets/images/about';
+import { aboutImages as images } from '../../assets/images/about_images';
 import { colors } from '../../assets/colors/colors';
 import './About.scss';
 
@@ -50,7 +50,7 @@ const About = () => {
     <div className='about-container'>
       <div className='about-intro flex'>
         <div className='about-intro__avatar-container flex'>
-          <img src={aboutImages.avatar2Svg} alt='avatar' />
+          <img src={images.avatar2Svg} alt='avatar' />
         </div>
 
         <div className='about-intro__text-container'>

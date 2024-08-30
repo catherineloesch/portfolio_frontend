@@ -118,6 +118,7 @@ const Work = () => {
               img={project.imgArr[0].src}
               alt={project.imgArr[0].title}
               txt={project.title}
+              overview={project.overview}
               imgEffects=''
               overlayEffects='blur slide-up'
               onClick={() => openProjectModal(project)}

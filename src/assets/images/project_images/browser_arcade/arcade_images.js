@@ -1,6 +1,6 @@
 import img1 from './ttt_1.png';
 import img2 from './ttt_2.png';
-import img4 from './ttt_4.png';
+// import img4 from './ttt_4.png';
 import img5 from './ttt_5.png';
 import img6 from './ttt_6.png';
 import img7 from './ttt_7.png';
@@ -31,13 +31,13 @@ const arcadeImages = [
   //   alt: 'screenshot of form to add player name',
   //   type: 'project-screenshot',
   // },
-  {
-    id: 3,
-    src: img4,
-    title: 'add player color',
-    alt: 'screenshot of form to add player color',
-    type: 'project-screenshot',
-  },
+  // {
+  //   id: 3,
+  //   src: img4,
+  //   title: 'add player color',
+  //   alt: 'screenshot of form to add player color',
+  //   type: 'project-screenshot',
+  // },
   {
     id: 4,
     src: img5,
