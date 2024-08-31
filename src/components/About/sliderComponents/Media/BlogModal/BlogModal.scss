@@ -116,42 +116,6 @@
           font-weight: 500;
           font-size: 2rem;
         }
-
-        .modal-links {
-          display: flex;
-          justify-content: center;
-          gap: 1rem;
-
-          .modal-link {
-            // background-color: var(--primary);
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.4s ease-in-out;
-
-            svg {
-              width: 80%;
-              height: 80%;
-              color: var(--primary);
-            }
-
-            svg.link-icon {
-              width: 95%;
-              height: 95%;
-            }
-          }
-
-          .modal-link:hover {
-            svg {
-              color: var(--secondary);
-              scale: 1.15;
-              cursor: pointer;
-            }
-          }
-        }
       }
 
       .modal-description {

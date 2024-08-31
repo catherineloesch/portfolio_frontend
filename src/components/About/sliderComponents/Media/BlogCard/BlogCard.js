@@ -1,7 +1,7 @@
 import React from 'react';
-import './Creator.scss';
+import './BlogCard.scss';
 
-const Creator = ({ blog, onClick }) => {
+const BlogCard = ({ blog, onClick }) => {
   return (
     <div
       className={`about-creator ${blog.className}`}
@@ -21,4 +21,4 @@ const Creator = ({ blog, onClick }) => {
   );
 };
 
-export default Creator;
+export default BlogCard;

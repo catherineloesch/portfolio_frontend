@@ -106,14 +106,17 @@ const github = (
 const link = (
   <svg
     xmlns='http://www.w3.org/2000/svg'
-    width='2em'
-    height='2em'
-    viewBox='0 0 56 56'
-    className='link-icon'
+    width='1em'
+    height='1em'
+    viewBox='0 0 24 24'
   >
     <path
       fill='currentColor'
-      d='M28 51.906c13.055 0 23.906-10.851 23.906-23.906c0-13.078-10.875-23.906-23.93-23.906C14.899 4.094 4.095 14.922 4.095 28c0 13.055 10.828 23.906 23.906 23.906m10.406-34.804c2.906 2.882 2.649 6.445-.703 9.773l-4.031 4.055c.328-1.125.305-2.438-.07-3.328l2.367-2.368c2.297-2.25 2.554-4.617.726-6.422c-1.804-1.78-4.172-1.5-6.422.75l-3.351 3.305c-2.32 2.344-2.625 4.735-.797 6.516c.539.562 1.336.914 2.367 1.101c-.352.75-1.078 1.618-1.758 2.086c-.703-.117-1.594-.68-2.344-1.453c-2.906-2.883-2.601-6.492.797-9.914l3.422-3.398c3.352-3.352 6.914-3.586 9.797-.703M16.75 38.758c-2.906-2.883-2.649-6.446.727-9.774l4.03-4.054c-.35 1.125-.327 2.437.048 3.328l-2.368 2.367c-2.297 2.227-2.554 4.617-.726 6.422c1.805 1.781 4.195 1.5 6.422-.75l3.351-3.305c2.32-2.344 2.625-4.734.797-6.515c-.539-.563-1.336-.915-2.367-1.102c.351-.75 1.078-1.617 1.758-2.086c.703.117 1.593.68 2.367 1.453c2.883 2.883 2.578 6.469-.82 9.89l-3.422 3.423c-3.352 3.351-6.914 3.586-9.797.703'
+      d='M10.9 8a4 4 0 0 1 1.352.135a2.511 2.511 0 0 1-.7 4.863a.5.5 0 0 0 0 1a3.508 3.508 0 0 0 2.944-5.2A3.56 3.56 0 0 0 11.434 7H5.59a3.5 3.5 0 0 0-.19 7c.724.041 1.458 0 2.183 0a.5.5 0 0 0 0-1c-1.323 0-2.915.262-3.891-.843A2.522 2.522 0 0 1 5.59 8Z'
+    ></path>
+    <path
+      fill='currentColor'
+      d='M18.41 17a3.5 3.5 0 0 0 .192-6.994c-.724-.041-1.458 0-2.183 0a.5.5 0 0 0 0 1c1.323 0 2.915-.262 3.891.843A2.522 2.522 0 0 1 18.41 16H13.1a4 4 0 0 1-1.352-.135a2.511 2.511 0 0 1 .7-4.863a.5.5 0 0 0 0-1a3.508 3.508 0 0 0-2.944 5.2A3.56 3.56 0 0 0 12.566 17Z'
     ></path>
   </svg>
 );
@@ -228,7 +231,7 @@ const newsletter = (
 
 const aboutIcons = {
   codingJourney: {
-    src: code,
+    svg: code,
     className: 'code',
     author: 'iconify.design',
     license: 'https://github.com/iconify/iconify/blob/main/license.txt',
@@ -238,7 +241,7 @@ const aboutIcons = {
       '"programming-linear" by iconify.design, available at https://icon-sets.iconify.design/solar/programming-linear/, license: https://github.com/iconify/iconify/blob/main/license.txt',
   },
   codingJourney2: {
-    src: code2,
+    svg: code2,
     className: 'code',
     author: 'FontAwesome',
     license: 'https://fontawesome.com/license/free',
@@ -248,7 +251,7 @@ const aboutIcons = {
       '"laptop code classic solid" by FontAwesome, available at https://fontawesome.com/icons/laptop-code?f=classic&s=solid, license: https://fontawesome.com/license/free',
   },
   codingJourney3: {
-    src: code3,
+    svg: code3,
     name: 'code',
     author: 'FontAwesome',
     license: 'https://fontawesome.com/license/free',
@@ -258,7 +261,7 @@ const aboutIcons = {
       '"code classic solid" by FontAwesome, available at:  https://fontawesome.com/icons/code?f=classic&s=solid, licence: https://fontawesome.com/license/free',
   },
   background: {
-    src: dna,
+    svg: dna,
     className: 'dna',
     author: 'iconify.design',
     license: 'https://github.com/iconify/iconify/blob/main/license.txt',
@@ -268,7 +271,7 @@ const aboutIcons = {
       '"solar:programming-linear" by iconify.design, available at https://icon-sets.iconify.design/file-icons/dna/, license: https://github.com/iconify/iconify/blob/main/license.txt',
   },
   interests: {
-    src: ufo,
+    svg: ufo,
     className: 'ufo',
     author: 'iconify.design',
     license: 'https://github.com/iconify/iconify/blob/main/license.txt',
@@ -278,7 +281,7 @@ const aboutIcons = {
       '"solar:ufo-2-bold" by iconify.design, available at: https://icon-sets.iconify.design/solar/ufo-2-bold/, licence: https://github.com/iconify/iconify/blob/main/license.txt',
   },
   github: {
-    src: github,
+    svg: github,
     className: 'github',
     author: 'FontAwesome',
     license: 'https://fontawesome.com/license/free',
@@ -288,17 +291,17 @@ const aboutIcons = {
       '"github" by FontAwesome, available at: https://fontawesome.com/icons/github?f=brands&s=solid, licence: https://fontawesome.com/license/free',
   },
   website: {
-    src: link,
+    svg: link,
     className: 'website',
     author: 'iconify.design',
     license: 'https://github.com/iconify/iconify/blob/main/license.txt',
-    url: 'https://icon-sets.iconify.design/f7/link-circle-fill/',
-    alt: 'link icon, source: iconify.design - https://icon-sets.iconify.design/f7/link-circle-fill/, licence: https://github.com/iconify/iconify/blob/main/license.txt',
+    url: 'https://icon-sets.iconify.design/circum/link/',
+    alt: 'link icon, source: iconify.design - https://icon-sets.iconify.design/circum/link/, licence: https://github.com/iconify/iconify/blob/main/license.txt',
     title:
-      '"link-circle-fill" by iconify.design, available at: https://icon-sets.iconify.design/f7/link-circle-fill/, licence: https://github.com/iconify/iconify/blob/main/license.txt',
+      '"circum:link" by iconify.design, available at: https://icon-sets.iconify.design/circum/link/, licence: https://github.com/iconify/iconify/blob/main/license.txt',
   },
   blog: {
-    src: blog,
+    svg: blog,
     className: 'blog',
     author: 'FontAwesome',
     license: 'https://fontawesome.com/license/free',
@@ -308,7 +311,7 @@ const aboutIcons = {
       '"blog" by FontAwesome, available at: https://fontawesome.com/icons/blog?f=classic&s=solid, licence: https://fontawesome.com/license/free',
   },
   forum: {
-    src: forum,
+    svg: forum,
     className: 'forum',
     author: 'iconify.design',
     license: 'https://github.com/iconify/iconify/blob/main/license.txt',
@@ -318,7 +321,7 @@ const aboutIcons = {
       '"material-symbols:forum" by iconify.design, available at: https://icon-sets.iconify.design/material-symbols/forum/, licence: https://github.com/iconify/iconify/blob/main/license.txt',
   },
   youtube: {
-    src: youtube,
+    svg: youtube,
     className: 'youtube',
     author: 'iconify.design',
     license: 'https://github.com/iconify/iconify/blob/main/license.txt',
@@ -328,7 +331,7 @@ const aboutIcons = {
       '"youtube" by iconify.design, available at: https://icon-sets.iconify.design/mingcute/youtube-fill/, licence: https://github.com/iconify/iconify/blob/main/license.txt',
   },
   linkedin: {
-    src: linkedin,
+    svg: linkedin,
     className: 'linkedin',
     author: 'FontAwesome',
     license: 'https://fontawesome.com/license/free',
@@ -338,7 +341,7 @@ const aboutIcons = {
       '"linkedin" by FontAwesome, available at: https://fontawesome.com/icons/linkedin?f=brands&s=solid, licence: https://fontawesome.com/license/free',
   },
   mastodon: {
-    src: mastodon,
+    svg: mastodon,
     className: 'mastodon',
     author: 'FontAwesome',
     license: 'https://fontawesome.com/license/free',
@@ -348,7 +351,7 @@ const aboutIcons = {
       '"mastodon" by FontAwesome, available at: https://fontawesome.com/icons/mastodon?f=brands&s=solid, licence: https://fontawesome.com/license/free',
   },
   podcast: {
-    src: podcast,
+    svg: podcast,
     className: 'podcast',
     author: 'FontAwesome',
     license: 'https://fontawesome.com/license/free',
@@ -358,7 +361,7 @@ const aboutIcons = {
       '"podcast" by FontAwesome, available at: https://fontawesome.com/icons/podcast?f=classic&s=solid, licence: https://fontawesome.com/license/free',
   },
   newsletter: {
-    src: newsletter,
+    svg: newsletter,
     className: 'newsletter',
     author: 'https://github.com/quadrifolia',
     url: 'https://github.com/FortAwesome/Font-Awesome/issues/8277',

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
+import BlogCard from './BlogCard/BlogCard';
+import BlogModal from './BlogModal/BlogModal';
 import './Media.scss';
-import Creator from './Creator';
-import BlogModal from './BlogModal';
 
-const Media = ({ mediaData }) => {
+const Media = ({ mediaData, mediaLinks }) => {
   const [showBlogPortal, setShowBlogPortal] = useState(false);
   const [modalContent, setModalContent] = useState({});
 
@@ -22,19 +22,21 @@ const Media = ({ mediaData }) => {
 
       <div className='about-creators'>
         {mediaData.map((blog) => (
-          <Creator
+          <BlogCard
             key={`about-creator-${blog.className}`}
             blog={blog}
             onClick={() => openBlogPortal(blog)}
           />
         ))}
       </div>
+
       <BlogModal
         type='blog-modal'
         data={modalContent}
         show={showBlogPortal}
         onCancel={closeBlogPortal}
         closeModal={closeBlogPortal}
+        links={mediaLinks}
       />
     </div>
   );

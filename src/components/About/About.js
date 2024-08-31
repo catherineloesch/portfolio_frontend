@@ -70,7 +70,10 @@ const About = () => {
           type='about'
           slides={[
             <Abouts columnData={aboutData.abouts} />,
-            <Media mediaData={aboutData.media} />,
+            <Media
+              mediaData={aboutData.media}
+              mediaLinks={aboutData.mediaLinks}
+            />,
           ]}
         />
       </div>
