@@ -3,10 +3,11 @@ import { motion } from 'framer-motion';
 
 import { CurrentContext } from '../../contexts/CurrentContext';
 import { AppContainer, MotionContainer } from '../../containers';
-import { BtnFill, Card, Modal, SectionHeading } from '../Shared';
+import { BtnFill, Card, SectionHeading } from '../Shared';
 import { projects } from './../../api_data/api_projects';
 import { colors } from '../../assets/colors/colors';
 import './Work.scss';
+import ProjectModal from './ProjectModal/ProjectModal';
 
 const Work = () => {
   const [activeFilter, setActiveFilter] = useState('All');
@@ -126,7 +127,7 @@ const Work = () => {
           ))}
         </motion.div>
       </div>
-      <Modal
+      <ProjectModal
         type='project-modal'
         data={modalContent}
         show={showProjectModal}

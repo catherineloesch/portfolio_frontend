@@ -3,12 +3,13 @@ import { useState, useRef, useEffect, useContext } from 'react';
 import { motion } from 'framer-motion';
 
 import { skills } from './../../api_data/api_skills';
+import SkillsCategory from './SkillsCategory/SkillsCategory';
+import { SectionHeading } from '../Shared';
+
 import { CurrentContext } from '../../contexts/CurrentContext';
 import { AppContainer, MotionContainer } from '../../containers';
-import { SectionHeading } from '../Shared';
 import { colors } from '../../assets/colors/colors';
 import './Skills.scss';
-import SkillsCategory from './SkillsCategory';
 
 const Skills = () => {
   const active = useContext(CurrentContext);

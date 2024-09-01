@@ -1,5 +1,5 @@
 import React from 'react';
-import Skill from './Skill';
+import Skill from '../Skill/Skill';
 import './SkillsCategory.scss';
 
 const SkillsCategory = ({ category }) => {
