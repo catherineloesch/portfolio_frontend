@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom';
 import { CSSTransition } from 'react-transition-group';
 import { HiX } from 'react-icons/hi';
 
-import Backdrop from '../Backdrop/Backdrop';
-import Carousel from '../Carousel/Carousel';
+import { Backdrop, Carousel } from '../../../components/Shared';
 import { workIcons } from '../../../assets/icons/icons_work';
 import { colors } from '../../../assets/colors/colors';
 
-import './Modal.scss';
+import './ProjectModal.scss';
+import ProjectSkill from './ProjectSkill/ProjectSkill';
 
 const Overlay = ({ show, type, data, closeModal }) => {
   useEffect(() => {
@@ -34,6 +34,7 @@ const Overlay = ({ show, type, data, closeModal }) => {
         <div className='modal__main__img-container'>
           <Carousel slides={data.imgArr} type='project' />
         </div>
+
         <div className='modal__main__text-container'>
           <div className='heading-modal'>
             <h2>{data.title}</h2>
@@ -62,18 +63,14 @@ const Overlay = ({ show, type, data, closeModal }) => {
       <footer className={`modal__footer`}>
         <div className='modal-skills-list flex'>
           {data.skills.map((skill) => (
-            <div
-              whileinview={{ opacity: [0, 1] }}
-              transition={{ duration: 0.5 }}
-              className='modal-skills-item flex'
+            <ProjectSkill
+              name={skill.name}
+              icon={skill.icon}
+              className={`modal-skills-item`}
               id={skill.id}
-              key={`skill-${skill.name}`}
-            >
-              <div className='flex' style={{ backgroundColor: colors.skillBg }}>
-                <img src={skill.icon} alt={skill.name} />
-              </div>
-              <p className='p-text'>{skill.name}</p>
-            </div>
+              bg={colors.skillBg}
+              key={`modal-skill-${skill.id}`}
+            />
           ))}
         </div>
       </footer>
@@ -82,7 +79,7 @@ const Overlay = ({ show, type, data, closeModal }) => {
   return ReactDOM.createPortal(content, document.getElementById('modal-hook'));
 };
 
-const Modal = (props) => {
+const ProjectModal = (props) => {
   return (
     <React.Fragment>
       {props.show && <Backdrop onClick={props.onCancel} />}
@@ -99,4 +96,4 @@ const Modal = (props) => {
   );
 };
 
-export default Modal;
+export default ProjectModal;

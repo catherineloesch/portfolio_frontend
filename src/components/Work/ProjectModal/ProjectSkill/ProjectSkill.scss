@@ -1,0 +1,24 @@
+.modal-skills-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease-in-out;
+
+  div {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+    img {
+      width: 50%;
+      height: 50%;
+    }
+  }
+
+  p {
+    margin-top: 0.5rem;
+    color: var(--grey);
+  }
+}

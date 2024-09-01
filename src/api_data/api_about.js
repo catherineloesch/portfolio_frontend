@@ -11,19 +11,19 @@ const abouts = [
     title: 'background.',
     description:
       'As a biomedical science graduate, I had the opportunity to work with databases that store genetic data and algorithms for comparing sequence information. This experience sparked my interest in how software and technology can be used to improve and innovate healthcare and medical research.',
-    imgUrl: icons.background,
+    icon: icons.background.svg,
   },
   {
     title: 'coding journey.',
     description:
       'My interest in coding led me to join the General Assembly software engineering immersive course to secure a solid foundation in programming fundamentals to build upon. I’m currently looking for opportunities to further develop my skills and learn new languages, frameworks and technologies.',
-    imgUrl: icons.codingJourney,
+    icon: icons.codingJourney.svg,
   },
   {
     title: 'interests.',
     description:
       "I'm fascinated by sci-fi books, movies, and TV shows like Star Trek and Black Mirror that have often predicted technological advancements before they became mainstream, such as video calls, mobile phones, wireless headphones, credit cards, solar power and AI.",
-    imgUrl: icons.interests,
+    icon: icons.interests.svg,
   },
 ];
 
@@ -65,7 +65,7 @@ const media = [
     github: 'https://github.com/tnonate/thenewoil',
     blog: 'https://blog.thenewoil.org/',
     podcast: 'https://open.spotify.com/show/34JkJr5rzTQ7d1UZvUjfnJ',
-    img: images.newOil2,
+    img: images.newOil,
     alt: 'the new oil logo',
     bg: '',
   },
@@ -130,7 +130,7 @@ const media = [
     podcast: 'https://academind.com/podcast',
     udemy: 'https://www.udemy.com/user/academind',
     linkedin: 'https://www.linkedin.com/school/academind-pro',
-    img: images.academind,
+    img: images.academind2,
     alt: 'academind logo',
     bg: '',
   },
@@ -138,7 +138,17 @@ const media = [
     name: 'ZTM',
     className: 'ztm',
     id: '6',
-    description: [],
+    description: [
+      'ZTM is an online education platform designed to teach in-demand skills,',
+      'Founded by Andrei Neagoie, the platform offers a wide range of courses covering topics such as web development, data science, ethical hacking, machine learning, and more.',
+      'ZTM is known for its high-quality video lessons, practical projects, and regularly updated content, ensuring that students are learning the most relevant and up-to-date information.',
+      'The platform also includes courses that teach important life skills, like productivity and efficient learning, which complement the technical skills being taught.',
+      'In addition to the structured courses, ZTM has an active community where students can collaborate, ask questions, and support each other, which is particularly valuable for learners who thrive in a community-driven environment.',
+      "ZTM offers several blogs and newsletters that focus on a wide range of topics relevant to tech professionals and learners. This includes: Tech News and Industry Updates, latest trends in technology, software development, and industry news as well as insights into new tools, frameworks, and best practices, helping learners stay updated with what's happening in the tech world.",
+      'ZTM also shares blogs and newsletters about effective learning strategies, how to optimise your study routines, and resources that can help you better absorb and retain the skills you’re learning.',
+      'There are also articles focusing on productivity, mental health, and lifestyle adjustments that can help tech professionals maintain a healthy work-life balance while advancing in their careers.',
+      "These resources are part of ZTM's broader mission to not only teach technical skills but also to support their students in becoming well-rounded professionals.",
+    ],
     website: 'https://zerotomastery.io/',
     blog: 'https://zerotomastery.io/blog/',
     newsletter: 'https://zerotomastery.io/newsletters/',
@@ -168,16 +178,26 @@ const media = [
     alt: 'lamadev logo',
     bg: '',
   },
-  // {
-  //   name: 'Andy Sterkowitz',
-  //   url: 'https://www.youtube.com/@AndySterkowitz',
-  // },
+];
+
+const mediaLinks = [
+  'website',
+  'blog',
+  'podcast',
+  'newsletter',
+  'forum',
+  'youtube',
+  'github',
+
+  'mastodon',
+  'linkedin',
 ];
 
 const aboutData = {
-  intros: intros,
-  abouts: abouts,
-  media: media,
+  intros,
+  abouts,
+  media,
+  mediaLinks,
 };
 
 export { aboutData };

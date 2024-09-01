@@ -98,61 +98,44 @@ npx create-react-app .
   - <sub>[GitHub repository](https://github.com/remix-run/react-router)</sub>
   - <sub> [website](https://reactrouter.com/en/main)</sub>
 - **react-router-dom** (v6.12.1)
-
   - <sub>an implementation of react-router that includes additional components for browser-based routing</sub>
   - <sub>[npm page](https://www.npmjs.com/package/react-router-dom)</sub>
   - <sub>[GitHub repository](https://github.com/remix-run/react-router)</sub>
   - <sub> [website](https://reactrouter.com/en/main)</sub>
-
 - **@emailjs/browser** (v3.11.0)
-
   - <sub>package for sending emails directly from the browser using the EmailJS service</sub>
   - <sub>[npm page](https://www.npmjs.com/package/@emailjs/browser)</sub>
   - <sub>[GitHub repository](https://github.com/emailjs-com/emailjs-sdk)</sub>
   - <sub> [website](https://www.emailjs.com/)</sub>
-
 - **intersection-observer** (v0.12.2)
-
   - <sub>a polyfill for the Intersection Observer API allowing you to observe when elements enter or exit the viewport or a parent container</sub>
   - <sub>[npm page](https://www.npmjs.com/package/intersection-observer)</sub>
   - <sub>[GitHub repository](https://github.com/GoogleChromeLabs/intersection-observer)</sub>
-
 - **framer-motion** (v3.11.0)
-
   - <sub>an open source animation library for React</sub>
   - <sub>[npm page](https://www.npmjs.com/package/framer-motion)</sub>
   - <sub>[GitHub repository](https://github.com/framer/motion)</sub>
   - <sub> [website](https://www.framer.com/motion/)</sub>
-
 - **react-transition-group** (v4.4.5)
-
   - <sub>a library for handling animations and transitions in React applications</sub>
   - <sub>[npm page](https://www.npmjs.com/package/react-transition-group)</sub>
   - <sub>[GitHub repository](https://github.com/reactjs/react-transition-group)</sub>
   - <sub> [website](https://reactcommunity.org/react-transition-group/)</sub>
-
 - **Sass** (v1.77.8)
-
   - <sub>CSS preprocessor used for styling the application</sub>
   - <sub>[npm page](https://www.npmjs.com/package/sass)</sub>
   - <sub>[GitHub repository](https://github.com/sass/dart-sass)</sub>
-
 - **react-icons** (v4.9.0)
-
   - <sub>a free and open-source project providing icons for use in React projects</sub>
   - <sub>[npm page](https://www.npmjs.com/package/react-icons)</sub>
   - <sub>[GitHub repository](https://github.com/react-icons/react-icons)</sub>
   - <sub> [website](https://react-icons.github.io/react-icons/)</sub>
-
 - **react-tsparticles** (v2.10.1)
-
   - <sub>a React component library that provides a way to integrate customizable particle animations into React applications</sub>
   - <sub>[npm page](https://www.npmjs.com/package/react-tsparticles)</sub>
   - <sub>[GitHub repository](https://github.com/tsparticles/react)</sub>
   - <sub> [website](https://particles.js.org/)</sub>
-
 - **react-vertical-timeline-component** (v3.6.0)
-
   - <sub>a React component library that provides a pre-built, customizable vertical timeline component/sub>
   - <sub>[npm page](https://www.npmjs.com/package/react-vertical-timeline-component)</sub>
   - <sub>[GitHub repository](https://github.com/stephane-monnot/react-vertical-timeline)</sub>
@@ -166,7 +149,6 @@ npx create-react-app .
   - header: \'**VT323**\', designed by **Peter Hull**
     - <sub>[Google Fonts](https://fonts.google.com/specimen/VT323)</sub>
 - **Icons**
-
   - **Iconify**
     - <sub>A free and open-source framework providing access to a vast number of icons, designed for use across various platforms and environments, including React.</sub>
     - <sub>[website](https://icon-sets.iconify.design/)</sub>
@@ -182,9 +164,7 @@ npx create-react-app .
     - <sub> [website](https://react-icons.github.io/react-icons/)</sub>
     - <sub>[GitHub repository](https://github.com/react-icons/react-icons)</sub>
     - <sub>[license](https://github.com/react-icons/react-icons/blob/master/LICENSE)</sub>
-
 - **Timeline** (Experience Section): **react-vertical-timeline-component** (v3.6.0)
-
   - <sub>a React component library that provides a pre-built, customizable vertical timeline component/sub>
   - <sub> created by [Stéphane Monnot](https://github.com/stephane-monnot/react-vertical-timeline/commits?author=stephane-monnot)</sub>
   - <sub>[npm page](https://www.npmjs.com/package/react-vertical-timeline-component)</sub>
@@ -194,35 +174,25 @@ npx create-react-app .
 ### Development Tools
 
 - **Git / GitHub**
-
   - <sub>used for version control and collaboration</sub>
   - <sub>[Git website](https://git-scm.com/)</sub>
   - <sub>[GitHub website](https://github.com/)</sub>
-
 - **Visual Studio Code (VSCode)**
-
   - <sub>code editor used for development</sub>
   - <sub>[website](https://code.visualstudio.com/)</sub>
   - <sub>[GitHub repository](https://github.com/microsoft/vscode)</sub>
-
 - **Google Chrome & Chrome DevTools**
-
   - <sub>used for testing, debugging, and developing in the browser</sub>
   - <sub>[Google Chrome website](https://www.google.com/chrome/)</sub>
   - <sub>[Chrome DevTools documentation](https://developer.chrome.com/docs/devtools)</sub>
-
 - **Excalidraw**
-
   - <sub>tool used to create wireframes for the application</sub>
   - <sub>[website](https://excalidraw.com/)</sub>
   - <sub>[GitHub repository](https://github.com/excalidraw/excalidraw)</sub>
-
 - **ChatGPT4o**:
-
   - <sub>generative AI tool used for debugging, development support and generating artwork for the README file</sub>
   - <sub>[website](https://chat.openai.com/)</sub>
   - <sub>[GitHub repository](https://github.com/openai)</sub>
-
 - **Hostinger**:
   - <sub>web hosting provider used to deploy the application</sub>
   - <sub>[UK website](https://www.hostinger.co.uk)</sub>
@@ -289,7 +259,7 @@ Deployment to [custom domain](katieloesch.co.uk) obtained from [Hostinger](https
 ## 7. <a name="challenges"></a> Challenges
 
 - depending on how much text is provided to the modal showing details on each project, the container overflows but by default you can't scroll down on a modal
-- In order to scoll on overlay text the scroll on the body needs to be disabled first which took me a while to figure out.
+- In order to scroll on overlay text the scroll on the body needs to be disabled first which took me a while to figure out.
 
 ## 8. <a name="wins"></a> Wins
 

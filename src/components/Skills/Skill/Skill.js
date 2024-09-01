@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { colors } from '../../assets/colors/colors';
+import { colors } from '../../../assets/colors/colors';
 import './Skill.scss';
 
 const Skill = ({ name, icon, id }) => {
