@@ -1,8 +1,8 @@
 import React, { useContext, useState, useRef, useEffect } from 'react';
 
 import { AppContainer, MotionContainer } from '../../containers';
-import { SectionHeading, Slider } from '../Shared';
-import { Abouts, Media } from './sliderComponents';
+import { SectionHeading, Slider, SliderMobile } from '../Shared';
+import { Abouts, Media, MobileAboutComponent } from './sliderComponents';
 import { CurrentContext } from '../../contexts/CurrentContext';
 import { aboutData } from './../../api_data/api_about';
 import { aboutImages as images } from '../../assets/images/about_images';
@@ -46,15 +46,25 @@ const About = () => {
     return () => observer.disconnect();
   }, [isIntersecting, active, dot, navDots]);
 
+  const mobileSlides = aboutData.abouts.map((about, index) => (
+    <MobileAboutComponent
+      key={`about-slide-mobile-${index}`}
+      content='about'
+      title={about.title}
+      txt={about.description}
+      img={about.icon}
+    />
+  ));
+
   return (
     <div className='about-container'>
+      <SectionHeading section='about'>About</SectionHeading>
       <div className='about-intro flex'>
         <div className='about-intro__avatar-container flex'>
           <img src={images.avatar2Svg} alt='avatar' />
         </div>
 
         <div className='about-intro__text-container'>
-          <SectionHeading section='about'>About</SectionHeading>
           <div className='about-intro__text flex'>
             {aboutData.intros.map((intro, index) => (
               <p className='p-text flex' key={`about-intro-${index}`}>
@@ -68,14 +78,27 @@ const About = () => {
       <div className='about__slider-container' ref={ref}>
         <Slider
           type='about'
-          slides={[<Abouts columnData={aboutData.abouts} />, <Media />]}
+          slides={[
+            <Abouts columnData={aboutData.abouts} />,
+            <Media
+              mediaData={aboutData.media}
+              mediaLinks={aboutData.mediaLinks}
+            />,
+          ]}
+        />
+        <SliderMobile
+          type='about-mobile'
+          slides={[
+            ...mobileSlides,
+            <MobileAboutComponent
+              content='creators'
+              title='Creators & Blogs I follow:'
+              creators={aboutData.media}
+              links={aboutData.mediaLinks}
+            />,
+          ]}
         />
       </div>
-
-      {/* <Slider
-        type='about'
-        slides={[<Abouts columnData={aboutData.abouts} />, <Media />]}
-      /> */}
     </div>
   );
 };

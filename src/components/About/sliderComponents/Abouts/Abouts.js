@@ -5,16 +5,19 @@ import './Abouts.scss';
 
 const Abouts = ({ columnData }) => {
   return (
-    <div className='abouts-columns'>
-      {columnData.map((about, index) => (
-        <Column
-          type='about'
-          key={`about-column-${index}`}
-          img={about.imgUrl}
-          title={about.title}
-          txt={about.description}
-        />
-      ))}
+    <div className='abouts-columns about-slide'>
+      {columnData.map((about, index) => {
+        console.log(about);
+        return (
+          <Column
+            type='about'
+            key={`about-column-${index}`}
+            img={about.icon}
+            title={about.title}
+            txt={about.description}
+          />
+        );
+      })}
     </div>
   );
 };

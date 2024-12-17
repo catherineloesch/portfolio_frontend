@@ -11,19 +11,19 @@ const abouts = [
     title: 'background.',
     description:
       'As a biomedical science graduate, I had the opportunity to work with databases that store genetic data and algorithms for comparing sequence information. This experience sparked my interest in how software and technology can be used to improve and innovate healthcare and medical research.',
-    imgUrl: icons.background,
+    icon: icons.background.svg,
   },
   {
     title: 'coding journey.',
     description:
       'My interest in coding led me to join the General Assembly software engineering immersive course to secure a solid foundation in programming fundamentals to build upon. I’m currently looking for opportunities to further develop my skills and learn new languages, frameworks and technologies.',
-    imgUrl: icons.codingJourney,
+    icon: icons.codingJourney.svg,
   },
   {
     title: 'interests.',
     description:
       "I'm fascinated by sci-fi books, movies, and TV shows like Star Trek and Black Mirror that have often predicted technological advancements before they became mainstream, such as video calls, mobile phones, wireless headphones, credit cards, solar power and AI.",
-    imgUrl: icons.interests,
+    icon: icons.interests.svg,
   },
 ];
 
@@ -65,7 +65,7 @@ const media = [
     github: 'https://github.com/tnonate/thenewoil',
     blog: 'https://blog.thenewoil.org/',
     podcast: 'https://open.spotify.com/show/34JkJr5rzTQ7d1UZvUjfnJ',
-    img: images.newOil2,
+    img: images.newOil,
     alt: 'the new oil logo',
     bg: '',
   },
@@ -130,7 +130,7 @@ const media = [
     podcast: 'https://academind.com/podcast',
     udemy: 'https://www.udemy.com/user/academind',
     linkedin: 'https://www.linkedin.com/school/academind-pro',
-    img: images.academind,
+    img: images.academind2,
     alt: 'academind logo',
     bg: '',
   },
@@ -138,7 +138,15 @@ const media = [
     name: 'ZTM',
     className: 'ztm',
     id: '6',
-    description: [],
+    description: [
+      'ZTM is an online education platform founded by Andrei Neagoie and offering a wide range of courses on topics like web development, data science, ethical hacking, and machine learning.',
+      'It features high-quality video lessons as well as hands-on projects and its content regularly updated to ensure students learn the latest industry-relevant information.',
+      'ZTM also fosters an active community where students can collaborate, ask questions, and support one another, creating a community-driven learning environment.',
+      "ZTM extends its mission through blogs and newsletters that cover a variety of topics, including tech news, emerging trends, new tools, and best practices, helping learners stay informed about the tech industry's latest developments.",
+      'ZTM also shares content on productivity, mental health, and work-life balance, supporting tech professionals in building sustainable and fulfilling careers.',
+      "These offerings reflect ZTM's broader mission to equip students not only with technical expertise but also with the skills needed to become well-rounded, successful professionals.",
+    ],
+
     website: 'https://zerotomastery.io/',
     blog: 'https://zerotomastery.io/blog/',
     newsletter: 'https://zerotomastery.io/newsletters/',
@@ -168,16 +176,25 @@ const media = [
     alt: 'lamadev logo',
     bg: '',
   },
-  // {
-  //   name: 'Andy Sterkowitz',
-  //   url: 'https://www.youtube.com/@AndySterkowitz',
-  // },
+];
+
+const mediaLinks = [
+  'website',
+  'blog',
+  'podcast',
+  'newsletter',
+  'forum',
+  'youtube',
+  'github',
+  'mastodon',
+  'linkedin',
 ];
 
 const aboutData = {
-  intros: intros,
-  abouts: abouts,
-  media: media,
+  intros,
+  abouts,
+  media,
+  mediaLinks,
 };
 
 export { aboutData };
