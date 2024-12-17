@@ -188,7 +188,6 @@ const mediaLinks = [
   'forum',
   'youtube',
   'github',
-
   'mastodon',
   'linkedin',
 ];
