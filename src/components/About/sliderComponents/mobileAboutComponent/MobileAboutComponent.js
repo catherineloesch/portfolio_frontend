@@ -25,10 +25,7 @@ const MobileAboutComponent = ({
   if (content === 'about') {
     return (
       <div className='mobile-slide mobile-slide-about'>
-        <h2 className='grad1'>
-          {img}
-          {title}
-        </h2>
+        <h2 className='grad1'>{title}</h2>
         <div className={`slide-img-container ${img.className}`}>{img}</div>
         <img src={img} alt='' />
         <p>{txt}</p>
