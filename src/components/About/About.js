@@ -52,7 +52,7 @@ const About = () => {
       content='about'
       title={about.title}
       txt={about.description}
-      img={about.icon}
+      img={about.mobileIcon}
     />
   ));
 

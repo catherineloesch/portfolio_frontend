@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './MobileAboutComponent.scss';
 import BlogModal from '../Media/BlogModal/BlogModal';
 
+// import { aboutIcons as icons } from './../../../../assets/icons/icons_about';
+
 const MobileAboutComponent = ({
   content,
   title,
@@ -25,16 +27,15 @@ const MobileAboutComponent = ({
   if (content === 'about') {
     return (
       <div className='mobile-slide mobile-slide-about'>
-        <h2 className='grad1'>{title}</h2>
-        <div className={`slide-img-container ${img.className}`}>{img}</div>
-        <img src={img} alt='' />
+        <div className={`slide-img-container`}>{img}</div>
+        <h2>{title}</h2>
         <p>{txt}</p>
       </div>
     );
   } else {
     return (
       <div className='mobile-slide mobile-slide-creators'>
-        <h2 className='grad1'>{title}</h2>
+        <h2>{title}</h2>
         <div className='creators'>
           {creators.map((blog) => (
             <div

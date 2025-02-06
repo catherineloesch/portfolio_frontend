@@ -7,7 +7,6 @@ const Abouts = ({ columnData }) => {
   return (
     <div className='abouts-columns about-slide'>
       {columnData.map((about, index) => {
-        console.log(about);
         return (
           <Column
             type='about'

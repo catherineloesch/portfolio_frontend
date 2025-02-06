@@ -25,6 +25,26 @@ const code = (
 );
 
 const code2 = (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    width={24}
+    height={24}
+    viewBox='0 0 24 24'
+  >
+    <g
+      fill='none'
+      stroke='currentColor'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      strokeWidth={1.5}
+    >
+      <path d='m8 9l3 3l-3 3m5 0h3'></path>
+      <path d='M3 9.4c0-2.24 0-3.36.436-4.216a4 4 0 0 1 1.748-1.748C6.04 3 7.16 3 9.4 3h5.2c2.24 0 3.36 0 4.216.436a4 4 0 0 1 1.748 1.748C21 6.04 21 7.16 21 9.4v5.2c0 2.24 0 3.36-.436 4.216a4 4 0 0 1-1.748 1.748C17.96 21 16.84 21 14.6 21H9.4c-2.24 0-3.36 0-4.216-.436a4 4 0 0 1-1.748-1.748C3 17.96 3 16.84 3 14.6z'></path>
+    </g>
+  </svg>
+);
+
+const code3 = (
   <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 512'>
     <path
       fill='currentColor'
@@ -33,7 +53,7 @@ const code2 = (
   </svg>
 );
 
-const code3 = (
+const code4 = (
   <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 512'>
     <path
       fill='currentColor'
@@ -65,6 +85,20 @@ const dna = (
   </svg>
 );
 
+const dna2 = (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    width={506}
+    height={512}
+    viewBox='0 0 506 512'
+  >
+    <path
+      fill='currentColor'
+      d='M336.742.004c-5.732-.12-12.481 2.453-19.86 9.18c-46.533 64.308-24.742 112.637.669 195.094c27.589 89.525 3.311 151.023-96.922 122.124l13.974 45.02C356.01 389.67 380.316 301.64 363.98 225.555c-22.331-104.015-54.152-129.427-9.84-196.19c5.233-11.154-2.753-29.053-17.4-29.36M377.2 45.64c-8.08 4.781-10.91 11.338-11.192 25.867c32.625 27.345 60.36 65.991 82.18 93.208c-8.074 4.809-18.18 9.25-29.263 7.892c-10.334-14.493-37.847-47.05-58.236-66.709c1.662 17.845 6.535 31.115 8.014 46.572c31.968 35.89 33.665 54.176 33.665 54.176c41.241 2.092 76.028-15.901 99.24-36.808c12.519-10.748-4.996-39.884-27.34-19.885c-30.184-37.486-61.414-73.664-97.068-104.313m-135.397 90.39c-64.648-.737-110.817 48.596-107.626 112.728c5.05 56.142 30.399 92.912 34.463 138.263l-27.758-31.354c-10.855-1.19-20.37-2.676-32.085 3.792l58.532 61.95c-1.583 9.517-4.242 19.559-8.264 30.318c-22.906-22.013-49.869-55.033-79.44-87.009c-17.09 3.793-26.497 13.47-26.672 13.76l93.326 100.594c-24.194 26.779 17.503 44.953 36.45 23.433c65.193-75.952 14.961-165.88-6.389-252.319l47.519 51.681c16.752 9.187 39.172 8.919 47.482 3.836l-91.225-94.87c4.713-10.523 9.684-13.146 21.044-18.759l88.982 92.74c5.634-10.584 14.017-20.687 3.397-43.3l-57.92-64.106c9.893-3.314 31.811 3.576 48.981 8.943l-14.05-46.836c-9.899-2.252-19.512-3.379-28.747-3.484M98.745 300.054c-45.42-.472-70.368 18.213-91.777 37.05c-19.17 16.978 5.015 47.966 26.71 32.057c27.197-24.263 50.117-37.07 93.589-33.961l-7.754-33.715c-7.374-.905-14.28-1.363-20.768-1.43'
+    ></path>
+  </svg>
+);
+
 const ufo = (
   <svg
     xmlns='http://www.w3.org/2000/svg'
@@ -90,6 +124,26 @@ const ufo = (
     <path
       fill='url(#grad1)'
       d='M7.055 7.005A4.73 4.73 0 0 1 11.729 3h.542a4.73 4.73 0 0 1 4.674 4.005a.429.429 0 0 1-.145.175c-.414.288-1.61.82-4.8.82c-3.19 0-4.386-.532-4.8-.82a.429.429 0 0 1-.145-.175M6 16.25a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3a.75.75 0 0 1 .75-.75m12.75.75a.75.75 0 0 0-1.5 0v3a.75.75 0 0 0 1.5 0zm-6.75.25a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3a.75.75 0 0 1 .75-.75'
+    ></path>
+  </svg>
+);
+
+const ufo2 = (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    width={24}
+    height={24}
+    viewBox='0 0 24 24'
+  >
+    <path
+      fill='currentColor'
+      fillRule='evenodd'
+      d='M5.675 7.593C3.432 8.36 2 9.523 2 10.826C2 13.131 6.477 15 12 15s10-1.869 10-4.174c0-1.303-1.432-2.467-3.675-3.233c-.124.29-.331.584-.668.819C16.869 8.96 15.3 9.5 12 9.5s-4.868-.54-5.657-1.088a1.9 1.9 0 0 1-.668-.819M12 13a1 1 0 1 0 0-2a1 1 0 0 0 0 2m-4-2a1 1 0 1 1-2 0a1 1 0 0 1 2 0m9 1a1 1 0 1 0 0-2a1 1 0 0 0 0 2'
+      clipRule='evenodd'
+    ></path>
+    <path
+      fill='currentColor'
+      d='M7.055 7.005A4.73 4.73 0 0 1 11.729 3h.542a4.73 4.73 0 0 1 4.674 4.005a.43.43 0 0 1-.145.175c-.414.288-1.61.82-4.8.82s-4.386-.532-4.8-.82a.43.43 0 0 1-.145-.175M6 16.25a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3a.75.75 0 0 1 .75-.75m12.75.75a.75.75 0 0 0-1.5 0v3a.75.75 0 0 0 1.5 0zm-6.75.25a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3a.75.75 0 0 1 .75-.75'
     ></path>
   </svg>
 );
@@ -232,6 +286,7 @@ const newsletter = (
 const aboutIcons = {
   codingJourney: {
     svg: code,
+    mobileSvg: code2,
     className: 'code',
     author: 'iconify.design',
     license: 'https://github.com/iconify/iconify/blob/main/license.txt',
@@ -240,8 +295,8 @@ const aboutIcons = {
     title:
       '"programming-linear" by iconify.design, available at https://icon-sets.iconify.design/solar/programming-linear/, license: https://github.com/iconify/iconify/blob/main/license.txt',
   },
-  codingJourney2: {
-    svg: code2,
+  codingJourney3: {
+    svg: code3,
     className: 'code',
     author: 'FontAwesome',
     license: 'https://fontawesome.com/license/free',
@@ -250,8 +305,8 @@ const aboutIcons = {
     title:
       '"laptop code classic solid" by FontAwesome, available at https://fontawesome.com/icons/laptop-code?f=classic&s=solid, license: https://fontawesome.com/license/free',
   },
-  codingJourney3: {
-    svg: code3,
+  codingJourney4: {
+    svg: code4,
     name: 'code',
     author: 'FontAwesome',
     license: 'https://fontawesome.com/license/free',
@@ -262,6 +317,7 @@ const aboutIcons = {
   },
   background: {
     svg: dna,
+    mobileSvg: dna2,
     className: 'dna',
     author: 'iconify.design',
     license: 'https://github.com/iconify/iconify/blob/main/license.txt',
@@ -272,6 +328,7 @@ const aboutIcons = {
   },
   interests: {
     svg: ufo,
+    mobileSvg: ufo2,
     className: 'ufo',
     author: 'iconify.design',
     license: 'https://github.com/iconify/iconify/blob/main/license.txt',
