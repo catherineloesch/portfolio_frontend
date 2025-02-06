@@ -3,7 +3,7 @@ import { aboutImages as images } from '../assets/images/about_images';
 
 const intros = [
   "Hi there! I'm Katie. I'm a full-stack developer with a background in biomedical science, currently based in London.",
-  "I'm currently open to job opportunities where I can contribute, learn and grow.",
+  "I'm always open to job opportunities where I can contribute, learn and grow.",
 ];
 
 const abouts = [
